@@ -32,7 +32,7 @@ description):
 * Submit a pull request. Your commit message should be 'lint: Fix LNNN pep8
   violations.'
 
-See git commit `6d93b3b` for an example.
+See git commit [6d93b3b](https://github.com/zulip/zulip/commit/6d93b3b) for an example.
 
 ## General notes
 
