@@ -2,13 +2,8 @@ import argparse
 from upload import upload_task
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--force', dest='force', action="store_true", default=False)
+parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
-if not args.force:
-    print("Add --force argument to create tasks.")
-    print("This is not idempotent. Running this twice with --force will create two sets of tasks.")
-    exit(0)
-
 
 pep8_rules = ['E251', 'E261', 'E128', 'E402', 'E221', 'E265', 'E127', 'E303',
               'E266', 'E301', 'W503', 'E203', 'E731', 'E225', 'E122', 'E502',
@@ -42,4 +37,10 @@ for rule in ["E261"]:
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
         # external_url = "TODO",
-        private_metadata = "PEP8")
+        private_metadata = "PEP8",
+        do_upload = args.force)
+
+if not args.force:
+    print
+    print("No tasks uploaded. Add a -f argument to upload tasks to the GCI website.")
+    print("This is not idempotent. Running this twice with -f will create two sets of tasks.")
