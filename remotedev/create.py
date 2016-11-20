@@ -84,8 +84,10 @@ def set_user_data(username, userkeys):
     print("Setting cloud-config data, populated with GitHub user's public keys...")
     ssh_authorized_keys = ""
 
+    # spaces here are important here - these need to be properly indented under
+    # ssh_authorized_keys:
     for key in userkeys:
-        ssh_authorized_keys += "\n      - {0}".format(key['key'])
+        ssh_authorized_keys += "\n          - {0}".format(key['key'])
 
     #print(ssh_authorized_keys)
     cloudconf = """
@@ -99,7 +101,7 @@ def set_user_data(username, userkeys):
      mode: reboot
      condition: True
     """.format(username, ssh_authorized_keys)
-   
+
     print("...returning cloud-config data.")
     return cloudconf
 
