@@ -30,9 +30,9 @@ for rule in ["E261"]:
         max_instances = 1,
         mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'pep8'], # free text
+        is_beginner = rule in beginner_rules,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
-        is_beginner = rule in beginner_rules,
         categories = [1, 4],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
