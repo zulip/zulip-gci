@@ -1,6 +1,5 @@
-import json
 import os
-import requests
+from .task_uploader.client import GCIAPIClient
 
 # Information about the fields is available at
 # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
@@ -18,16 +17,8 @@ def upload_task(name, description, status, max_instances, mentors, tags, is_begi
         print("You can get your key from https://codein.withgoogle.com/dashboard/profile/.")
         exit(1)
 
-    headers = {
-        'Authorization': 'Bearer %s' % API_KEY,
-        'Content-Type': 'application/json'}
-    url = 'https://codein.withgoogle.com/api/program/current/tasks/'
-
     if do_upload:
-        r = requests.post(url, headers=headers, data=json.dumps(task))
-        r.raise_for_status()
-        if (r.status_code != 201):
-            raise Exception("Task not created. Something went wrong.")
+        GCIAPIClient(API_KEY).create_new_task(task)
         print("Task created at https://codein.withgoogle.com/dashboard/tasks/")
     else:
         print("Dry run, printing task below.")
