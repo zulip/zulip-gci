@@ -1,5 +1,5 @@
 import os
-from .task_uploader.client import GCIAPIClient
+from task_uploader.client import GCIAPIClient
 
 # Information about the fields is available at
 # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
