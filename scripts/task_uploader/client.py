@@ -33,12 +33,12 @@ class GCIAPIClient(object):
             'Content-Type': 'application/json',
         }
 
-    if debug:
-        logging.basicConfig()
-        logging.getLogger().setLevel(logging.DEBUG)
-        requests_log = logging.getLogger('requests.packages.urllib3')
-        requests_log.setLevel(logging.DEBUG)
-        requests_log.propagate = True
+        if debug:
+            logging.basicConfig()
+            logging.getLogger().setLevel(logging.DEBUG)
+            requests_log = logging.getLogger('requests.packages.urllib3')
+            requests_log.setLevel(logging.DEBUG)
+            requests_log.propagate = True
 
     def _build_url(self, path):
         return urlparse.urljoin(self.url_prefix, path) + '/'
@@ -98,7 +98,7 @@ class GCIAPIClient(object):
         Returns:
           A JSON encoded response.
         """
-        r = requests.put(self._build_url('tasks/{}'.format(task_id), data=json.dumps(task), headers=self.headers))
+        r = requests.put(self._build_url('tasks/{}'.format(task_id)), data=json.dumps(task), headers=self.headers)
         r.raise_for_status()
         return r.json()
 
