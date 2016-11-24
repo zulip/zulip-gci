@@ -27,7 +27,6 @@ great way to practice git, git grep, and efficiently using a powerful editor.
 Instructions for mypy annotation tasks are at
 https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md.
 
-
 """
 
 description_A = description + "For this task, do **Task Type A** for the following set of directories: **%s**."
