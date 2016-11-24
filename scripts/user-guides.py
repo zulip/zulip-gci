@@ -10,7 +10,8 @@ features = ["Edit Messages", "Mention a Team Member", "Change Language", "Messag
 description = """Good user guides help users and search engines discover Zulip features.
 Help write user guides for Zulip!
 
-Instructions for all user documentation tasks are at https://[TODO].
+Instructions for all user documentation tasks are at
+https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md.
 
 
 """
@@ -34,8 +35,8 @@ for feature in features:
         categories = [3, 5],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        # external_url = "TODO",
-        private_metadata = "user-documentation",
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
+        private_metadata = "user-guides",
         do_upload = args.force)
 
     # Part 2
@@ -53,7 +54,7 @@ for feature in features:
         categories = [3],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        # external_url = "TODO",
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
         private_metadata = "user-guides",
         do_upload = args.force)
 
@@ -74,8 +75,8 @@ for i in range(10):
         categories = [3, 4],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        # external_url = "TODO",
-        private_metadata = "user-documentation",
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
+        private_metadata = "user-guides",
         do_upload = args.force)
 
 
