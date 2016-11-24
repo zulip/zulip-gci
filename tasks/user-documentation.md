@@ -1,13 +1,60 @@
 # GCI Tasks: User Documentation
 
+## Prerequisites
+
+* SET_UP_ZULIP_DEVELOPMENT_ENVIRONMENT
+
+## Background
+
 Good user guides help users and search engines discover Zulip features. They
 are crucial since they are a medium through which we present Zulip to our
-potential users and contributors.
+potential users and contributors. This task involves writing a user
+guide for one of our features.
+
+## Task Descriptions
+
+There are three types of task in this category, each corresponding to one of
+the Task Types below. Let *feature* be the feature mentioned in task that brought
+you here (if relevant).
+
+### Task Type A
+
+* Look at the List of Features section below to see a link to how *feature*
+  works in Slack. Play with the Zulip UI to learn how *feature* works in
+  Zulip.
+* Write an outline for documentation for *feature*. It doesn't have to be
+  in Markdown, and it is okay if the writing isn't perfect, but it should
+  include all the relevant content, including screenshots and links pointing
+  to parts of the Zulip UI if appropriate.
+
+  Put the outline and screenshots into a new directory
+  `gci/user-documentation/<folder name>/`, where 'folder name' is something
+  like edit-messages, or mention-a-team-member.
+* Post your work as a pull request in the zulip/gci-submissions
+  repository. The title of the pull request should be "User documentation A: *feature*"
+
+*Completion criteria*: Mentors will check that the information is correct and complete.
+
+### Task Type B
+
+Write a nice and clear user guide for *feature*, using the outline from Task
+Type A. The user guide should be written in Markdown. Create a pull request
+adding it to the `templates/zerver/help/` directory of the zulip/gci-submissions
+repository. The title of the pull request should be "User documentation B: *feature*"
+
+*Completion criteria*: This should be a polished product, and something that
+ could go live on the site. Mentors will check that that is indeed the case.
+
+### Task Type C
+
+Read three of the guides that have been written by other GCI contributors.
+Try to follow the instructions step-by-step, completely precisely, taking
+careful notes on any issues or mistakes you run into.  Add those notes and
+any suggested edits as comments on the appropriate pull requests. Open a new
+pull request with links to the three guides.
+The title of the pull request should be "User documentation C: *feature1*, *feature2*, *feature3*"
 
 ## General Instructions
-
-* All the tasks below require a working Zulip development environment. Complete the
-[add link to task for setting up dev environment] task first if you haven't already.
 
 * The source for the user documentation is the Markdown files under
 templates/zerver/help/ in the main Zulip repository.
@@ -27,36 +74,7 @@ copying, please ask on the [TODO] stream at chat.zulip.org!
 
 TODO: Add some others / better ones.
 
-## Task Descriptions
 
-There are three types of task in this category, each corresponding to one of
-the Parts below. Let *feature* be the feature mentioned in task that brought
-you here (if relevant).
-
-### Part 1
-
-* Look at the list below to see a link to how *feature* works in Slack. Play
-  with the Zulip UI to learn how *feature* works in Zulip.
-* Write an outline for documentation for this feature. It doesn't have to be
-  in Markdown, and it is okay if the writing isn't perfect, but it should
-  include all the relevant content, including screenshots and links pointing
-  to parts of the Zulip UI if appropriate.
-* Post your work as an issue on GitHub using
-  https://github.com/zulip/zulip-gci/issues/new.
-
-### Part 2
-
-Write a nice and clear user guide for *feature*, using the outline from Part
-1. The user guide should be written in Markdown. Create a pull request
-adding it to the templates/zerver/help/ directory of the zulip-gci
-repository.
-
-### Part 3
-
-Read three of the guides that have been written by other GCI contributors.
-Try to follow the instructions step-by-step, completely precisely, taking
-careful notes on any issues or mistakes you run into.  Submit those notes
-and any suggested edits to the documentation.
 
 ## List of Features
 
