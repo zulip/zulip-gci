@@ -7,7 +7,7 @@ args = parser.parse_args()
 
 integrations = [
     ('HelloSign', 'an E-signing tool'),
-    ('AppFollow', 'monitors appstore activity')
+    ('AppFollow', 'monitors appstore activity'),
     ('Mention', 'a media monitoring tool'),
     ('GoSquared', 'real time analytics'),
     ('Mailchimp', 'an email marketing tool'),
