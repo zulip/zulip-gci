@@ -38,10 +38,13 @@ Follow the tutorial below to test run the followup bot on your local instance.
 
   ```
   [api]
-  key=RBY3lw7v4BNDBYMZzuBk9xkpD0Y0msIK
+  key=<api-key>
   email=iago@zulip.com
   site=http://localhost:9991/
   ```
+  replace the placeholder "<api-key>" in the example with your own api-key which can be attained
+  from settings and also configure its email properly.
+  This is how Zulip knows the request is from an authorized user.
 
 4. Run the server using vagrant - `/srv/zulip/tools/run-dev.py`.
 
