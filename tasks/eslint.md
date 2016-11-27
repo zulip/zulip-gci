@@ -1,6 +1,7 @@
 # GCI Tasks: JavaScript code style cleanup
 
 ## Prerequisites
+
 * SET_UP_ZULIP_DEVELOPMENT_ENVIRONMENT
 
 ## Background
@@ -14,7 +15,7 @@ which checks the rules in [.eslintrc.json][eslintrc]. Some of the rules have
 been set to warning (or off) instead of erroring, because the Zulip codebase
 does not pass them.
 
-Our goal is to fix these rules by the end of GCI.
+Our goal is to have Zulip pass all of these rules by the end of GCI.
 
 [eslint]: http://eslint.org/
 [eslintrc]: http://eslint.org/docs/user-guide/configuring#configuration-file-formats
