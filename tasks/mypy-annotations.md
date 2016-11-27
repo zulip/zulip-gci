@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-* CLONE_GIT_REPO
+* SET_UP_ZULIP_DEVELOPMENT_ENVIRONMENT
 
 ## Background
 
@@ -42,12 +42,14 @@ brought you here. For each directory:
   if and only if it starts with `# type: `.
   * Update the import statements. Add `typing.Text`, and remove
     `six.text_type` if it no longer appears in the file.
-* Submit a pull request to zulip/gci-submissions, with commit message
-  `typing.Text: Convert <directories>` where `directories` is some
-  summarization of the *set of directories* so that the whole commit message
-  is at most 76 characters long.
+* Add a commit with commit message `mypy: Convert <directory> to use typing.Text.`
 
-See commit XXX for an example.
+* Submit a single pull request to zulip/gci-submissions, with title
+  "Mypy Annotations A: <set of directories>".
+
+See commit
+[fdae58f](https://github.com/zulip/zulip/commit/fdae58f96b284b4153ff6b4fa4b07343647b85b2)
+for an example.
 
 *Completion criteria*:
 * PASS_TRAVIS
