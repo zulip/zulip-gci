@@ -33,6 +33,7 @@ Let *rules* be the rules in the task description on codein.withgoogle.com.
 Steps for completing the task:
 
 For each *rule* in *rules*:
+
   * Remove *rule* from the `ignored_rules` array in `tools/lint-all`. Leave the
     line-wrapping as is, in order to reduce rebase conflicts with other
     contributors.
@@ -41,8 +42,9 @@ For each *rule* in *rules*:
     or some combination.
   * Run `tools/test-all`, and make sure your code (still) passes all the tests.
   * Add a commit with message 'pep8: Fix *rule* violations.'
-Submit a pull request to zulip/gci-submissions with all the commits.  The
-title of the pull request should be 'pep8: *rules*'.
+
+Submit a pull request with all the commits.  The title of the pull
+request should be something like 'pep8: Fix *rules*'.
 
 See git commit [6d93b3b](https://github.com/zulip/zulip/commit/6d93b3b) for an example.
 
