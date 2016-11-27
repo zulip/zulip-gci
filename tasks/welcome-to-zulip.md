@@ -19,7 +19,8 @@ Important streams:
 
 A few notes:
 * If you see a question you can answer (on any of the streams), please do!
-* Please adhere to our community code of conduct.
+* Please adhere to our
+  [community code of conduct](https://zulip.readthedocs.io/en/latest/code-of-conduct.html).
 
 A few non-obvious things that help keep the server manageable:
 * All test messages should go to the `test here` stream.
