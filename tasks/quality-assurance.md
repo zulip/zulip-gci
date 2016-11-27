@@ -38,10 +38,12 @@ thing to click.
 
 ## Submission instructions
 
-Post the bug to the 'quality assurance' topic of the 'GCI task discussion'
-stream on chat.zulip.org, and a mentor will check off on whether it is a
-known bug or not. If it is indeed new, submit a pull request to the
-zulip/gci-submissions repository, with
+Post the bug to the 'quality assurance' topic of the 'GCI task
+discussion' stream on chat.zulip.org, and a mentor will check off on
+whether it is a known bug or not. If it is indeed new, open a new
+GitHub issue the zulip/zulip-gci repository (aka this repository),
+with:
+
 * A title that starts with "Quality Assurance".
 * A screenshot of the broken behavior.
 * Step by step instructions for getting to that broken state. E.g. "log in
