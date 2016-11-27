@@ -32,19 +32,22 @@ that brought you here (if relevant).
   to parts of the Zulip UI if appropriate.
 
   Put the outline and screenshots into a new directory
-  `gci/user-documentation/<folder name>/`, where 'folder name' is something
-  like edit-messages, or mention-a-team-member.
-* Post your work as a pull request in the zulip/gci-submissions
-  repository. The title of the pull request should be "User guides A: *feature*"
+  `user-documentation/<folder name>/`, where 'folder name' is
+  something describing the feature, like edit-messages, or
+  mention-a-team-member.
+* Post your work as a pull request in the zulip/zulip-gci repository
+  (aka this one). The title of the pull request should be "User guides
+  A: *feature*"
 
 *Completion criteria*: Mentors will check that the information is correct and complete.
 
 ### Task Type B
 
-Write a nice and clear user guide for *feature*, using the outline from Task
-Type A. The user guide should be written in Markdown. Create a pull request
-adding it to the `templates/zerver/help/` directory of the zulip/gci-submissions
-repository. The title of the pull request should be "User guides B: *feature*"
+Write a nice and clear user guide for *feature*, using the outline
+from Task Type A. The user guide should be written in Markdown. Create
+a pull request adding it to the `templates/zerver/help/` directory of
+the https://github.com/zulip/zulip/ repository. The title of the pull
+request should be "User guides B: *feature*"
 
 *Completion criteria*: This should be a polished product, and something that
 could go live on the site. Mentors will check that that is indeed the case,
@@ -52,19 +55,23 @@ and that we are not copying text or images from other products.
 
 ### Task Type C
 
-Read three of the guides that have been written by other GCI contributors.
-Try to follow the instructions step-by-step, completely precisely, taking
-careful notes on any issues or mistakes you run into.  Add those notes and
-any suggested edits as comments on the appropriate pull requests. Open a new
-pull request with links to the three guides.
-The title of the pull request should be "User guides C: *feature1*, *feature2*, *feature3*"
+Read three of the guides that have been written by other GCI
+contributors.  Try to follow the instructions step-by-step, completely
+precisely, taking careful notes on any issues or mistakes you run
+into.  Add those notes and any suggested edits as comments on the
+appropriate pull requests (or if they're already been merged, just
+make your changes and submit a pull request to update the text). Open
+a new pull request with links to the three guides.
+
+The title of the pull request should be "User guides C: *feature1*,
+*feature2*, *feature3*"
 
 ## General Notes
 
-* The source for the user documentation is the Markdown files under
-templates/zerver/help/ in the main Zulip repository.
+* The source for the user documentation is the Markdown files is under
+templates/zerver/help/ in the main Zulip repository (zulip/zulip).
 
-* To see the latest version of a user documentation file
+* To see the current version of a user documentation file,
 templates/zerver/help/feature.md in Markdown, reload your browser on
 http://localhost:9991/help/feature.
 
