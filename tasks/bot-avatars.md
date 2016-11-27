@@ -6,11 +6,12 @@
 
 ## Background
 
-Zulip allows users to create custom bots and integrations, and those bots
-need avatars to help make the product more fun!  Zulip would like to provide
-a library of cute custom avatars that users can choose from when creating
-a new bot.  Our non-custom avatars look like https://chat.zulip.org/integrations/,
-basically the logos of products that Zulip integrates with.
+Zulip allows users to create custom bots and integrations, and those
+bots need avatars to help make the product more fun!  Zulip would like
+to provide a library of cute custom avatars that users can choose from
+when creating a new bot.  Our non-custom avatars look like
+https://chat.zulip.org/integrations/, basically the logos of products
+that Zulip integrates with.
 
 The avatars should look good at the 50x50px size at which the user avatars
 are displayed in the Zulip web application.  Use your creativity!  For example,
@@ -25,7 +26,7 @@ its function or a pun around the word “logging”, e.g.:
 
 ### Task Type A: Find bot avatars on the internet.
 
-* Create the directory `gci/bot-avatars/<username>`, where <username> is
+* Create the directory `bot-avatars/<username>`, where <username> is
   your github username.
 
 * Find a list of online repositories of cute bot images with a clear open source
@@ -37,29 +38,31 @@ its function or a pun around the word “logging”, e.g.:
 * Add a commit with these files, with commit message "bot avatars: Add
   avatars from internet sources."
 
-* Make a pull request to the `zulip/gci-submissions` repository, with title
+* Make a pull request to the `zulip/zulip-gci` repository, with title
   "Bot avatars A: Find avatars from internet sources."
 
-### Task Type B: Design prototype avatars.
+### Task Type B: Design avatars.
 
-* Create the directory `gci/bot-avatars/<username>`, where <username> is
+* Create the directory `bot-avatars/<username>`, where <username> is
   your github username.
 
-* Design 3-5 avatar images that fit together thematically (e.g. similar visual style),
-  inspired by some of the potential bot use cases described below.  They should look
-  good at 50x50px size. It’s OK for these to be quick prototypes; it makes sense
-  to spend a lot of time making them really good once you’ve gotten feedback on which
-  design directions others like. Add the images to the directory above.
+* Design 3-5 avatar images that fit together thematically
+  (e.g. similar visual style), inspired by some of the potential bot
+  use cases described below.  They should look good at 50x50px
+  size. It’s OK for the first versions of these to be rough versions;
+  it makes sense to defer spending a lot of time making them really
+  good until you’ve gotten feedback on which design directions others
+  like. Add the images to the directory above.
 
 * Add a commit with these files, with commit message "bot avatars: Add
   prototype avatars."
 
-* Make a pull request to the `zulip/gci-submissions` repository, with title
+* Make a pull request to the `zulip/zulip-gci` repository, with title
   "Bot avatars B: Create prototype avatars."
 
 ### Task Type C: Refine avatars from prototypes.
 
-* Create the directory `gci/bot-avatars/<username>`, where <username> is
+* Create the directory `bot-avatars/<username>`, where <username> is
   your github username.
 
 * Refine one collection of avatar images that you or another contributor have
@@ -74,7 +77,7 @@ its function or a pun around the word “logging”, e.g.:
 * Add a commit with these files, with commit message "bot avatars: Add refined
   avatars."
 
-* Make a pull request to the `zulip/gci-submissions` repository, with title
+* Make a pull request to the `zulip/zulip-gci` repository, with title
   "Bot avatars C: Refine prototype avatars."
 
 Please use either the .svg file format or create both a 50x50 and 300x300 pixel .png image.
@@ -85,7 +88,9 @@ Do not submit images found on the Internet for Task Types B or C.
 
 ## Example Bots
 
-Here is a non-inclusive list of bots for which we do not have avatars:
+Here is a list of bots ideas that you can use for inspiration when
+designing your avatars, but you don't need to base your avatar designs
+on things from this list.  Be creative!
 
 - build bot (used for notifications about software having been compiled)
 - alert bot (used to send notifications about software system statuses and alerts, e.g. a server being down)
