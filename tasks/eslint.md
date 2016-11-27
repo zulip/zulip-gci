@@ -39,7 +39,7 @@ Let `rule` be the rule in the task description on
    error and fix violations' (where a value is specified, use that
    instead of error, and if the current value is 0 or off, mention
    that).
-6. Submit a pull request to zulip/gci-submissions.
+6. Submit a pull request with a title mentioning `eslint`.
 
 An example pull request (PR) would look like this: https://github.com/zulip/zulip/pull/2408
 
