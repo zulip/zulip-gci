@@ -11,7 +11,9 @@ them before users do, which is where this task comes in.
 
 ## Task descriptions
 
-All of these can be done in the development environment.
+All of these can be done in the development environment.  A helpful
+guide to doing manual testing in Zulip is here:
+http://zulip.readthedocs.io/en/latest/manual-testing.html
 
 ### Task Type A: Internationalization overflow
 
@@ -26,18 +28,11 @@ Open up two browser tabs, one with an incognito window, and log in to the
 development environments with two different users. Do a bunch of stuff in one
 window, and try to get the other window to not be in sync with the first one.
 
-### Task Type C: Open graph
-
-Zulip has this cool “open graph” integration, where when you post a link
-into Zulip, it provides a nice visual preview of the webpage. Post links to
-a bunch of web pages (homepages of websites, blogs, etc.). Find at least
-one URL for a website where the preview doesn’t look good, fails to show up,
-or is broken.
-
-### Task Type D: Frontend bug
+### Task Type C: Frontend bug
 
 Find any sequence of actions that results in something displaying the wrong
-output.
+output.  Try to click on things that aren't the most natural next
+thing to click.
 
 ## Submission instructions
 
