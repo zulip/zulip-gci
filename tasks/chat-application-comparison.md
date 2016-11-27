@@ -9,6 +9,12 @@ to work on only one chat application for testing the features. The GCI
 task description should tell you which chat application and set you
 should be testing.
 
+* You have to create a new team in the third party chat application and 
+refer to the docs for completing most of the tasks. 
+
+* Try to submit link to documentation whenever you can. If not possible 
+screenshots are good.
+
 # Set A
 
 Check whether the following features are present in the **chat
@@ -75,7 +81,16 @@ The output should be submitted as a spreadsheet with the following column names
  required.
  * **Documentation** - Link to the documentation if available.
  * **Screenshots** - Take the screenshots of the feature while you are testing them.
-Put the spreadsheat and screenshots into a new directory gci/user-doc
+
+The spreadsheet should be named as 'chat-application-name-set-X-username.format'. Replace
+`chat-application-name` with the chat application you are working on, `X` with the 
+set Id (A, B, C, D, or E), `username` with your GitHub username and `format` with the 
+spreadsheet type (eg xls).
+
+Put the spreadsheat in directory `gci/chat-application-comparison`.
+
+Put the screenshots in directory `gci/chat-application-comparison/screenshots/username`
+where **username** is your Github username.
 
 [Here is an example](https://docs.google.com/spreadsheets/d/16a46fPeEd-PnqS5ZBpspTScnjIaXwr60xFVEdcwKiTY/edit?usp=sharing) of how the spreadsheet would look like while testing Slack.
 
@@ -224,6 +239,17 @@ The ouput can be submitted as a plain text file or markdown. It is okay if the
 writing isn't perfect, but it should include all the relevant content, including
 screenshots and links pointing to documentations if appropriate.
 
+The output file should be named as 'chat-application-name-set-X-username.format'. Replace
+`chat-application-name` with the chat application you are working on, `X` with the 
+set Id (A, B, C, D, or E), `username` with your GitHub username and `format` with the 
+type of the file (eg .md, .txt).
+
+Put the file in directory `gci/chat-application-comparison`.
+
+Put the screenshots in directory `gci/chat-application-comparison/screenshots/username`
+where **username** is your Github username.
+
+
 # Set E
 
 Try to answer the following questions by playing with the chat application.
@@ -251,3 +277,12 @@ The output can be submitted as a plain text file or markdown. It is
 okay if the writing isn't perfect, but it should include all the
 relevant content, including screenshots and links pointing to
 documentation if appropriate.
+
+The output file should be named as 'chat-application-name-set-X-username.format'. Replace
+`chat-application-name` with the chat application you are working on, `X` with the 
+set Id (A, B, C, D, or E), `username` with your GitHub username and `format` with the 
+type of the file (eg .md, .txt).
+
+Put the file in directory `gci/chat-application-comparison`.
+Put the screenshots in directory `gci/chat-application-comparison/screenshots/username`
+where **username** is your Github username.
