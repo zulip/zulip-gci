@@ -6,7 +6,10 @@ We'll write the text for these later, and do a find and replace in all the
 templates before GCI starts. If there is another prerequisite we haven't
 thought of that might apply to more than one category, add it here!
 
-* SET_UP_ZULIP_DEVELOPMENT_ENVIRONMENT
+* A working Zulip development environment. See
+  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  on how to set one up.
+
 * CLONE_GIT_REPO (for anything that doesn't require a working dev environment)
 * GET_MENTOR_PERMISSION
 

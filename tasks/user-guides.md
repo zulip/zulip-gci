@@ -2,7 +2,9 @@
 
 ## Prerequisites
 
-* SET_UP_ZULIP_DEVELOPMENT_ENVIRONMENT
+* A working Zulip development environment. See
+  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  on how to set one up.
 
 ## Background
 
