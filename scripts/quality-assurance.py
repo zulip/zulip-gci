@@ -21,7 +21,7 @@ upload_task(
     max_instances = 25,
     mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
     tags = ['bug squashing', 'internationalization', 'open graph', 'frontend'], # free text
-    is_beginner = True,
+    is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [2, 4],

@@ -24,7 +24,7 @@ upload_task(
     max_instances = 30,
     mentors = ['arpith@feedreader.co', 'niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
     tags = ['design', 'bots', 'avatars'], # free text
-    is_beginner = True,
+    is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [2, 5],
