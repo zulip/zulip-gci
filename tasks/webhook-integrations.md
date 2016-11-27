@@ -25,10 +25,13 @@ that is named after yourself, and sends a unique message you’d like to share
 with the world. As you’re going through the tutorial, take notes on where
 you got stuck or needed to look up terminology.
 
-* Create a new directory `zerver/fixtures/<your_name>`. Replace the
-  placeholder `<your_name>` with your own name here.
+Notation: Everywhere below, <yourname> should be replaced by your name in
+lowercase (no spaces or underscores), and <YourName> should be replaced by
+your name in CamelCase.
 
-* Add a json file to this directory `zerver/fixtures/<your_name>/<your_name>_hello.json`
+* Create a new directory `zerver/fixtures/<yourname>`.
+
+* Add a json file to this directory `zerver/fixtures/<yourname>/<yourname>_hello.json`
   that contains fixtures like:
   ```
     {
@@ -37,21 +40,16 @@ you got stuck or needed to look up terminology.
     }
   ```
 
-* Add a new file `zerver/views/webhooks/<your_name>.py`
+* Add a new file `zerver/views/webhooks/<yourname>.py`
 
-* Copy the contents of the `helloworld.py` to this file. Edit some sections:
+* Copy the contents of the `helloworld.py` to this file. Replace all instances of `HelloWorld` and `helloworld` with <YourName> and <yourname>, respectively. Also choose a new topic below (replace <your_topic>)
   ```
-    # Put <your_name> in CamelCase.
-    @api_key_only_webhook_view('<your_name>')
-  ```
-  ```
-    # Replace <your_name> in the function name below with your name in lowercase.
-    def api_<your_name>_webhook(request, user_profile, client,
+    def api_<yourname>_webhook(request, user_profile, client,
                                payload=REQ(argument_type='body'),
                                stream=REQ(default='test'),
-                               topic=REQ(default='<your_own_topic')): #Edit topic here.
+                               topic=REQ(default='<your_topic>')):
   ```
-  Play around with the `body` of the message. This is the message that you will send out
+  and play around with the `body`.
 
 * Open `zerver/lib/integrations.py` and look for the lines beginning with:
   ```
@@ -59,7 +57,7 @@ you got stuck or needed to look up terminology.
   ```
   At the end of this section, add
   ```
-    WebhookIntegration('<your_name>', display_name='<your_name>'),
+    WebhookIntegration('<yourname>', display_name='<yourname>'),
   ```
 
 * Start the server. If using vagrant, you can do this by running `/srv/zulip/tools/run-dev.py`.
@@ -70,23 +68,24 @@ you got stuck or needed to look up terminology.
   page and copy the API key.
 
 * Send the fixture message you wrote above! Replace the placeholder
-  `<api_key>` in the code below with your real API key and `<your_name>`
-  with your own name:
+  `<api_key>` in the code below with your real API key and `<yourname>`
+  with your name:
 
 ```
 (zulip-venv)vagrant@vagrant-ubuntu-trusty-64:/srv/zulip$./manage.py send_webhook_fixture_message \
---fixture=zerver/fixtures/<your_name>/<your_name>_hello.json \
-'--url=http://localhost:9991/api/v1/external/<your_name> api_key=<api_key>'
+--fixture=zerver/fixtures/<yourname>/<yourname>_hello.json \
+'--url=http://localhost:9991/api/v1/external/<yourname> api_key=<api_key>'
 ```
 
-* Take two screenshots, and put them in a new folder called `gci/incoming-webhooks/<your_name>/`:
+* Take two screenshots, and put them in a new folder called `gci/incoming-webhooks/<yourname>/`:
 
  * Take a screenshot of the log line you get on the terminal after you
    finish your task. It should look something like:
 
 ```
-    2016-11-18 15:58:04,600 INFO     127.0.0.1       POST    200 643ms (mem: 34ms/16) (md: 155ms/1) (db: 166ms/15q) (+start: 18ms) /api/v1/external/<your_name> (<bot_name>-bot@zulip.com via Zulip<your_name>Webhook)
+    2016-11-18 15:58:04,600 INFO     127.0.0.1       POST    200 643ms (mem: 34ms/16) (md: 155ms/1) (db: 166ms/15q) (+start: 18ms) /api/v1/external/<yourname> (<bot_name>-bot@zulip.com via Zulip<YourName>Webhook)
 ```
+
  * On your local server, you will see a new message in the `test`
    stream. Take a screenshot of the message.
 
