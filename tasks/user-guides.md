@@ -11,6 +11,11 @@ are important since they are a medium through which we present Zulip to our
 potential users and contributors. This task involves writing a user
 guide for one of our features.
 
+You can see the existing user guide style content that we have at
+https://chat.zulip.org/help/; we may already have some content related
+to the relevant feature.  If so, you should clean up that content and
+extract it into its own page.
+
 ## Task Descriptions
 
 There are three types of task in this category, each corresponding to one of
