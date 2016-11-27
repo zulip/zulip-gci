@@ -39,7 +39,7 @@ for directory_set in A_tasks:
         description = description_A % directory_set,
         status = 1, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        mentors = ['rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'mypy'], # free text
         is_beginner = True,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -58,7 +58,7 @@ for filename in B_tasks:
         description = description_B % filename,
         status = 1, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        mentors = ['rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'mypy'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
