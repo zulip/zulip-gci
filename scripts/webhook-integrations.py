@@ -54,9 +54,9 @@ for integration, desc in integrations:
     # Task Type B
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Learn how an integration works in Slack.',
+        name = 'Investigate how the %s integration should work.' % (integration,),
         description = description_BCD % {'type': 'B', 'integration': integration, 'desc': desc},
-        status = 1, # 1: draft, 2: published
+        status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'integrations'], # free text
@@ -73,9 +73,9 @@ for integration, desc in integrations:
     # Task Type C
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Write code to add an integration to Zulip.',
+        name = 'Write code to add a %s integration to Zulip.' % (integration,),
         description = description_BCD % {'type': 'C', 'integration': integration, 'desc': desc},
-        status = 1, # 1: draft, 2: published
+        status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'integrations'], # free text
@@ -92,9 +92,9 @@ for integration, desc in integrations:
     # Task Type D
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Add user documentation for a Zulip integration.',
+        name = 'Add user documentation for the %s integration.' % (integration,),
         description = description_BCD % {'type': 'D', 'integration': integration, 'desc': desc},
-        status = 1, # 1: draft, 2: published
+        status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'integrations'], # free text
