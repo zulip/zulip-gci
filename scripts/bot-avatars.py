@@ -27,7 +27,7 @@ for task_type in titles.keys():
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
     name = titles[task_type],
     description = description % (task_type,),
-    status = 1, # 1: draft, 2: published
+    status = 2 if task_type != 'C' else 1, # 1: draft, 2: published
     max_instances = 10,
     mentors = ['arpith@feedreader.co', 'rishig@zulipchat.com', 'svnitakash@gmail.com', 'tabbott@zulipchat.com'],
     tags = ['design', 'bots', 'avatars'], # free text

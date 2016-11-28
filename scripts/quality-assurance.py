@@ -17,7 +17,7 @@ upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
     name = 'Find bugs in Zulip',
     description = description,
-    status = 1, # 1: draft, 2: published
+    status = 2, # 1: draft, 2: published
     max_instances = 20,
     mentors = ['rishig@zulipchat.com', 'tabbott@zulipchat.com'],
     tags = ['bug squashing', 'internationalization', 'android', 'frontend'], # free text
