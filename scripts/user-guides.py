@@ -35,7 +35,7 @@ for feature, slack_link in features:
         max_instances = 1,
         mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['documentation', 'user guides'], # free text
-        is_beginner = True,
+        is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [3, 5],
@@ -54,7 +54,7 @@ for feature, slack_link in features:
         max_instances = 1,
         mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['documentation', 'user guides'], # free text
-        is_beginner = True,
+        is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [3],
