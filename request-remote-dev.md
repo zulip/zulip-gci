@@ -59,9 +59,9 @@ Next, you'll want to read these documents to learn how to use it:
 [github-help-add-ssh-key]: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 [github-zulip-zulip]: https://github.com/zulip/zulip/
 [github-help-fork]: https://help.github.com/articles/fork-a-repo/
-[install-direct]: dev-env-first-time-contributors.html
-[install-vagrant]: install-ubuntu-without-vagrant-dev.html
+[install-direct]: https://zulip.readthedocs.io/en/latest/dev-env-first-time-contributors.html
+[install-vagrant]: https://zulip.readthedocs.io/en/latest/install-ubuntu-without-vagrant-dev.html
 [google-gci]: https://codein.withgoogle.com/
-[testing]: testing.html
-[using-dev-env]: using-dev-environment.html
-[dev-remote]: dev-remote.html
+[testing]: https://zulip.readthedocs.io/en/latest/testing.html
+[using-dev-env]: https://zulip.readthedocs.io/en/latest/using-dev-environment.html
+[dev-remote]: https://zulip.readthedocs.io/en/latest/dev-remote.html
