@@ -72,7 +72,7 @@ def fork_exists(username):
         print("Has user {0} forked zulip/zulip?".format(username))
         sys.exit(1)
 
-def droplet_exists(my_token, username):
+def exit_if_droplet_exists(my_token, username):
     print("Checking to see if droplet for {0} already exists...".format(username))
     manager = digitalocean.Manager(token=my_token)
     my_droplets = manager.get_all_droplets()
@@ -82,7 +82,6 @@ def droplet_exists(my_token, username):
             print("Delete droplet AND dns entry via Digital Ocean control panel if you need to re-create.")
             sys.exit(1)
     print("...No droplet found...proceeding.")
-    return True
 
 def set_user_data(username, userkeys):
     print("Setting cloud-config data, populated with GitHub user's public keys...")
@@ -165,7 +164,8 @@ if __name__ == '__main__':
     fork_exists(username=args.username)
 
     # does the droplet already exist?
-    droplet_exists(my_token=config['digitalocean']['api_token'], username=args.username)
+    exit_if_droplet_exists(my_token=config['digitalocean']['api_token'],
+                           username=args.username)
 
     # set user_data
     user_data = set_user_data(username=args.username, userkeys=public_keys)
