@@ -35,9 +35,9 @@ def get_config():
 
 def user_exists(username):
     print("Checking to see if GitHub user {0} exists...".format(username))
-    apiurl_user = "https://api.github.com/users/{0}".format(username)
+    user_api_url = "https://api.github.com/users/{0}".format(username)
     try:
-        response = urllib.request.urlopen(apiurl_user)
+        response = urllib.request.urlopen(user_api_url)
         userdata = json.loads(response.read().decode())
         print("...user exists!")
         return True
