@@ -65,26 +65,25 @@ for feature, slack_link in features:
         do_upload = args.force)
 
 # Part 3
-for i in range(10):
-    upload_task(
-        name = 'Test and review user guides.',
-        description = description_C,
-        # Note: these should be released as drafts, and published only as we
-        # get Part 2's completed
-        status = 1, # 1: draft, 2: published
-        max_instances = 1,
-        mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
-        tags = ['documentation', 'user guides'], # free text
-        is_beginner = False,
-        # 1: Coding, 2: User Interface, 3: Documentation & Training,
-        # 4: Quality Assurance, 5: Outreach & Research
-        categories = [3, 4],
-        time_to_complete_in_days = 3, # must be between 3 and 7
-        # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
-        private_metadata = "user-guides-C",
-        do_upload = args.force)
-
+# Don't upload yet, wait for some guides to be written
+# upload_task(
+#     name = 'Test and review user guides.',
+#     description = description_C,
+#     # Note: these should be released as drafts, and published only as we
+#     # get Part 2's completed
+#     status = 1, # 1: draft, 2: published
+#     max_instances = 10,
+#     mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+#     tags = ['documentation', 'user guides'], # free text
+#     is_beginner = False,
+#     # 1: Coding, 2: User Interface, 3: Documentation & Training,
+#     # 4: Quality Assurance, 5: Outreach & Research
+#     categories = [3, 4],
+#     time_to_complete_in_days = 3, # must be between 3 and 7
+#     # Field currently not accessible via API. gci-support says it is coming soon.
+#     external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
+#     private_metadata = "user-guides-C",
+#     do_upload = args.force)
 
 if not args.force:
     print
