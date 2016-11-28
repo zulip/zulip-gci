@@ -11,6 +11,21 @@ features = [
     ("Change Language", "https://get.slack.help/hc/en-us/articles/215058658-Slack-in-different-languages"),
     ("Message Display Settings", "https://get.slack.help/hc/en-us/articles/213893898-Change-your-message-display-settings"),
     ("Browse and Join Streams", "https://get.slack.help/hc/en-us/articles/205239967-Browse-and-join-channels"),
+    ("Edit Your Profile", "https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile"),
+    ("Manage Your Password", "https://get.slack.help/hc/en-us/articles/201909068-Manage-your-password"),
+    ("Change Your Username", "https://get.slack.help/hc/en-us/articles/216360827-Change-your-username"),
+    ("Change Your Email Address", "https://get.slack.help/hc/en-us/articles/207262907-Change-your-email-address"),
+    ("Zulip Glossary", "https://get.slack.help/hc/en-us/articles/213817348-Slack-glossary"),
+    ("Sign In", "https://get.slack.help/hc/en-us/articles/212681477-Sign-in-to-Slack"),
+    ("Sign Out", "https://get.slack.help/hc/en-us/articles/214613347-Sign-out-of-Slack"),
+    ("Emoji and Emoticons", "https://get.slack.help/hc/en-us/articles/202931348-Emoji-and-emoticons"),
+    ("Streams and Private Messages", "https://get.slack.help/hc/en-us/articles/201925108-About-channels-and-direct-messages"),
+    ("Create a Stream", "https://get.slack.help/hc/en-us/articles/201402297-Create-a-channel"),
+    ("Upload and Share Files", "https://get.slack.help/hc/en-us/articles/201330736-Upload-and-share-files"),
+    ("Formatting for Posts", "https://get.slack.help/hc/en-us/articles/209774578-Formatting-for-posts"),
+    ("Search for Messages", "https://get.slack.help/hc/en-us/articles/202528808-Search-for-messages-and-files"),
+    ("Advanced Search", "https://get.slack.help/hc/en-us/articles/213532017-Advanced-search-in-Slack"),
+    ("Keyboard Shortcuts", "https://get.slack.help/hc/en-us/articles/201374536-Slack-keyboard-shortcuts"),
 ]
 
 description = """Good user guides help users and search engines discover Zulip features.
