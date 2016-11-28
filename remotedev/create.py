@@ -168,7 +168,7 @@ See [Developing remotely](http://zulip.readthedocs.io/en/latest/dev-remote.html)
 
 if __name__ == '__main__':
     # define id of image to create new droplets from
-    template_id = "20997685"
+    template_id = "21193944"
 
     # get command line arguments
     args = parser.parse_args()
