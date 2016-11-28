@@ -38,7 +38,7 @@ upload_task(
     description = description_A,
     status = 1, # 1: draft, 2: published
     max_instances = 20,
-    mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+    mentors = ['tomasz-kolek@o2.pl', 'christie@authenticengine.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
     tags = ['python', 'integrations'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -58,7 +58,7 @@ for integration, desc in integrations:
         description = description_BCD % {'type': 'B', 'integration': integration, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        mentors = ['tomasz-kolek@o2.pl', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'integrations'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -77,7 +77,7 @@ for integration, desc in integrations:
         description = description_BCD % {'type': 'C', 'integration': integration, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        mentors = ['tomasz-kolek@o2.pl', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'integrations'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -96,7 +96,7 @@ for integration, desc in integrations:
         description = description_BCD % {'type': 'D', 'integration': integration, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        mentors = ['tomasz-kolek@o2.pl', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'integrations'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
