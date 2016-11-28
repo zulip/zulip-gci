@@ -36,6 +36,11 @@ Find any sequence of actions that results in something displaying the wrong
 output.  Try to click on things that aren't the most natural next
 thing to click.
 
+### Task Type D: Android bug
+
+Download the Zulip Android app from the Google Play Store, and find a
+new bug in it.
+
 ## Submission instructions
 
 Post the bug to the 'quality assurance' topic of the 'GCI task
@@ -51,6 +56,9 @@ is indeed new, open a new GitHub issue the zulip/zulip-gci repository
 
 Mentors will accept your task once you've written up a clear bug
 report that they are able to reproduce.
+
+Mentors: Create a new GCI task or zulip/zulip GitHub issue for fixing
+the bug after accepting the bug report.
 
 ## General notes
 
