@@ -78,7 +78,7 @@ tasks will instruct you to submit pull requests and create github issues on
 this repository.
 
 If you are not sure how to submit a pull request (or what that even means), check out our
-[beginner task](https://github.com/hackerkid/zulip-gci/blob/master/tasks/submit-a-pull-request.md)
+[beginner task](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md)
 on this topic.
 
 ## Information for GCI mentors
