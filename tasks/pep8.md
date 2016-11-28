@@ -19,7 +19,7 @@ Zulip’s linter tool `tools/lint-all` has been configured to support running
 the standard PEP-8 linter for Python code style, but some of the rules are
 not being checked because the Zulip codebase does not pass them. In a few
 cases, the violations are intentional, but in other cases, the violations
-are in code written before Zulip started enforcing the PEP-8 standard, and
+are in code written before Zulip started enforcing the PEP-8 standard and
 should be fixed. Our goal is to fix all the non-intentional PEP-8 violations
 by the end of GCI.
 
