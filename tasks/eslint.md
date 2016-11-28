@@ -25,7 +25,7 @@ Our goal is to have Zulip pass all of these rules by the end of GCI.
 # Task Description
 
 Each task in this category involves making Zulip pass one of the rules
-in the `.eslintrc.json`.
+in `.eslintrc.json`.
 
 Let `rule` be the rule in the task description on
 [codein.withgoogle.com](codein.withgoogle.com).
@@ -42,7 +42,9 @@ Let `rule` be the rule in the task description on
    error and fix violations' (where a value is specified, use that
    instead of error, and if the current value is 0 or off, mention
    that).
-6. Submit a pull request with a title mentioning `eslint`.
+6. Submit a pull request to the zulip/zulip repository using the commit
+   message as the title. Include a link to the pull request when you submit
+   your task on the GCI website.
 
 An example pull request (PR) would look like this: https://github.com/zulip/zulip/pull/2408
 
@@ -50,11 +52,12 @@ _Completion criteria_:
 
 * PASS_TRAVIS
 * Mentor review. Mentors will review all code changes, check that the
-  commits and their commit messages match Zulip's guidelines, correct
+  commits and their commit messages match Zulip's guidelines,
   and that the rule has been changed to the specified value.
 
 ## Rules that need fixing
-Unless otherwise mentioned, change the value from 0 or 1 to 2.
+All of the rules below have an associated GCI task.
+Unless otherwise mentioned, the task is to change the value from 0 or 1 to 2.
 This list is in order of number of errors.
 Where possible, a link to the explanation from the airbnb rules docs page is provided.
 Some of these rules may be fixed using `node npm_modules/.bin/eslint --fix`
@@ -67,10 +70,10 @@ Some of these rules may be fixed using `node npm_modules/.bin/eslint --fix`
       to `'new-cap': ['error', { newIsCap: true, capIsNew: false, }]`
       ([airbnb](https://github.com/airbnb/javascript#naming--PascalCase))
 - [ ] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors)
+- [ ] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix)
 - [ ] [space-before-blocks](http://eslint.org/docs/rules/space-before-blocks) (2 errors) (--fix)
       ([airbnb 1](https://github.com/airbnb/javascript#whitespace--before-blocks),
       [2](https://github.com/airbnb/javascript#functions--signature-spacing))
-- [ ] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix)
 - [ ] [brace-style](http://eslint.org/docs/rules/brace-style) (7 errors) (--fix)
       to be changed to `['error', '1tbs', { allowSingleLine: true }]`
       ([airbnb](https://github.com/airbnb/javascript#blocks--cuddled-elses))
@@ -132,6 +135,8 @@ Some of these rules may be fixed using `node npm_modules/.bin/eslint --fix`
 
 
 ## Rules that need not be changed
+The rules below do not have an associated GCI task.
+
 1. strict - when we switch to ES6, babel will insert this for us
 2. no-console - this is only a warning in airbnb’s lint rules, perhaps this can be discussed later?
 3. [camelcase](http://eslint.org/docs/rules/camelcase) (3680 errors)
