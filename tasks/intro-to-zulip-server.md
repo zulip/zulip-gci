@@ -13,7 +13,7 @@ Run your Zulip server using
 tools/run-dev.py
 ```
 
-Visit your Zulip server at http://<hostname>:9991, where <hostname> is
+Visit your Zulip server at `http://<hostname>:9991`, where `<hostname>` is
 either `localhost` or the hostname of your remote VM, and verify that you
 can log in by clicking on one of the accounts.
 
