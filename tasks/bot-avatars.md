@@ -38,9 +38,13 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 * Create the directory `bot-avatars/<username>`, where <username> is
   your github username.
 
-* Find a list of online repositories of cute bot images with a clear open source
-  license, such as Creative Commons. Pick out 5-10 images from each that you think
-  might be a good fit for a Zulip bot. Add the images to the directory above.
+* Find a list of online repositories of cute bot images with a clear
+  open source license, such as Creative Commons. Pick out 5-10 images
+  from each that you think might be a good fit for a Zulip bot. Add
+  the images to the directory above; be sure to cite your source.  If
+  the repository has a lot of images, you can instead add a markdown
+  file linking to all of the sets of images that you think we should
+  use, in some reasonably organization fashion.
 
 * Add a text file with links to the sources of the images.
 
