@@ -50,7 +50,7 @@ if you are not sure how to do this.
 
 * Post a link to the pull request when you submit your task on the GCI
   website. The link should look like
-  https://github.com/zulip/zulip-gci/pull/<number>, where <number> is a 2 or
+  `https://github.com/zulip/zulip-gci/pull/<number>`, where `<number>` is a 2 or
   3 digit number.
 
 The mentors will verify that you successfully created a pull request
