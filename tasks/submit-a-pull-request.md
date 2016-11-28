@@ -19,7 +19,7 @@ If you are not sure what `fork` means refer to [this tutorial](https://guides.gi
 * Create a new branch called `submit-a-pull-request` in the forked repository.
 If you are not sure what a branch is refer to [this tutorial](https://guides.github.com/activities/hello-world/#branch).
 
-* Make a new folder `gci/submit-a-pull-request/`**`username`** where **username** is your GitHub username.
+* Make a new folder `submit-a-pull-request/`**`username`** where **username** is your GitHub username.
 
 * Create a new file called `hello-world.md` with the following content. Don't replace the username with 
 your GitHub username for now.
