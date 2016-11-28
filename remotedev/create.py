@@ -163,21 +163,21 @@ if __name__ == '__main__':
     # now make sure the user has forked zulip/zulip
     fork_exists(username=args.username)
 
+    api_token = config['digitalocean']['api_token']
     # does the droplet already exist?
-    exit_if_droplet_exists(my_token=config['digitalocean']['api_token'],
-                           username=args.username)
+    exit_if_droplet_exists(my_token=api_token, username=args.username)
 
     # set user_data
     user_data = set_user_data(username=args.username, userkeys=public_keys)
 
     # create droplet
-    ip_address = create_droplet(my_token=config['digitalocean']['api_token'],
+    ip_address = create_droplet(my_token=api_token,
                                 template_id=template_id,
                                 username=args.username,
                                 user_data=user_data)
 
     # create dns entry
-    create_dns_record(my_token=config['digitalocean']['api_token'], username=args.username, ip_address=ip_address)
+    create_dns_record(my_token=api_token, username=args.username, ip_address=ip_address)
 
     print("COMPLETE! GitHub user {0} can connect to droplet with:".format(args.username))
     print("   ssh zulipdev@{0}.zulipdev.org".format(args.username))
