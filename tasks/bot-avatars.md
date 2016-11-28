@@ -2,8 +2,10 @@
 
 ## Prerequisites
 
-* Clone this zulip-gci repository so that you can create a pull
-  request to upload your designs.
+* You will need to submit a pull request to the zulip-gci repository to
+  submit your work. Check out the "Learn how to create a GitHub Pull
+  Request" task if you aren't sure how to do this, or read through the task description
+  [here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
 
 ## Background
 
@@ -51,8 +53,9 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 * Add a commit with these files, with commit message "bot avatars: Add
   avatars from internet sources."
 
-* Make a pull request to the `zulip/zulip-gci` repository, with title
+* Submit a pull request to the `zulip/zulip-gci` repository, with title
   "Bot avatars A: Find avatars from internet sources."
+  Include a link to the pull request when you submit your task on the GCI website.
 
 ### Task Type B: Design avatars.
 
@@ -70,8 +73,9 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 * Add a commit with these files, with commit message "bot avatars: Add
   prototype avatars."
 
-* Make a pull request to the `zulip/zulip-gci` repository, with title
+* Submit a pull request to the `zulip/zulip-gci` repository, with title
   "Bot avatars B: Create prototype avatars."
+  Include a link to the pull request when you submit your task on the GCI website.
 
 ### Task Type C: Refine avatars from prototypes.
 
@@ -90,8 +94,9 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 * Add a commit with these files, with commit message "bot avatars: Add refined
   avatars."
 
-* Make a pull request to the `zulip/zulip-gci` repository, with title
+* Submit a pull request to the `zulip/zulip-gci` repository, with title
   "Bot avatars C: Refine prototype avatars."
+  Include a link to the pull request when you submit your task on the GCI website.
 
 Please use either the .svg file format or create both a 50x50 and 300x300 pixel .png image.
 
