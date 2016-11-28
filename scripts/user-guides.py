@@ -63,7 +63,7 @@ for feature, slack_link in features:
         categories = [3, 5],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
         private_metadata = "user-guides-A",
         do_upload = args.force)
 
@@ -82,7 +82,7 @@ for feature, slack_link in features:
     #     categories = [3],
     #     time_to_complete_in_days = 3, # must be between 3 and 7
     #     # Field currently not accessible via API. gci-support says it is coming soon.
-    #     external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
+    #     # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
     #     private_metadata = "user-guides-B",
     #     do_upload = args.force)
 
@@ -103,7 +103,7 @@ for feature, slack_link in features:
 #     categories = [3, 4],
 #     time_to_complete_in_days = 3, # must be between 3 and 7
 #     # Field currently not accessible via API. gci-support says it is coming soon.
-#     external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
+#     # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
 #     private_metadata = "user-guides-C",
 #     do_upload = args.force)
 

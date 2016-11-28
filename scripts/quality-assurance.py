@@ -27,7 +27,7 @@ upload_task(
     categories = [2, 4],
     time_to_complete_in_days = 3, # must be between 3 and 7
     # Field currently not accessible via API. gci-support says it is coming soon.
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/quality-assurance.md",
+    # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/quality-assurance.md",
     private_metadata = "quality-assurance",
     do_upload = args.force)
 
