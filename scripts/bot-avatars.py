@@ -13,15 +13,22 @@ when creating a new bot.
 Instructions for bot avatars tasks are at
 https://github.com/zulip/zulip-gci/blob/master/tasks/bot-avatars.md
 
-For this task, do any one of the listed Task Types.
+Do task Type %s from that document.
 """
 
-upload_task(
+titles = {
+    "A": "Find a collection of avatars for Zulip bots",
+    "B": "Design a collection of avatars for Zulip bots",
+    "C": "Refine a collection of avatars for Zulip bots",
+}
+
+for task_type in titles.keys():
+    upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Design or find avatars for Zulip bots',
-    description = description,
+    name = titles[task_type],
+    description = description % (task_type,),
     status = 1, # 1: draft, 2: published
-    max_instances = 30,
+    max_instances = 10,
     mentors = ['arpith@feedreader.co', 'niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
     tags = ['design', 'bots', 'avatars'], # free text
     is_beginner = False,
