@@ -47,7 +47,8 @@ brought you here. For each directory:
 * Add a commit with commit message `mypy: Convert <directory> to use typing.Text.`
 
 * Submit a pull request containing your commits with
-  title "mypy: Use typing.Text in <set of directories>".
+  title `mypy: Use typing.Text in <set of directories>`.
+  Include a link to the pull request when you submit your task on the GCI website.
 
 See commit
 [fdae58f](https://github.com/zulip/zulip/commit/fdae58f96b284b4153ff6b4fa4b07343647b85b2)
@@ -65,8 +66,9 @@ Let *file* be the file listed in the task that brought you here.
 * Remove *file* from the `exclude_common` list in `tools/run-mypy`.
 * Add mypy annotations to *file* until all the tests pass.
 * Commit your changes with a commit message `mypy: Annotate *file*`.
-* Submit a pull request, with title:
+* Submit a pull request, with title
   `mypy: Add annotations to <file>.`
+  Include a link to the pull request when you submit your task on the GCI website.
 
 *Completion criteria*:
 * PASS_TRAVIS
