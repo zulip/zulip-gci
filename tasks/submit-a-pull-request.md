@@ -61,3 +61,7 @@ workflow.
 Zulip has a detailed guide on how we use GitHub for our server project
 that you may find useful reading as you continue to learn about Git and
 GitHub: http://zulip.readthedocs.io/en/latest/git-guide.html.
+
+After you finish this task, a great next task is to learn how to use
+the Zulip server development environment:
+https://codein.withgoogle.com/dashboard/tasks/4799263762546688/
