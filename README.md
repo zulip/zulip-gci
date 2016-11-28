@@ -2,29 +2,34 @@
 
 Welcome to the Zulip GCI landing page!
 
-This page has information on (joining the developers' chat server)[#community] and
-(setting up a development environment)[#setting-up-the-zulip-development-environment].
+This page has information on [joining the developers' chat server](#community) and
+[setting up a development environment](#setting-up-the-zulip-development-environment).
 
 Once you're done, we recommend browsing through Zulip's
 [extensive documentation](http://zulip.readthedocs.io/en/latest/readme-symlink.html)
-about its code and community.
+about its code and community. If you're planning on submitting a lot of code, we
+particularly recommend the guides to
+[git](https://zulip.readthedocs.io/en/latest/git-guide.html),
+[version control](https://zulip.readthedocs.io/en/latest/version-control.html),
+[coding style](https://zulip.readthedocs.io/en/latest/code-style.html), and
+[testing](https://zulip.readthedocs.io/en/latest/testing.html).
 
 ## Community
 
 Almost all GCI discussion (and discussion of Zulip more generally) happens
-on our developers' server, https://chat.zulip.org. Step 1: Create an account
+on our developers' server, https://chat.zulip.org. Create an account
 and say hi on the "introductions" topic of the "GCI general" stream! When
 you signed up, hopefully you checked the box that says you are a GCI
-student. This will subscribe you to the following streams:
+student. This will have subscribed you to the following streams:
 
-* GCI announce: Messages from the Zulip GCI mentors.
-* GCI tasks: Task-specific discussion or help.
-* GCI help: Questions (about code or otherwise) not related to a specific task.
-* GCI general: General discussion, feedback, questions, or anything you want!
-* test here: Used for sending test messages.
+* `GCI announce`: Messages from the Zulip GCI mentors.
+* `GCI tasks`: Task-specific discussion or help.
+* `GCI help`: Questions (about code or otherwise) not related to a specific task.
+* `GCI general`: General discussion, feedback, questions, or anything you want!
+* `test here`: Used for sending test messages.
 
 There are at least a dozen other active streams on the server; go to
-https://chat.zulip.org/#subscriptions to check them out!
+https://chat.zulip.org/#subscriptions to check them out.
 
 A few notes:
 * If you see a question you can answer (on any of the streams), please do!
