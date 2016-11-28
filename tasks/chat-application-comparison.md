@@ -1,32 +1,43 @@
 # Comparison with other chat tools
 
-Help us prepare the comparison page between Zulip and other chat
+Help us prepare the comparison page between Zulip and competing chat
 tools, with a matrix of which features each product has or doesn't
-have. There are 5 sets of tasks in this section. The first 3 types
-involves testing whether a given set of features is present in a chat
-application. The last 2 sets contains open ended questions. You have
-to work on only one chat application for testing the features. The GCI
-task description should tell you which chat application and set you
-should be testing.
+have. To do this you will need to use the other chat tools and
+determine if they have or do not have the given features.
 
-* You will likely need to create a new team in the third party chat
-application (so that you can play around with their UI) and refer to
-their documentation in order to complete most of the tasks here.
+There are 5 sets of tasks in this section. The first 3 sets involve
+testing whether a features from a given list are present in a
+competing chat application. The last 2 sets contain open-ended
+questions.
 
-* The best answer for whether a feature exists is usually a link to
-their documentation.  When a feature exists in a product, but isn't
-documented, screenshots are a good way to demonstrate the feature.
+You only have to test one competing chat application for the listed
+features.  The GCI task description should tell you which chat
+application and set of features you should be testing.
 
-# Set A
+* You should refer to the competing chat application's documentation
+in order to complete most of the tasks here.  You will likely also
+need to sign up for and create a new team in the competing chat
+application, so that you can play around with their UI and determine
+if features exist which aren't documented.
+
+* The best way to prove that a feature exists in your output is to
+link to the competing chat application's documentation.  If a feature
+exists in a product, but isn't documented, then the best proof is to
+take one or more screenshots demonstrating it in action.
+
+
+# Task Sets
+
+## Set A
 
 Check whether the following features are present in the **chat
-application** that is described in the task description in GCI website
-:tada:.
+application** that is described in the task description on the GCI
+website :tada:.
 
-:bangbang: Make sure that you use the output format
-[described here](#output-format).
+:bangbang: Make sure that you use
+[this output format](#output-format).
 
-## Features to Test
+### Features to Test
 
 - Is this the first time you are using this chat application?
 - Private Channels: Does the chat application support private channels?
@@ -74,7 +85,7 @@ so that users don’t have to download them for viewing the content?
 - Preview Images: Does the chat application preview the images sent in
 the chat?
 
-## Output Format
+### Output Format
 
 The output should be submitted as a publicly readable Google
 Spreadsheet with the following columns:
@@ -88,7 +99,7 @@ Spreadsheet with the following columns:
 
 [Here is an example](https://docs.google.com/spreadsheets/d/16a46fPeEd-PnqS5ZBpspTScnjIaXwr60xFVEdcwKiTY/edit?usp=sharing) of how the spreadsheet would look like while testing Slack.
 
-# Set B
+## Set B
 
 Check whether the following features are present in the **chat application**
 that is described in the task description in GCI website :tada:.
@@ -151,7 +162,7 @@ APP?
 - Single sign-on: Does the chat application support single sign on?
   Through which service(s) (e.g. Google, GitHub, etc.).
 
-# Set C
+## Set C
 
 Check whether the following features are present in the **chat application**
 that is described in the task description in GCI website :tada:.
@@ -208,7 +219,7 @@ application would notify the user or channel at the time of the reminder.
 - Sign in using Link:  Does the chat application allow users to sign in using a 
 one time use special link?
 
-# Set D
+## Set D
 
 Try to answer the following questions by playing with the chat application.
 
@@ -228,7 +239,7 @@ the organization without invite? If yes how can they do that? Take screenshots.
 application. If yes how how will the user login to a specific organization?
 How can user identify which all teams he is a part of? Take screenshots.
 
-## :bangbang: Output
+### :bangbang: Output
 
 The output can be submitted as a markdown file or similar document. It
 is okay if the writing isn't perfect, but it should include all the
@@ -238,7 +249,7 @@ documentations if appropriate.
 Put the file and any screenshots in the `chat-application-comparison`
 directory in zulip-gci.git (aka this repository).
 
-# Set E
+## Set E
 
 Try to answer the following questions by playing with the chat application.
 
@@ -259,6 +270,6 @@ the user experience, features, etc they have that Zulip lacks, etc? Take Screens
 - Compare the getting started tutorial with Zulip’s. Which one was more user 
 friendly and informative? Take screenshots.
 
-## :bangbang: Output
+### :bangbang: Output
 
 See the instructions for Set D.
