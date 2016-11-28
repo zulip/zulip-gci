@@ -55,19 +55,20 @@ that brought you here (if relevant).
 * Write an outline for documentation for *feature*, and post it to the
   Zulip `GCI tasks` stream to get feedback from mentors and other GCI
   participants on what you plan to include in your documentation.
-* Now work on writing your new documentation!  You should add your new
-  documentaton to a new file with a clear, lowercase, hyphenated name
+* Now work on writing your new documentation!  You should add your
+  documentation to a new file with a clear, lowercase, hyphenated name
   like `edit-messages` or `mention-a-team-member`, to the
   `templates/zerver/help/` directory of
   https://github.com/zulip/zulip/.  The end result should be a nice
-  and clear user guide for *feature*, using the outline from Task Type
-  A. The user guide should be written in Markdown. Create a pull
-  request adding it to the directory of the
-  https://github.com/zulip/zulip/ repository. The title of both the
-  commit and the pull request should be `docs: Add user guide for
-  *feature*`.  Add a link to your guide under the "Table of contents"
-  heading in `templates/zerver/help/index.md`; our goal is that by the
+  and clear user guide for *feature*, written in Markdown.
+* Add a link to your guide under the "Table of contents"
+  heading in `templates/zerver/help/index.md`. One goal is that by the
   end of GCI, that page will just be the table of contents.
+* Add a commit and submit a pull request to the
+  https://github.com/zulip/zulip/ repository. The title of both the commit
+  and the pull request should be `docs: Add user guide for *feature*`.
+  Include a link to the pull request when you submit your task on the GCI
+  website.
 * If there are visual elements that you'd like to be able to express
   in your user guide, but aren't sure how to, bring it up in the `GCI
   tasks` stream!  Our user guide rendering software is very new, and
