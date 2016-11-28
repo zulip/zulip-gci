@@ -5,29 +5,30 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-description = """Welcome to Zulip! This task will help you set up a development
-environment, and introduce you to the process of making, testing and
-submitting changes to Zulip.
+description = """This task will introduce you to the process of making and
+testing changes to Zulip.
 
-Instructions are at https://github.com/zulip/zulip-gci/blob/master/tasks/welcome-to-zulip.md.
+Instructions for this task are at
+https://github.com/zulip/zulip-gci/blob/master/tasks/intro-to-zulip-server.md.
 """
 
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Intro task, do me first! Set up development environment.',
+    name = 'Intro to Zulip server development',
     description = description,
-    status = 1, # 1: draft, 2: published
-    max_instances = 200,
-    mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
-    tags = [], # free text
+    status = 2, # 1: draft, 2: published
+    max_instances = 30,
+    mentors = ['christie@authenticengine.com', 'umair.waheed@gmail.com', 'rose@happyspork.com',
+               'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+    tags = ['intro'], # free text
     is_beginner = True,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [1],
-    time_to_complete_in_days = 3, # must be between 3 and 7
+    time_to_complete_in_days = 5, # must be between 3 and 7
     # Field currently not accessible via API. gci-support says it is coming soon.
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/welcome-to-zulip.md",
-    private_metadata = "welcome-to-zulip",
+    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/intro-to-zulip-server.md",
+    private_metadata = "intro-to-zulip-server",
     do_upload = args.force)
 
 if not args.force:
