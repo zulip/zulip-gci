@@ -19,7 +19,7 @@ upload_task(
     description = description,
     status = 1, # 1: draft, 2: published
     max_instances = 20,
-    mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+    mentors = ['rishig@zulipchat.com', 'tabbott@zulipchat.com'],
     tags = ['bug squashing', 'internationalization', 'android', 'frontend'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
