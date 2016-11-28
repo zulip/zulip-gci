@@ -25,9 +25,8 @@ If you are not sure what a branch is, refer to [this tutorial](https://guides.gi
 * Create a new file called `hello-world.md` with the following
 content, verbatim.
 
-```markdown
-# Hello world
-
+```
+Hello world
 I am username. :tada:
 ```
 
@@ -43,9 +42,16 @@ if you are not sure how to do this.
 * Commit the changes you just made with the commit message
 `hello-world.md: Change username to GitHub handle.`
 
+## Submit
+
 * Open a Pull Request in the zulip-gci repository with title "Submit a Pull Request".
-Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
-if you don't know how to open a pull request.
+  Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
+  if you don't know how to open a pull request.
+
+* Post a link to the pull request when you submit your task on the GCI
+  website. The link should look like
+  https://github.com/zulip/zulip-gci/pull/<number>, where <number> is a 2 or
+  3 digit number.
 
 The mentors will verify that you successfully created a pull request
 with 2 commits, first adding the file and then editing it to contain
