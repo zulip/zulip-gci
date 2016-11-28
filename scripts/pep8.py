@@ -32,11 +32,11 @@ For this task, fix the errors for the following rule(s): **%s**.
 for rules in pep8_rules:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Cleanup Zulip code to follow PEP-8 style standards',
+        name = 'Cleanup Zulip code to follow PEP-8 rule(s) %s' % (", ".join(rules),),
         description = description % ', '.join(rules),
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        mentors = ['zev-zuliporg@strangersgate.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'pep8'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
