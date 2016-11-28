@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-chat_applications_names = ["Slack", "HipChat", "Microsoft for Teams", "Mattermost", "RocketChat", "IRCCloud"]
+chat_applications_names = ["Slack", "HipChat", "Microsoft for Teams", "Mattermost", "RocketChat", "IRCCloud", "Discord"]
 task_sets = ["a", "b", "c", "d", "e"]
 
 task_name = 'Identify which features are present in %s: Set %s'
@@ -13,7 +13,7 @@ task_name = 'Identify which features are present in %s: Set %s'
 task_description = """"Help us prepare the comparison page between Zulip and other chat tools,
 with a matrix of which features each product has or doesn't have.  Your task is to test
 **%s** and figure out which all features are present in it. See %s to see the features you
-have to test and the output format"""
+have to test and the output format."""
 
 for chat_application_name in chat_applications_names:
     for set in task_sets:
