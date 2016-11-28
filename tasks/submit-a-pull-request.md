@@ -43,8 +43,8 @@ if you are not sure how to do this.
 * Commit the changes you just made with the commit message
 `hello-world.md: Change username to GitHub handle.`
 
-* Open a Pull Request in the zulip-gci repository with these commits. Refer to
-[this tutorial](https://guides.github.com/activities/hello-world/#pr)
+* Open a Pull Request in the zulip-gci repository with title "Submit a Pull Request".
+Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
 if you don't know how to open a pull request.
 
 The mentors will verify that you successfully created a pull request
