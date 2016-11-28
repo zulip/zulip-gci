@@ -1,2 +1,2 @@
 Hello world
-I am imsuprem3. :tada:
+I am imsuprem. :tada:
