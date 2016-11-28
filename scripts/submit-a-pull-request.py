@@ -13,7 +13,7 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md.
 
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Submit a Pull Request to gci-submissions repositary',
+    name = 'Learn how to create a GitHub Pull Request',
     description = description,
     status = 1, # 1: draft, 2: published
     max_instances = 40,
