@@ -1,8 +1,90 @@
-# Zulip Google Code-In tasks repository
+# Zulip Google Code-In repository
 
-This repository contains items related to Zulip's participation in
-Google Code-In that aren't part of an individual Zulip subproject
-(e.g. the [Zulip server](https://github.com/zulip/zulip)).
+Welcome to the Zulip GCI landing page!
+
+This page has information on (joining the developers' chat server)[#community] and
+(setting up a development environment)[#setting-up-the-zulip-development-environment].
+
+Once you're done, we recommend browsing through Zulip's
+[extensive documentation](http://zulip.readthedocs.io/en/latest/readme-symlink.html)
+about its code and community.
+
+## Community
+
+Almost all GCI discussion (and discussion of Zulip more generally) happens
+on our developers' server, https://chat.zulip.org. Step 1: Create an account
+and say hi on the "introductions" topic of the "GCI general" stream! When
+you signed up, hopefully you checked the box that says you are a GCI
+student. This will subscribe you to the following streams:
+
+* GCI announce: Messages from the Zulip GCI mentors.
+* GCI tasks: Task-specific discussion or help.
+* GCI help: Questions (about code or otherwise) not related to a specific task.
+* GCI general: General discussion, feedback, questions, or anything you want!
+* test here: Used for sending test messages.
+
+There are at least a dozen other active streams on the server; go to
+https://chat.zulip.org/#subscriptions to check them out!
+
+A few notes:
+* If you see a question you can answer (on any of the streams), please do!
+* Please adhere to our
+  [community code of conduct](https://zulip.readthedocs.io/en/latest/code-of-conduct.html).
+
+A few non-obvious things that help keep the server manageable:
+* All test messages should go to the `test here` stream.
+* Always use a topic. If you're not sure what to put, you can use your name.
+* When asking for help, include as much detail as you can, in particular,
+  what you tried, and the full traceback of any error messages you got.
+
+## Setting up the Zulip Development environment
+
+Most coding tasks require a working Zulip development environment. There are
+two strategies for setting one up.
+
+### Remote VM
+
+Zulip has partnered with Digital Ocean to provide VMs for GCI participants
+developing Zulip. To get a VM, send us a message on the "VM request" topic
+in the "GCI help" stream. We will verify that you are a GCI student, and then
+send you a link to a VM.
+
+Once you have access to your VM, take a look at our tips for
+[editing code on a remote machine](https://zulip.readthedocs.io/en/latest/dev-remote.html#editing-code-on-the-remote-machine).
+
+### Local install
+
+See the
+[Vagrant environment setup tutorial](https://zulip.readthedocs.io/en/latest/dev-env-first-time-contributors.html)
+for installing Zulip on Linux or OS X. There are also instructions for installing locally on Windows, though the setup can be tricky.
+
+There is also documentation for using Docker or installing directly on
+Ubuntu. We don't recommend either of those methods unless you have a
+specific reason to prefer them.
+
+### How to choose
+
+Setting up a Remote VM can be faster, but day to day development can be more
+convenient with a local install. If you are running Windows, have a slow
+internet connection (the local install is ~500 Mb), or are planning on doing
+a small number of Zulip tasks, we recommend starting with the remote VM.
+You can always set up a local install later.
+
+## This repository
+
+This repository is the home for images, code, and other contributions that
+don't yet have a place in one of the other Zulip repositories. Many of the
+tasks will instruct you to submit pull requests and create github issues on
+this repository.
+
+If you are not sure how to submit a pull request (or what that even means), check out our
+[beginner task](https://github.com/hackerkid/zulip-gci/blob/master/tasks/submit-a-pull-request.md)
+on this topic.
+
+## Information for GCI mentors
+
+This repository also contains items generally related to Zulip's
+participation in Google Code-In.
 
 At the moment, this includes:
 
@@ -14,10 +96,6 @@ At the moment, this includes:
   creating actual GCI tasks out of them.
 
 For each major category of tasks, we'll want to have both a template
-description under `tasks/` as well as a script under `scripts/` to
-actually import the tasks into the GCI web application.  We'll run the
-relevant scripts batches of tasks are ready to publish.
-
-This repository will likely also be the home for GCI contributions
-that don't yet have a clear place in another Zulip repository
-(e.g. cute avatar images might just be stored in a directory here).
+description under `tasks/` as well as a script under `scripts/` to import
+the tasks into the GCI web application.  We'll run the relevant scripts
+as tasks are ready to be published.
