@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-description = """Find bugs in Zulip!
+description = """Find new bugs in Zulip!
 
 Instructions for quality assurance tasks are at
 https://github.com/zulip/zulip-gci/blob/master/tasks/quality-assurance.md.
@@ -18,9 +18,9 @@ upload_task(
     name = 'Find bugs in Zulip',
     description = description,
     status = 1, # 1: draft, 2: published
-    max_instances = 25,
+    max_instances = 20,
     mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
-    tags = ['bug squashing', 'internationalization', 'open graph', 'frontend'], # free text
+    tags = ['bug squashing', 'internationalization', 'android', 'frontend'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
     # 4: Quality Assurance, 5: Outreach & Research
