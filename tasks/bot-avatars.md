@@ -22,6 +22,11 @@ its function or a pun around the word “logging”, e.g.:
 * A pile of wooden logs
 * A cute robot with all its limbs made of logs
 
+You can see some an example in
+https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample
+
+![customer](bot-avatars/sample/Customer100.png)
+
 ## Task Descriptions
 
 ### Task Type A: Find bot avatars on the internet.
