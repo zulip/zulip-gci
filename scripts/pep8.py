@@ -6,26 +6,30 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 # We can release these later
-larger_pep8_rules = [['E251'],
-                     ['E261'],]
+larger_pep8_rules = [['E261']]
 
-# Determined by Zev to be maybe not worth enabling
-skipped_pep8_rules = [['E131']]
+skipped_pep8_rules = [
+    # We should maybe release these later. They require more judgement
+    ['E251'],  # This one is also larger
+    ['E221'],
 
+    # We should definitely not release these
+    ['E703'],
+    ['E731'],
+    ['W503'],
+    ['E266'],
+    ['E265'],
+    ['E402']
+]
+
+# These are all ready to go
 pep8_rules = [['E128'],
-              ['E402'],
-              ['E221'],
-              ['E265'],
               ['E127'],
               ['E303'],
-              ['E266'],
               ['E301'],
-              ['W503'],
               ['E203'],
-              ['E731'],
               ['E225'],
-              # Below this point are reviewed by Zev as ready
-              ['E122'],
+              ['E122', 'E131'],
               ['E502', 'E129'],
               ['E302', 'E211'],
               ['E124', 'E111'],
