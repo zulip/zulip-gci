@@ -36,7 +36,7 @@ upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
     name = 'Learn how Zulip integrations work.',
     description = description_A,
-    status = 1, # 1: draft, 2: published
+    status = 2, # 1: draft, 2: published
     max_instances = 20,
     mentors = ['tomasz-kolek@o2.pl', 'christie@authenticengine.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
     tags = ['python', 'integrations'], # free text
@@ -44,7 +44,7 @@ upload_task(
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [1],
-    time_to_complete_in_days = 3, # must be between 3 and 7
+    time_to_complete_in_days = 5, # must be between 3 and 7
     # Field currently not accessible via API. gci-support says it is coming soon.
     external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
     private_metadata = "webhook-integrations-A",
@@ -83,7 +83,7 @@ for integration, desc in integrations:
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1],
-        time_to_complete_in_days = 3, # must be between 3 and 7
+        time_to_complete_in_days = 5, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
         external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
         private_metadata = "webhook-integrations-C",
