@@ -22,7 +22,7 @@ For this task, fix the errors for rule **%s**.
 for rules in eslint_rules:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Cleanup Zulip JavaScript code',
+        name = 'Cleanup Zulip JavaScript code: eslint %s' % (rules,),
         description = description % ', '.join(rules),
         status = 2, # 1: draft, 2: published
         max_instances = 1,
