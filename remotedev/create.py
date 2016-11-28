@@ -1,3 +1,7 @@
+# Creates a Droplet on Digital Ocean for remote Zulip development.
+# Particularly useful for sprints/hackathons, interns, and other
+# situation where one wants to quickly onboard new contributors.
+#
 # This script takes one argument: the name of the GitHub user for whom you want
 # to create a Zulip developer environment. Requires Python 3.
 #
