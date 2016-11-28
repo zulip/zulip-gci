@@ -54,7 +54,8 @@ for feature, slack_link in features:
         description = description_A_and_B % (feature, slack_link),
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['sonaligpt0@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        mentors = ['sonaligpt0@gmail.com', 'christie@authenticengine.com',
+                   'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['documentation', 'user guides'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
