@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-chat_applications_names = ["Slack", "HipChat", "Microsoft for Teams", "Mattermost", "RocketChat"]
+chat_applications_names = ["Slack", "HipChat", "Microsoft for Teams", "Mattermost", "RocketChat", "IRCCloud"]
 task_sets = ["a", "b", "c", "d", "e"]
 
 task_name = 'Identify which features are present in %s: Set %s'
