@@ -22,10 +22,13 @@ its function or a pun around the word “logging”, e.g.:
 * A pile of wooden logs
 * A cute robot with all its limbs made of logs
 
-You can see some an example in
-https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample
+Here is an example set for inspiration:
 
-![customer](../bot-avatars/sample/Customer100.png)
+![customer](../bot-avatars/sample/Customer50.png) !![alert](../bot-avatars/sample/Alert50.png) !![one](../bot-avatars/sample/One50.png) ![poll](../bot-avatars/sample/Poll50.png)
+
+The source for these is available in this directory:
+
+https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 
 ## Task Descriptions
 
