@@ -226,6 +226,8 @@ Spreadsheet with the following columns:
 
 [Here is an example](https://docs.google.com/spreadsheets/d/16a46fPeEd-PnqS5ZBpspTScnjIaXwr60xFVEdcwKiTY/edit?usp=sharing) of how the spreadsheet would look like while testing Slack.
 
+### Features to Test
+
 - **Is this your first time using this chat application?** (This isn't
   a feature, but we would like you to record this for tracking
   purposes.)
@@ -265,8 +267,8 @@ Spreadsheet with the following columns:
   with other web services?
 - **Hubot support:** Does the chat application have a Hubot
   integration?
-- **hashtag:** Does the chat application make use of hashtags
-  (#example). If yes how it is used?
+- **Hashtags:** Does the chat application make use of hashtags
+  (#example)? If yes how are they used?
 - **Auto highlight sent messages:** Does the chat application
   highlight the messages sent by the user?
 - **Last seen online:** Does the chat application shows when was a
