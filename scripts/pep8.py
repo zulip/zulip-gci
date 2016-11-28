@@ -5,21 +5,33 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-pep8_rules = [['E251'],
-              ['E261'],
-              ['E128'],
+# We can release these later
+larger_pep8_rules = [['E251'],
+                     ['E261'],]
+
+# Determined by Zev to be maybe not worth enabling
+skipped_pep8_rules = [['E131']]
+
+pep8_rules = [['E128'],
               ['E402'],
               ['E221'],
               ['E265'],
               ['E127'],
-              ['E303', 'E266'],
-              ['E301', 'W503'],
-              ['E203', 'E731'],
-              ['E225', 'E122'],
-              ['E502', 'E129', 'E703'],
-              ['E302', 'E211', 'E131'],
-              ['E124', 'E111', 'E701', 'E222'],
-              ['E202', 'E201', 'E231', 'E125']]
+              ['E303'],
+              ['E266'],
+              ['E301'],
+              ['W503'],
+              ['E203'],
+              ['E731'],
+              ['E225'],
+              # Below this point are reviewed by Zev as ready
+              ['E122'],
+              ['E502', 'E129'],
+              ['E302', 'E211'],
+              ['E124', 'E111'],
+              ['E701', 'E222'],
+              ['E202', 'E201'],
+              ['E231', 'E125']]
 
 description = """Fix the Zulip codebase to follow PEP-8 python style guidelines! This is a
 great way to learn the basics of refactoring, git workflow, and good style.
