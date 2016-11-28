@@ -65,7 +65,9 @@ that brought you here (if relevant).
   request adding it to the directory of the
   https://github.com/zulip/zulip/ repository. The title of both the
   commit and the pull request should be `docs: Add user guide for
-  *feature*`.
+  *feature*`.  Add a link to your guide under the "Table of contents"
+  heading in `templates/zerver/help/index.md`; our goal is that by the
+  end of GCI, that page will just be the table of contents.
 * If there are visual elements that you'd like to be able to express
   in your user guide, but aren't sure how to, bring it up in the `GCI
   tasks` stream!  Our user guide rendering software is very new, and

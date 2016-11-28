@@ -42,7 +42,7 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md.
 
 """
 
-description_A_and_B = description + "For this task, do **Part %s** for the **%s** feature.\n" + \
+description_A_and_B = description + "For this task, do Task Type A for the **%s** feature.\n" + \
 "Slack's guide for this feature is at %s."
 description_C = description + "For this task, do **Part 3** for any three features."
 
@@ -50,8 +50,8 @@ for feature, slack_link in features:
     # Part 1
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Write a rough user guide for a feature.',
-        description = description_A_and_B % (1, feature, slack_link),
+        name = 'Write a user guide for the %s feature.' % (feature,),
+        description = description_A_and_B % (feature, slack_link),
         status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['sonaligpt0@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
