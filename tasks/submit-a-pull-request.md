@@ -1,4 +1,4 @@
-# Submit A Pull Request to GCI Submissions Repository
+# Submit A Pull Request to Zulip GCI Repository
 
 This task is for getting you familiarize with the GitHub flow. 
 If you are already familiar with making a pull request in GitHub feel
@@ -13,7 +13,7 @@ to learn Git.
 
 ## Task
 
-* Fork the [gci-submissions](https://github.com/zulip/gci-submissions) repository.
+* Fork the [zulip-gci](https://github.com/zulip/zulip-gci) repository.
 If you are not sure what `fork` means refer to [this tutorial](https://guides.github.com/activities/forking/#fork).
 
 * Create a new branch called `submit-a-pull-request` in the forked repository.
@@ -38,5 +38,5 @@ if you are not sure what commit means.
 
 * Now commit the changes you just made as `Add Github handle to hello-world.md.`
 
-* Now go ahead and make Pull Request to gci-submissions. Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
+* Now go ahead and make Pull Request to zulip-gci. Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
 if you don't know how to make a pull request.
