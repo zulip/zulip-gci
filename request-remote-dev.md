@@ -40,7 +40,8 @@ If you haven't already, creating an account on https://chat.zulip.org/.
 Next, join the **GCI help** stream. Create a new **stream message**
 with your GitHub username as the **topic** and request your remote dev
 instance.  A mentor should reply letting you know they're working on
-creating it as soon as they are available to help.
+creating it as soon as they are available to help (they'll be using
+the tool in `remotedev/create.py` in this repository).
 
 Once requested, it will only take a few minutes to create your instance. Once
 created, it will be available via ssh at `<username>.zulipdev.org` where
