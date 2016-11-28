@@ -1,2 +1,2 @@
 [digitalocean]
-apitoken = APITOKEN
+api_token = APITOKEN
