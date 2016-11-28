@@ -2,7 +2,8 @@
 
 ## Prerequisites
 
-* CLONE_GIT_REPO
+* Clone this zulip-gci repository so that you can create a pull
+  request to upload your designs.
 
 ## Background
 
