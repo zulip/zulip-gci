@@ -25,7 +25,7 @@ its function or a pun around the word “logging”, e.g.:
 You can see some an example in
 https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample
 
-![customer](bot-avatars/sample/Customer100.png)
+![customer](../bot-avatars/sample/Customer100.png)
 
 ## Task Descriptions
 
