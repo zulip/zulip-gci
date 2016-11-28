@@ -1,3 +1,3 @@
 # Hello world
 
-I am cosmicAsymmetry. :tada:
+I am CosmicAsymmetry. :tada:
