@@ -35,7 +35,7 @@ description_B = description + "For this task, do **Task Type B** for the followi
 for directory_set in A_tasks:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Update mypy annotations in the Zulip codebase',
+        name = 'Update text_type->Text in mypy annotations',
         description = description_A % directory_set,
         status = 1, # 1: draft, 2: published
         max_instances = 1,
@@ -54,7 +54,7 @@ for directory_set in A_tasks:
 for filename in B_tasks:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Add mypy annotations to the Zulip codebase',
+        name = 'Add mypy annotations to %s' % (filename,),
         description = description_B % filename,
         status = 1, # 1: draft, 2: published
         max_instances = 1,
