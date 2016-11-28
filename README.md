@@ -49,10 +49,9 @@ two strategies for setting one up.
 
 ### Remote VM
 
-Zulip has partnered with Digital Ocean to provide VMs for GCI participants
-developing Zulip. To get a VM, send us a message on the "VM request" topic
-in the "GCI help" stream. We will verify that you are a GCI student, and then
-send you a link to a VM.
+Zulip has partnered with Digital Ocean to provide VMs for GCI
+participants developing Zulip.  To get a VM,
+[follow the instructions here](https://github.com/zulip/zulip-gci/blob/master/request-remote-dev.md).
 
 Once you have access to your VM, take a look at our tips for
 [editing code on a remote machine](https://zulip.readthedocs.io/en/latest/dev-remote.html#editing-code-on-the-remote-machine).
