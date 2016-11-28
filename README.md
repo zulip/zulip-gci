@@ -85,6 +85,20 @@ If you are not sure how to submit a pull request (or what that even means), chec
 [beginner task](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md)
 on this topic.
 
+## Can't find the perfect task to work on?
+
+Zulip has hundreds of open issues that we'd like to resolve that don't
+have corresponding GCI tasks; many of them have been tagged as
+"bite-size" issues because we expect them to be accessible to new
+contributors:
+
+https://github.com/zulip/zulip/issues?q=is%3Aissue+is%3Aopen+label%3A%22bite+size%22
+
+You're encouraged to browse that list!  If you see a project in there
+that you're excited about helping with, ask about it on
+chat.zulip.org; it's likely that we'll be happy to create a GCI task
+for it.
+
 ## Information for GCI mentors
 
 This repository also contains items generally related to Zulip's
