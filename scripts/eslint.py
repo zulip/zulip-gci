@@ -28,7 +28,7 @@ for rules in eslint_rules:
         max_instances = 1,
         mentors = ['arpith@feedreader.co', 'brock@zulipchat.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['javascript', 'eslint'], # free text
-        is_beginner = False,
+        is_beginner = rules in ['new-cap', 'no-empty', 'space-before-blocks', 'yoda'],
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1],
