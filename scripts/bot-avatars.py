@@ -29,7 +29,7 @@ for task_type in titles.keys():
     description = description % (task_type,),
     status = 1, # 1: draft, 2: published
     max_instances = 10,
-    mentors = ['arpith@feedreader.co', 'niftynei@gmail.com', 'rishig@zulipchat.com', 'svnitakash@gmail.com', 'tabbott@zulipchat.com'],
+    mentors = ['arpith@feedreader.co', 'rishig@zulipchat.com', 'svnitakash@gmail.com', 'tabbott@zulipchat.com'],
     tags = ['design', 'bots', 'avatars'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
