@@ -6,11 +6,7 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 features = [
-    ("Edit Messages", "https://get.slack.help/hc/en-us/articles/202395258-Edit-or-delete-messages"),
-    ("Mention a Team Member", "https://get.slack.help/hc/en-us/articles/205240127-Mention-a-team-member"),
-    ("Change Language", "https://get.slack.help/hc/en-us/articles/215058658-Slack-in-different-languages"),
-    ("Message Display Settings", "https://get.slack.help/hc/en-us/articles/213893898-Change-your-message-display-settings"),
-    ("Browse and Join Streams", "https://get.slack.help/hc/en-us/articles/205239967-Browse-and-join-channels"),
+    # Account Basics
     ("Edit Your Profile", "https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile"),
     ("Manage Your Password", "https://get.slack.help/hc/en-us/articles/201909068-Manage-your-password"),
     ("Change Your Username", "https://get.slack.help/hc/en-us/articles/216360827-Change-your-username"),
@@ -18,11 +14,20 @@ features = [
     ("Zulip Glossary", "https://get.slack.help/hc/en-us/articles/213817348-Slack-glossary"),
     ("Sign In", "https://get.slack.help/hc/en-us/articles/212681477-Sign-in-to-Slack"),
     ("Sign Out", "https://get.slack.help/hc/en-us/articles/214613347-Sign-out-of-Slack"),
+    # Messages
+    ("Change Language", "https://get.slack.help/hc/en-us/articles/215058658-Slack-in-different-languages"),
+    ("Format Your Messages", "https://get.slack.help/hc/en-us/articles/202288908-Format-your-messages"),
     ("Emoji and Emoticons", "https://get.slack.help/hc/en-us/articles/202931348-Emoji-and-emoticons"),
+    ("Edit Messages", "https://get.slack.help/hc/en-us/articles/202395258-Edit-or-delete-messages"),
+    ("Mention a Team Member", "https://get.slack.help/hc/en-us/articles/205240127-Mention-a-team-member"),
+    ("Message Display Settings", "https://get.slack.help/hc/en-us/articles/213893898-Change-your-message-display-settings"),
+    # Streams & Private Messages
     ("Streams and Private Messages", "https://get.slack.help/hc/en-us/articles/201925108-About-channels-and-direct-messages"),
+    ("Browse and Join Streams", "https://get.slack.help/hc/en-us/articles/205239967-Browse-and-join-channels"),
     ("Create a Stream", "https://get.slack.help/hc/en-us/articles/201402297-Create-a-channel"),
+    # Files
     ("Upload and Share Files", "https://get.slack.help/hc/en-us/articles/201330736-Upload-and-share-files"),
-    ("Formatting for Posts", "https://get.slack.help/hc/en-us/articles/209774578-Formatting-for-posts"),
+    # Tools & Customization
     ("Search for Messages", "https://get.slack.help/hc/en-us/articles/202528808-Search-for-messages-and-files"),
     ("Advanced Search", "https://get.slack.help/hc/en-us/articles/213532017-Advanced-search-in-Slack"),
     ("Keyboard Shortcuts", "https://get.slack.help/hc/en-us/articles/201374536-Slack-keyboard-shortcuts"),
