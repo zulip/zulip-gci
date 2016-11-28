@@ -19,8 +19,8 @@ particularly recommend the guides to
 Almost all GCI discussion (and discussion of Zulip more generally) happens
 on our developers' server, https://chat.zulip.org. Create an account
 and say hi on the "introductions" topic of the "GCI general" stream! When
-you signed up, hopefully you checked the box that says you are a GCI
-student. This will have subscribed you to the following streams:
+signing up, check the box that says you are a GCI student.
+This will subscribe you to the following streams (among others):
 
 * `GCI announce`: Messages from the Zulip GCI mentors.
 * `GCI tasks`: Task-specific discussion or help.
