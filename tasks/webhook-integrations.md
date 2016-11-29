@@ -120,7 +120,15 @@ for it in the JSON file you created above.
 * Post your notes of where you got stuck or found confusing terminology to the
   "GCI tasks" stream, under the topic "Incoming Webhooks".
 
+### Double check your work and submit.
+
+* Your first screenshot should have "/api/v1/external" and "POST"
+  in one of the "INFO" lines.
+
+* Your second screenshot should include a "Harry Potter" link.
+
 * Submit the two screenshots using the GCI tasks interface.
+
 
 ### Task Type B: Research how the integration should work.
 
