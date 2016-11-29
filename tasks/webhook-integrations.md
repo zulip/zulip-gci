@@ -39,6 +39,8 @@ you got stuck or needed to look up terminology.
 * Start the server. If using vagrant, you can do this by running `/srv/zulip/tools/run-dev.py`.
   This will start your development server at
   [http://localhost:9991/](http://localhost:9991/)
+  or "http://put-your-name-here.zulipdev.org:9991/", depending
+  on your configuration.
 
 #### Create a bot.
 
