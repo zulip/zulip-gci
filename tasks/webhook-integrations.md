@@ -103,7 +103,7 @@ for it in the JSON file you created above.
 ```
 (zulip-venv)vagrant@vagrant-ubuntu-trusty-64:/srv/zulip$./manage.py send_webhook_fixture_message \
 --fixture=zerver/fixtures/<yourname>/<yourname>_hello.json \
-'--url=http://localhost:9991/api/v1/external/<yourname>?api_key=<api_key>'
+--url='http://localhost:9991/api/v1/external/<yourname>?api_key=<api_key>'
 ```
 
 #### Take screenshots.
