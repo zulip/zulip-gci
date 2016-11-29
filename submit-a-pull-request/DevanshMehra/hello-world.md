@@ -1,2 +1,2 @@
 Hello world
-I am DevanshMehra. :tada:
+I am DevanshMehra :tada:
