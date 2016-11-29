@@ -34,6 +34,23 @@ that is named after yourself, and sends a unique message you'd like to share
 with the world. As you're going through the tutorial, take notes on where
 you got stuck or needed to look up terminology.
 
+#### Start the Zulip server
+
+* Start the server. If using vagrant, you can do this by running `/srv/zulip/tools/run-dev.py`.
+  This will start your development server at
+  [http://localhost:9991/](http://localhost:9991/)
+
+#### Create a bot.
+
+* Create a bot under the `Your Bots` section of your Zulip user’s `Settings`
+  page and copy the API key.  Add a **comment** to your task that
+  says the name of the bot.
+
+#### Create a test fixture
+
+A "test fixture" is a file with sample data in it.  We will use
+this file to test our webhook later.
+
 Notation: Everywhere below, `<yourname>` should be replaced by your name in
 lowercase (no spaces or underscores), and `<YourName>` should be replaced by
 your name in CamelCase.
@@ -48,6 +65,8 @@ your name in CamelCase.
       "featured_url":"https://en.wikipedia.org/wiki/Harry_Potter",
     }
   ```
+
+#### Create the webhook
 
 * Add a new file `zerver/views/webhooks/<yourname>.py`
 
@@ -69,12 +88,10 @@ your name in CamelCase.
     WebhookIntegration('<yourname>', display_name='<yourname>'),
   ```
 
-* Start the server. If using vagrant, you can do this by running `/srv/zulip/tools/run-dev.py`.
-  This will start your development server at
-  [http://localhost:9991/](http://localhost:9991/)
+#### Test the webhook.
 
-* Create a bot under the `Your Bots` section of your Zulip user’s `Settings`
-  page and copy the API key.
+You now have the webhook code written, and you have fixture data
+for it in the JSON file you created above.
 
 * Send the fixture message you wrote above! Replace the placeholder
   `<api_key>` in the code below with your real API key and `<yourname>`
@@ -86,7 +103,9 @@ your name in CamelCase.
 '--url=http://localhost:9991/api/v1/external/<yourname>?api_key=<api_key>'
 ```
 
-* Take a screenshot of the log line you get on the terminal after you
+#### Take screenshots.
+
+* Take a **screenshot** of the log line you get on the terminal after you
   finish your task. It should look something like:
 
 ```
@@ -94,7 +113,7 @@ your name in CamelCase.
 ```
 
 * On your local server, you will see a new message in the `test`
-  stream. Take a screenshot of the message.
+  stream. Take a **screenshot** of the message.
 
 * Post your notes of where you got stuck or found confusing terminology to the
   "GCI tasks" stream, under the topic "Incoming Webhooks".
