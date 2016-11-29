@@ -44,7 +44,8 @@ you got stuck or needed to look up terminology.
 
 #### Create a bot.
 
-* Create a bot under the `Your Bots` section of your Zulip user’s `Settings`
+* Create a bot named "Test van Botten" under the `Your Bots` section
+  of your Zulip user’s `Settings`
   page and copy the API key.  Add a **comment** to your task that
   says the name of the bot.
 
@@ -125,7 +126,8 @@ for it in the JSON file you created above.
 * Your first screenshot should have "/api/v1/external" and "POST"
   in one of the "INFO" lines.
 
-* Your second screenshot should include a "Harry Potter" link.
+* Your second screenshot should include a "Harry Potter" link, and
+  it should be clear that "Test van Botten" sent it.
 
 * Submit the two screenshots using the GCI tasks interface.
 
