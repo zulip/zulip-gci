@@ -6,6 +6,9 @@
   https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
   on how to set one up.
 
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
 ### Practice Running Zulip
 
 Run your Zulip server using
