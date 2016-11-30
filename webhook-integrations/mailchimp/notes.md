@@ -3,14 +3,14 @@
 -added hook to hookb.in ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/hooks.PNG)
 -slack was automatic
 # Unsubed:
--went to manage preferences through confirmed page (manage.png)
--unsubbed and got survey (survey.png)
--got request (unsubbed.png)
+-went to manage preferences through confirmed page ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/manage.PNG)
+-unsubbed and got survey ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/survey.PNG)
+-got request ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/UNSUBBED.PNG)
 # Subscribed:
--Subbed through form: http://eepurl.com/cq4t0T (1.png)
--got email to confirm (2.png)
--got a sub confirmed (subconfirmed.png)
--got member added to list (4.png)
--got request (subbed.png)
+-Subbed through form: http://eepurl.com/cq4t0T ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/1.PNG)
+-got email to confirm ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/2.PNG)
+-got a sub confirmed ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/subconfirm.PNG)
+-got member added to list ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/4.PNG)
+-got request ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/subbed.PNG)
 # Options:
--Other Hook options (options.jpg)
+-Other Hook options ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/options.jpg)
