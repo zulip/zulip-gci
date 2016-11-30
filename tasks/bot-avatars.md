@@ -2,10 +2,10 @@
 
 ## Prerequisites
 
-* You need to know how to create a GitHub pull request.
-Check out the "Learn how to create a GitHub Pull
-Request" task if you aren't sure how to do this, or read through the task description
-[here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
+* You need to know how to create a GitHub pull request. Check out the
+  [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)
+  task if you aren't sure how to do this, or read through the task description
+  [here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
 
 ## Background
 

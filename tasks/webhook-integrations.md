@@ -3,8 +3,15 @@
 ## Prerequisites
 
 * A working Zulip development environment. See
-  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
+
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
+* If this is your first contribution, you may be interested in the
+  [how to create a pull request](https://codein.withgoogle.com/tasks/6541581402243072/) and
+  [intro to Zulip server development](https://codein.withgoogle.com/tasks/4799263762546688/) tasks.
 
 ## Background
 
@@ -26,12 +33,31 @@ particular integration to be completed first.
 
 Follow the tutorial below to create a duplicate of our
 [HelloWorld integration](http://zulip.readthedocs.io/en/latest/integration-guide.html#hello-world-webhook-walkthrough)
-that is named after yourself, and sends a unique message you’d like to share
-with the world. As you’re going through the tutorial, take notes on where
+that is named after yourself, and sends a unique message you'd like to share
+with the world. As you're going through the tutorial, take notes on where
 you got stuck or needed to look up terminology.
 
-Notation: Everywhere below, <yourname> should be replaced by your name in
-lowercase (no spaces or underscores), and <YourName> should be replaced by
+#### Start the Zulip server
+
+* Start the server. If using vagrant, you can do this by running `/srv/zulip/tools/run-dev.py`.
+  This will start your development server at
+  [http://localhost:9991/](http://localhost:9991/)
+  or "http://put-your-name-here.zulipdev.org:9991/", depending
+  on your configuration.
+
+#### Create a bot.
+
+* Create a bot named "Test van Botten" under the `Your Bots` section
+  of your Zulip user’s `Settings` page and copy the API key to a
+  text file.
+
+#### Create a test fixture
+
+A "test fixture" is a file with sample data in it.  We will use
+this file to test our webhook later.
+
+Notation: Everywhere below, `<yourname>` should be replaced by your name in
+lowercase (no spaces or underscores), and `<YourName>` should be replaced by
 your name in CamelCase.
 
 * Create a new directory `zerver/fixtures/<yourname>`.
@@ -45,9 +71,11 @@ your name in CamelCase.
     }
   ```
 
+#### Create the webhook
+
 * Add a new file `zerver/views/webhooks/<yourname>.py`
 
-* Copy the contents of the `helloworld.py` to this file. Replace all instances of `HelloWorld` and `helloworld` with <YourName> and <yourname>, respectively. Also choose a new topic below (replace <your_topic>)
+* Copy the contents of the `helloworld.py` to this file. Replace all instances of `HelloWorld` and `helloworld` with `<YourName>` and `<yourname>`, respectively. Also choose a new topic below (replace `<your_topic>`)
   ```
     def api_<yourname>_webhook(request, user_profile, client,
                                payload=REQ(argument_type='body'),
@@ -65,12 +93,10 @@ your name in CamelCase.
     WebhookIntegration('<yourname>', display_name='<yourname>'),
   ```
 
-* Start the server. If using vagrant, you can do this by running `/srv/zulip/tools/run-dev.py`.
-  This will start your development server at
-  [http://localhost:9991/](http://localhost:9991/)
+#### Test the webhook.
 
-* Create a bot under the `Your Bots` section of your Zulip user’s `Settings`
-  page and copy the API key.
+You now have the webhook code written, and you have fixture data
+for it in the JSON file you created above.
 
 * Send the fixture message you wrote above! Replace the placeholder
   `<api_key>` in the code below with your real API key and `<yourname>`
@@ -79,27 +105,34 @@ your name in CamelCase.
 ```
 (zulip-venv)vagrant@vagrant-ubuntu-trusty-64:/srv/zulip$./manage.py send_webhook_fixture_message \
 --fixture=zerver/fixtures/<yourname>/<yourname>_hello.json \
-'--url=http://localhost:9991/api/v1/external/<yourname> api_key=<api_key>'
+--url='http://localhost:9991/api/v1/external/<yourname>?api_key=<api_key>'
 ```
 
-* Take two screenshots, and put them in a new folder called `gci/incoming-webhooks/<yourname>/`:
+#### Take screenshots.
 
- * Take a screenshot of the log line you get on the terminal after you
-   finish your task. It should look something like:
+* Take a **screenshot** of the log line you get on the terminal after you
+  finish your task. It should look something like:
 
 ```
     2016-11-18 15:58:04,600 INFO     127.0.0.1       POST    200 643ms (mem: 34ms/16) (md: 155ms/1) (db: 166ms/15q) (+start: 18ms) /api/v1/external/<yourname> (<bot_name>-bot@zulip.com via Zulip<YourName>Webhook)
 ```
 
- * On your local server, you will see a new message in the `test`
-   stream. Take a screenshot of the message.
+* On your local server, you will see a new message in the `test`
+  stream. Take a **screenshot** of the message.
 
 * Post your notes of where you got stuck or found confusing terminology to the
-  "GCI task discussion" stream, under the topic "Incoming Webhooks".
+  "GCI tasks" stream, under the topic "Incoming Webhooks".
 
-* Post your work as a pull request to this zulip/zulip-gci
-  repository. The title of the pull request should be "Incoming
-  Webhooks A".
+### Double check your work and submit.
+
+* Your first screenshot should have "/api/v1/external" and "POST"
+  in one of the "INFO" lines.
+
+* Your second screenshot should include a "Harry Potter" link, and
+  it should be clear that "Test van Botten" sent it.
+
+* Submit the two screenshots using the GCI tasks interface.
+
 
 ### Task Type B: Research how the integration should work.
 
@@ -120,37 +153,35 @@ we can use to verify whether out integration works.
   [RequestBin](http://requestb.in/) (click "Create a RequestBin") or a
   similar site, in addition to the Slack webhook URL.
 
-* Play around with the integration to figure out all the different
-  types of messages you can generate in Slack, and take screenshots
-  showing them (it's fine if multiple of these are in the same
-  screenshot). Make a brief note about any messages you think are
-  possible, but which you are unable to generate (e.g. because they
-  are only available to paying customers).  Submit a pull request
-  adding the screenshots and notes in a new folder in this repository
-  of the form `webhook-integrations/<integration>` , where
-  `<integration>` should be replaced by *integration* in lowercase.
+* Play around with the integration to figure out all the different types of
+  messages you can generate in Slack, and take screenshots showing them
+  (it's fine if multiple of these are in the same screenshot). Make a brief
+  note about any messages you think are possible, but which you are unable
+  to generate (e.g. because they are only available to paying
+  customers). Add the screenshots and notes in a new folder
+  `webhook-integrations/<integration>` in the zulip/zulip-gci respository,
+  where `<integration>` is replaced by *integration* in lowercase.
+
+* Add a commit with the screenshots and notes, and submit a pull request to the
+  zulip/zulip-gci repository. Both the commit message and the title of the pull
+  request should be `integrations: Add screenshots and notes for *integration*.`
 
 * All these messages should also have been posted to your RequestBin
-  URL. Put the webhook payloads generated for your integration in
-  files in the zulip-gci repository of the form
-  `webhook-integrations/<integration>/fixtures/<integration>_<message-type>.json`,
-  where `<integration>` is replaced by *integration* in lowercase. You
-  can look at the folders under `zerver/fixtures` in the main
-  zulip/zulip repository to get a sense of what these should look like
-  and how to name the files. Include exactly one payload for each type
-  of message.  When we write the actual integration, in task type C,
-  we'll use these "test fixtures" to test our code.
+  URL. Put the webhook payloads generated for your integration in files in
+  the zulip/zulip repository (not the zulip/zulip-gci repository) of the
+  form `zerver/fixtures/<integration>/<integration>_<message-type>.json`,
+  where `<integration>` is replaced by *integration* in lowercase. You can
+  look at the other folders under `zerver/fixtures` to get a sense of what
+  these should look like and how to name the files. Include exactly one
+  payload for each type of message.  When we write the integration in task
+  type C, we'll use these "test fixtures" to test our code.
 
-* Create two commits.
- * One for the webhook payloads. The commit message should be e.g.
-   `*integration* integration: Add webhook payloads.`
+* Add a commit with the webhook payloads, and submit a pull request to the
+  zulip/zulip repository. Both the commit message and the title of the pull
+  request should be `integrations: Add webhook payloads for *integration*.`
 
- * One with the screenshots and notes. The commit message should be e.g.
-   `*integration* integration: Screenshots and notes.`
-
-* Submit a pull request to the the zulip/zulip-gci repository
-  (i.e. this one). The title of the pull request should be
-  e.g. "Webhook Integrations B: Test fixtures for *integration*".
+* Include links to both pull requests when you submit your task on
+  the GCI website.
 
 Congratulations!  You've done a lot of the hard work involved in
 creating an integration.
@@ -160,11 +191,7 @@ creating an integration.
 Let *integration* be the integration listed in the task that brought you
 here.
 
-* Make sure you have access to the output of Task Type B for
-  *integration*, namely the files in
-  `webhook-integrations/<integration>` in this repository.  You'll
-  want to copy the test fixtures to the appropriate place in the
-  *zulip/zulip repository when you get started.
+* Make sure you have access to the output of Task Type B for *integration*.
 
 * Skim through
   http://zulip.readthedocs.io/en/latest/integration-guide.html so you
@@ -178,19 +205,19 @@ here.
 
 * Make sure all the tests pass, using `tools/test-all`.
 
-* Create a commit titled `*integration* integration: Add webhook code, API
-  endpoint, and tests.`  You'll want to make sure to add all the files
-  using `git add`, or they won't be included in your changes.
+* Add a commit with the changes above, and submit a pull request to the
+  zulip/zulip repository. Both the commit message and the title of the pull
+  request should be `integrations: Add webhook code, API endpoint, and tests
+  for *integration*.` Make sure to add all the files using `git add`, or
+  they won't be included in your commit.
 
-* Submit a pull request with your commit to the main zulip/zulip
-  project. The title of the pull request should be "Webhook
-  Integrations C: webhook code, API endpoint, and tests for
-  *integration*".
+* Include a link to the pull request when you submit your task on the GCI
+  website.
 
 ### Task Type D: Add documentation for an integration.
 
 Let *integration* be the integration listed in the task that brought you
-here.
+here. All paths in this task refer to the zulip/zulip repository.
 
 * Make sure you have access to the output of Task Type C for *integration*.
   For instance, check that there is something in the file
@@ -208,7 +235,7 @@ here.
   `<integration>` is the name of the integration in lower case.
 
 * Generate a message sent by the integration by giving your test bot a nice
-  name like "`<integration>` Bot", use the project’s logo as the bot’s
+  name like "`<Integration>` Bot", use the project’s logo as the bot’s
   avatar, and take the screenshots showing the stream/topic bar for the
   message, not just the message body, doing something like:
 
@@ -228,10 +255,12 @@ here.
 
 * Make sure all the tests pass, using `tools/test-all`.
 
-* Create a commit titled `*integration* integration: Add documentation.`
+* Add a commit with the changes above, and submit a pull request to the
+  zulip/zulip repository. Both the commit message and the title of the pull
+  request should be `integrations: Add documentation for *integration*.`
 
-* Submit a pull request to the main zulip/zulip project. The title of
-  the pull request should be "Webhook Integrations D: documentation for *integration*".
+* Include a link to the pull request when you submit your task on the GCI
+  website.
 
 ## General notes
 

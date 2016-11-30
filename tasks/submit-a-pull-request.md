@@ -23,7 +23,7 @@ If you are not sure what a branch is, refer to [this tutorial](https://guides.gi
 * Make a new folder `submit-a-pull-request/<username>` where `<username>` is your GitHub username.
 
 * Create a new file called `hello-world.md` with the following
-content, verbatim.
+content, verbatim (exactly as written).
 
 ```
 Hello world
@@ -48,6 +48,8 @@ if you are not sure how to do this.
   Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
   if you don't know how to open a pull request.
 
+* Sign the Dropbox CLA using the link posted by the Dropbox CLA bot.
+
 * Post a link to the pull request when you submit your task on the GCI
   website. The link should look like
   `https://github.com/zulip/zulip-gci/pull/<number>`, where `<number>` is a 2 or
@@ -55,9 +57,14 @@ if you are not sure how to do this.
 
 The mentors will verify that you successfully created a pull request
 with 2 commits, first adding the file and then editing it to contain
-your username.  Congratulations!  You've learned the basics of GitHub
+your username.  Once you've signed the Dropbox CLA, your pull request
+will be merged. Congratulations!  You've learned the basics of GitHub
 workflow.
 
 Zulip has a detailed guide on how we use GitHub for our server project
 that you may find useful reading as you continue to learn about Git and
 GitHub: http://zulip.readthedocs.io/en/latest/git-guide.html.
+
+After you finish this task, a great next task is to learn how to use
+the Zulip server development environment:
+https://codein.withgoogle.com/tasks/4799263762546688/

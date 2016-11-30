@@ -18,7 +18,7 @@ account][github-help-add-ssh-key].
 ## Step 2: Create a fork of zulip/zulip
 
 Zulip uses a **forked-repo** and **[rebase][gitbook-rebase]-oriented
-workflow.**. This means that all contributors create a fork of the [Zulip
+workflow**. This means that all contributors create a fork of the [Zulip
 repository][github-zulip-zulip] they want to contribute to and then submit pull
 requests to the upstream repository to have their contributions reviewed and
 accepted.
@@ -35,7 +35,7 @@ for further details).
 Now that you have a GitHub account, have added your ssh keys, and forked
 zulip/zulip, you are ready to request your Zulip developer instance.
 
-If you haven't already, creating an account on https://chat.zulip.org/.
+If you haven't already, create an account on https://chat.zulip.org/.
 
 Next, join the **GCI help** stream. Create a new **stream message**
 with your GitHub username as the **topic** and request your remote dev
@@ -43,18 +43,32 @@ instance.  A mentor should reply letting you know they're working on
 creating it as soon as they are available to help (they'll be using
 the tool in `remotedev/create.py` in this repository).
 
-Once requested, it will only take a few minutes to create your instance. Once
-created, it will be available via ssh at `<username>.zulipdev.org` where
-<username> is your GitHub username.
+Once requested, it will only take a few minutes to create your instance. Your
+mentor will let you know when it is complete and available.
 
 ## Next steps
 
-First, take a look at our tips for [developing remotely][dev-remote].
+Once your remote dev instance is ready:
 
-Next, you'll want to read these documents to learn how to use it:
+- Connect to your server by running
+  `ssh zulipdev@<username>.zulipdev.org` on the command line
+  (Terminal for macOS and Linux, Bash for Git on Windows).
+- There is no password; your account is configured to use your ssh keys.
+- Once you log in, you should see `(zulip-venv) ~$`.
+- To start the dev server, `cd zulip` and then run `./tools/run-dev.py`.
+- While the dev server is running, you can see the Zulip server in your browser
+  at http://username.zulipdev.org:9991.
 
-* [Using the Development Environment][using-dev-env]
-* [Testing][testing]
+Once you've confirmed you can connect to your remote server, take a look at:
+
+* [developing remotely][rtd-dev-remote] for tips on using the remote dev
+  instance, and
+* our [Git & GitHub Guide][rtd-git-guide] to learn how to use Git with Zulip.
+
+Next, read the following to learn more about developing for Zulip:
+
+* [Using the Development Environment][rtd-using-dev-env]
+* [Testing][rtd-testing]
 
 [github-join]: https://github.com/join
 [github-help-add-ssh-key]: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
@@ -63,6 +77,8 @@ Next, you'll want to read these documents to learn how to use it:
 [install-direct]: https://zulip.readthedocs.io/en/latest/dev-env-first-time-contributors.html
 [install-vagrant]: https://zulip.readthedocs.io/en/latest/install-ubuntu-without-vagrant-dev.html
 [google-gci]: https://codein.withgoogle.com/
-[testing]: https://zulip.readthedocs.io/en/latest/testing.html
-[using-dev-env]: https://zulip.readthedocs.io/en/latest/using-dev-environment.html
-[dev-remote]: https://zulip.readthedocs.io/en/latest/dev-remote.html
+[rtd-testing]: https://zulip.readthedocs.io/en/latest/testing.html
+[rtd-using-dev-env]: https://zulip.readthedocs.io/en/latest/using-dev-environment.html
+[rtd-dev-remote]: https://zulip.readthedocs.io/en/latest/dev-remote.html
+[rtd-git-guide]: http://zulip.readthedocs.io/en/latest/git-guide.html
+[gitbook-rebase]: https://git-scm.com/book/en/v2/Git-Branching-Rebasing

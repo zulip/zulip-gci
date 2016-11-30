@@ -3,8 +3,15 @@
 ## Prerequisites
 
 * A working Zulip development environment. See
-  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
+
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
+* If this is your first contribution, you may be interested in the
+  [how to create a pull request](https://codein.withgoogle.com/tasks/6541581402243072/) and
+  [intro to Zulip server development](https://codein.withgoogle.com/tasks/4799263762546688/) tasks.
 
 ## Background
 
@@ -46,7 +53,8 @@ For each *rule* in *rules*:
   * Add a commit with message 'pep8: Fix *rule* violations.'
 
 Submit a pull request with all the commits.  The title of the pull
-request should be something like 'pep8: Fix *rules*'.
+request should be 'pep8: Fix *rules*'.
+Include a link to the pull request when you submit your task on the GCI website.
 
 See git commit [6d93b3b](https://github.com/zulip/zulip/commit/6d93b3b) for an example.
 
@@ -59,16 +67,7 @@ See git commit [6d93b3b](https://github.com/zulip/zulip/commit/6d93b3b) for an e
 
 ## General notes
 
-* TODO: If you think a style change would make the code less readable, would
-  change the behavior of the code, or would otherwise be a regression, add
-  the relevant file to the [???] list in `tools/lint-all` and add a comment
-  to the pull request.
-* The commit with the PEP-8 changes should have no other cleanup. If you end
-  up making other code changes while doing this task, please put it in a
-  separate commit.
-
-## List of rules
-
-Any special instructions for *rule* will appear below.
-
-* TODO
+* If you think a style change would make the code less readable, would
+  change the behavior of the code, or would otherwise be a regression, talk
+  to a mentor on the "GCI Task" stream. We may end up adding the line or
+  file to an exclude list.

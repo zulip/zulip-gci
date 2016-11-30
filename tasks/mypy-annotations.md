@@ -3,8 +3,15 @@
 ## Prerequisites
 
 * A working Zulip development environment. See
-  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
+
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
+* If this is your first contribution, you may be interested in the
+  [how to create a pull request](https://codein.withgoogle.com/tasks/6541581402243072/) and
+  [intro to Zulip server development](https://codein.withgoogle.com/tasks/4799263762546688/) tasks.
 
 ## Background
 
@@ -47,7 +54,8 @@ brought you here. For each directory:
 * Add a commit with commit message `mypy: Convert <directory> to use typing.Text.`
 
 * Submit a pull request containing your commits with
-  title "mypy: Use typing.Text in <set of directories>".
+  title `mypy: Use typing.Text in <set of directories>`.
+  Include a link to the pull request when you submit your task on the GCI website.
 
 See commit
 [fdae58f](https://github.com/zulip/zulip/commit/fdae58f96b284b4153ff6b4fa4b07343647b85b2)
@@ -65,8 +73,9 @@ Let *file* be the file listed in the task that brought you here.
 * Remove *file* from the `exclude_common` list in `tools/run-mypy`.
 * Add mypy annotations to *file* until all the tests pass.
 * Commit your changes with a commit message `mypy: Annotate *file*`.
-* Submit a pull request, with title:
+* Submit a pull request, with title
   `mypy: Add annotations to <file>.`
+  Include a link to the pull request when you submit your task on the GCI website.
 
 *Completion criteria*:
 * PASS_TRAVIS

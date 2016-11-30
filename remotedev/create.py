@@ -52,6 +52,9 @@ def get_keys(username):
     try:
         response = urllib.request.urlopen(apiurl_keys)
         userkeys = json.loads(response.read().decode())
+        if not userkeys:
+            print("No keys found. Has user {0} added ssh keys to their github account?".format(username))
+            sys.exit(1)
         print("...public keys found!")
         return userkeys
     except urllib.error.HTTPError as err:
@@ -100,6 +103,7 @@ def set_user_data(username, userkeys):
         ssh_authorized_keys:{1}
     runcmd:
       - su -c 'cd /home/zulipdev/zulip && git remote add origin https://github.com/{0}/zulip.git && git fetch origin' zulipdev
+      - su -c 'git config --global core.editor nano' zulipdev
     power_state:
      mode: reboot
      condition: True
@@ -143,9 +147,32 @@ def create_dns_record(my_token, username, ip_address):
     domain.load()
     domain.create_new_domain_record(type='A', name=username, data=ip_address)
 
+def print_completion(username):
+    completion_message = """
+COMPLETE! Droplet for GitHub user {0} is available at {0}.zulipdev.org.
+    
+Instructions for use are below. (copy and paste to the user)
+
+------
+Your remote Zulip dev server has been created!
+
+- Connect to your server by running
+  `ssh zulipdev@{0}.zulipdev.org` on the command line 
+  (Terminal for macOS and Linux, Bash for Git on Windows).
+- There is no password; your account is configured to use your ssh keys.
+- Once you log in, you should see `(zulip-venv) ~$`.
+- To start the dev server, `cd zulip` and then run `./tools/run-dev.py`.
+- While the dev server is running, you can see the Zulip server in your browser at http://{0}.zulipdev.org:9991.
+
+See [Developing remotely](http://zulip.readthedocs.io/en/latest/dev-remote.html) for tips on using the remote dev instance and [Git & GitHub Guide](http://zulip.readthedocs.io/en/latest/git-guide.html) to learn how to use Git with Zulip.
+------
+    """.format(username)
+
+    print(completion_message)
+
 if __name__ == '__main__':
     # define id of image to create new droplets from
-    template_id = "20997685"
+    template_id = "21193944"
 
     # get command line arguments
     args = parser.parse_args()
@@ -179,6 +206,7 @@ if __name__ == '__main__':
     # create dns entry
     create_dns_record(my_token=api_token, username=args.username, ip_address=ip_address)
 
-    print("COMPLETE! GitHub user {0} can connect to droplet with:".format(args.username))
-    print("   ssh zulipdev@{0}.zulipdev.org".format(args.username))
+    # print completion message
+    print_completion(username=args.username)
+
     sys.exit(1)

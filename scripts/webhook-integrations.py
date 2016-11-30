@@ -47,7 +47,7 @@ upload_task(
     categories = [1],
     time_to_complete_in_days = 5, # must be between 3 and 7
     # Field currently not accessible via API. gci-support says it is coming soon.
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+    # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
     private_metadata = "webhook-integrations-A",
     do_upload = args.force)
 
@@ -68,7 +68,7 @@ for integration, desc in integrations:
         categories = [5],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
         private_metadata = "webhook-integrations-B",
         do_upload = args.force)
 
@@ -88,7 +88,7 @@ for integration, desc in integrations:
         categories = [1],
         time_to_complete_in_days = 5, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
         private_metadata = "webhook-integrations-C",
         do_upload = args.force)
 
@@ -108,7 +108,7 @@ for integration, desc in integrations:
         categories = [3],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
         private_metadata = "webhook-integrations-D",
         do_upload = args.force)
 
