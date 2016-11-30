@@ -34,7 +34,7 @@ in `.eslintrc.json`.
 Let `rule` be the rule in the task description on
 [codein.withgoogle.com](codein.withgoogle.com).
 
-1. Edit `.eslintrc` to switch the rule from 0 (off) or 1 (warning) to 2 (error)
+1. Edit `.eslintrc.json` to switch the rule from 0 (off) or 1 (warning) to 2 (error)
    or the value specified in the task description
 2. Run `tools/lint-all`. This will print a list of errors.
 3. Fix the errors. You can either do this by hand, write a script, or use `eslint`'s
@@ -65,7 +65,7 @@ Unless otherwise mentioned, the task is to change the value from 0 or 1 to 2.
 This list is in order of number of errors.
 Where possible, a link to the explanation from the airbnb rules docs page is provided.
 Some of these rules may be fixed using `node npm_modules/.bin/eslint --fix`
-(after changing the value in `eslintrc` appropriately)
+(after changing the value in `eslintrc.json` appropriately)
 
 - [x] [no-loop-func](http://eslint.org/docs/rules/no-loop-func) (1 error)
       ([airbnb](http://eslint.org/docs/rules/valid-typeof))
