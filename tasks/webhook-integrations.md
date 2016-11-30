@@ -45,9 +45,8 @@ you got stuck or needed to look up terminology.
 #### Create a bot.
 
 * Create a bot named "Test van Botten" under the `Your Bots` section
-  of your Zulip user’s `Settings`
-  page and copy the API key.  Add a **comment** to your task that
-  says the name of the bot.
+  of your Zulip user’s `Settings` page and copy the API key to a
+  text file.
 
 #### Create a test fixture
 
