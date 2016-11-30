@@ -1,6 +1,6 @@
 # NOTES
 # Setup:
--added hook to hookb.in (hooks.png)
+-added hook to hookb.in ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/hooks.PNG)
 -slack was automatic
 # Unsubed:
 -went to manage preferences through confirmed page (manage.png)
