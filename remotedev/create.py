@@ -103,6 +103,7 @@ def set_user_data(username, userkeys):
         ssh_authorized_keys:{1}
     runcmd:
       - su -c 'cd /home/zulipdev/zulip && git remote add origin https://github.com/{0}/zulip.git && git fetch origin' zulipdev
+      - su -c 'git config --global core.editor nano' zulipdev
     power_state:
      mode: reboot
      condition: True
