@@ -39,6 +39,6 @@
 
 ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/subbed.PNG)
 # Options:
--Other Hook options 
+-Other Hook options (I only chose subscribe and unsubscribe since I am new to mailchimp)
 
 ![alt tag](https://raw.githubusercontent.com/NoahCristino/zulip-gci/master/webhook-integrations/mailchimp/options.jpg)
