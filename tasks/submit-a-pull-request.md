@@ -48,6 +48,8 @@ if you are not sure how to do this.
   Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
   if you don't know how to open a pull request.
 
+* Sign the Dropbox CLA using the link posted by the Dropbox CLA bot.
+
 * Post a link to the pull request when you submit your task on the GCI
   website. The link should look like
   `https://github.com/zulip/zulip-gci/pull/<number>`, where `<number>` is a 2 or
@@ -55,7 +57,8 @@ if you are not sure how to do this.
 
 The mentors will verify that you successfully created a pull request
 with 2 commits, first adding the file and then editing it to contain
-your username.  Congratulations!  You've learned the basics of GitHub
+your username.  Once you've signed the Dropbox CLA, your pull request
+will be merged. Congratulations!  You've learned the basics of GitHub
 workflow.
 
 Zulip has a detailed guide on how we use GitHub for our server project
