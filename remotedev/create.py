@@ -52,6 +52,9 @@ def get_keys(username):
     try:
         response = urllib.request.urlopen(apiurl_keys)
         userkeys = json.loads(response.read().decode())
+        if not userkeys:
+            print("No keys found. Has user {0} added ssh keys to their github account?".format(username))
+            sys.exit(1)
         print("...public keys found!")
         return userkeys
     except urllib.error.HTTPError as err:
