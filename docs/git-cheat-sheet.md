@@ -1,6 +1,5 @@
-Fixing commits:
-
-    - see https://github.com/zulip/zulip-gci/blob/master/docs/fixing-commits.md
+See also
+[fixing commits](https://github.com/zulip/zulip-gci/blob/master/docs/fixing-commits.md)
 
 Commands:
 
