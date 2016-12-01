@@ -114,4 +114,3 @@ copyright to their documentation. If you are not sure what constitutes
 copying, please ask on the "user guides" topic of the "GCI tasks" stream at
 chat.zulip.org!
 
-* The tests will fail if any new help templates are added to templates/zerver/help without a corresponding test. Make sure to update zerver/tests/test_templates.py with any relevant tests.
