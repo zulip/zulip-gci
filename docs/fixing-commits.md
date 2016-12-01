@@ -25,6 +25,7 @@ This is mostly from https://help.github.com/articles/changing-a-commit-message/#
 
 ## Squashing commits
 Sometimes, you want to make one commit out of a bunch of commits. To do this,
+
 1. `git rebase -i HEAD~n` where `n` is the number of commits you are interested in
 2. Change `pick` to `squash` on the lines containing the commits you want to squash and save
 3. `git push -f`
