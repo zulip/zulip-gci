@@ -156,11 +156,12 @@ we can use to verify whether out integration works.
 * Play around with the integration to figure out all the different types of
   messages you can generate in Slack, and take screenshots showing them
   (it's fine if multiple of these are in the same screenshot). Make a brief
-  note about any messages you think are possible, but which you are unable
-  to generate (e.g. because they are only available to paying
-  customers). Add the screenshots and notes in a new folder
-  `webhook-integrations/<integration>` in the zulip/zulip-gci respository,
-  where `<integration>` is replaced by *integration* in lowercase.
+  note in a file called `notes.md` (.md is the extension used by markdown
+  format. It can be edited in any text editor e.g. notepad) about any messages
+  you think are possible, but which you are unable to generate (e.g. because
+  they are only available to paying customers). Add the screenshots and notes
+  in a new folder `webhook-integrations/<integration>` in the zulip/zulip-gci
+  respository, where `<integration>` is replaced by *integration* in lowercase.
 
 * Add a commit with the screenshots and notes, and submit a pull request to the
   zulip/zulip-gci repository. Both the commit message and the title of the pull
