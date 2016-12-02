@@ -27,7 +27,7 @@ upload_task(
     categories = [1],
     time_to_complete_in_days = 5, # must be between 3 and 7
     # Field currently not accessible via API. gci-support says it is coming soon.
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/intro-to-zulip-server.md",
+    # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/intro-to-zulip-server.md",
     private_metadata = "intro-to-zulip-server",
     do_upload = args.force)
 

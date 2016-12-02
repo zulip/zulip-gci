@@ -47,7 +47,7 @@ for directory_set in A_tasks:
         categories = [1],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
         private_metadata = "mypy-annotations-A",
         do_upload = args.force)
 
@@ -66,7 +66,7 @@ for filename in B_tasks:
         categories = [1],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
         private_metadata = "mypy-annotations-B",
         do_upload = args.force)
 

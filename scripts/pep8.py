@@ -60,7 +60,7 @@ for rules in pep8_rules:
         categories = [1],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/pep8.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/pep8.md",
         private_metadata = "pep8",
         do_upload = args.force)
 

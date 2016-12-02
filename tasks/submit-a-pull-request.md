@@ -23,7 +23,7 @@ If you are not sure what a branch is, refer to [this tutorial](https://guides.gi
 * Make a new folder `submit-a-pull-request/<username>` where `<username>` is your GitHub username.
 
 * Create a new file called `hello-world.md` with the following
-content, verbatim.
+content, verbatim (exactly as written).
 
 ```
 Hello world

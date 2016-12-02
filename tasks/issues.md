@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * A working Zulip development environment. See
-  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
 
 ## Background
@@ -14,14 +14,14 @@ is at
 https://github.com/zulip/zulip#how-to-get-involved-with-contributing-to-zulip
 
 Issues on the dashboard are generally bite sizes bugs or features but you may
-work on any issue in the project. If an issue you want to work on is not of the
+work on any issue in the project. If an issue you want to work on is not on the
 GCI Dashboard ask the GCI tasks stream for a mentor to add it.
 
 ## Task Description
 
 Read the issue description and discussion. If you have any questions ask on the
-Zulip Chat (set the topic to the issue number) or add to the discussion on Github.
+"GCI tasks" stream (set the topic to the issue number) or add to the discussion on Github.
 
-When you have completed the task submit a pull request to the zulip github
+When you have completed the task submit a pull request to the zulip/zulip github
 respository. Make sure you reference the issue number in the
 [commit message](https://zulip.readthedocs.io/en/latest/version-control.html#commit-messages).

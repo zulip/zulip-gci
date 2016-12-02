@@ -10,7 +10,7 @@ eslint_rules = ['new-cap', 'no-empty', 'space-before-blocks', 'yoda',
               'no-plusplus', 'no-shadow', 'max-len', 'quote-props',
               'no-unused-vars', 'comma-dangle']
 
-description = """Fix the Zulip JavaScript code style! This is a great way to 
+description = """Fix the Zulip JavaScript code style! This is a great way to
 learn the basics of refactoring, git workflow, and good style.
 
 Instructions for eslint tasks are at
@@ -34,7 +34,7 @@ for rules in eslint_rules:
         categories = [1],
         time_to_complete_in_days = 3, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/eslint.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/eslint.md",
         private_metadata = "eslint",
         do_upload = args.force)
 
