@@ -18,7 +18,7 @@ account][github-help-add-ssh-key].
 ## Step 2: Create a fork of zulip/zulip
 
 Zulip uses a **forked-repo** and **[rebase][gitbook-rebase]-oriented
-workflow.**. This means that all contributors create a fork of the [Zulip
+workflow**. This means that all contributors create a fork of the [Zulip
 repository][github-zulip-zulip] they want to contribute to and then submit pull
 requests to the upstream repository to have their contributions reviewed and
 accepted.

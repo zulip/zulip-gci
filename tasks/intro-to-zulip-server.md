@@ -6,7 +6,10 @@
   https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
   on how to set one up.
 
-## Practice Running Zulip
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
+### Practice Running Zulip
 
 Run your Zulip server using
 ```
@@ -17,43 +20,53 @@ Visit your Zulip server at `http://<hostname>:9991`, where `<hostname>` is
 either `localhost` or the hostname of your remote VM, and verify that you
 can log in by clicking on one of the accounts.
 
-## Make a Change.
+### Grep for code
 
 Find the `check_send_message` function by going to the `zulip/` directory
 and entering `git grep 'def check_send_message'`.
 
+#### Modify the code
+
 Modify `check_send_message` so that anytime a user sends a message which says
-"Nanananana" the message becomes "Nanananana Batman!"
+"bye", we convert the content to become `See you in a while :crocodile:!`
+before `check_send_message` calls `check_message`.
+
+**Hint**: You will want to look at the incoming parameters to the function
+and take a guess at which one needs to be modified.  (If you are unsure,
+you can add statements like `print(message_to)` to the code and see
+what shows up in the server output.)
 
 Test that your change works in the browser, and take a screenshot.
 
-## Add Some Tests
+### Add Some Tests
 
 Add some tests to the bottom of `zerver/tests/test_messages.py` to make sure
 we do not accidentally break this behavior in the future.
 
 ```
-class BatmanTest(ZulipTestCase):
-    def test_add_batman_to_nanana_message(self):
+class CrocodileTest(ZulipTestCase):
+    def test_change_bye_message(self):
         # type: () -> None
         sender = get_user_profile_by_email('othello@zulip.com')
         client = make_client(name="test suite")
-        message_id = check_send_message(sender, client, "stream", ["Verona"], "Batman test", "Nanananana")
-        self.assertEqual(Message.objects.values_list("content", flat=True).get(id=message_id),
-                         "Nanananana Batman!")
+        message_id = check_send_message(sender, client, "stream", ["Verona"], "Crocodile test", "bye")
+        self.assertEqual(
+            Message.objects.values_list("content", flat=True).get(id=message_id),
+            "See you in a while :crocodile:!")
 
-    def test_do_not_add_batman_to_normal_message(self):
+    def test_leave_hi_message_alone(self):
         # type: () -> None
         sender = get_user_profile_by_email('othello@zulip.com')
         client = make_client(name="test suite")
-        message_id = check_send_message(sender, client, "stream", ["Verona"], "Batman test", "Hi there")
-        self.assertEqual(Message.objects.values_list("content", flat=True).get(id=message_id),
-                         "Hi there")
+        message_id = check_send_message(sender, client, "stream", ["Verona"], "Crocodile test", "Hi there")
+        self.assertEqual(
+            Message.objects.values_list("content", flat=True).get(id=message_id),
+            "Hi there")
 ```
 
 Then run
 ```
-tools/test-backend zerver/tests/test_messages.BatmanTest
+tools/test-backend zerver/tests/test_messages.CrocodileTest
 ```
 to make sure your code passes the tests you just added. If it doesn't,
 fix any brokenness in your code until it does. Take a screenshot of
@@ -75,6 +88,6 @@ output). Add an extra space to the beginning of any line of code and run the
 lint tests again. You should see a bunch of output in red. Take a screenshot of
 your terminal.
 
-## Submit
+### Submit
 
 Submit the three screenshots using the GCI tasks interface.

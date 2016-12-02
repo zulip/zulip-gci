@@ -3,9 +3,16 @@
 ## Prerequisites
 
 * A working Zulip development environment. See
-  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
+
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
 * Good written English.
+
+* If this is your first contribution, you may be interested in the
+  [how to create a pull request](https://codein.withgoogle.com/tasks/6541581402243072/) task.
 
 ## Background
 
@@ -98,10 +105,12 @@ make your changes and submit a pull request to update the text).
 
 * To see the current version of a user documentation file,
 templates/zerver/help/feature.md in Markdown, reload your browser on
-http://localhost:9991/help/feature.
+`http://<hostname>:9991/help/feature`, where `<hostname>` is either
+`localhost` or the hostname of your VM.
 
 * It is *extremely important* that you not copy text or images from other
 products’ documentation. The companies that develop those products own the
 copyright to their documentation. If you are not sure what constitutes
 copying, please ask on the "user guides" topic of the "GCI tasks" stream at
 chat.zulip.org!
+

@@ -3,8 +3,15 @@
 ## Prerequisites
 
 * A working Zulip development environment. See
-  https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
+  [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
+
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
+* If this is your first contribution, you may be interested in the
+  [how to create a pull request](https://codein.withgoogle.com/tasks/6541581402243072/) and
+  [intro to Zulip server development](https://codein.withgoogle.com/tasks/4799263762546688/) tasks.
 
 ## Background
 
