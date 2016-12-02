@@ -74,7 +74,7 @@ Some of these rules may be fixed using `node npm_modules/.bin/eslint --fix`
       ([airbnb](http://eslint.org/docs/rules/valid-typeof))
       ([example pull request](https://github.com/zulip/zulip/pull/2408))
 - [ ] [new-cap](http://eslint.org/docs/rules/new-cap) (1 error) to be changed
-      to `'new-cap': ['error', { newIsCap: true, capIsNew: false, }]`
+      to `"new-cap": ["error", { "newIsCap": true, "capIsNew": false }]`
       ([airbnb](https://github.com/airbnb/javascript#naming--PascalCase))
 - [ ] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors)
 - [ ] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix)
@@ -82,24 +82,24 @@ Some of these rules may be fixed using `node npm_modules/.bin/eslint --fix`
       ([airbnb 1](https://github.com/airbnb/javascript#whitespace--before-blocks),
       [2](https://github.com/airbnb/javascript#functions--signature-spacing))
 - [ ] [brace-style](http://eslint.org/docs/rules/brace-style) (7 errors) (--fix)
-      to be changed to `['error', '1tbs', { allowSingleLine: true }]`
+      to be changed to `["error", "1tbs", { "allowSingleLine": true }]`
       ([airbnb](https://github.com/airbnb/javascript#blocks--cuddled-elses))
 - [ ] [keyword-spacing](http://eslint.org/docs/rules/keyword-spacing) (12 errors)(--fix)
       ([airbnb](https://github.com/airbnb/javascript#whitespace--around-keywords)) to be changed to
 
     ```
-       'keyword-spacing': ['error', {
-          before: true,
-          after: true,
-          overrides: {
-            return: { after: true },
-            throw: { after: true },
-            case: { after: true }
+       "keyword-spacing": ["error", {
+          "before": true,
+          "after": true,
+          "overrides": {
+            "return": { "after": true },
+            "throw": { "after": true },
+            "case": { "after": true }
           }
         }],
     ```
 
-- [ ] [one-var](http://eslint.org/docs/rules/one-var) (32 errors) to be changed to `['error', 'never']`
+- [ ] [one-var](http://eslint.org/docs/rules/one-var) (32 errors) to be changed to `["error", "never"]`
 - [ ] [no-else-return](http://eslint.org/docs/rules/no-else-return) (39 errors)
 - [ ] [no-plusplus](http://eslint.org/docs/rules/no-plusplus) (40 errors)
       ([airbnb](https://github.com/airbnb/javascript#variables--unary-increment-decrement))
@@ -108,30 +108,30 @@ Some of these rules may be fixed using `node npm_modules/.bin/eslint --fix`
       ([airbnb](https://github.com/airbnb/javascript#whitespace--max-len)) to be changed to
 
     ```
-        'max-len': ['error', 100, 2, {
-          ignoreUrls: true,
-          ignoreComments: false,
-          ignoreRegExpLiterals: true,
-          ignoreStrings: true,
-          ignoreTemplateLiterals: true,
+        "max-len": ["error", 100, 2, {
+          "ignoreUrls": true,
+          "ignoreComments": false,
+          "ignoreRegExpLiterals": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
         }],
     ```
 
 - [ ] [quote-props](http://eslint.org/docs/rules/quote-props) (201 errors) (--fix) to be changed
-      to `['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }]`
+      to `["error", "as-needed", { "keywords": false, "unnecessary": true, "numbers": false }]`
       ([airbnb](https://github.com/airbnb/javascript#objects--quoted-props))
 - [ ] [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars) (221 errors) to be changed
-      to `['error', { vars: 'local', args: 'after-used' }]`
+      to `["error", { "vars": "local", "args": "after-used" }]`
 - [ ] [comma-dangle](http://eslint.org/docs/rules/comma-dangle) (795 errors) (--fix)
       ([airbnb](https://github.com/airbnb/javascript#commas--dangling)) to be changed to
 
     ```
-        'comma-dangle': ['error', {
-          arrays: 'always-multiline',
-          objects: 'always-multiline',
-          imports: 'always-multiline',
-          exports: 'always-multiline',
-          functions: 'always-multiline',
+        "comma-dangle": ["error", {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "always-multiline"
         }],
     ```
 
@@ -148,9 +148,9 @@ The rules below do not have an associated GCI task.
 2. no-console - this is only a warning in airbnb’s lint rules, perhaps this can be discussed later?
 3. [camelcase](http://eslint.org/docs/rules/camelcase) (3680 errors)
    [airbnb's recommendation](https://github.com/airbnb/javascript#naming--camelCase))
-   is `['error', { properties: 'never' }]`,
+   is `["error", { "properties": "never" }]`,
 4. [quotes](http://eslint.org/docs/rules/quotes) (5773 errors) (--fix)
    [airbnb's recommendation](https://github.com/airbnb/javascript#strings--quotes))
-   is `['error', 'single', { avoidEscape: true }]`
+   is `["error", "single", { "avoidEscape": true }]`
 5. [no-underscore-dangle](http://eslint.org/docs/rules/no-underscore-dangle) (410 errors)
       ([airbnb](https://github.com/airbnb/javascript#naming--leading-underscore))
