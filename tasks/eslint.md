@@ -38,7 +38,17 @@ Let `rule` be the rule in the task description on
 [codein.withgoogle.com](codein.withgoogle.com).
 
 1. Edit `.eslintrc.json` to switch the rule from 0 (off) or 1 (warning) to 2 (error)
-   or the value specified in the task description
+   or the value specified in the task description, e.g:
+   ```
+   "no-alert": 2,  // Changes value 2 (error).
+   "comma-dangle": ["error", {  // Changes value to the rule specified in the description.
+     "arrays": "always-multiline",
+     "objects": "always-multiline",
+     "imports": "always-multiline",
+     "exports": "always-multiline",
+     "functions": "always-multiline"
+   }],
+   ```
 2. Run `tools/lint-all`. This will print a list of errors.
 3. Fix the errors. You can either do this by hand, write a script, or use `eslint`'s
    [--fix](http://eslint.org/docs/user-guide/command-line-interface#fix) option
