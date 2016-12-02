@@ -52,6 +52,9 @@ def get_keys(username):
     try:
         response = urllib.request.urlopen(apiurl_keys)
         userkeys = json.loads(response.read().decode())
+        if not userkeys:
+            print("No keys found. Has user {0} added ssh keys to their github account?".format(username))
+            sys.exit(1)
         print("...public keys found!")
         return userkeys
     except urllib.error.HTTPError as err:
@@ -100,6 +103,7 @@ def set_user_data(username, userkeys):
         ssh_authorized_keys:{1}
     runcmd:
       - su -c 'cd /home/zulipdev/zulip && git remote add origin https://github.com/{0}/zulip.git && git fetch origin' zulipdev
+      - su -c 'git config --global core.editor nano' zulipdev
     power_state:
      mode: reboot
      condition: True

@@ -6,6 +6,9 @@
   [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
 
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
 * Good written English.
 
 * If this is your first contribution, you may be interested in the
@@ -110,3 +113,4 @@ products’ documentation. The companies that develop those products own the
 copyright to their documentation. If you are not sure what constitutes
 copying, please ask on the "user guides" topic of the "GCI tasks" stream at
 chat.zulip.org!
+

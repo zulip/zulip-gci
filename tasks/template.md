@@ -10,6 +10,9 @@ thought of that might apply to more than one category, add it here!
   https://github.com/zulip/zulip-gci/blob/master/README.md for instructions
   on how to set one up.
 
+* Update your working copy of Zulip and then create a feature branch. [Learn
+  how](../before-every-task.md).
+
 * CLONE_GIT_REPO (for anything that doesn't require a working dev environment)
 * GET_MENTOR_PERMISSION
 
