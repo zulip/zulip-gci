@@ -1,2 +1,2 @@
 Hello world
-I am Shin4y. :tada:
+I am Shin4y :tada:
