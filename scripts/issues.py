@@ -37,6 +37,11 @@ issues = [
     (1528, ['python']),
 ]
 
+head_description = """ Your task is to solve an open bug or missing feature in the Zulip
+server project.  Here is the issue:
+
+"""
+
 tail_description = """
 
 Instructions for all issue tasks are at
@@ -52,7 +57,7 @@ for (issue, tags) in issues:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
         name = 'Issue #{0} {1}'.format(issue, title),
-        description = description + tail_description,
+        description = head_description + description + tail_description,
         status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['rishig@zulipchat.com', 'tabbott@zulipchat.com'],
