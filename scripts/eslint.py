@@ -19,16 +19,16 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/eslint.md
 For this task, fix the errors for rule **%s**.
 """
 
-for rules in eslint_rules:
+for rule in eslint_rules:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Cleanup Zulip JavaScript code: eslint %s' % (rules,),
-        description = description % ', '.join(rules),
+        name = 'Cleanup Zulip JavaScript code: eslint %s' % (rule,),
+        description = description % (rule,),
         status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['arpith@feedreader.co', 'brock@zulipchat.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['javascript', 'eslint'], # free text
-        is_beginner = rules in ['new-cap', 'no-empty', 'space-before-blocks', 'yoda'],
+        is_beginner = rule in ['new-cap', 'no-empty', 'space-before-blocks', 'yoda'],
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1],
