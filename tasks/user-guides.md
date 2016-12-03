@@ -71,6 +71,9 @@ that brought you here (if relevant).
 * Add a link to your guide under the "Table of contents"
   heading in `templates/zerver/help/index.md`. One goal is that by the
   end of GCI, that page will just be the table of contents.
+* Verify your documentation looks as you intended and all links work;
+  it's common to make small mistakes in the markdown that cause your
+  documentation to not look right.
 * Add a commit and submit a pull request to the
   https://github.com/zulip/zulip/ repository. The title of both the commit
   and the pull request should be `docs: Add user guide for *feature*`.
