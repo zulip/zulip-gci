@@ -89,55 +89,12 @@ Where possible, a link to the explanation from the airbnb rules docs page is pro
 If the rule has `(--fix)` next to it, it can be fixed using eslint's --fix option.
 Follow [these instructions](#using-eslint---fix) to do so.
 
-- [x] [no-loop-func](http://eslint.org/docs/rules/no-loop-func) (1 error) to be changed to `2`
-      ([airbnb](http://eslint.org/docs/rules/valid-typeof))
-      ([example pull request](https://github.com/zulip/zulip/pull/2408))
 - [ ] [new-cap](http://eslint.org/docs/rules/new-cap) (1 error) to be changed
       to `"new-cap": ["error", { "newIsCap": true, "capIsNew": false }]`
       ([airbnb](https://github.com/airbnb/javascript#naming--PascalCase))
 - [ ] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors) to be changed to `2`
 - [ ] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix) to be changed to `2`
-- [ ] [space-before-blocks](http://eslint.org/docs/rules/space-before-blocks) (2 errors) (--fix)
-      ([airbnb 1](https://github.com/airbnb/javascript#whitespace--before-blocks),
-      [2](https://github.com/airbnb/javascript#functions--signature-spacing)) to be changed to `2`
-- [ ] [brace-style](http://eslint.org/docs/rules/brace-style) (7 errors) (--fix)
-      to be changed to `["error", "1tbs", { "allowSingleLine": true }]`
-      ([airbnb](https://github.com/airbnb/javascript#blocks--cuddled-elses))
-- [ ] [keyword-spacing](http://eslint.org/docs/rules/keyword-spacing) (12 errors)(--fix)
-      ([airbnb](https://github.com/airbnb/javascript#whitespace--around-keywords)) to be changed to
-
-    ```
-       "keyword-spacing": ["error", {
-          "before": true,
-          "after": true,
-          "overrides": {
-            "return": { "after": true },
-            "throw": { "after": true },
-            "case": { "after": true }
-          }
-        }],
-    ```
-- [ ] [one-var](http://eslint.org/docs/rules/one-var) (32 errors) to be changed to `['error', 'never']`
-- [ ] [no-else-return](http://eslint.org/docs/rules/no-else-return) (39 errors) to be changed to `2`
-- [ ] [no-plusplus](http://eslint.org/docs/rules/no-plusplus) (40 errors) to be changed to `2`
-      ([airbnb](https://github.com/airbnb/javascript#variables--unary-increment-decrement))
 - [ ] [no-shadow](http://eslint.org/docs/rules/no-shadow) (56 errors) to be changed to `2`
-- [ ] [max-len](http://eslint.org/docs/rules/max-len) (78 errors) to be changed to `2`
-      ([airbnb](https://github.com/airbnb/javascript#whitespace--max-len)) to be changed to
-
-    ```
-        "max-len": ["error", 100, 2, {
-          "ignoreUrls": true,
-          "ignoreComments": false,
-          "ignoreRegExpLiterals": true,
-          "ignoreStrings": true,
-          "ignoreTemplateLiterals": true
-        }],
-    ```
-
-- [ ] [quote-props](http://eslint.org/docs/rules/quote-props) (201 errors) (--fix) to be changed
-      to `["error", "as-needed", { "keywords": false, "unnecessary": true, "numbers": false }]`
-      ([airbnb](https://github.com/airbnb/javascript#objects--quoted-props))
 - [ ] [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars) (221 errors) to be changed
       to `["error", { "vars": "local", "args": "after-used" }]`
 - [ ] [comma-dangle](http://eslint.org/docs/rules/comma-dangle) (795 errors) (--fix)
@@ -156,6 +113,51 @@ Follow [these instructions](#using-eslint---fix) to do so.
     Note that there's an `eslint --fix` command that will do this automatically;
     you shouldn't change all 800 of these manually.
 
+## Rules that have been fixed
+
+- [x] [no-loop-func](http://eslint.org/docs/rules/no-loop-func) (1 error) to be changed to `2`
+      ([airbnb](http://eslint.org/docs/rules/valid-typeof))
+      ([example pull request](https://github.com/zulip/zulip/pull/2408))
+- [x] [space-before-blocks](http://eslint.org/docs/rules/space-before-blocks) (2 errors) (--fix)
+      ([airbnb 1](https://github.com/airbnb/javascript#whitespace--before-blocks),
+      [2](https://github.com/airbnb/javascript#functions--signature-spacing)) to be changed to `2`
+- [x] [brace-style](http://eslint.org/docs/rules/brace-style) (7 errors) (--fix)
+      to be changed to `["error", "1tbs", { "allowSingleLine": true }]`
+      ([airbnb](https://github.com/airbnb/javascript#blocks--cuddled-elses))
+- [x] [keyword-spacing](http://eslint.org/docs/rules/keyword-spacing) (12 errors)(--fix)
+      ([airbnb](https://github.com/airbnb/javascript#whitespace--around-keywords)) to be changed to
+
+    ```
+       "keyword-spacing": ["error", {
+          "before": true,
+          "after": true,
+          "overrides": {
+            "return": { "after": true },
+            "throw": { "after": true },
+            "case": { "after": true }
+          }
+        }],
+    ```
+- [x] [one-var](http://eslint.org/docs/rules/one-var) (32 errors) to be changed to `['error', 'never']`
+- [x] [no-else-return](http://eslint.org/docs/rules/no-else-return) (39 errors) to be changed to `2`
+- [x] [no-plusplus](http://eslint.org/docs/rules/no-plusplus) (40 errors) to be changed to `2`
+      ([airbnb](https://github.com/airbnb/javascript#variables--unary-increment-decrement))
+- [x] [max-len](http://eslint.org/docs/rules/max-len) (78 errors) to be changed to `2`
+      ([airbnb](https://github.com/airbnb/javascript#whitespace--max-len)) to be changed to
+
+    ```
+        "max-len": ["error", 100, 2, {
+          "ignoreUrls": true,
+          "ignoreComments": false,
+          "ignoreRegExpLiterals": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }],
+    ```
+
+- [x] [quote-props](http://eslint.org/docs/rules/quote-props) (201 errors) (--fix) to be changed
+      to `['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }]`
+      ([airbnb](https://github.com/airbnb/javascript#objects--quoted-props))
 
 ## Rules that need not be changed
 The rules below do not have an associated GCI task.
