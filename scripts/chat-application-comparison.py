@@ -6,7 +6,8 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 chat_applications_names = ["Slack", "HipChat", "Microsoft for Teams", "Mattermost", "RocketChat", "IRCCloud", "Discord"]
-task_sets = ["a", "b", "c", "d", "e"]
+# A/B/C have been released; D/E aren't quite ready yet.
+task_sets = ["d", "e"]
 
 task_name = 'Identify which features are present in %s: Set %s'
 
@@ -22,7 +23,7 @@ for chat_application_name in chat_applications_names:
             # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
             name = task_name % (chat_application_name, set.upper()),
             description = task_description % (chat_application_name, url),
-            status = 1, # 1: draft, 2: published
+            status = 2, # 1: draft, 2: published
             max_instances = 1,
             mentors = ['tabbott@zulipchat.com', 'rishig@zulipchat.com', 'niftynei@gmail.com', 'yo@vishnuks.com'],
             tags = ['user research'], # free text
