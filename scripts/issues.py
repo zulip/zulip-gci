@@ -11,7 +11,30 @@ args = parser.parse_args()
 # (Issue number, tags)
 # Catagory assumed to be coding
 issues = [
-    (2442, ['html', 'javascript']),
+    (2527, ['javascript']),
+    (2465, ['python']),
+    (2464, ['javascript']),
+    (2448, ['javascript']),
+    (2435, ['python']),
+    (2430, ['python']),
+    (2426, ['python']),
+    (2427, ['python']),
+    (2423, ['npm', 'node']),
+    (2422, ['documentation']),
+    (2396, ['python']),
+    (2357, ['javascript']),
+    (2355, ['javascript']),
+    (2350, ['python']),
+    (2327, ['python', 'bots']),
+    (2321, ['node', 'testing']),
+    (2287, ['python', 'javascript']),
+    (2247, ['python', 'javascript']),
+    (2239, ['python', 'test mocking']),
+    (2058, ['html']),
+    (2008, ['javascript', 'autocomplete']),
+    (1969, ['emoji']),
+    (1663, ['javascript']),
+    (1528, ['python']),
 ]
 
 tail_description = """
@@ -39,8 +62,6 @@ for (issue, tags) in issues:
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1],
         time_to_complete_in_days = 5, # must be between 3 and 7
-        # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = url,
         private_metadata = "issues",
         do_upload = args.force)
 
