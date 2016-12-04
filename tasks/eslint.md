@@ -92,11 +92,30 @@ Follow [these instructions](#using-eslint---fix) to do so.
 - [ ] [new-cap](http://eslint.org/docs/rules/new-cap) (1 error) to be changed
       to `"new-cap": ["error", { "newIsCap": true, "capIsNew": false }]`
       ([airbnb](https://github.com/airbnb/javascript#naming--PascalCase))
+- [ ] [array-callback-return](http://eslint.org/docs/rules/array-callback-return) (2 errors)
+      ([airbnb](https://github.com/airbnb/javascript#arrays--callback-return)) to be changed 
+      to `"error"`
 - [ ] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors) to be changed to `2`
 - [ ] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix) to be changed to `2`
+- [ ] [space-before-function-paren](http://eslint.org/docs/rules/space-before-function-paren)
+      (47 errors) --fix ([airbnb](https://github.com/airbnb/javascript#functions--signature-spacing))
+      to be changed to
+
+      ```
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+        }],
+      ```
+- [ ] [no-useless-escape](http://eslint.org/docs/rules/no-useless-escape) (55 errors)
+      ([airbnb](https://github.com/airbnb/javascript#strings--escaping)) to be changed to `"error"`
 - [ ] [no-shadow](http://eslint.org/docs/rules/no-shadow) (56 errors) to be changed to `2`
 - [ ] [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars) (221 errors) to be changed
       to `["error", { "vars": "local", "args": "after-used" }]`
+- [ ] [no-param-reassign](http://eslint.org/docs/rules/no-param-reassign.html) (233 errors)
+      ([airbnb](https://github.com/airbnb/javascript#functions--mutate-params)) to be changed to
+      `["error", { "props": true }]`
 - [ ] [comma-dangle](http://eslint.org/docs/rules/comma-dangle) (795 errors) (--fix)
       ([airbnb](https://github.com/airbnb/javascript#commas--dangling)) to be changed to
 
