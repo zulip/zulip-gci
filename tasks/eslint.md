@@ -35,7 +35,7 @@ Each task in this category involves making Zulip pass one of the rules
 in `.eslintrc.json`.
 
 Let `rule` be the rule in the task description on
-[codein.withgoogle.com](codein.withgoogle.com).
+[codein.withgoogle.com](http://codein.withgoogle.com).
 
 1. Edit `.eslintrc.json` to switch the rule from 0 (off) or 1 (warning)
    to the value specified in the task description. For example, in the 
