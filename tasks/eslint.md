@@ -89,14 +89,36 @@ Where possible, a link to the explanation from the airbnb rules docs page is pro
 If the rule has `(--fix)` next to it, it can be fixed using eslint's --fix option.
 Follow [these instructions](#using-eslint---fix) to do so.
 
+- [ ] [no-nested-ternary](http://eslint.org/docs/rules/no-nested-ternary.html) (1 error)
+      ([airbnb](https://github.com/airbnb/javascript#comparison--nested-ternaries))
+      to be changed to `"error"`
+- [ ] [no-whitespace-before-property](http://eslint.org/docs/rules/no-whitespace-before-property)
+      (1 error) (--fix) ([airbnb](https://github.com/airbnb/javascript#whitespace--chains))
+      to be changed to `"error"`
 - [ ] [new-cap](http://eslint.org/docs/rules/new-cap) (1 error) to be changed
       to `"new-cap": ["error", { "newIsCap": true, "capIsNew": false }]`
       ([airbnb](https://github.com/airbnb/javascript#naming--PascalCase))
+- [ ] [no-restricted-syntax](http://eslint.org/docs/rules/no-restricted-syntax) (2 errors)
+      ([airbnb](https://github.com/airbnb/javascript#iterators--nope)) to be changed to
+      
+      ```
+        "no-restricted-syntax": [
+             "error",
+             "ForInStatement",
+             "ForOfStatement",
+             "LabeledStatement",
+             "WithStatement"
+        ],
+      ```
 - [ ] [array-callback-return](http://eslint.org/docs/rules/array-callback-return) (2 errors)
       ([airbnb](https://github.com/airbnb/javascript#arrays--callback-return)) to be changed 
       to `"error"`
-- [ ] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors) to be changed to `2`
-- [ ] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix) to be changed to `2`
+- [ ] [newline-per-chained-call](http://eslint.org/docs/rules/newline-per-chained-call) (10 errors)
+      ([airbnb](https://github.com/airbnb/javascript#whitespace--chains)) to be changed to
+      `["error", { "ignoreChainWithDepth": 4 }]`
+- [ ] [space-in-parens](http://eslint.org/docs/rules/space-in-parens.html) (23 errors) (--fix)
+      ([airbnb](https://github.com/airbnb/javascript#whitespace--in-parens)) to be changed to
+      `["error", "never"]`
 - [ ] [space-before-function-paren](http://eslint.org/docs/rules/space-before-function-paren)
       (47 errors) --fix ([airbnb](https://github.com/airbnb/javascript#functions--signature-spacing))
       to be changed to
@@ -111,6 +133,11 @@ Follow [these instructions](#using-eslint---fix) to do so.
 - [ ] [no-useless-escape](http://eslint.org/docs/rules/no-useless-escape) (55 errors)
       ([airbnb](https://github.com/airbnb/javascript#strings--escaping)) to be changed to `"error"`
 - [ ] [no-shadow](http://eslint.org/docs/rules/no-shadow) (56 errors) to be changed to `2`
+- [ ] [space-infix-ops]http://eslint.org/docs/rules/space-infix-ops.html) (99 errors) (--fix)
+      ([airbnb](https://github.com/airbnb/javascript#whitespace--infix-ops)) to be changed to `"error"`
+- [ ] [no-padded-blocks](http://eslint.org/docs/rules/padded-blocks.html) (199 errors) (--fix)
+      ([airbnb](https://github.com/airbnb/javascript#whitespace--padded-blocks)) to be changed to
+      `["error", "never"]`
 - [ ] [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars) (221 errors) to be changed
       to `["error", { "vars": "local", "args": "after-used" }]`
 - [ ] [no-param-reassign](http://eslint.org/docs/rules/no-param-reassign.html) (233 errors)
@@ -134,6 +161,8 @@ Follow [these instructions](#using-eslint---fix) to do so.
 
 ## Rules that have been fixed
 
+- [x] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors) to be changed to `2`
+- [x] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix) to be changed to `2`
 - [x] [no-loop-func](http://eslint.org/docs/rules/no-loop-func) (1 error) to be changed to `2`
       ([airbnb](http://eslint.org/docs/rules/valid-typeof))
       ([example pull request](https://github.com/zulip/zulip/pull/2408))
