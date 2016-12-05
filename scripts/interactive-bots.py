@@ -10,12 +10,15 @@ bots = [
     ('GitHub issue', 'opens a new GitHub issue with the message content'),
     ('GitHub issue comment', 'posts a comment on a GitHub issue'),
     ('Google', 'returns a top Google search result for a given keyword'),
-    ('Alert', 'messages a user or group at a scheduled time - [#585](https://github.com/zulip/zulip/issues/585)'),
-    ('Giphy', 'displays gifs from Giphy site - [#839](https://github.com/zulip/zulip/issues/839)'),
+    ('Alert', """messages a user or group at a scheduled time -
+    [#585](https://github.com/zulip/zulip/issues/585)"""),
+    ('Giphy', """displays gifs from Giphy site -
+    [#839](https://github.com/zulip/zulip/issues/839)"""),
     ('Calendar', 'adds events to an external calendar, like Google Calendar'),
 ]
 
-description = """Zulip [contrib-bots](https://github.com/zulip/zulip/tree/master/contrib_bots/lib)
+description = """Zulip
+[contrib-bots](https://github.com/zulip/zulip/tree/master/contrib_bots/lib)
 is a boilerplate for creating interactive bots that react to messages sent
 by users.
 
