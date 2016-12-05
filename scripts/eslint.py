@@ -5,13 +5,16 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-eslint_rules = ['array-callback-return', 'space-before-function-paren', 
-                'no-useless-escape', 'no-param-reassign']
+eslint_rules = ['no-restricted-syntax', 'no-nested-ternary', 'spaced-comment',
+                'space-infix-ops', 'newline-per-chained-call', 'padded-blocks',
+                'no-whitespace-before-property', 'space-in-parens']
 
 uploaded_rules = ['new-cap', 'no-empty', 'space-before-blocks', 'yoda',
                   'brace-style', 'keyword-spacing', 'one-var', 'no-else-return',
                   'no-plusplus', 'no-shadow', 'max-len', 'quote-props',
-                  'no-unused-vars', 'comma-dangle']
+                  'no-unused-vars', 'comma-dangle',
+                  'array-callback-return', 'space-before-function-paren', 
+                  'no-useless-escape', 'no-param-reassign']
 
 description = """Fix the Zulip JavaScript code style! This is a great way to
 learn the basics of refactoring, git workflow, and good style.
