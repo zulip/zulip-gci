@@ -34,7 +34,7 @@ can be integrated with various APIs.
 There are three types of task in this category, each corresponding to one of the
  Task Types below.
 
-### Task Type A: Run the followup bot
+### Task Type A: Learn about interactive bots by running the followup bot
 
 Follow the tutorial below to test run the followup bot on your local instance.
 
@@ -95,7 +95,9 @@ doing this setup process. Add your notes as a `notes.md` file to
 *Completion criteria:* Mentors will check that the followup bot was properly
 set up.
 
-### Task Type B: Create a links bot
+### Task Type B: Learn about interactive bots by creating a links bot
+
+We recommend completing Task Type A before doing this task.
 
 Follow the tutorial below to create your first simple bot that sends private
 messages to users.
@@ -190,6 +192,9 @@ doing this setup process. Add your notes as a `notes.md` file to
 *Completion criteria:* Mentors will check that the links bot was properly set up.
 
 ### Task Type C: Create an interactive bot
+
+We recommend claiming one of these tasks after completing Task Type A
+and Task Type B.
 
 Let *feature* be the feature mentioned in the task that brought you here.
 
