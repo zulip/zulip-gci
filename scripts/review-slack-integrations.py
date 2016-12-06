@@ -16,7 +16,7 @@ For this task, review rows **%s** through **%s** in the spreadsheet.
 
 for n in range(5, 806, 30):
     low = n
-    high = max(n + 29, 806)
+    high = min(n + 29, 806)
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
         name = 'Analyze Slack integrations: rows {} to {}'.format(low, high),
