@@ -36,7 +36,7 @@ description_C = description + "For this task, do **Task Type C** for " + \
 # Task Type A
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn about interactive bots by running the followup bot.',
+    name = 'Learn about interactive bots, pt 1: running the followup bot.',
     description = description_ABD % {'type': 'A' },
     status = 2, # 1: draft, 2: published
     max_instances = 30,
@@ -55,7 +55,7 @@ upload_task(
 # Task Type B
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn about interactive bots by creating a links bot.',
+    name = 'Learn about interactive bots, pt 2: creating a links bot.',
     description = description_ABD % {'type': 'B' },
     status = 2, # 1: draft, 2: published
     max_instances = 30,
