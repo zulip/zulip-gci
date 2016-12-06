@@ -22,10 +22,6 @@ description = """Zulip
 is a boilerplate for creating interactive bots that react to messages sent
 by users.
 
-The interactive bots live in the `contrib-bots/lib` as `.py` files that define
-their specific behavior. The `contrib-bots/run.py` file defines common behaviors
-for the interactive bots that react to messages.
-
 The following tasks will introduce you to using interactive bots and creating
 simple new bots that react to messages. This group of tasks has a high creative
 potential, as you can create your own bots that react to specific messages and
@@ -41,7 +37,7 @@ description_C = description + "For this task, do **Task Type C** for " + \
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
     name = 'Run the followup bot.',
-    description = description_ABD,
+    description = description_ABD % {'type': 'A' },
     status = 2, # 1: draft, 2: published
     max_instances = 10,
     mentors = ['alicja.raszkowska@gmail.com'],
@@ -60,7 +56,7 @@ upload_task(
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
     name = 'Create a links bot.',
-    description = description_ABD,
+    description = description_ABD % {'type': 'B' },
     status = 2, # 1: draft, 2: published
     max_instances = 10,
     mentors = ['alicja.raszkowska@gmail.com'],
@@ -79,11 +75,11 @@ for bot, desc in bots:
     # Task Type C
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-        name = 'Create your %s own bot.' % (bot,),
+        name = 'Create your own %s bot.' % (bot,),
         description = description_C % {'bot': bot, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['alicja.raszkowska@gmail.com', 'tabbott@zulipchat.com']
+        mentors = ['alicja.raszkowska@gmail.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'bots'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -99,7 +95,7 @@ for bot, desc in bots:
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
     name = 'Create your own bot.',
-    description = description_ABD,
+    description = description_ABD % {'type': 'D' },
     status = 2, # 1: draft, 2: published
     max_instances = 20,
     mentors = ['alicja.raszkowska@gmail.com', 'tabbott@zulipchat.com'],
