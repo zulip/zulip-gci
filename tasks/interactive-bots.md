@@ -38,6 +38,17 @@ There are three types of task in this category, each corresponding to one of the
 
 Follow the tutorial below to test run the followup bot on your local instance.
 
+* Run the Zulip server and log in the browser as Cordelia.
+
+* Find the API keys.
+
+  You can get API keys just below the bots section in the settings page. This 
+  is how Zulip knows the request is from an authorized user.
+
+  You can also create a new bot for a user in settings - it will have its own
+  api key and email. Remember to subscribe it to the streams you want to use the
+   bot in.
+
 * Create a `~/.zuliprc-local` file with credentials:
 
   ```
@@ -51,18 +62,7 @@ Follow the tutorial below to test run the followup bot on your local instance.
   key and placeholder `<email>` with the user email. The placeholder `<dev-url>` 
   should point to your development environment URL. 
   
-  You can get API keys just below the bots section in the settings page. This 
-  is how Zulip knows the request is from an authorized user.
-
-  You can also create a new bot for a user in settings - it will have its own
-  api key and email. Remember to subscribe it to the streams you want to use the
-   bot in.
-
-* Run the Zulip server.
-
-
 * Create a `followup` stream.
-
 
 * Run the followup bot:
 
