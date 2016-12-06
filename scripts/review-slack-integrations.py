@@ -25,7 +25,7 @@ for n in range(5, 806, 30):
         max_instances = 1,
         mentors = ['michael.cordover@gmail.com', 'tomasz-kolek@o2.pl', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
         tags = ['integrations', 'research'], # free text
-        is_beginner = True
+        is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [5],
