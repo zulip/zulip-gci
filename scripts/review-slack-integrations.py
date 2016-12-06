@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-description = """Review Slack integrations! This is a great way to get an understanding
+description = """Help us research Slack's integrations! This is a great way to get an understanding
 of the different types of integrations and the enormous range of them.
 
 Instructions for these tasks are at
@@ -29,7 +29,7 @@ for n in range(5, 806, 30):
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [5],
-        time_to_complete_in_days = 3, # must be between 3 and 7
+        time_to_complete_in_days = 5, # must be between 3 and 7
         # Field currently not accessible via API. gci-support says it is coming soon.
         # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/eslint.md",
         private_metadata = "slack",
