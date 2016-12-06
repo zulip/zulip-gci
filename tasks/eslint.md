@@ -95,8 +95,6 @@ Follow [these instructions](#using-eslint---fix) to do so.
 - [ ] [array-callback-return](http://eslint.org/docs/rules/array-callback-return) (2 errors)
       ([airbnb](https://github.com/airbnb/javascript#arrays--callback-return)) to be changed 
       to `"error"`
-- [ ] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors) to be changed to `2`
-- [ ] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix) to be changed to `2`
 - [ ] [space-before-function-paren](http://eslint.org/docs/rules/space-before-function-paren)
       (47 errors) --fix ([airbnb](https://github.com/airbnb/javascript#functions--signature-spacing))
       to be changed to
@@ -140,6 +138,8 @@ Follow [these instructions](#using-eslint---fix) to do so.
 - [x] [space-before-blocks](http://eslint.org/docs/rules/space-before-blocks) (2 errors) (--fix)
       ([airbnb 1](https://github.com/airbnb/javascript#whitespace--before-blocks),
       [2](https://github.com/airbnb/javascript#functions--signature-spacing)) to be changed to `2`
+- [x] [no-empty](http://eslint.org/docs/rules/no-empty) (2 errors) to be changed to `2`
+- [x] [yoda](http://eslint.org/docs/rules/yoda) (3 errors) (--fix) to be changed to `2`
 - [x] [brace-style](http://eslint.org/docs/rules/brace-style) (7 errors) (--fix)
       to be changed to `["error", "1tbs", { "allowSingleLine": true }]`
       ([airbnb](https://github.com/airbnb/javascript#blocks--cuddled-elses))
