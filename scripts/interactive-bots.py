@@ -40,7 +40,7 @@ upload_task(
     description = description_ABD % {'type': 'A' },
     status = 2, # 1: draft, 2: published
     max_instances = 30,
-    mentors = ['alicja.raszkowska@gmail.com'],
+    mentors = ['malavarena@gmail.com'],
     tags = ['python', 'bots'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -59,7 +59,7 @@ upload_task(
     description = description_ABD % {'type': 'B' },
     status = 2, # 1: draft, 2: published
     max_instances = 30,
-    mentors = ['alicja.raszkowska@gmail.com'],
+    mentors = ['malavarena@gmail.com'],
     tags = ['python', 'bots'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -79,7 +79,7 @@ for bot, desc in bots:
         description = description_C % {'bot': bot, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['alicja.raszkowska@gmail.com', 'tabbott@zulipchat.com'],
+        mentors = ['malavarena@gmail.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'bots'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -98,7 +98,7 @@ upload_task(
     description = description_ABD % {'type': 'D' },
     status = 2, # 1: draft, 2: published
     max_instances = 20,
-    mentors = ['alicja.raszkowska@gmail.com', 'tabbott@zulipchat.com'],
+    mentors = ['malavarena@gmail.com', 'tabbott@zulipchat.com'],
     tags = ['python', 'bots', 'creative'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
