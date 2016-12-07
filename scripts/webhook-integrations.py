@@ -31,25 +31,25 @@ description_A = description + "For this task, do **Task Type A**."
 description_BCD = description + "For this task, do **Task Type %(type)s** for " + \
                   "the **%(integration)s** integration (%(desc)s)."
 
-# Task Type A
-upload_task(
-    # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn how Zulip integrations work.',
-    description = description_A,
-    status = 2, # 1: draft, 2: published
-    max_instances = 20,
-    mentors = ['tomasz-kolek@o2.pl', 'christie@authenticengine.com', 'reyhaverma@gmail.com',
-               'rishig@zulipchat.com', 'tabbott@zulipchat.com', 'zulip@feorlen.org'],
-    tags = ['python', 'integrations'], # free text
-    is_beginner = False,
-    # 1: Coding, 2: User Interface, 3: Documentation & Training,
-    # 4: Quality Assurance, 5: Outreach & Research
-    categories = [1],
-    time_to_complete_in_days = 5, # must be between 3 and 7
-    # Field currently not accessible via API. gci-support says it is coming soon.
-    # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
-    private_metadata = "webhook-integrations-A",
-    do_upload = args.force)
+# # Task Type A
+# upload_task(
+#     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+#     name = 'Learn how Zulip integrations work.',
+#     description = description_A,
+#     status = 2, # 1: draft, 2: published
+#     max_instances = 20,
+#     mentors = ['tomasz-kolek@o2.pl', 'christie@authenticengine.com', 'reyhaverma@gmail.com',
+#                'rishig@zulipchat.com', 'tabbott@zulipchat.com', 'zulip@feorlen.org'],
+#     tags = ['python', 'integrations'], # free text
+#     is_beginner = False,
+#     # 1: Coding, 2: User Interface, 3: Documentation & Training,
+#     # 4: Quality Assurance, 5: Outreach & Research
+#     categories = [1],
+#     time_to_complete_in_days = 5, # must be between 3 and 7
+#     # Field currently not accessible via API. gci-support says it is coming soon.
+#     # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+#     private_metadata = "webhook-integrations-A",
+#     do_upload = args.force)
 
 for integration, desc in integrations:
     # Task Type B
