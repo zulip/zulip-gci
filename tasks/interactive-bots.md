@@ -31,7 +31,7 @@ can be integrated with various APIs.
 
 ## Task Descriptions
 
-There are three types of task in this category, each corresponding to one of the
+There are four types of task in this category, each corresponding to one of the
  Task Types below.
 
 ### Task Type A: Learn about interactive bots by running the followup bot
