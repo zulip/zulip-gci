@@ -2,7 +2,7 @@
 
 Before beginning each and every GCI task, you should do the following:
 
-**1. Fetch new commits from [zulip/zulip] (upstream):**
+**1. Fetch new commits from zulip/zulip (upstream):**
 
 ```
 $ git fetch upstream
