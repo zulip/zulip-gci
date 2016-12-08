@@ -80,7 +80,7 @@ by:
   b. checking that the messages showed up in the `followup` stream, prepended by
   the sender email
 
-* Take screenshots showing that the bot is working, i.a. your terminal window
+* Take screenshots showing that the bot is working, i.e. your terminal window
 with the bot working, messages sent by the bot in the followup stream. Add the
 screenshots to `interactive-bots/followup/<username>/`.
 
