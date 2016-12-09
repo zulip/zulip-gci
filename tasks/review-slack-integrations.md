@@ -25,6 +25,10 @@ the [Slack API documentation](https://api.slack.com/).
 
 ## Task Description
 
+The GCI task description may be slightly misleading here.
+
+For this task you only have to look at **30** Slack integrations.
+
 Open up our
 [Slack integrations analysis spreadsheet](https://docs.google.com/spreadsheets/d/1BGD9kszda3BWgvwE4TehcfvoMuMbqE5LbZiJ2AMDL74/edit#gid=0)
 and find the row numbers indicated in your task description.
@@ -36,9 +40,6 @@ interesting or unusual about the integration in column E.
 
 If you have any questions ask on the "GCI tasks" stream (set the topic
 to "Slack integration analysis").
-
-When you have completed the task submit it for review. Each task
-requires looking at 30 Slack integrations.
 
 *Completion criteria:* Mentors will check that all of the rows have
  been completed, the data appears correct and is formatted correctly
