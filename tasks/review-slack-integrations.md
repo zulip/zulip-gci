@@ -25,7 +25,8 @@ the [Slack API documentation](https://api.slack.com/).
 
 ## Task Description
 
-The GCI task description may be slightly misleading here.
+The GCI task description for this task may have been 
+slightly misleading in the past.
 
 For this task you only have to look at **30** Slack integrations.
 
