@@ -31,8 +31,8 @@ and find the row numbers indicated in your task description.
 
 For each row, open up the URL in column C. Read over the integration
 description and try to figure out the type of integration and record
-that in column D. If there is anything interesting or unusual about
-the integration, note it in column E.
+that in column D. Add a brief description along with anything
+interesting or unusual about the integration in column E.
 
 If you have any questions ask on the "GCI tasks" stream (set the topic
 to "Slack integration analysis").
