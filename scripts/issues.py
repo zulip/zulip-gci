@@ -14,6 +14,7 @@ issues = [
 ]
 
 uploaded_issues = [
+    (2657, ['python', 'javascript']),
     (2560, ['documentation']),
     (2527, ['javascript']),
     (2465, ['python']),
