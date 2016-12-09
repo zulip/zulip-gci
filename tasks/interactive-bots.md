@@ -111,18 +111,18 @@ messages to users.
 = LinksHandler`.
 
 
-* Edit the comments appropriately:
-
-  a. `class LinksHandler(object)`
+* Edit the comment  in `class LinksHandler(object)` appropirately:
+  
   > This plugin facilitates creating a list of resources you want to save while
   using Zulip. It looks for messages starting with "@link" or "@resource".
   > In this example, we send resources to private messages.
 
-
-  b.  `def usage(self)`
+* Edit the return statement in `def usage(self)`:
+  
   > This plugin will allow users to flag messages as being resources and store
   them in private messages with the bot. Users should preface messages with
   "@link" or "@resource".
+
 
 
 * Edit the `triage_message`:
