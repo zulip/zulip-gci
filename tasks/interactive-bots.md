@@ -64,6 +64,8 @@ Follow the tutorial below to test run the followup bot on your local instance.
   
 * Create a `followup` stream.
 
+* Use "Manage Streams" to subscribe your bot to the following streams: devel, social, and followup
+
 * Run the followup bot:
 
   ```
@@ -75,7 +77,7 @@ Follow the tutorial below to test run the followup bot on your local instance.
 by:
 
   a. sending a few messages starting with `@followup` and `@follow-up` from
-  different streams
+  different streams, such as "devel" and "social"
 
   b. checking that the messages showed up in the `followup` stream, prepended by
   the sender email
