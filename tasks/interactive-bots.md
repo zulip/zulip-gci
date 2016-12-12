@@ -31,22 +31,23 @@ can be integrated with various APIs.
 
 ## Task Descriptions
 
-There are four types of task in this category, each corresponding to one of the
+There are four types of tasks in this category, each corresponding to one of the
  Task Types below.
 
 ### Task Type A: Learn about interactive bots by running the followup bot
 
-Follow the tutorial below to test run the followup bot on your local instance.
+Follow the tutorial below to test run the followup bot on your Zulip instance
+(either local or in your droplet).
 
 * Run the Zulip server and log in the browser as Cordelia.
 
 * Find the API keys.
 
-  You can get API keys just below the bots section in the settings page. This 
+  You can get API keys just below the bots section in the settings page. This
   is how Zulip knows the request is from an authorized user.
 
   You can also create a new bot for a user in settings - it will have its own
-  api key and email. Remember to subscribe it to the streams you want to use the
+  API key and email. Remember to subscribe it to the streams you want to use the
    bot in.
 
 * Create a `~/.zuliprc-local` file with credentials:
@@ -59,32 +60,48 @@ Follow the tutorial below to test run the followup bot on your local instance.
   ```
 
   Replace the placeholder `<api-key>` in the example with an existing user API
-  key and placeholder `<email>` with the user email. The placeholder `<dev-url>` 
-  should point to your development environment URL. 
-  
+  key and placeholder `<email>` with the user email. The placeholder `<dev-url>`
+  should point to your development environment URL.
+
+  If you're running your bot in the droplet, alongside your Zulip instance, the
+  `<dev-url>` will be `localhost:9991`.
+
 * Create a `followup` stream.
 
-* Use "Manage Streams" to subscribe your bot to the following streams: devel, social, and followup
+* Use `Manage Streams` to subscribe your bot to the following streams: `devel`,
+`social`, and `followup`.
 
-* Run the followup bot:
+* Run the followup bot outside of your VM:
 
   ```
   cd ~/zulip/contrib_bots
   python run.py lib/followup.py --config-file ~/.zuliprc-local
   ```
 
+  Make sure to point to your `.zuliprc-local` file - if you have created it in
+  a different folder than `~`, you have to point to the right folder, e.g.
+  `../../.zuliprc-local`.
+
 * Test manually that the followup bot is working on the local Zulip instance,
 by:
 
   a. sending a few messages starting with `@followup` and `@follow-up` from
-  different streams, such as "devel" and "social"
+  different streams, such as `devel` and `social`
 
   b. checking that the messages showed up in the `followup` stream, prepended by
   the sender email
 
-* Take screenshots showing that the bot is working, i.e. your terminal window
-with the bot working, messages sent by the bot in the followup stream. Add the
-screenshots to `interactive-bots/followup/<username>/`.
+* Take screenshots showing that the bot is working, make sure to have screenshots
+of:
+
+ - your terminal window with the bot running, including the command you used to
+ run the bot and the output with the bot description
+ - messages sent to the bot in the `devel` and `social` streams
+ - messages sent by the bot in the followup stream
+ - any other screenshots you find relevant
+
+Add the screenshots to `interactive-bots/followup/<username>/`. Make sure your
+filenames include no white spaces or underscores, use dashes (`-`) as connectors.
 
 * Note down any places you got stuck, problems or errors you ran into while
 doing this setup process. Add your notes as a `notes.md` file to
@@ -114,17 +131,16 @@ messages to users.
 
 
 * Edit the comment  in `class LinksHandler(object)` appropirately:
-  
+
   > This plugin facilitates creating a list of resources you want to save while
   using Zulip. It looks for messages starting with "@link" or "@resource".
   > In this example, we send resources to private messages.
 
 * Edit the return statement in `def usage(self)`:
-  
+
   > This plugin will allow users to flag messages as being resources and store
   them in private messages with the bot. Users should preface messages with
   "@link" or "@resource".
-
 
 
 * Edit the `triage_message`:
@@ -153,8 +169,7 @@ messages to users.
   ```
 
 * Create a links bot in settings for an existing user. Use its credentials in
-`~/.zuliprc-local`. Remember to subscribe the bot to the streams you want to use
- it in.
+`~/.zuliprc-local`. Subscribe the bot to `devel` and `social` streams.
 
 * Check that the bot is working as expected:
 
@@ -179,9 +194,17 @@ messages to users.
 
   - it sends a private message to the author of the original message
 
-* Take screenshots showing that the bot is working, i.a. your terminal window
-with the bot working, messages sent by the bot to the users. Add the screenshots
- to `interactive-bots/links/<username>/`.
+* Take screenshots showing that the bot is working, make sure to have screenshots
+of:
+
+ - your terminal window with the bot running, including the command you used to
+ run the bot and the output with the bot description
+ - messages sent to the bot in the `devel` and `social` streams
+ - messages sent by the bot in the private messages to the author
+ - any other screenshots you find relevant
+
+ Add the screenshots to `interactive-bots/links/<username>/`. Make sure your
+ filenames include no white spaces or underscores, use dashes (`-`) as connectors.
 
 * Note down any places you got stuck, problems or errors you ran into while
 doing this setup process. Add your notes as a `notes.md` file to
@@ -226,6 +249,8 @@ should it post any output. Should you have any doubts, discuss them in the Zulip
 requirements.
 
 ### Task Type D: Create your own bot
+
+We recommend claiming this task after completing Task Type A and Task Type B.
 
 * Come up with an idea for your own interactive bot that would improve Zulip.
 Make sure to make clear what would be expected of the bot -  what messages
