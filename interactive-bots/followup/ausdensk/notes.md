@@ -1,0 +1,2 @@
+Issues:
+When I tried to run the bot first, there was an error that the zuliprc-local-file was not found. After a while, I figured out that I had to go a folder back to access the file. That was my only real issue, I didn't get any other problems doing the rest of the setup.
