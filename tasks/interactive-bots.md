@@ -130,7 +130,7 @@ messages to users.
 = LinksHandler`.
 
 
-* Edit the comment  in `class LinksHandler(object)` appropirately:
+* Edit the comment  in `class LinksHandler(object)` appropriately:
 
   > This plugin facilitates creating a list of resources you want to save while
   using Zulip. It looks for messages starting with "@link" or "@resource".
