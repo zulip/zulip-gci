@@ -68,7 +68,7 @@ Follow the tutorial below to test run the followup bot on your Zulip instance
 
 * Create a `followup` stream.
 
-* Use `Manage Streams` to subscribe your bot to the following streams: `devel`,
+* Use `Manage Streams` to subscribe your bot (if you created one) to the following streams: `devel`,
 `social`, and `followup`.
 
 * Run the followup bot outside of your VM:
@@ -258,7 +258,7 @@ should it react to, what should it do with the message content and where should
 it post any output.
 
 * Present your idea for an interactive bot on the `interactive bots` topic on
-the `GCI tasks` stream. Consult with mentors and make sure your idea was approved
+the `GCI tasks` stream. Consult with mentors and make sure your idea is approved
  before you start coding.
 
 * Create your interactive bot at `~/zulip/contrib_bots/lib/<bot_name>` as a
