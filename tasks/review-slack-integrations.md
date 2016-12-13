@@ -6,7 +6,7 @@ A Zulip integration is a special type of bot that brings information
 from the outside world into Zulip. Zulip integrations allow teams to
 stay up-to-date on code changes, issue tickets, build system results,
 tweets, and more. Zulip currently has over 50 integrations, but there
-are dozens more that would be valuabled to add.
+are dozens more that would be valuable to add.
 
 To get an idea of the type of integrations out there, we've grabbed a
 list of all the apps available for Slack, another chat tool. We'd like
