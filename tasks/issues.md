@@ -37,7 +37,7 @@ topic to the issue number) or add comments to the discussion on
 Github.
 
 When you have completed the task, submit a pull request to the
-zulip/zulip github respository. Make sure you reference the issue
+`zulip/zulip` github respository. Make sure you reference the issue
 number in the
 [commit message](https://zulip.readthedocs.io/en/latest/version-control.html#commit-messages).
 
