@@ -39,7 +39,7 @@ to make sure you're familiar with how to edit the documentation.
 
 ## Task Descriptions
 
-There are three types of task in this category, each corresponding to one of
+There are two types of task in this category, each corresponding to one of
 the Task Types below. Let *feature* be the feature mentioned in the task
 that brought you here (if relevant).
 
@@ -51,7 +51,7 @@ that brought you here (if relevant).
   index page), and then edit it to make sure it is high quality and
   covers the topic fully.  You'll still want to do the research
   suggested in this task description, however.
-* Look at the link in the task description to how *feature* works in
+* Look at the link in the task description to see how *feature* works in
   Slack.
 * Play with the Zulip UI to learn how *feature* works in Zulip.
   Browse the documentation linked from the gear menu in the upper-left
