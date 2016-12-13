@@ -37,7 +37,7 @@ rules. You can find the list of all the rules not being checked in the
 `check_pep8` function in `tools/lint-all`. Each rule has a name like LNNN,
 where L is a letter and the Ns are numbers.
 
-Let *rules* be the rules in the task description on codein.withgoogle.com.
+Let *rules* be the rules in the task description on [codein.withgoogle.com](https://www.codein.withgoogle.com).
 
 Steps for completing the task:
 
