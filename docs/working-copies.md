@@ -24,7 +24,7 @@ Sometimes you need to get commits.  Here are some scenarios:
 
 Sometimes you want to publish commits.  Here are scenarios:
 
-- You push code from local copy to your Github fork.  (You usually
+- You push code from your local copy to your Github fork.  (You usually
   want to put the commit on a feature branch.)
 - You submit a PR to the official Zulip repo.
 
@@ -47,7 +47,7 @@ The following commands are useful for moving commits between
 working copies:
 
 - `git fetch`: This grabs code from another repo to your local copy.
-- `git push`: This pushes code from your repo to one of the remotes.
+- `git push`: This pushes code from your local repo to one of the remotes.
 - `git remote`: This helps you configure short names for remotes.  (Your
   mentor can help you with this.)
 - `git pull`: **Do not use this, please**!
