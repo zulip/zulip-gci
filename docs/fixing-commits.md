@@ -6,7 +6,7 @@ This is mostly from https://help.github.com/articles/changing-a-commit-message/#
 
 ### Changing the last commit
 1. Make your changes to the files
-2. Run `git add <filename>` to add each file
+2. Run `git add <filename>` to add one file or `git add <filename1> <filename2> ...` to add multiple files
 3. `git commit --amend`
 
 ## Fixing older commits
