@@ -6,7 +6,7 @@ have. To do this you will need to use the other chat tools and
 determine if they have or do not have the given features.
 
 There are 5 sets of tasks in this section. The first 3 sets involve
-testing whether a features from a given list are present in a
+testing whether a feature from a given list are present in a
 competing chat application. The last 2 sets contain open-ended
 questions.
 
@@ -85,12 +85,12 @@ Spreadsheet with the following columns:
   GIFs sent by the users?
 - **Share Code Snippets:** Does the chat application allow users to
   quickly create code snippets and share it other users?
-- **Desktop Application:** Does that chat application have a native
+- **Desktop Application:** Does the chat application have a native
   desktop application? Mention the operating system(s) for which it is
   available.
-- **Mobile App:** Does that chat application have a native mobile app?
+- **Mobile App:** Does the chat application have a native mobile app?
   Mention the mobile platform(s) for which it is available.
-- **Apple Watch App:** Does that chat application have an Apple Watch
+- **Apple Watch App:** Does the chat application have an Apple Watch
   app?
 - **Themes:** Can the users or admins change how the application looks
   using themes?
@@ -236,17 +236,17 @@ Spreadsheet with the following columns:
 - **Change handle/display name:** Can the handle or display name be
   changed?
 - **Status Message:** Can users show custom status messages? 
-- **Sign out of all other sessions:** Does the chat application allows
+- **Sign out of all other sessions:** Does the chat application allow
   users to log out of all the other sessions?
 - **Support Markdown:** Does the chat application support message
   formatting using markdown?
-- **Unread message count:** Does the chat application shows the count
+- **Unread message count:** Does the chat application show the count
   of messages that are not read by the user?
 - **Message seen:** Does the chat application show whether the message
   has been seen by the receiver? 
-- **User is typing:** Does the chat application notifies other users
+- **User is typing:** Does the chat application notify other users
   when a user is typing?
-- **Message reactions:** Can users react to a message using emoji?
+- **Message reactions:** Can users react to a message using emojis?
   Similar to Github comment reactions.
 - **Share message:** Can a message be shared to other channels or
   users?
@@ -271,15 +271,15 @@ Spreadsheet with the following columns:
   (#example)? If yes how are they used?
 - **Auto highlight sent messages:** Does the chat application
   highlight the messages sent by the user?
-- **Last seen online:** Does the chat application shows when was a
-  user last seen online? Can it be disabled?
+- **Last seen online:** Does the chat application show when a
+  user was last seen online? Can it be disabled?
 - **Buttons:** Buttons are used by some chat applications to make chat
   conversations more interactive. eg: An integration can send a poll
   to the channel with 2 different buttons. The buttons can be clicked
-  to vote in the poll. Does the chat application supports buttons?
+  to vote in the poll. Does the chat application support buttons?
 - **User joined/user left:** Does the chat application display user
   joined/user left messages? Can it be configured by admin?
-- **Reminder:** Can users use chat application for setting reminders?
+- **Reminder:** Can users use the chat application for setting reminders?
   The chat application would notify the user or channel at the time of
   the reminder.
 - **User Documentation:** Is there a documentation for users?
@@ -304,21 +304,21 @@ directory in [zulip-gci.git](https://github.com/zulip/zulip-gci/).
 
 - Does the chat application have threaded conversations similar to
   Zulip?  If yes how are they implemented? Take screenshots.
-- Compare the chat applications' search functionality with Zulip's.
+- Compare the chat application's search functionality with Zulip's.
 - Describe the pricing structure of the chat application.
 - Who can create channels? How can admins restrict it? Take
-  screesshots.
+  screenshots.
 - What are the different type of roles for a user? (eg admin,
   moderator, user etc) Explain how the roles differ.
 - Does the application have a user profile page or similar? What
-  details are displayed? Take screesnshots.
+  details are displayed? Take screenshots.
 - Do they have a guest mode, and if so, what do guests have access to?
 - Public organization - Is there an option that allows users to join
-  the organization without invite? If yes how can they do that? Take
+  the organization without an invite? If yes how can they do that? Take
   screenshots.
 - Can a user be member of multiple teams or organizations in the chat
   application? If yes how how will the user login to a specific
-  organization?  How can user identify which all teams they are a part
+  organization?  How can user identify which teams they are a part
   of? Take screenshots.
 
 ## Set E
