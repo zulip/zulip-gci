@@ -1,0 +1,1 @@
+While setting up the links bot, I didn't run into any problems. At some point, I accidentally messed up my task branch my merging it into another, but I fixed it pretty fast with "git reset --hard" and I wouldn't count that as a bot-related issue. ;)
