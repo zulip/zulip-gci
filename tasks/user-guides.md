@@ -51,8 +51,6 @@ that brought you here (if relevant).
   index page), and then edit it to make sure it is high quality and
   covers the topic fully.  You'll still want to do the research
   suggested in this task description, however.
-* Look at the link in the task description to see how *feature* works in
-  Slack.
 * Play with the Zulip UI to learn how *feature* works in Zulip.
   Browse the documentation linked from the gear menu in the upper-left
   to see if it's documented there.  If you can't find out how to do
@@ -68,9 +66,8 @@ that brought you here (if relevant).
   `templates/zerver/help/` directory of
   https://github.com/zulip/zulip/.  The end result should be a nice
   and clear user guide for *feature*, written in Markdown.
-* Add a link to your guide under the "Table of contents"
-  heading in `templates/zerver/help/index.md`. One goal is that by the
-  end of GCI, that page will just be the table of contents.
+* Add a link to your guide under the "Using Zulip"
+  heading in `templates/zerver/help/index.md`.
 * Verify your documentation looks as you intended and all links work;
   it's common to make small mistakes in the markdown that cause your
   documentation to not look right.
@@ -111,9 +108,12 @@ templates/zerver/help/feature.md in Markdown, reload your browser on
 `http://<hostname>:9991/help/feature`, where `<hostname>` is either
 `localhost` or the hostname of your VM.
 
-* It is *extremely important* that you not copy text or images from other
-products’ documentation. The companies that develop those products own the
-copyright to their documentation. If you are not sure what constitutes
-copying, please ask on the "user guides" topic of the "GCI tasks" stream at
-chat.zulip.org!
+* You can check out the other guides in `templates/zerver/help/` or at
+  https://get.slack.help/hc/en-us/categories/200111606-Using-Slack for
+  inspiration.
 
+* That being said, it is *extremely important* that you not copy text or
+  images from other products’ documentation. The companies that develop
+  those products own the copyright to their documentation. If you are not
+  sure what constitutes copying, please ask on the "user guides" topic of
+  the "GCI tasks" stream at chat.zulip.org!
