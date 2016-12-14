@@ -34,6 +34,64 @@ features = [
     ("Keyboard Shortcuts", "https://get.slack.help/hc/en-us/articles/201374536-Slack-keyboard-shortcuts"),
 ]
 
+features = [
+    # Account Basics
+    'Change your avatar', 'Change the date and time format',
+    'Join a Zulip organization', 'Sign in to Zulip', 'Deactivate your account',
+    # Messages - Sending
+    'Send a stream message', 'Send a private message', 'Preview your message before sending',
+    'Attach a file to a message', 'Restore the last unsent message',
+    'Automatically link to an external issue tracker',
+    'Add a link preview', 'Enable or disable pressing enter to send',
+    'Verify that your message has been successfully sent',
+    'What to do if the server returns an error', 'Send a status message',
+    'Make an announcement', 'Send a message in a different language', 'Reply to a message',
+    # Messages - Reading
+    'View the Markdown source of a message', 'View the exact time a message was sent',
+    'View information about the message sender', 'View an image at full size',
+    'Collapse a message', 'Star a message', 'Share a message or conversation',
+    # Messages - Editing
+    'Edit or delete a message', 'Change the topic of a message',
+    'Change the topic of a group of messages',
+    # People
+    'See whether someone is here or away', 'Invite a friend to Zulip',
+    'Send someone a private message', 'Send a group of people a private message',
+    # Streams & Topics
+    'About streams and topics', 'Browse and join streams',
+    'View your current stream subscriptions', 'View messages from a stream',
+    'The #announce stream', 'Add or invite someone to a stream',
+    'Change the stream description', 'Rename a stream', 'Preview a stream',
+    'Unsubscribe from a stream', 'Change who can join a stream', 'Pin a stream',
+    'Change the color of a stream', 'Send an email to a stream', 'Remove someone from a stream',
+    'Delete a stream',
+    # Apps
+    'Use Zulip on Mac OS', 'Use Zulip on Linux', 'Use Zulip on Windows', 'Use Zulip on Android',
+    'Use Zulip on iOS', 'Use Zulip in a terminal',
+]
+
+# Posted Dec 13 (then unposted)
+# features_round2 = [
+#     # Account Basics
+#     ("Join a Zulip Organization", "https://get.slack.help/hc/en-us/articles/212675257-Join-a-Slack-team"),
+#     ("Learn about Away Statuses", "https://get.slack.help/hc/en-us/articles/201864558-Set-your-Slack-status"),
+#     # Messages
+#     ("Send and Read Messages", "https://get.slack.help/hc/en-us/articles/201457107-Send-and-read-messages"),
+#     ("Make an Announcement", "https://get.slack.help/hc/en-us/articles/202009646-Make-an-announcement"),
+#     # Streams & Private Messages
+#     ("Private Messages and Group PMs", "https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs"),
+#     ("The #announce Stream", "https://get.slack.help/hc/en-us/articles/220105027-The-general-channel"),
+#     ("Organize your Streams", "https://get.slack.help/hc/en-us/articles/212596808-Organize-your-channels-and-direct-messages"),
+#     ("Invite Members to a Stream", "https://get.slack.help/hc/en-us/articles/201980108-Invite-team-members-to-a-channel"),
+#     ("Set a Stream Description", "https://get.slack.help/hc/en-us/articles/201654083-Set-a-channel-topic-or-purpose"),
+#     ("Unsubscribe from a Stream", "https://get.slack.help/hc/en-us/articles/201375146-Leave-a-channel"),
+#     # Notifications
+#     ("Set up Zulip Notifications", "https://get.slack.help/hc/en-us/articles/201895138-Set-up-Slack-notifications"),
+#     ("Mute a Stream", "https://get.slack.help/hc/en-us/articles/201563847-Archive-a-channel"),
+#     ("Add a Custom Alert Word" , "https://get.slack.help/hc/en-us/articles/201398467-Highlight-word-notifications"),
+# ]
+
+
+
 description = """Good user guides help users and search engines discover Zulip features.
 Help write user guides for Zulip!
 
@@ -42,16 +100,15 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md.
 
 """
 
-description_A_and_B = description + "For this task, do Task Type A for the **%s** feature.\n" + \
-"Slack's guide for this feature is at %s."
+description_A_and_B = description + "For this task, do Task Type A for the **%s** feature."
 description_C = description + "For this task, do **Part 3** for any three features."
 
-for feature, slack_link in features:
+for feature in features:
     # Part 1
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
         name = 'Write a user guide for the %s feature.' % (feature,),
-        description = description_A_and_B % (feature, slack_link),
+        description = description_A_and_B % (feature,),
         status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['sonaligpt0@gmail.com', 'christie@authenticengine.com',
