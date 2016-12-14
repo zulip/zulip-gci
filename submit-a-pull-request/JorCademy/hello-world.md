@@ -1,2 +1,2 @@
 Hello world
-I am JorCademy. :tada:
+I am JorCademy! :tada:
