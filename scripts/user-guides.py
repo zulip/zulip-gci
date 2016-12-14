@@ -57,12 +57,11 @@ features = [
     'See whether someone is here or away', 'Invite a friend to Zulip',
     'Send someone a private message', 'Send a group of people a private message',
     # Streams & Topics
-    'About streams and topics', 'Browse and join streams',
-    'View your current stream subscriptions', 'View messages from a stream',
-    'The #announce stream', 'Add or invite someone to a stream',
+    'About streams and topics', 'View your current stream subscriptions',
+    'View messages from a stream', 'The #announce stream', 'Add or invite someone to a stream',
     'Change the stream description', 'Rename a stream', 'Preview a stream',
     'Unsubscribe from a stream', 'Change who can join a stream', 'Pin a stream',
-    'Change the color of a stream', 'Send an email to a stream', 'Remove someone from a stream',
+    'Change the color of a stream', 'Message a stream by email', 'Remove someone from a stream',
     'Delete a stream',
     # Apps
     'Use Zulip on Mac OS', 'Use Zulip on Linux', 'Use Zulip on Windows', 'Use Zulip on Android',
