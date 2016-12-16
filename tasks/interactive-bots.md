@@ -123,7 +123,10 @@ We recommend completing Task Type A before doing this task.
 Follow the tutorial below to create your first simple bot that sends private
 messages to users.
 
-* Duplicate the `followup.py` file under `links.py`, to build on existing code.
+* Make a copy of `followup.py` under `contrib_bots/lib` and name it `links.py`, to build on existing code.
+  ```
+  cp followup.py links.py
+  ```
 
 
 * Change the class name to `LinksHandler` and the last line to `handler_class
@@ -143,10 +146,19 @@ messages to users.
   "@link" or "@resource".
 
 
-* Edit the `triage_message`:
+* Edit the comments of `triage_message`:
 
   ```
-  if message['display_recipient'] == 'links':
+  # This next line of code is defensive, as we
+  # never want to get into an infinite loop of posting links
+  # for own links!
+  ```
+
+
+* Edit the if statements of `triage_message`:
+
+  ```
+  if message['display_recipient'] == 'followup':
       return False
   is_link = (original_content.startswith('@link') or
              original_content.startswith('@resource'))
@@ -157,7 +169,7 @@ messages to users.
   The bot now responds to `@link` and `@resource`.
 
 
-* Edit the `handle_message`:
+* Edit the if statements of `handle_message`:
 
   ```
   if original_content.startswith('@link'):
@@ -167,6 +179,7 @@ messages to users.
       new_content = original_content.replace('@resource',
                                          'from %s:' % (original_sender,))
   ```
+
 
 * Create a links bot in settings for an existing user. Use its credentials in
 `~/.zuliprc-local`. Subscribe the bot to `devel` and `social` streams.
