@@ -1,0 +1,1 @@
+I didn't come across any problems or errors while doing this task itself, because the previous task (the followup bot) already teached me almost everything I needed for this one. The only thing that took me a little while before I got it was some of the basic git stuff, because i'm quite new to git.
