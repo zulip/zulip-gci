@@ -71,16 +71,19 @@ Follow the tutorial below to test run the followup bot on your Zulip instance
 * Use `Manage Streams` to subscribe your bot (if you created one) to the following streams: `devel`,
 `social`, and `followup`.
 
-* Run the followup bot outside of your VM:
+* Run the followup bot:
 
   ```
   cd ~/zulip/contrib_bots
   python run.py lib/followup.py --config-file ~/.zuliprc-local
   ```
 
-  Make sure to point to your `.zuliprc-local` file - if you have created it in
-  a different folder than `~`, you have to point to the right folder, e.g.
-  `../../.zuliprc-local`.
+    Make sure to point to your `.zuliprc-local` file - if you have created it in
+    a different folder than `~`, you have to point to the right folder, e.g.
+    `../../.zuliprc-local`.
+
+    **Note:** if you're using Vagrant, make sure you run the bot **outside** of the Vagrant container.
+
 
 * Test manually that the followup bot is working on the local Zulip instance,
 by:
