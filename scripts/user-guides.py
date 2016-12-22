@@ -68,6 +68,29 @@ features = [
     'Use Zulip on iOS', 'Use Zulip in a terminal',
 ]
 
+features = [
+    # Notifications
+    'Mute a stream', 'Mute a topic', 'Set notifications for a single stream',
+    'Configure desktop notifications', 'Configure audible notifications',
+    'Configure email notifications', 'Configure mobile push notifications',
+    'Add an alert word',
+    # Tools & Customization
+    'Keyboard shortcuts', 'Add a bot or integration',
+    # Administration - Organization Settings
+    "Change your organization's name", 'Restrict user email addresses to certain domains',
+    'Allow anyone to join without an invitation', 'Only allow admins to invite new users',
+    'Only allow admins to create new streams', 'Restrict editing of old messages and topics',
+    'Change the default language', 'Add custom emoji', 'Configure authentication methods',
+    'Add a custom linkification filter',
+    # Administration - Users & Bots
+    'Deactivate or reactivate a user', 'Deactivate or reactivate a bot',
+    'Make a user an administrator', "Change a user's name", 'View the list of installed bots',
+    # Administration - Streams
+    'Delete a stream', 'Set default streams for new users', 'Rename a stream',
+    "Change a stream's description", 'Make a public stream private',
+    'Add or remove users from a stream',
+]
+
 # Posted Dec 13 (then unposted)
 # features_round2 = [
 #     # Account Basics
