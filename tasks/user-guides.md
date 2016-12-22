@@ -61,10 +61,11 @@ that brought you here (if relevant).
   Zulip `GCI tasks` stream to get feedback from mentors and other GCI
   participants on what you plan to include in your documentation.
 * Now work on writing your new documentation!  You should add your
-  documentation to a new file with a clear, lowercase, hyphenated name
-  like `edit-messages` or `mention-a-team-member`, to the
-  `templates/zerver/help/` directory of
-  https://github.com/zulip/zulip/.  The end result should be a nice
+  documentation to a new file to the `templates/zerver/help/` directory of
+  https://github.com/zulip/zulip/.
+  The name of the file should be a lowercase, hyphenated version of *feature*
+  like `view-the-markdown-source-of-a-message` for the feature "View the Markdown source of a message".
+  The end result should be a nice
   and clear user guide for *feature*, written in Markdown.
 * Add a link to your guide under the "Using Zulip"
   heading in `templates/zerver/help/index.md`.
