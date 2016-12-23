@@ -1,12 +1,12 @@
 #GCI Tasks: interactive bots
 
-## Prerequisites
+## Project Essentials
 
 * A working Zulip development environment. See
   [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions on
   how to set one up.
 
-* You need to know how to create a GitHub pull request. Check out the
+* Knowledge on how to create a GitHub pull request. Check out the
   [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)
   task if you aren't sure how to do this, or read through the task description
   [here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
@@ -16,18 +16,16 @@
 
 ## Background
 
-Zulip [contrib-bots](https://github.com/zulip/zulip/tree/master/contrib_bots/lib)
-is a boilerplate for creating interactive bots that react to messages sent
+The Zulip [contrib-bots](https://github.com/zulip/zulip/tree/master/contrib_bots/lib)
+boilerplate is used for creating interactive bots that react to messages sent
 by users.
 
-The interactive bots live in the `contrib-bots/lib` as python files ('.py') that define
-their specific behavior. The `contrib-bots/run.py` file defines common behaviors
+The interactive bots are constituted of python files ('.py') in `contrib-bots/lib` that define
+each bot's specific behavior. The `contrib-bots/run.py` file defines common behaviors
 for the interactive bots that react to messages.
 
 The following tasks will introduce you to using interactive bots and creating
-simple new bots that react to messages. This group of tasks has a high creative
-potential, as you can create your own bots that react to specific messages and
-can be integrated with various APIs.
+new simple bots that react to messages. The skills taught in this task can be used to create your own bots that can react to specific messages and be integrated with various APIs.
 
 ## Task Descriptions
 
@@ -82,13 +80,13 @@ Follow the tutorial below to test run the followup bot on your Zulip instance
   a different folder than `~`, you have to point to the right folder, e.g.
   `../../.zuliprc-local`.
 
-* Test manually that the followup bot is working on the local Zulip instance,
+* Test manually that the followup bot is working on the local Zulip instance
 by:
 
-  a. sending a few messages starting with `@followup` and `@follow-up` from
+  A. sending a few messages starting with `@followup` and `@follow-up` from
   different streams, such as `devel` and `social`
 
-  b. checking that the messages showed up in the `followup` stream, prepended by
+  B. checking that the messages showed up in the `followup` stream, prepended by
   the sender email
 
 * Take screenshots showing that the bot is working, make sure to have screenshots
@@ -101,19 +99,19 @@ of:
  - any other screenshots you find relevant
 
 Add the screenshots to `interactive-bots/followup/<username>/`. Make sure your
-filenames include no white spaces or underscores, use dashes (`-`) as connectors.
+filenames use dashes (`-`) in place of spaces or underscores.
 
-* Note down any places you got stuck, problems or errors you ran into while
-doing this setup process. Add your notes as a `notes.md` file to
+* Take note of any places you got stuck and problems or errors you ran into while
+doing this setup process. Add your notes as a `notes.md` file in
 `interactive-bots/followup/<username>/`.
 
-* Create a commit with the screenshots and notes, with commit message
+* Create a commit with the screenshots and notes, with the commit message
 `interactive bots: Run the followup bot for <username>.`.
 
-* Create a pull request in the `zulip/zulip-gci` repository, with title
-`interactive bots: Run the followup bot for <username>`. Link to your GCI task in comment section.
+* Create a pull request in the `zulip/zulip-gci` repository, with the title
+`interactive bots: Run the followup bot for <username>`. Include a link to your GCI task in comment section.
 
-*Completion criteria:* Mentors will check that the followup bot was properly
+*Completion criteria:* Your project mentors will check that the followup bot was properly
 set up.
 
 ### Task Type B: Learn about interactive bots by creating a links bot
@@ -133,7 +131,7 @@ messages to users.
 = LinksHandler`.
 
 
-* Edit the comment  in `class LinksHandler(object)` appropriately:
+* Rewrite the comment  in `class LinksHandler(object)` accordingly:
 
   > This plugin facilitates creating a list of resources you want to save while
   using Zulip. It looks for messages starting with "@link" or "@resource".
@@ -146,7 +144,7 @@ messages to users.
   "@link" or "@resource".
 
 
-* Edit the comments of `triage_message`:
+* Edit the comments in `triage_message`:
 
   ```
   # This next line of code is defensive, as we
@@ -155,7 +153,7 @@ messages to users.
   ```
 
 
-* Edit the if statements of `triage_message`:
+* Edit the if statements in `triage_message`:
 
   ```
   if message['display_recipient'] == 'followup':
@@ -166,7 +164,7 @@ messages to users.
   return is_link
   ```
 
-  The bot now responds to `@link` and `@resource`.
+  The bot can now detect `@link` and `@resource` in a message.
 
 
 * Edit the if statements of `handle_message`:
@@ -182,13 +180,13 @@ messages to users.
 
 
 * Create a links bot in settings for an existing user. Use its credentials in
-`~/.zuliprc-local`. Subscribe the bot to `devel` and `social` streams.
+`~/.zuliprc-local`. Subscribe the bot to the `devel` and `social` streams.
 
-* Check that the bot is working as expected:
+* Check that the bot is working as expected. A functional bot should:
 
-  - it reacts to the `@link` and `@resource` at the beginning of a message
+  - react to the `@link` and `@resource` at the beginning of a message
 
-  - it currently posts the message to the followup stream, as the followup bot
+  - currently post the message to the followup stream, as the followup bot
   would
 
 * Edit the `handle_message`:
@@ -201,7 +199,7 @@ messages to users.
   ))
   ```
 
-* Check that the bot is working as expected:
+* Check that the bot meets these requirements:
 
   - it reacts to the `@link` and `@resource` at the beginning of a message
 
@@ -213,23 +211,24 @@ of:
  - your terminal window with the bot running, including the command you used to
  run the bot and the output with the bot description
  - messages sent to the bot in the `devel` and `social` streams
- - messages sent by the bot in the private messages to the author
+ - messages sent by the bot in the followup stream
  - any other screenshots you find relevant
 
- Add the screenshots to `interactive-bots/links/<username>/`. Make sure your
- filenames include no white spaces or underscores, use dashes (`-`) as connectors.
+Add the screenshots to `interactive-bots/followup/<username>/`. Make sure your
+filenames use dashes (`-`) in place of spaces or underscores.
 
-* Note down any places you got stuck, problems or errors you ran into while
-doing this setup process. Add your notes as a `notes.md` file to
-`interactive-bots/links/<username>/`.
+* Take note of any places you got stuck and problems or errors you ran into while
+doing this setup process. Add your notes as a `notes.md` file in
+`interactive-bots/followup/<username>/`.
 
-* Create a commit with the screenshots and notes, with commit message
-`interactive bots: Run the links bot for <username>.`.
+* Create a commit with the screenshots and notes, with the commit message
+`interactive bots: Run the followup bot for <username>.`.
 
-* Create a pull request in the `zulip/zulip-gci` repository, with title
-`interactive bots: Run the links bot for <username>`. Link to your GCI task in comment section.
+* Create a pull request in the `zulip/zulip-gci` repository, with the title
+`interactive bots: Run the followup bot for <username>`. Include a link to your GCI task in comment section.
 
-*Completion criteria:* Mentors will check that the links bot was properly set up.
+*Completion criteria:* Your project mentors will check that the followup bot was properly
+set up.
 
 ### Task Type C: Create an interactive bot
 
@@ -238,13 +237,13 @@ and Task Type B.
 
 Let *feature* be the feature mentioned in the task that brought you here.
 
-* Make sure you understand what is expected of the *feature* - what messages
-should the bot react to, what should it do with the message content and where
-should it post any output. Should you have any doubts, discuss them in the Zulip
+* Make sure you understand what is expected of the *feature* i.e. what messages
+the bot should react to, what it should do with the message content, and where
+it should post any output. Should you have any doubts, discuss them in the Zulip
 `GCI tasks` stream.
 
 * Create the interactive bot at `~/zulip/contrib_bots/lib/<feature>` as a
-`<feature>.py` file. Make sure it fulfills the requirements.
+`<feature>.py` file. Make sure it fulfills the project requirements.
 
 * Test your bot manually, check that:
 
@@ -252,13 +251,13 @@ should it post any output. Should you have any doubts, discuss them in the Zulip
   * The bot uses the content from the messages properly.
   * The bot posts the expected output.
 
-* Create a commit with your bot, with commit message `interactive bots: Create
+* Create a commit with your bot, with the commit message `interactive bots: Create
 *feature* bot.`.
 
-* Create a pull request in the `zulip/zulip` repository, with title
+* Create a pull request in the `zulip/zulip` repository, with the title
 `interactive bots: Create *feature* bot.`. Link to your GCI task in comment section.
 
-*Completion criteria:* Mentors will check if the new bot fulfills the feature
+*Completion criteria:* Your project mentors will check if the new bot fulfills the feature
 requirements.
 
 ### Task Type D: Create your own bot
@@ -266,16 +265,16 @@ requirements.
 We recommend claiming this task after completing Task Type A and Task Type B.
 
 * Come up with an idea for your own interactive bot that would improve Zulip.
-Make sure to make clear what would be expected of the bot -  what messages
-should it react to, what should it do with the message content and where should
-it post any output.
+Make sure to make the bot's function clear -  what messages
+it should react to, what it should do with the message content and where it should
+post any output.
 
 * Present your idea for an interactive bot on the `interactive bots` topic on
 the `GCI tasks` stream. Consult with mentors and make sure your idea is approved
  before you start coding.
 
 * Create your interactive bot at `~/zulip/contrib_bots/lib/<bot_name>` as a
-`<bot_name>.py` file. Make sure it fulfills the requirements.
+`<bot_name>.py` file. Make sure it fulfills the feature requirements.
 
 * Test your bot manually, check that:
 
@@ -284,14 +283,14 @@ the `GCI tasks` stream. Consult with mentors and make sure your idea is approved
   * The bot posts the expected output.
 
 * Document your interactive bot at `~/zulip/contrib_bots/lib/<bot_name>` in a
-`docs.md`. Add any relevant screenshots that will help understand how the bot
+`docs.md`. Add any relevant screenshots that will help users understand how the bot
 works.
 
-* Create a commit with your bot, with commit message `interactive bots: Create
+* Create a commit with your bot, with the commit message `interactive bots: Create
 <bot_name> bot.`.
 
-* Create a pull request in the `zulip/zulip` repository, with title
+* Create a pull request in the `zulip/zulip` repository, with the title
 `interactive bots: Create <bot_name> bot by <username>.`. Link to your GCI task in comment section.
 
-*Completion criteria:* Mentors will check if the new bot fulfills the feature
+*Completion criteria:* Your project mentors will check if the new bot fulfills the feature
 requirements.
