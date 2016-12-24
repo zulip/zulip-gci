@@ -56,7 +56,7 @@ In `remotedev` there is a sample configuration file `conf.ini-template`.
 Copy this file to `conf.ini`:
 
 ```
-$ cp conf.ini-template conf.ini
+$ cp conf.ini-sample conf.ini
 ```
 
 Now edit the file and replace `APITOKEN` with the personal API token you

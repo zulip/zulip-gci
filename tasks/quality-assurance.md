@@ -57,7 +57,7 @@ is indeed new, open a new GitHub issue the zulip/zulip-gci repository
 Mentors will accept your task once you've written up a clear bug
 report that they are able to reproduce.
 
-Mentors: Create a new GCI task or `zulip/zulip` GitHub issue for fixing
+Mentors: Create a new GCI task or zulip/zulip GitHub issue for fixing
 the bug after accepting the bug report.
 
 ## General notes

@@ -14,25 +14,6 @@ issues = [
 ]
 
 uploaded_issues = [
-    # Batch 2
-    (2713, ['python', 'javascript']),
-    (2668, ['documentation']),
-    (2659, ['javascript']),
-    (2640, ['python', 'javascript']),
-    (2629, ['javascript']),
-    (2628, ['javascript']),
-    (2713, ['python', 'javascript']),
-    (2431, ['python', 'javascript']),
-    (2419, ['python', 'shell']),
-    (2281, ['javascript']),
-    (2270, ['html', 'css']),
-    (2058, ['python', 'HTML']),
-    (1996, ['javascript']),
-    (1734, ['javascript']),
-    (1276, ['python', 'testing']),
-    (215, ['python']),
-    # Batch 1
-    (2657, ['python', 'javascript']),
     (2560, ['documentation']),
     (2527, ['javascript']),
     (2465, ['python']),

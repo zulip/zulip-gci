@@ -37,8 +37,8 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 
 ### Task Type A: Find bot avatars on the internet.
 
-* Create the directory `bot-avatars/<username>`, where `<username>` is
-  your GitHub username.
+* Create the directory `bot-avatars/<username>`, where <username> is
+  your github username.
 
 * Find a list of online repositories of cute bot images with a clear
   open source license, such as Creative Commons. Pick out 5-10 images
@@ -59,8 +59,8 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 
 ### Task Type B: Design avatars.
 
-* Create the directory `bot-avatars/<username>`, where `<username>` is
-  your GitHub username.
+* Create the directory `bot-avatars/<username>`, where <username> is
+  your github username.
 
 * Design 3-5 avatar images that fit together thematically
   (e.g. similar visual style), inspired by some of the potential bot
@@ -79,8 +79,8 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
 
 ### Task Type C: Refine avatars from prototypes.
 
-* Create the directory `bot-avatars/<username>`, where `<username>` is
-  your GitHub username.
+* Create the directory `bot-avatars/<username>`, where <username> is
+  your github username.
 
 * Refine one collection of avatar images that you or another contributor have
   contributed to the project and add touches to make it look really nice.  The goal
@@ -89,7 +89,7 @@ https://github.com/zulip/zulip-gci/tree/master/bot-avatars/sample.
   images to the directory above.
 
 * Add a text file explaining the origin of the prototypes, with links to
-  the files on GitHub.
+  the files on github.
 
 * Add a commit with these files, with commit message "bot avatars: Add refined
   avatars."
@@ -128,10 +128,10 @@ on things from this list.  Be creative!
   … <<10 minutes later>>
   reminderbot: lisa, pick up the groceries)
 - +1 bot (bot that lets you give other chat members +1, and can tell you who’s got the most +1s in the chat)
-- sales bot (bot that plugs into your Etsy/Squarespace/Shopify/Stripe/Square/etc
+- sales bot (bot that plugs into your Etsy/Squarespace/Shopfiy/Stripe/Square/etc
   eCommerce site or payments system and updates the chat every time an item is
   sold or refunded)
-- revenue bot (bot that plugs into your eCommerce site and updates the chat on
+- revenue bot (bots that plug into your eCommerce site and updates the chat on
   revenues every day)
 - error bot (bot that notifies you when users are getting errors when using a site/service that you run)
 - Anything else that seems fun! Someone will find a good use for a potato bot icon.

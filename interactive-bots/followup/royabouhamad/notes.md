@@ -1,5 +1,0 @@
-At first I was getting an error saying that some modules didn’t exist that were used in the python files. I fixed this by running a pip command to install the simplejson module.
-I then began running the command with ‘python3’ at the start instead of ‘python’, this seemed to solve all the other problems I had with modules not existing.
-Problems also arose with the my .zuliprc-local file when the terminal could not find it to run the command. After some discussion on the GCI help stream I found that my error was not adding the .txt to the end of the command as the command did not have the full file name and therefore was not working.
-Once that was working the messages were not being sent through to the followup stream, after more discussion on the GCI help stream it was found that I was not using the correct credentials for the API key due to me destroying the vagrant environment the previous day. 
-After this there were no more problems and it worked fine.

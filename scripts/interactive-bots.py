@@ -36,11 +36,11 @@ description_C = description + "For this task, do **Task Type C** for " + \
 # Task Type A
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn about interactive bots, pt 1: running the followup bot.',
+    name = 'Learn about interactive bots by running the followup bot.',
     description = description_ABD % {'type': 'A' },
     status = 2, # 1: draft, 2: published
     max_instances = 30,
-    mentors = ['malavarena@gmail.com'],
+    mentors = ['alicja.raszkowska@gmail.com'],
     tags = ['python', 'bots'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -55,11 +55,11 @@ upload_task(
 # Task Type B
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn about interactive bots, pt 2: creating a links bot.',
+    name = 'Learn about interactive bots by creating a links bot.',
     description = description_ABD % {'type': 'B' },
     status = 2, # 1: draft, 2: published
     max_instances = 30,
-    mentors = ['malavarena@gmail.com'],
+    mentors = ['alicja.raszkowska@gmail.com'],
     tags = ['python', 'bots'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -79,7 +79,7 @@ for bot, desc in bots:
         description = description_C % {'bot': bot, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['malavarena@gmail.com', 'tabbott@zulipchat.com'],
+        mentors = ['alicja.raszkowska@gmail.com', 'tabbott@zulipchat.com'],
         tags = ['python', 'bots'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -98,7 +98,7 @@ upload_task(
     description = description_ABD % {'type': 'D' },
     status = 2, # 1: draft, 2: published
     max_instances = 20,
-    mentors = ['malavarena@gmail.com', 'tabbott@zulipchat.com'],
+    mentors = ['alicja.raszkowska@gmail.com', 'tabbott@zulipchat.com'],
     tags = ['python', 'bots', 'creative'], # free text
     is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
