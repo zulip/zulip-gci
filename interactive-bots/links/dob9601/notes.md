@@ -1,1 +1,0 @@
-Only problem I had was with where I forgot to write-out in nano and lost a bit of progress
