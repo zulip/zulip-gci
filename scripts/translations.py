@@ -28,14 +28,10 @@ guides = [
     ('Spanish')
 ]
 
-description = """Zulip is a tool used by many teams daily. In order to make it more approachable
-to users, there is an ongoing translation effort. [Read more about translating
-Zulip](https://zulip.readthedocs.io/en/latest/translating.html).
+description = """Help translate Zulip into another language!
 
-This group of tasks is about creating common translation style guides, to give
-guidance on how Zulip should be translated into specific languages. Currently
-there are guides for [Polish](https://zulip.readthedocs.io/en/latest/polish.html)
-and [Spanish](https://zulip.readthedocs.io/en/latest/spanish.html).
+Instructions for translations tasks are at
+https://github.com/zulip/zulip-gci/blob/master/tasks/translations.md
 
 """
 
@@ -45,7 +41,7 @@ description_E = description + """If you are a native speaker of a language that
 does not have a style guide yet and there is no translation task for it, feel
 free to propose a language for translation tasks!
 
-Before you claim this task, make sure to ask on Zulip `GCI tasks` stream if an
+Before you claim this task, ask on Zulip `GCI tasks` stream to check that an
 appropriate task does not already exist.
 
 Once you get confirmation, claim the task and do **Task Type E**.
