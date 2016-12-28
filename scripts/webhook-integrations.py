@@ -6,6 +6,10 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 integrations = [
+]
+
+already_integrations = [
+    ('Solano Labs', 'A continuous integration tool'),
     ('HelloSign', 'an E-signing tool'),
     ('AppFollow', 'monitors appstore activity'),
     ('Mention', 'a media monitoring tool'),
