@@ -149,7 +149,7 @@ your benchmark. Make sure your improvement includes:
   * Diving the *Special terms used in Zulip* into *Terms*, *Phrases* and *Other*
   sections
   * Adding any missing terms in the appropriate sections - the full list of words
-  is available [here](/translation-terms.md) (do not remove any existing
+  is available [here](translation-terms.md) (do not remove any existing
   translations)
   * Providing example usage of the translated terms in the Zulip context
   * Refactoring the formatting of the markdown file
