@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg4585"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="bot4.svg"
+   inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4.png"
+   inkscape:export-xdpi="37.5"
+   inkscape:export-ydpi="37.5">
+  <defs
+     id="defs4587">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4275"
+       id="linearGradient4459"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.75664934,0,0,0.75664934,-86.472348,254.62395)"
+       x1="-17.5"
+       y1="950.57648"
+       x2="146.78572"
+       y2="1039.505" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4275">
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="0"
+         id="stop4277" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:0;"
+         offset="1"
+         id="stop4279" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4011"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135-1"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135-2"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135-22"
+       is_visible="true" />
+    <linearGradient
+       y2="1039.505"
+       x2="146.78572"
+       y1="950.57648"
+       x1="-17.5"
+       gradientTransform="matrix(0.75664934,0,0,0.75664934,45.593331,-283.89312)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4792"
+       xlink:href="#linearGradient4275"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#ffffff"
+     borderopacity="0.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="0"
+     inkscape:zoom="1.979899"
+     inkscape:cx="134.9724"
+     inkscape:cy="571.86526"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     showgrid="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="757"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4593" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4590">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.43035398;color:#000000;fill:url(#linearGradient4792);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4232"
+       width="120"
+       height="120"
+       x="30.791462"
+       y="432.71933"
+       ry="0"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4_500.png"
+       inkscape:export-xdpi="375.00009"
+       inkscape:export-ydpi="375.00009" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer">
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 149.6965,509.40796 -117.810083,0 c 2.210758,18.40899 17.624853,32.64259 36.648731,32.64259 l 44.512622,0 c 19.02389,0 34.43799,-14.2336 36.64873,-32.64259 z"
+       id="path3049"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4_500.png"
+       inkscape:export-xdpi="375.00009"
+       inkscape:export-ydpi="375.00009" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 133.15264,449.45215 -84.722363,0 c -10.220669,11.0988 -16.988986,30.37602 -16.988986,52.46134 0,2.56949 0.267776,5.0079 0.445126,7.49447 l 117.810083,0 c 0.17736,-2.48657 0.44513,-4.92498 0.44513,-7.49447 0,-22.08532 -6.7683,-41.36254 -16.98899,-52.46134 z"
+       id="path3047"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4_500.png"
+       inkscape:export-xdpi="375.00009"
+       inkscape:export-ydpi="375.00009" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 68.535148,439.45953 c -7.432636,0 -14.313576,3.70377 -20.104871,9.99262 l 84.722363,0 c -5.79128,-6.28885 -12.67223,-9.99262 -20.10487,-9.99262 l -44.512622,0 z"
+       id="rect2985"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4_500.png"
+       inkscape:export-xdpi="375.00009"
+       inkscape:export-ydpi="375.00009" />
+    <rect
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3051"
+       width="83.09024"
+       height="17.805052"
+       x="49.246338"
+       y="509.39264"
+       ry="8.9025259"
+       inkscape:export-xdpi="375.00009"
+       inkscape:export-ydpi="375.00009"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4_500.png" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999000000005;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:1.61692023;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4925"
+       sodipodi:cx="263.90234"
+       sodipodi:cy="433.77002"
+       sodipodi:rx="23.991123"
+       sodipodi:ry="23.991123"
+       d="m 287.89347,433.77002 a 23.991123,23.991123 0 1 1 -47.98225,0 23.991123,23.991123 0 1 1 47.98225,0 z"
+       transform="matrix(1.2369194,0,0,1.2369194,-236.57394,-57.15849)"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4_500.png"
+       inkscape:export-xdpi="375.00009"
+       inkscape:export-ydpi="375.00009" />
+    <g
+       id="g5911"
+       transform="matrix(1.8171682,0,0,1.8171682,-77.306315,-411.7652)"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot4_500.png"
+       inkscape:export-xdpi="375.00009"
+       inkscape:export-ydpi="375.00009">
+      <rect
+         inkscape:transform-center-y="-50"
+         ry="1.0818174"
+         y="476.0661"
+         x="90.982887"
+         height="6.4909048"
+         width="2.1636348"
+         id="rect4888"
+         style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:transform-center-x="-35.860218"
+         transform="matrix(0.69686305,0.71720422,-0.71720422,0.69686305,0,0)"
+         style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4890"
+         width="2.1636348"
+         height="6.4909048"
+         x="414.59778"
+         y="261.46045"
+         ry="1.0818174"
+         inkscape:transform-center-y="-34.843167" />
+      <rect
+         inkscape:transform-center-x="-35.504781"
+         transform="matrix(-0.70410596,0.71009492,-0.71009492,-0.70410596,0,0)"
+         style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4894"
+         width="2.163635"
+         height="6.4909048"
+         x="282.13348"
+         y="-424.54156"
+         ry="1.0818175"
+         inkscape:transform-center-y="35.205267" />
+      <rect
+         inkscape:transform-center-y="49.999596"
+         ry="1.0818174"
+         y="-504.56488"
+         x="-91.14621"
+         height="6.4909043"
+         width="2.1636348"
+         id="rect4896"
+         style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="matrix(-0.99999168,0.00407967,-0.00407967,-0.99999168,0,0)"
+         inkscape:transform-center-x="-0.20402937" />
+      <rect
+         inkscape:transform-center-x="35.482032"
+         transform="matrix(-0.70456289,-0.70964156,0.70964156,-0.70456289,0,0)"
+         style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4898"
+         width="2.163635"
+         height="6.4909048"
+         x="-413.76364"
+         y="-294.05789"
+         ry="1.0818175"
+         inkscape:transform-center-y="35.228165" />
+      <g
+         style="fill:#4d4d4d"
+         transform="matrix(0.21636349,0,0,0.21636349,74.755632,357.63691)"
+         id="g4904">
+        <rect
+           inkscape:transform-center-x="-49.999603"
+           transform="matrix(-0.00400408,0.99999198,-0.99999198,-0.00400408,0,0)"
+           style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect4892"
+           width="10"
+           height="30"
+           x="607.03693"
+           y="-147.45131"
+           ry="5"
+           inkscape:transform-center-y="0.20018008" />
+        <rect
+           inkscape:transform-center-x="49.99972"
+           transform="matrix(-0.00331259,-0.99999451,0.99999451,-0.00331259,0,0)"
+           style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect4900"
+           width="10"
+           height="30"
+           x="-617.62384"
+           y="12.971062"
+           ry="5"
+           inkscape:transform-center-y="0.16563733" />
+      </g>
+      <rect
+         inkscape:transform-center-x="34.886818"
+         transform="matrix(0.71635474,-0.69773626,0.69773626,0.71635474,0,0)"
+         style="color:#000000;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4902"
+         width="2.1636348"
+         height="6.4909048"
+         x="-277.11212"
+         y="401.28"
+         ry="1.0818174"
+         inkscape:transform-center-y="-35.817711" />
+      <rect
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4908"
+         width="1.8181158"
+         height="9.09058"
+         x="91.177856"
+         y="483.21002"
+         ry="1.5150965"
+         inkscape:transform-center-y="-21.007651" />
+      <rect
+         inkscape:transform-center-x="-1.4561801"
+         transform="matrix(-0.60435798,0.79671289,-0.79671289,-0.60435798,0,0)"
+         inkscape:transform-center-y="1.1046015"
+         ry="0.94962043"
+         y="-375.42255"
+         x="334.86569"
+         height="5.6977229"
+         width="1.8181158"
+         id="rect5909"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>
