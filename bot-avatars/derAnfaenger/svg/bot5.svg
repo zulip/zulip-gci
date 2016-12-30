@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg5506"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="bot5.svg"
+   inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5.png"
+   inkscape:export-xdpi="37.5"
+   inkscape:export-ydpi="37.5">
+  <defs
+     id="defs5508">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4011"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135-1"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135-2"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4135-22"
+       is_visible="true" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4275"
+       id="linearGradient4459"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.75664934,0,0,0.75664934,-86.472348,254.62395)"
+       x1="-17.5"
+       y1="950.57648"
+       x2="146.78572"
+       y2="1039.505" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4275">
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="0"
+         id="stop4277" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:0;"
+         offset="1"
+         id="stop4279" />
+    </linearGradient>
+    <linearGradient
+       y2="1039.505"
+       x2="146.78572"
+       y1="950.57648"
+       x1="-17.5"
+       gradientTransform="matrix(0.75664934,0,0,0.75664934,-145.19812,-574.25026)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient5546"
+       xlink:href="#linearGradient4275"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#ffffff"
+     borderopacity="0.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="0"
+     inkscape:zoom="1.4"
+     inkscape:cx="-170.37743"
+     inkscape:cy="903.24216"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="757"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5599" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5511">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.43035398;color:#000000;fill:url(#linearGradient5546);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4232"
+       width="120"
+       height="120"
+       x="-160"
+       y="142.36218"
+       ry="0"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -114.12941,183.83457 -39.28178,0 c 0.73714,6.13817 5.87671,10.88411 12.2199,10.88411 l 14.84199,0 c 6.34318,0 11.48275,-4.74594 12.21989,-10.88411 z"
+       id="path3049"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -119.64568,171.96098 -28.24924,0 c -3.4079,2.198 -5.66468,6.01564 -5.66468,10.38939 0,0.50886 0.0893,0.99176 0.14841,1.4842 l 39.28178,0 c 0.0591,-0.49244 0.14842,-0.97534 0.14842,-1.4842 0,-4.37375 -2.25678,-8.19139 -5.66469,-10.38939 z"
+       id="path3047"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -141.19129,169.98205 c -2.47829,0 -4.77262,0.73349 -6.70363,1.97893 l 28.24924,0 c -1.931,-1.24544 -4.22534,-1.97893 -6.70362,-1.97893 l -14.84199,0 z"
+       id="rect2985"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <rect
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.25688362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3051"
+       width="27.705029"
+       height="5.9367919"
+       x="-147.62282"
+       y="183.82947"
+       ry="2.9683959"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:6.58442688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       transform="matrix(0,0.19789307,-0.5936792,0,457.3534,169.97699)"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       transform="matrix(0,0.19789307,-0.5936792,0,477.14271,169.97699)"
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:6.58442688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-1"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -47.775585,178.76418 -37.611782,0 c 0.705799,8.47916 5.62687,15.03514 11.70039,15.03514 l 14.211001,0 c 6.073524,0 10.994592,-6.55598 11.700391,-15.03514 z"
+       id="path3049-2"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -53.057341,162.36218 -27.04827,0 c -3.263028,3.03628 -5.423866,8.30992 -5.423866,14.35174 0,0.70294 0.08549,1.37001 0.14211,2.05026 l 37.611782,0 c 0.05661,-0.68025 0.142109,-1.34732 0.142109,-2.05026 0,-6.04182 -2.160833,-11.31546 -5.423865,-14.35174 z"
+       id="path3047-2"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -73.686977,159.62851 c -2.372925,0 -4.569723,1.01324 -6.418634,2.73367 l 27.04827,0 c -1.848911,-1.72043 -4.045709,-2.73367 -6.418635,-2.73367 l -14.211001,0 z"
+       id="rect2985-1"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <rect
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.25688362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3051-6"
+       width="26.527203"
+       height="5.6844006"
+       x="-79.845078"
+       y="178.13013"
+       ry="2.8422003"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#7f2aff;fill-opacity:1;stroke:#000000;stroke-width:6.87678051;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-8"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       transform="matrix(0.18948,0,0,0.56844001,-83.634677,-403.0214)"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       transform="matrix(0.18948,0,0,0.56844001,-64.686676,-403.0214)"
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#7f2aff;fill-opacity:1;stroke:#000000;stroke-width:6.87678051;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-1-5"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -72.366269,190.07315 -51.150001,0 c 0.95985,7.9927 7.65224,14.17254 15.91191,14.17254 l 19.32619,0 c 8.259666,0 14.952054,-6.17984 15.911901,-14.17254 z"
+       id="path3049-7"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -79.549171,174.61219 -36.784199,0 c -4.43754,2.86207 -7.37616,7.83314 -7.37616,13.52834 0,0.6626 0.11626,1.2914 0.19326,1.93262 l 51.150001,0 c 0.077,-0.64122 0.193263,-1.27002 0.193263,-1.93262 0,-5.6952 -2.938618,-10.66627 -7.376165,-13.52834 z"
+       id="path3047-6"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -107.60436,172.03536 c -3.22706,0 -6.21458,0.9551 -8.72901,2.57683 l 36.784199,0 c -2.514421,-1.62173 -5.501946,-2.57683 -8.728999,-2.57683 l -19.32619,0 z"
+       id="rect2985-18"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <rect
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.25688362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3051-9"
+       width="36.075565"
+       height="5.153511"
+       x="-115.97906"
+       y="195.22035"
+       ry="2.5767555"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:7.15119362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-2"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       transform="matrix(0.25768262,0,0,0.38652371,-121.13271,-205.10067)"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       transform="matrix(0.25768262,0,0,0.38652371,-95.364442,-205.10067)"
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:7.15119362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-1-7"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -32.36064,205.33046 -63.470702,0 c 1.191049,9.91793 9.495465,17.58634 19.744664,17.58634 l 23.981373,0 c 10.249205,0 18.553615,-7.66841 19.744665,-17.58634 z"
+       id="path3049-9"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -41.273718,186.14536 -45.644547,0 c -5.506431,3.55148 -9.152892,9.71995 -9.152892,16.78697 0,0.82221 0.144266,1.60247 0.239815,2.39813 l 63.470702,0 c 0.09555,-0.79566 0.239813,-1.57592 0.239813,-2.39813 0,-7.06702 -3.646453,-13.23549 -9.152891,-16.78697 z"
+       id="path3047-5"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -76.086678,182.94783 c -4.004365,0 -7.711508,1.18517 -10.831587,3.19753 l 45.644547,0 c -3.120078,-2.01236 -6.827222,-3.19753 -10.831587,-3.19753 l -23.981373,0 z"
+       id="rect2985-4"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <rect
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.25688362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3051-3"
+       width="10.049342"
+       height="16.740873"
+       x="-69.120667"
+       y="205.3222"
+       ry="8.3704367"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:6.34986019;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-12"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       transform="matrix(0.31975165,0,0,0.39507291,-92.87364,-204.22714)"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       transform="matrix(0.31975165,0,0,0.39507291,-60.898475,-204.22714)"
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:6.34986019;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-1-3"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -95.403629,213.13083 -72.296821,0 c 1.35668,11.2971 10.81589,20.03186 22.49032,20.03186 l 27.31618,0 c 11.67443,0 21.133646,-8.73476 22.490321,-20.03186 z"
+       id="path3049-3"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -105.55614,191.27788 -51.99179,0 c -6.27214,4.04533 -10.42568,11.07158 -10.42568,19.12133 0,0.93655 0.16434,1.82531 0.27316,2.73162 l 72.296821,0 c 0.108838,-0.90631 0.273161,-1.79507 0.273161,-2.73162 0,-8.04975 -4.153523,-15.076 -10.425672,-19.12133 z"
+       id="path3047-4"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -145.21013,187.63571 c -4.5612,0 -8.78386,1.34997 -12.3378,3.64217 l 51.99179,0 c -3.55396,-2.2922 -7.7766,-3.64217 -12.33781,-3.64217 l -27.31618,0 z"
+       id="rect2985-11"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <rect
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.25688362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3051-38"
+       width="50.990196"
+       height="10.926471"
+       x="-157.04715"
+       y="213.12141"
+       ry="5.4632354"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:3.57758451;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-7"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       transform="matrix(0.36421569,0,0,1.0926471,-164.33145,-903.95953)"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <path
+       transform="matrix(0.36421569,0,0,1.0926471,-127.90988,-903.95953)"
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:3.57758451;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3015-1-4"
+       sodipodi:cx="40"
+       sodipodi:cy="1012.3622"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 50,1012.3622 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+       inkscape:export-xdpi="373.78613"
+       inkscape:export-ydpi="373.78613" />
+    <g
+       id="g3865"
+       transform="matrix(1.0559121,0,0,1.0559121,7.8066066,-6.8387107)">
+      <path
+         inkscape:export-ydpi="373.78613"
+         inkscape:export-xdpi="373.78613"
+         inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+         id="path3049-27"
+         d="m -58.026855,229.79939 -84.191685,0 c 1.57989,13.15578 12.59541,23.32767 26.19062,23.32767 l 31.810454,0 c 13.595213,0 24.610725,-10.17189 26.190611,-23.32767 z"
+         style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="373.78613"
+         inkscape:export-xdpi="373.78613"
+         inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+         id="path3047-7"
+         d="m -69.849743,204.35102 -60.545907,0 c -7.30409,4.71091 -12.14099,12.89317 -12.14099,22.26733 0,1.09063 0.19137,2.12561 0.3181,3.18104 l 84.191685,0 c 0.126742,-1.05543 0.318104,-2.09041 0.318104,-3.18104 0,-9.37416 -4.836895,-17.55642 -12.140992,-22.26733 z"
+         style="color:#000000;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="373.78613"
+         inkscape:export-xdpi="373.78613"
+         inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+         id="rect2985-9"
+         d="m -116.02792,200.10961 c -5.31166,0 -10.22906,1.57208 -14.36773,4.24141 l 60.545907,0 c -4.138675,-2.66933 -9.056072,-4.24141 -14.367723,-4.24141 l -31.810454,0 z"
+         style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.40000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <rect
+         inkscape:export-ydpi="373.78613"
+         inkscape:export-xdpi="373.78613"
+         inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+         ry="6.3620915"
+         y="229.78844"
+         x="-129.81245"
+         height="12.724182"
+         width="59.37952"
+         id="rect3051-31"
+         style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.25688362;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:export-ydpi="373.78613"
+         inkscape:export-xdpi="373.78613"
+         inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+         transform="matrix(0.42413945,0,0,1.2724184,-138.29525,-1071.0839)"
+         d="m 50,1012.3622 c 0,5.5228 -4.477153,10 -10,10 -5.522847,0 -10,-4.4772 -10,-10 0,-5.5229 4.477153,-10 10,-10 5.522847,0 10,4.4771 10,10 z"
+         sodipodi:ry="10"
+         sodipodi:rx="10"
+         sodipodi:cy="1012.3622"
+         sodipodi:cx="40"
+         id="path3015-9"
+         style="opacity:0.98999999;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:3.07213211;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="373.78613"
+         inkscape:export-xdpi="373.78613"
+         inkscape:export-filename="C:\Users\Robert\Documents\IT-Working\GCI 2016\Zulip\bot-icons\bot5_500.png"
+         d="m 50,1012.3622 c 0,5.5228 -4.477153,10 -10,10 -5.522847,0 -10,-4.4772 -10,-10 0,-5.5229 4.477153,-10 10,-10 5.522847,0 10,4.4771 10,10 z"
+         sodipodi:ry="10"
+         sodipodi:rx="10"
+         sodipodi:cy="1012.3622"
+         sodipodi:cx="40"
+         id="path3015-1-8"
+         style="opacity:0.98999999;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:3.07213211;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc"
+         transform="matrix(0.42413945,0,0,1.2724184,-95.881301,-1071.0839)" />
+    </g>
+  </g>
+</svg>
