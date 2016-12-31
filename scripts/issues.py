@@ -14,6 +14,12 @@ issues = [
 ]
 
 uploaded_issues = [
+    # Batch 3
+    (2996, ['shell']),
+    (2991, ['python']),
+    (2989, ['javascript']),
+    (2932, ['javascript']),
+    (2967, ['python']),
     # Batch 2
     (2713, ['python', 'javascript']),
     (2668, ['documentation']),
@@ -60,8 +66,8 @@ uploaded_issues = [
     (1528, ['python']),
 ]
 
-head_description = """ Your task is to solve an open bug or missing feature in the Zulip
-server project.  Here is the issue:
+head_description = """Your task is to solve an open bug or missing feature in the Zulip
+server project. Here is the issue:
 
 """
 
