@@ -9,6 +9,8 @@ A_tasks = [['zerver/tests/'], ['zerver/views/webhooks/'],
            ['analytics/', 'scripts/', 'tools/', 'zerver/management/', 'zilencer/', 'zproject/'],
            ['zerver/lib/bugdown/', 'zerver/lib/webhooks/']]
 
+A_tasks = []
+
 B_tasks = [
     'api/zulip/__init__.py',
     'bots/gcal-bot',
@@ -20,6 +22,24 @@ B_tasks = [
     'tools/deprecated/inject-messages/inject-messages',
     'zerver/tests/test_decorators.py',
     'zerver/tests/test_narrow.py']
+
+B_tasks = [
+    'api/integrations/hg/zulip-changegroup.py',
+    'api/integrations/perforce/git_p4.py',
+    'api/integrations/perforce/zulip_change-commit.py',
+    'api/integrations/trac/zulip_trac.py',
+    'api/integrations/asana/zulip_asana_mirror',
+    'api/integrations/basecamp/zulip_basecamp_mirror',
+    'api/integrations/codebase/zulip_codebase_mirror',
+    'api/integrations/nagios/nagios-notify-zulip',
+    'api/integrations/rss/rss-bot',
+    'api/integrations/svn/post-commit',
+    'api/integrations/twitter/twitter-bot',
+    'api/integrations/twitter/twitter-search-bot',
+    'bots/jabber_mirror_backend.py',
+    'tools/deprecated/iframe-bot/show-last-messages',
+    'zerver/tests/test_decorators.py',
+]
 
 description = """Help add mypy annotations to the Zulip codebase! This is a
 great way to practice git, git grep, and efficiently using a powerful editor.
