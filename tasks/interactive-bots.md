@@ -217,7 +217,7 @@ of:
  - any other screenshots you find relevant
 
  Add the screenshots to `interactive-bots/links/<username>/`. Make sure your
- filenames do not have white-spaces. Instead, use dashes (`-`).
+ filenames do not have white spaces. Instead, use dashes (`-`).
 
 * Note down any places you got stuck, problems or errors you ran into while
 doing this setup process. Add your notes as a `notes.md` file to
@@ -236,7 +236,7 @@ doing this setup process. Add your notes as a `notes.md` file to
 We recommend claiming this task type after completing Task Type A
 and Task Type B.
 
-Let **feature** be the feature mentioned in the task that brought you here.
+Let *feature* be the feature mentioned in the task that brought you here.
 
 * Make sure you understand what is expected of the *feature* - what messages
 should the bot react to, what should it do with the message content and where
@@ -256,8 +256,8 @@ should it post any output. Should you have any doubts, discuss them in the Zulip
 *feature* bot.`.
 
 * Create a pull request in the `zulip/zulip` repository, with title
-`interactive bots: Create *feature* bot.`. Link of your pull request to 
-your GCI task in comment section.
+`interactive bots: Create *feature* bot.`. Link to your GCI task in 
+the comment section on GitHub.
 
 *Completion criteria:* Mentors will check if the new bot fulfills the feature
 requirements.
@@ -292,7 +292,8 @@ the `GCI tasks` stream. Consult with mentors and make sure your idea is approved
 <bot_name> bot.`.
 
 * Create a pull request in the `zulip/zulip` repository, with title
-`interactive bots: Create <bot_name> bot by <username>.`. Link of your pull request to your GCI task in comment section.
+`interactive bots: Create <bot_name> bot by <username>.`. Link to your GCI task in 
+the comment section on GitHub.
 
 *Completion criteria:* Mentors will check if the new bot fulfills the feature
 requirements.
