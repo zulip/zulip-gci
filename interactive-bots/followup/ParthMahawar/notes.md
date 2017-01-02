@@ -1,0 +1,2 @@
+I got stuck at multiple places in this task and it took some time to figure out that I had to clone a different repository entirely to submit the task.
+Most of the errors I ran into were honestly mistakes from my side, so I can't say much about that.
