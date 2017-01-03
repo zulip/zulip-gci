@@ -40,8 +40,8 @@ to make sure you're familiar with how to edit the documentation.
 ## Task Descriptions
 
 There are two types of task in this category, each corresponding to one of
-the Task Types below. Let *feature* be the feature mentioned in the task
-that brought you here (if relevant).
+the Task Types below. Let *feature* or *features* be the feature or set of
+features mentioned in the task that brought you here.
 
 ### Task Type A
 
@@ -77,13 +77,6 @@ that brought you here (if relevant).
   and the pull request should be `docs: Add user guide for *feature*`.
   Include a link to the pull request when you submit your task on the GCI
   website.
-* If there are visual elements that you'd like to be able to express
-  in your user guide, but aren't sure how to, bring it up in the `GCI
-  tasks` stream!  Our user guide rendering software is very new, and
-  your feedback will help improve the documentation for the user guide
-  system, and additionally, it should be possible to add features to
-  the user guide system as needed.  If there's interest, we can create
-  GCI tasks for adding some of those features!
 
 *Completion criteria*: This should be a polished product, something
 that could go live on the site.  Mentors will check that that is
@@ -92,12 +85,20 @@ products.
 
 ### Task Type B
 
-Read three of the guides that have been written by other GCI
-contributors.  Try to follow the instructions step-by-step, completely
-precisely, taking careful notes on any issues or mistakes you run
-into.  Add those notes and any suggested edits as comments on the
-appropriate pull requests (or if they have already been merged, just
-make your changes and submit a pull request to update the text).
+Read the guides corresponding to *features*. For each feature, do the following:
+* Follow the instructions step-by-step, completely precisely. Correct
+  anything that is unclear, incorrect, and add any tips, warnings or other
+  information the author may not have thought of.
+* Edit the guide to conform to the
+[user documentation style guide](https://zulip.readthedocs.io/en/latest/README.html#style-guide).
+* Verify your documentation looks as you intended and all links work;
+  it's common to make small mistakes in the markdown that cause your
+  documentation to not look right.
+* Add a commit for a each feature, with commit message like `docs: Edit
+  change-your-name to conform to style guide`. Submit a single pull request
+  with all your commits to the https://github.com/zulip/zulip/
+  repository. The title of the pull request should be something like `docs:
+  Edit Accounts Basics articles to conform to style guide.`
 
 ## General Notes
 
@@ -108,6 +109,14 @@ make your changes and submit a pull request to update the text).
 templates/zerver/help/feature.md in Markdown, reload your browser on
 `http://<hostname>:9991/help/feature`, where `<hostname>` is either
 `localhost` or the hostname of your VM.
+
+* If there are visual elements that you'd like to be able to express
+  in your user guide, but aren't sure how to, bring it up in the `GCI
+  tasks` stream!  Our user guide rendering software is very new, and
+  your feedback will help improve the documentation for the user guide
+  system, and additionally, it should be possible to add features to
+  the user guide system as needed.  If there's interest, we can create
+  GCI tasks for adding some of those features!
 
 * You can check out the other guides in `templates/zerver/help/` or at
   https://get.slack.help/hc/en-us/categories/200111606-Using-Slack for
