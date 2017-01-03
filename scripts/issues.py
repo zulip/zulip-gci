@@ -10,12 +10,13 @@ args = parser.parse_args()
 
 # (Issue number, tags)
 # Catagory assumed to be coding
-issues = [
-]
+issues = [ ]
 
 uploaded_issues = [
     # Batch 3
+    (3055, ['javascript', 'html']),
     (2996, ['shell']),
+    (2994, ['python', 'javascript']),
     (2991, ['python']),
     (2989, ['javascript']),
     (2932, ['javascript']),
