@@ -108,6 +108,10 @@ for it in the JSON file you created above.
 --url='http://localhost:9991/api/v1/external/<yourname>?api_key=<api_key>'
 ```
 
+  Notice that you mustn't include the backslashes `\` if you're typing the
+  command manually. Those are to indicate that the line break shown is
+  only for more clarity.
+
 #### Take screenshots.
 
 * Take a **screenshot** of the log line you get on the terminal after you
