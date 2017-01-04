@@ -88,6 +88,9 @@ Read the guides corresponding to *features*. For each feature, do the following:
   information the author may not have thought of.
 * Edit the guide to conform to the
   [user documentation style guide](https://zulip.readthedocs.io/en/latest/README.html#style-guide).
+* Incorporate the new documentation macros we've included (if applicable).
+* Find unnecessary images and remove them.
+* Rewrite the user guide to use the styling conventions listed in the documentation style guide.
 * Edit the guide to have good English grammar and cadence.
 * Verify your documentation looks as you intended and all links work;
   it's common to make small mistakes in the markdown that cause your
