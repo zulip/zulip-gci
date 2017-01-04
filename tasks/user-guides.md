@@ -60,7 +60,9 @@ features mentioned in the task that brought you here.
 * Write an outline for documentation for *feature*, and post it to the
   Zulip `GCI tasks` stream to get feedback from mentors and other GCI
   participants on what you plan to include in your documentation.
-* Now work on writing your new documentation!  You should add your
+* Now work on writing your new documentation, following the
+  [user documentation style guide](https://zulip.readthedocs.io/en/latest/README.html#style-guide)!
+  You should add your
   documentation to a new file to the `templates/zerver/help/` directory of
   https://github.com/zulip/zulip/.
   The name of the file should be a lowercase, hyphenated version of *feature*
@@ -78,11 +80,6 @@ features mentioned in the task that brought you here.
   Include a link to the pull request when you submit your task on the GCI
   website.
 
-*Completion criteria*: This should be a polished product, something
-that could go live on the site.  Mentors will check that that is
-indeed the case, and that we are not copying text or images from other
-products.
-
 ### Task Type B
 
 Read the guides corresponding to *features*. For each feature, do the following:
@@ -90,33 +87,35 @@ Read the guides corresponding to *features*. For each feature, do the following:
   anything that is unclear, incorrect, and add any tips, warnings or other
   information the author may not have thought of.
 * Edit the guide to conform to the
-[user documentation style guide](https://zulip.readthedocs.io/en/latest/README.html#style-guide).
+  [user documentation style guide](https://zulip.readthedocs.io/en/latest/README.html#style-guide).
+* Edit the guide to have good English grammar and cadence.
 * Verify your documentation looks as you intended and all links work;
   it's common to make small mistakes in the markdown that cause your
   documentation to not look right.
 * Add a commit for a each feature, with commit message like `docs: Edit
-  change-your-name to conform to style guide`. Submit a single pull request
+  change-your-name.md to conform to style guide`. Submit a single pull request
   with all your commits to the https://github.com/zulip/zulip/
   repository. The title of the pull request should be something like `docs:
-  Edit Accounts Basics articles to conform to style guide.`
+  Edit Accounts Basics articles (Part 1) to conform to style guide.`
+
+A prerequisite for this task is good written English, at the high end of
+native proficiency.
 
 ## General Notes
 
-* The source for the user documentation is the Markdown files is under
-`templates/zerver/help/` in the main Zulip repository (zulip/zulip).
+* The source for the user documentation is the Markdown files under
+  `templates/zerver/help/` in the main Zulip repository (zulip/zulip).
 
-* To see the current version of a user documentation file,
-templates/zerver/help/feature.md in Markdown, reload your browser on
-`http://<hostname>:9991/help/feature`, where `<hostname>` is either
-`localhost` or the hostname of your VM.
+* To see the current, Markdown version of a user documentation file, reload
+  your browser on `http://<hostname>:9991/help/<feature>`, where
+  `<hostname>` is either `localhost` or the hostname of your VM, and
+  `<feature>` is the name of the feature.
 
-* If there are visual elements that you'd like to be able to express
-  in your user guide, but aren't sure how to, bring it up in the `GCI
-  tasks` stream!  Our user guide rendering software is very new, and
-  your feedback will help improve the documentation for the user guide
-  system, and additionally, it should be possible to add features to
-  the user guide system as needed.  If there's interest, we can create
-  GCI tasks for adding some of those features!
+* If there are visual elements that you'd like to be able to express in your
+  user guide, but aren't sure how to, bring it up in the `GCI tasks` stream!
+  Our user guide rendering software is very new, and it should be possible
+  to add features to the user guide system as needed. If there's interest,
+  we can also create GCI tasks for adding some of those features!
 
 * You can check out the other guides in `templates/zerver/help/` or at
   https://get.slack.help/hc/en-us/categories/200111606-Using-Slack for
