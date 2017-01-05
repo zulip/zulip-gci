@@ -95,7 +95,7 @@ Read the guides corresponding to *features*. For each feature, do the following:
 * Verify your documentation looks as you intended and all links work;
   it's common to make small mistakes in the markdown that cause your
   documentation to not look right.
-* Add a commit for a each feature, with commit message like `docs: Edit
+* Add a commit for each feature, with commit message like `docs: Edit
   change-your-name.md to conform to style guide`. Submit a single pull request
   with all your commits to the https://github.com/zulip/zulip/
   repository. The title of the pull request should be something like `docs:
