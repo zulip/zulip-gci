@@ -2,7 +2,9 @@
 
 ## Prerequisites
 
-* Native fluency in the appropriate language.
+* For tasks A, D, and E: Native fluency in the appropriate language. For
+  tasks B and C: This must be your primary language; i.e. your operating
+  system, browser, email, etc defaults should be this language.
 
 * Update your working copy of Zulip and then create a feature branch. [Learn
   how](../before-every-task.md).
