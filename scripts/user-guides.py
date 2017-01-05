@@ -91,46 +91,74 @@ features = [
     'Add or remove users from a stream',
 ]
 
-# Posted Dec 13 (then unposted)
-# features_round2 = [
-#     # Account Basics
-#     ("Join a Zulip Organization", "https://get.slack.help/hc/en-us/articles/212675257-Join-a-Slack-team"),
-#     ("Learn about Away Statuses", "https://get.slack.help/hc/en-us/articles/201864558-Set-your-Slack-status"),
-#     # Messages
-#     ("Send and Read Messages", "https://get.slack.help/hc/en-us/articles/201457107-Send-and-read-messages"),
-#     ("Make an Announcement", "https://get.slack.help/hc/en-us/articles/202009646-Make-an-announcement"),
-#     # Streams & Private Messages
-#     ("Private Messages and Group PMs", "https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs"),
-#     ("The #announce Stream", "https://get.slack.help/hc/en-us/articles/220105027-The-general-channel"),
-#     ("Organize your Streams", "https://get.slack.help/hc/en-us/articles/212596808-Organize-your-channels-and-direct-messages"),
-#     ("Invite Members to a Stream", "https://get.slack.help/hc/en-us/articles/201980108-Invite-team-members-to-a-channel"),
-#     ("Set a Stream Description", "https://get.slack.help/hc/en-us/articles/201654083-Set-a-channel-topic-or-purpose"),
-#     ("Unsubscribe from a Stream", "https://get.slack.help/hc/en-us/articles/201375146-Leave-a-channel"),
-#     # Notifications
-#     ("Set up Zulip Notifications", "https://get.slack.help/hc/en-us/articles/201895138-Set-up-Slack-notifications"),
-#     ("Mute a Stream", "https://get.slack.help/hc/en-us/articles/201563847-Archive-a-channel"),
-#     ("Add a Custom Alert Word" , "https://get.slack.help/hc/en-us/articles/201398467-Highlight-word-notifications"),
-# ]
+features = []
 
-
+features_review = [("Account Basics, Part 1", ["Change your name", "Change your password",
+                                               "Change your settings", "Change your avatar",
+                                               "Change your language"]),
+                   ("Account Basics, Part 2", ["Change the date and time format",
+                                               "Move the users list to the left sidebar",
+                                               "Signing in", "Signing out",
+                                               "Deactivate your account"]),
+                   ("Sending Messages, Part 1", ["Send a stream message", "Send a private message",
+                                                 "Format your message using Markdown"]),
+                   ("Sending Messages, Part 2", ["Preview your message before sending",
+                                                 "Add emoji", "Upload and share files"]),
+                   ("Sending Messages, Part 3", ["Restore the last unsent message",
+                                                 "Enable or disable pressing enter to send",
+                                                 "@-mention a team member",
+                                                 "Reply to a message"]),
+                   ("Reading Messages", ["View the Markdown source of a message",
+                                         "View information about a message",
+                                         "View the exact time a message was sent",
+                                         "View an image at full size",
+                                         "Collapse a message", "Star a message"]),
+                   ("Editing and Searching Messages", ["Edit or delete a message",
+                                                       "Change the topic of a message",
+                                                       "Search messages", "Advanced search for messages"]),
+                   ("People", ["Invite a friend to Zulip", "Send a group of people a private message"]),
+                   ("Streams & Topics, Part 1", ["About streams and topics", "Browse and join streams",
+                                                 "Create a stream"]),
+                   ("Streams & Topics, Part 2", ["View your current stream subscriptions",
+                                                 "View messages from a stream", "The #announce stream"]),
+                   ("Streams & Topics, Part 3", ["Add or invite someone to a stream",
+                                                 "Change the stream description", "Rename a stream"]),
+                   ("Streams & Topics, Part 4", ["Unsubscribe from a stream",
+                                                 "Change who can join a stream", "Pin a stream"]),
+                   ("Streams & Topics, Part 5", ["Change the color of a stream",
+                                                 "Remove someone from a stream", "Delete a stream"]),
+                   ("Notifications", ["Mute a stream", "Mute a topic", "Configure desktop notifications",
+                                      "Add an alert word"]),
+                   ("Organization Settings, Part 1", ["Change your organization's name",
+                                                      "Allow anyone to join without an invitation",
+                                                      "Only allow admins to invite new users",
+                                                      "Restrict editing of old messages and topics"]),
+                   ("Organization Settings, Part 2", ["Change the default language for realm",
+                                                      "Add custom emoji",
+                                                      "Add a custom linkification filter"]),
+                   ("Users & Bots", ["Deactivate or reactivate a user", "Deactivate or reactivate a bot",
+                                     "Make a user an administrator", "Change a user's name"]),
+                   ("Streams", ["Delete a stream", "Set default streams for new users",
+                                "Rename a stream", "Make a public stream private"])
+]
 
 description = """Good user guides help users and search engines discover Zulip features.
-Help write user guides for Zulip!
+Help write and edit user guides for Zulip!
 
 Instructions for all user documentation tasks are at
 https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md.
 
 """
 
-description_A_and_B = description + "For this task, do Task Type A for the **%s** feature."
-description_C = description + "For this task, do **Part 3** for any three features."
+description_A = description + "For this task, do Task Type A for the **%s** feature."
+description_B = description + "For this task, do Task Type B for the following features: **%s**."
 
+# Task Type A
 for feature in features:
-    # Part 1
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
         name = 'Write a user guide for the %s feature.' % (feature,),
-        description = description_A_and_B % (feature,),
+        description = description_A % (feature,),
         status = 2, # 1: draft, 2: published
         max_instances = 1,
         mentors = ['sonaligpt0@gmail.com', 'christie@authenticengine.com',
@@ -146,45 +174,23 @@ for feature in features:
         private_metadata = "user-guides-A",
         do_upload = args.force)
 
-    # # Part 2
-    # upload_task(
-    #     name = 'Polish an existing user guide for a feature.',
-    #     description = description_A_and_B % (2, feature, slack_link),
-    #     # Note: this should be released as a draft, and published only after Part 1 is done
-    #     status = 1, # 1: draft, 2: published
-    #     max_instances = 1,
-    #     mentors = ['sonaligpt0@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
-    #     tags = ['documentation', 'user guides'], # free text
-    #     is_beginner = False,
-    #     # 1: Coding, 2: User Interface, 3: Documentation & Training,
-    #     # 4: Quality Assurance, 5: Outreach & Research
-    #     categories = [3],
-    #     time_to_complete_in_days = 3, # must be between 3 and 7
-    #     # Field currently not accessible via API. gci-support says it is coming soon.
-    #     # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
-    #     private_metadata = "user-guides-B",
-    #     do_upload = args.force)
-
-# Part 3
-# Don't upload yet, wait for some guides to be written
-# upload_task(
-#     name = 'Test and review user guides.',
-#     description = description_C,
-#     # Note: these should be released as drafts, and published only as we
-#     # get Part 2's completed
-#     status = 1, # 1: draft, 2: published
-#     max_instances = 10,
-#     mentors = ['niftynei@gmail.com', 'rishig@zulipchat.com', 'tabbott@zulipchat.com'],
-#     tags = ['documentation', 'user guides'], # free text
-#     is_beginner = False,
-#     # 1: Coding, 2: User Interface, 3: Documentation & Training,
-#     # 4: Quality Assurance, 5: Outreach & Research
-#     categories = [3, 4],
-#     time_to_complete_in_days = 3, # must be between 3 and 7
-#     # Field currently not accessible via API. gci-support says it is coming soon.
-#     # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
-#     private_metadata = "user-guides-C",
-#     do_upload = args.force)
+# Task Type B
+for name, features in features_review:
+    upload_task(
+        name = 'Review user guides: %s.' % name,
+        description = description_B % ', '.join(features),
+        status = 2, # 1: draft, 2: published
+        max_instances = 1,
+        mentors = ['rishig@zulipchat.com', 'tabbott@zulipchat.com'],
+        tags = ['documentation', 'user guides'], # free text
+        is_beginner = False,
+        # 1: Coding, 2: User Interface, 3: Documentation & Training,
+        # 4: Quality Assurance, 5: Outreach & Research
+        categories = [3, 4],
+        time_to_complete_in_days = 3, # must be between 3 and 7
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/user-guides.md",
+        private_metadata = "user-guides-B",
+        do_upload = args.force)
 
 if not args.force:
     print
