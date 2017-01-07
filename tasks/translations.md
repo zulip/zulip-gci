@@ -161,10 +161,10 @@ your benchmark. Make sure your improvement includes:
 sure to talk about it.
 
 * Create a commit with the improvements, with commit message `translations:
-Improving the <language> style guide.`
+Improve the <language> style guide.`
 
 * Create a pull request in the `zulip/zulip` repository, with title `translations:
- Improving the <language> style guide.`
+ Improve the <language> style guide.`
 
 *Completion criteria*: The mentors will verify that you have improved the style
 guide and put the translated terms in the appropriate sections, providing
