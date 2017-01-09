@@ -90,6 +90,7 @@ by:
 
   a. sending a few messages starting with `@followup` and `@follow-up` from
   different streams, such as `devel` and `social`
+  Do not let it autocorrect to @**followup**
 
   b. checking that the messages showed up in the `followup` stream, prepended by
   the sender email
