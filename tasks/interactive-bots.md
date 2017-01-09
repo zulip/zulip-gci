@@ -39,18 +39,19 @@ There are four types of tasks in this category, each corresponding to one of the
 Follow the tutorial below to test run the followup bot on your Zulip instance
 (either local or in your droplet).
 
-* Run the Zulip server and log in the browser as Cordelia.
+* Run the Zulip server and log in to the browser as Cordelia.
 
-* Find the API keys.
-
-  You can get API keys just below the bots section in the settings page. This
+* Find your user's API key just below the bots section in the settings page. This
   is how Zulip knows the request is from an authorized user.
 
   You can also create a new bot for a user in settings - it will have its own
   API key and email. Remember to subscribe it to the streams you want to use the
-   bot in.
+  bot in.
 
-* Create a `~/.zuliprc-local` file with credentials:
+* Download your bot's `zuliprc` file, by clicking on the green button, and save it as
+ `~/zuliprc-local`.
+
+  Alternatively, you can create this file with credentials:
 
   ```
   [api]
@@ -59,9 +60,9 @@ Follow the tutorial below to test run the followup bot on your Zulip instance
   site=<dev-url>
   ```
 
--  In the example replace the `<api-key>` with an existing API
--  key and `<email>` with the bot's email. The `<dev-url>` should 
--  point to your development environment URL.
+  In the example replace the `<api-key>` with an existing API
+  key and `<email>` with the bot's email. The `<dev-url>` should 
+  point to your development environment URL.
 
   If you're running your bot in the droplet, alongside your Zulip instance, the
   `<dev-url>` will be `localhost:9991`.
@@ -88,11 +89,11 @@ Follow the tutorial below to test run the followup bot on your Zulip instance
 * Test manually that the followup bot is working on the local Zulip instance,
 by:
 
-  a. sending a few messages starting with `@followup` and `@follow-up` from
-  different streams, such as `devel` and `social`
+ - sending a few messages starting with `@followup` and `@follow-up` from
+ different streams, such as `devel` and `social`
 
-  b. checking that the messages showed up in the `followup` stream, prepended by
-  the sender email
+ - checking that the messages showed up in the `followup` stream, prepended by
+ the sender email
 
 * Take screenshots showing that the bot is working, make sure to have screenshots
 of:
@@ -103,7 +104,7 @@ of:
  - messages sent by the bot in the `followup` stream
  - any other screenshots you find relevant
 
-Add the screenshots to `interactive-bots/followup/<username>/`. Make sure your
+* Add the screenshots to `interactive-bots/followup/<username>/`. Make sure your
 filenames do not have white-spaces. Instead, use dashes (`-`).
 
 * Note down any places you got stuck, problems or errors you ran into while
