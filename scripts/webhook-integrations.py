@@ -5,10 +5,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-integrations = [
-]
+integrations = [ ]
 
 already_integrations = [
+    ('Review Bot', 'an on-line review monitoring tool'),
     ('Solano Labs', 'A continuous integration tool'),
     ('HelloSign', 'an E-signing tool'),
     ('AppFollow', 'monitors appstore activity'),
