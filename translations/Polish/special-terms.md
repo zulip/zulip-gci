@@ -3,11 +3,11 @@ English word | Polish word
 
 * Message - Wiadomość
 * Private Message (PM) - Prywatna wiadomość
-* Group PM - Czat grupowy
-* Realm - Domena
-* Stream - Kanał
-* Topic - Wątek
-* Private/Invite-Only Stream - Prywatny kanał / Kanał na zaproszenie
+* Group PM - Czat grupowy (Konwersacja would be too formal)
+* Realm - Domena (Królestwo wouldn't fit the context)
+* Stream - Kanał (Strumień wouldn't fit the context)
+* Topic - Wątek 
+* Private/Invite-Only Stream - Prywatny kanał (Kanał na zaproszenie seems too long)
 * Public Stream - Publiczny kanał
 * Bot - Bot (Robot just doesn't fit in my opinion)
 * Integration  - Integracja
@@ -27,15 +27,15 @@ English word | Polish word
 * Search - Wyszukaj
 * Pin - Odznaka / Kołek (Depending on the context)
 * Mention/@mention - Wspomnij/@oznacz
-* Invalid - Nieprawidłowy
-* Customization - Personalizacja
-* I want - Chcę
-* User - Użytkownik
-* Person/People - Osoba / Ludzie
+* Invalid - Nieprawidłowy 
+* Customization - Personalizacja 
+* I want - Chcę 
+* User - Użytkownik 
+* Person/People - Osoba (singular) / Ludzie (plural)
 
 # Other
 
-* You - ty 
+* You - ty
 * We - my
 
 
