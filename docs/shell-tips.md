@@ -1,6 +1,6 @@
 # Shell tips
 
-The *shell* (also known as *terminal* or *console*), is a **command line
+The *shell* (sometimes called *terminal* or *console*), is a **command line
 interpreter**. This is how most shells look like:
 
 ![An example shell window](shell-screenshot.png)
