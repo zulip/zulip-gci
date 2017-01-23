@@ -1,6 +1,6 @@
 # Shell tips
 
-The *shell* a is a **command line interpreter**. To use it you can open a
+The *shell* is a **command line interpreter**. To use it you can open a
 *terminal* (sometimes called a *console*). This is how most terminal windows
 look like:
 
@@ -49,6 +49,39 @@ $ cd ~
 $ cd /home/john
 ```
 
+## Change directory (`cd`)
+
+When you're using the shell, you work inside a directory (the one specified in
+the prompt). This way you can point to files relative to your current
+directory, instead of writing the whole path.
+
+Imagine you have a file called `ideas.txt` inside `/home/john/notes/`, and
+you want to edit it using `nano`. You could use:
+
+```
+$ nano /home/john/notes/ideas.txt
+```
+
+However, that isn't very practical, especially if you are working with
+longer paths.
+
+That's why it's very useful to change the path where you are currently
+located (usually known as **working directory**). To do that, you use `cd`
+(**c**hange **d**irectory):
+
+```
+$ cd /home/john/notes/
+~/notes$ nano ideas.txt
+```
+
+Or, if you're the user `john`: `cd ~/notes`.
+
+You can now access to all the files inside `/home/john/notes` directly, without
+needing to type the whole path.
+
+[Relative paths](http://www.linuxnix.com/abslute-path-vs-relative-path-in-linuxunix/)
+make it much easier to move through files and directories, too.
+
 ## Running commands as root (`sudo`)
 
 You may have noticed that many commands begin with `sudo`. This informs the
@@ -58,7 +91,8 @@ a user with administrator privileges). That's why you may be asked for a
 password in those cases: the system verifies you have permission to act as
 the *root* user.
 
-As a curiosity, the name `sudo` comes from **s**uper **u**ser **do**.
+In case you were wondering, the name `sudo` comes from **s**uper **u**ser
+**do**.
 
 ## Escaping characters
 
@@ -158,11 +192,115 @@ and hit <kbd>ENTER</kbd>/<kbd>RETURN</kbd> at the end.
 
 If you think about it, what is happening here is actually another case of
 character escaping. The newline character (the one that appears when you hit
-<kbd>ENTER</kbd>) usually means "read this command". However, here we want to literally
-have the newline character, and thus the `\<newline>`.
+<kbd>ENTER</kbd>) usually means "read this command". However, here we want to
+literally have the newline character, and thus the `\<newline>`.
 
 The newline character is invisible (we only see a line break), but it's still
 there!
+
+## Arguments
+
+Most commands need additional data to work, like a path or a file. That extra
+information is called an **argument**, and it's specified after the name of the
+command, like this:
+
+```
+$ cd /home/john/notes
+```
+
+Here, the command is `cd`, and the first (and only) argument is
+`/home/john/notes`:
+
+- `cd` - *command*: changes your current directory.
+
+- `/home/john/notes` - *argument*: the directory where you want to go.
+
+In each command the arguments are specified in different ways, and have
+different meanings.
+
+Sometimes, a command can accept arguments indicated with dashes. Here's another
+example of arguments usage:
+
+```
+$ nano -C /home/john/backups --mouse todo.txt
+```
+
+As you can see, some arguments imply that more information has to be specified,
+while others don't.
+
+In this case, we're saying: "Bash, use the app `nano` to open the file
+`todo.txt`, enabling mouse support, and saving the backup files to
+`/home/john/backups`". The different parts are:
+
+- `nano` - *command*: program that allows editing text easily.
+
+- `-C` - *argument*: needs you to indicate where the backups should be stored,
+  and thus you have to add an additional argument after it, to specify the
+  directory (`/home/john/backups` in the example).
+
+- `--mouse` - *argument*: is just an option you set, `nano` doesn't need
+  anything else to make it work. Thus, there isn't any extra argument for that.
+
+Note that the `todo.txt` is the file we want to open! It has nothing to do with
+the previous argument. This will probably clarify it (taken from `nano`'s
+help):
+
+```
+Usage: nano [OPTIONS] [FILE]...
+```
+
+So, in the options you indicate the arguments, and `FILE` is... well, the file.
+
+Don't worry, you don't have to memorize the meaning of
+all the arguments for every single command. There are
+[tools](#understanding-commands) that help you with that :wink:.
+
+## Shebang
+
+You can run some files directly, without specifying a program to interpret
+them.
+
+That's why you may have seen cases when some Python scripts are called with
+`python`:
+
+```
+$ python my_program.py
+```
+
+While other times, `python` isn't used:
+
+```
+$ ./my_program.py
+```
+
+In the latter, it's skipped because `my_program.py` already specifies in it
+which interpreter should be used (in this case, `python`).
+
+This is indicated in the very first line of the script files, and it's called
+a **shebang**. In Python scripts, it looks like this:
+
+```
+#!/usr/bin/env python
+```
+
+With this, you're telling the shell: "if I tell you to run this, ask
+`/usr/bin/env python` how to understand it".
+
+`/usr/bin/env` is a way to identify where `python` is installed. If it was in
+`/usr/bin/python`, you could use the shebang `#!/usr/bin/python`, but `env`
+allows more flexibility (since not everyone has their Python interpreter
+there).
+
+Another example of shebang is the one used in Bash scripts. In those cases,
+`#!/bin/sh` is used.
+
+The result is that the shell calls the program specified in the shebang, with
+the script as a parameter. So, returning to our example with `my_program.py`,
+when you run `./my_program.py`, what happens under the hood is:
+
+```
+$ /usr/bin/env python my_program.py
+```
 
 ## Understanding commands
 
@@ -171,3 +309,27 @@ know what they do. You can use `man <command>` to see the **man**ual page for
 that specific command. Also, you may find useful
 [explainshell](http://explainshell.com/), a webpage that explains what most
 commands do, part by part.
+
+## Cheatsheet
+
+There are many more commands in the shell, besides the ones explained in this
+file.
+[Here](https://www.git-tower.com/blog/command-line-cheat-sheet/) you can find
+a simple yet useful cheatsheet, created by Tower, that could help you
+understand and remember what other common commands do (e.g. `ls`).
+
+## Git
+
+Probably at this point you've heard about Git. It's basically a tool that most
+developers use to manage all the changes in their code.
+
+At first it seems like magic, but once you get the basic concepts you find it
+extremely useful and even easy to use (at least the 99% of the time).
+
+To learn more about how to use it, read
+[our docs](http://zulip.readthedocs.io/en/latest/git-guide.html) on Git and
+Github.
+[This cheatsheet](https://github.com/zulip/zulip-gci/blob/master/docs/git-cheat-detailed.md)
+will be useful in your journey, as well.
+
+![Git - XKCD 1597](https://imgs.xkcd.com/comics/git.png)
