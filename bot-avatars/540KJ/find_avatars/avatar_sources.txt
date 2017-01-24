@@ -1,0 +1,19 @@
+000 -> http://icons.iconarchive.com/icons/martin-berube/character/48
+001 -> https://www.flickr.com/photos/apelad/4035860385/
+002 -> https://www.flickr.com/photos/okaysamurai/418989706/
+003 -> https://www.flickr.com/photos/littleanimals/193076847/
+004 -> https://www.flickr.com/photos/automaton_be/7376092118/
+005 -> https://www.flickr.com/photos/automaton_be/4636685310/
+006 -> https://www.flickr.com/photos/jonathangp/5455939799/
+007 -> https://www.flickr.com/photos/mattglover/5921447281/
+008 -> https://www.flickr.com/photos/torres21/3351164820/
+009 -> https://www.flickr.com/photos/40925843@N03/6236743928/
+010 -> https://www.flickr.com/photos/jope_lines/4506228898/
+011 -> https://www.flickr.com/photos/thinkcage/4089878150/
+012 -> https://www.flickr.com/photos/drugoflickr/205640746/
+013 -> https://www.flickr.com/photos/brunurb/13128253254/
+014 -> https://www.flickr.com/photos/mrpony/3741227806/
+015 -> https://www.flickr.com/photos/apelad/4035860385/
+016 -> https://www.flickr.com/photos/brunurb/13128253254/
+
+All have Creative Commons Licensing
