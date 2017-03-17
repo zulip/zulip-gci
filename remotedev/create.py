@@ -115,7 +115,7 @@ def set_user_data(username, userkeys):
 def create_droplet(my_token, template_id, username, user_data):
     droplet = digitalocean.Droplet(token=my_token,
                                 name='{0}.zulipdev.org'.format(username),
-                                region='nyc3',
+                                region='sfo1',
                                 image=template_id,
                                 size_slug='2gb',
                                 user_data=user_data,
@@ -150,14 +150,14 @@ def create_dns_record(my_token, username, ip_address):
 def print_completion(username):
     completion_message = """
 COMPLETE! Droplet for GitHub user {0} is available at {0}.zulipdev.org.
-    
+
 Instructions for use are below. (copy and paste to the user)
 
 ------
 Your remote Zulip dev server has been created!
 
 - Connect to your server by running
-  `ssh zulipdev@{0}.zulipdev.org` on the command line 
+  `ssh zulipdev@{0}.zulipdev.org` on the command line
   (Terminal for macOS and Linux, Bash for Git on Windows).
 - There is no password; your account is configured to use your ssh keys.
 - Once you log in, you should see `(zulip-venv) ~$`.
@@ -172,7 +172,9 @@ See [Developing remotely](http://zulip.readthedocs.io/en/latest/dev-remote.html)
 
 if __name__ == '__main__':
     # define id of image to create new droplets from
-    template_id = "21193944"
+    # You can get this with something like the following. You may need to try other pages.
+    # curl -X GET -H "Content-Type: application/json" -u <API_KEY>: "https://api.digitalocean.com/v2/images?page=5" | grep --color=always base.zulipdev.org
+    template_id = "23520780"
 
     # get command line arguments
     args = parser.parse_args()
