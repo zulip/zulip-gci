@@ -136,13 +136,18 @@ Rough steps:
 1. `ssh zulipdev@base.zulipdev.org`
 1. `git pull upstream master`
 1. `tools/provision`
-1. `tools/run-dev.py`, and then Ctrl-C (to clear out anything in the Rabbit MQ queue, load messages, etc).
+1. `tools/run-dev.py`, let it run to completion, and then Ctrl-C (to clear
+   out anything in the Rabbit MQ queue, load messages, etc).
 1. `tools/run-dev.py`, and check that `base.zulipdev.org:9991` is up and running.
-1. `history -c` to clear any command line history, if you made a typo (to reduce chance of confusing new contributors).
+1. `history -c` to clear any command line history, if you made a typo (to
+   reduce chance of confusing new contributors).
 1. `sudo shutdown -h now`
 1. Go to the Images tab on DigitalOcean, and "Take a Snapshot".
 1. Wait for several minutes.
-1. Make sure to add the appropriate regions via More -> "Add to region" in the Snapshots section.
-1. Do something like `curl -X GET -H "Content-Type: application/json" -u <API_KEY>: "https://api.digitalocean.com/v2/images?page=5" | grep --color=always base.zulipdev.org` (maybe with a different page number, and replace your API_KEY).
-1. Replace `template_id` in `create.py` in this directory with the appropriate `id`, and region with the appropriate region.
+1. Make sure to add the appropriate regions via More -> "Add to region" in
+   the Snapshots section.
+1. Do something like `curl -X GET -H "Content-Type: application/json" -u <API_KEY>: "https://api.digitalocean.com/v2/images?page=5" | grep --color=always base.zulipdev.org`
+   (maybe with a different page number, and replace your API_KEY).
+1. Replace `template_id` in `create.py` in this directory with the
+   appropriate `id`, and region with the appropriate region.
 1. Test and push to zulip/zulip-gci!
