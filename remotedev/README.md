@@ -1,6 +1,6 @@
 # Create a remote Zulip dev server
 
-This guide is for mentors who want to help create remote Zulip dev servers 
+This guide is for mentors who want to help create remote Zulip dev servers
 for GCI participants.
 
 This year, [Digital Ocean](https://www.digitalocean.com/) is providing virtual
@@ -121,3 +121,25 @@ so they are notified.
 [zulip-zulip]: https://github.com/zulip/zulip
 [python-digitalocean]: https://github.com/koalalorenzo/python-digitalocean
 [how-to-request]: https://github.com/zulip/zulip-gci/blob/master/request-remote-dev.md
+
+## Updating the base image
+
+Rough steps:
+
+1. Get the `ssh` key for `base.zulipdev.org` from Christie or Rishi.
+1. Power up the `base.zulipdev.org` droplet from the digitalocean UI. You
+   probably have to be logged in in the Zulip organization view, rather than
+   via your personal account.
+1. `ssh zulipdev@base.zulipdev.org`
+1. `git pull upstream master`
+1. `tools/provision`
+1. `tools/run-dev.py`, and then Ctrl-C (to clear out anything in the Rabbit MQ queue, load messages, etc).
+1. `tools/run-dev.py`, and check that `base.zulipdev.org:9991` is up and running.
+1. `history -c` to clear any command line history, if you made a typo (to reduce chance of confusing new contributors).
+1. `sudo shutdown -h now`
+1. Go to the Images tab on DigitalOcean, and "Take a Snapshot".
+1. Wait for several minutes.
+1. Make sure to add the appropriate regions via More -> "Add to region" in the Snapshots section.
+1. Do something like `curl -X GET -H "Content-Type: application/json" -u <API_KEY>: "https://api.digitalocean.com/v2/images?page=5" | grep --color=always base.zulipdev.org` (maybe with a different page number, and replace your API_KEY).
+1. Replace `template_id` in `create.py` in this directory with the appropriate `id`, and region with the appropriate region.
+1. Test and push to zulip/zulip-gci!
