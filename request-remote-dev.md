@@ -1,7 +1,7 @@
 # How to request a remote Zulip dev instance
 
-In some events and under specific circumstances, Zulip can provide you a
-virtual machine hosted in Digital Ocean, with the development environment
+Under specific circumstances, Zulip can provide you a
+virtual machine hosted on Digital Ocean with the development environment
 already set up.
 
 To request a remote developer instance, ask a core developer to create it
