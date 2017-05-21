@@ -1,10 +1,11 @@
 # How to request a remote Zulip dev instance
 
-Zulip is participating in this year's [Google Code-in][google-gci]. To make it
-easy for participants to get started, Digital Ocean is providing virtual
-machines for participants.
+In some events and under specific circumstances, Zulip can provide you a
+virtual machine hosted in Digital Ocean, with the development environment
+already set up.
 
-Any Google Code-in participant may request a remote Zulip developer instance.
+To request a remote developer instance, ask a core developer to create it
+for you.
 
 ## Step 1: Join GitHub and create SSH Keys
 
@@ -37,14 +38,14 @@ zulip/zulip, you are ready to request your Zulip developer instance.
 
 If you haven't already, create an account on https://chat.zulip.org/.
 
-Next, join the **GCI help** stream. Create a new **stream message**
+Next, join the **development help** stream. Create a new **stream message**
 with your GitHub username as the **topic** and request your remote dev
-instance.  A mentor should reply letting you know they're working on
+instance. A core developer should reply letting you know they're working on
 creating it as soon as they are available to help (they'll be using
 the tool in `remotedev/create.py` in this repository).
 
-Once requested, it will only take a few minutes to create your instance. Your
-mentor will let you know when it is complete and available.
+Once requested, it will only take a few minutes to create your instance. You
+will be contacted when it is complete and available.
 
 ## Next steps
 
