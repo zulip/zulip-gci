@@ -13,7 +13,7 @@ To contribute to Zulip and to use a remote Zulip developer instance, you'll
 need a GitHub account. If you don't already have one, sign up
 [here][github-join].
 
-You'll also need to [create ssh keys and add them to your GitHub
+You'll also need to [create SSH keys and add them to your GitHub
 account][github-help-add-ssh-key].
 
 ## Step 2: Create a fork of zulip/zulip
@@ -33,7 +33,7 @@ for further details).
 
 ## Step 3: Make request via chat.zulip.org
 
-Now that you have a GitHub account, have added your ssh keys, and forked
+Now that you have a GitHub account, have added your SSH keys, and forked
 zulip/zulip, you are ready to request your Zulip developer instance.
 
 If you haven't already, create an account on https://chat.zulip.org/.
@@ -54,7 +54,7 @@ Once your remote dev instance is ready:
 - Connect to your server by running
   `ssh zulipdev@<username>.zulipdev.org` on the command line
   (Terminal for macOS and Linux, Bash for Git on Windows).
-- There is no password; your account is configured to use your ssh keys.
+- There is no password; your account is configured to use your SSH keys.
 - Once you log in, you should see `(zulip-venv) ~$`.
 - To start the dev server, `cd zulip` and then run `./tools/run-dev.py`.
 - While the dev server is running, you can see the Zulip server in your browser
