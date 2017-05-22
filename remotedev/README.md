@@ -20,7 +20,7 @@ Follow your operating system's instructions for installing python 3.
 Next, install [python-digitalocean][python-digitalocean] with `pip`:
 
 ```
-$ pip install -U python-digitalocean
+$ pip install python-digitalocean==1.10.1
 ```
 
 Note: If you have python 2 and python 3 installed on your system, you might
