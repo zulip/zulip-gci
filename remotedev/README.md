@@ -26,6 +26,9 @@ $ pip install python-digitalocean==1.10.1
 Note: If you have python 2 and python 3 installed on your system, you might
 need to use `pip3` instead.
 
+The `1.10.1` version is explicitly specified because later versions of the
+module have caused issues.
+
 ## Step 1: Fork & clone zulip/zulip-gci
 
 If you haven't already, fork and clone [zulip/zulip-gci][zulip-zulip-gci].
