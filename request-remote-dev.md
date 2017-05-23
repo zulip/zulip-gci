@@ -40,7 +40,8 @@ If you haven't already, create an account on https://chat.zulip.org/.
 
 Next, join the **development help** stream. Create a new **stream message**
 with your GitHub username as the **topic** and request your remote dev
-instance. A core developer should reply letting you know they're working on
+instance. Please note that you've already done steps 1 and 2. A
+core developer should reply letting you know they're working on
 creating it as soon as they are available to help (they'll be using
 the tool in `remotedev/create.py` in this repository).
 
