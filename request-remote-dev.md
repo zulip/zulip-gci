@@ -38,10 +38,12 @@ zulip/zulip, you are ready to request your Zulip developer instance.
 
 If you haven't already, create an account on https://chat.zulip.org/.
 
-Next, join the **development help** stream. Create a new **stream message**
-with your GitHub username as the **topic** and request your remote dev
-instance. A core developer should reply letting you know they're working on
-creating it as soon as they are available to help (they'll be using
+Next, join the [development
+help](https://chat.zulip.org/#narrow/stream/development.20help) stream. Create a
+new **stream message** with your GitHub username as the **topic** and request
+your remote dev instance. **Please make sure you have completed steps 1 and 2
+before doing so**. A core developer should reply letting you know they're
+working on creating it as soon as they are available to help (they'll be using
 the tool in `remotedev/create.py` in this repository).
 
 Once requested, it will only take a few minutes to create your instance. You
