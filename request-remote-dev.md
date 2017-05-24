@@ -5,7 +5,7 @@ virtual machine hosted on Digital Ocean with the development environment
 already set up.
 
 To request a remote developer instance, ask a core developer to create it
-for you.
+for you **after following these steps**:
 
 ## Step 1: Join GitHub and create SSH Keys
 
