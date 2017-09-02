@@ -165,6 +165,8 @@ Your remote Zulip dev server has been created!
 - While the dev server is running, you can see the Zulip server in your browser at http://{0}.zulipdev.org:9991.
 
 See [Developing remotely](http://zulip.readthedocs.io/en/latest/dev-remote.html) for tips on using the remote dev instance and [Git & GitHub Guide](http://zulip.readthedocs.io/en/latest/git-guide.html) to learn how to use Git with Zulip.
+
+Note that this droplet will automatically be deleted after a month of inactivity. If you are leaving Zulip for more than a few weeks, we recommend pushing all of your active branches to GitHub.
 ------
     """.format(username)
 
