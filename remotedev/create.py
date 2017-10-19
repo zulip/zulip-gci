@@ -27,6 +27,7 @@ import os
 # initiation argument parser
 parser = argparse.ArgumentParser(description='Create a Zulip devopment VM Digital Ocean droplet.')
 parser.add_argument("username", help="Github username for whom you want to create a Zulip dev droplet")
+parser.add_argument('--tags', nargs='+', default=[])
 
 def get_config():
     config = configparser.ConfigParser()
@@ -112,14 +113,14 @@ def set_user_data(username, userkeys):
     print("...returning cloud-config data.")
     return cloudconf
 
-def create_droplet(my_token, template_id, username, user_data):
+def create_droplet(my_token, template_id, username, tags, user_data):
     droplet = digitalocean.Droplet(token=my_token,
                                 name='{0}.zulipdev.org'.format(username),
                                 region='sfo1',
                                 image=template_id,
                                 size_slug='2gb',
                                 user_data=user_data,
-                                tags=username,
+                                tags=tags,
                                 backups=False)
 
     print("Initiating droplet creation...")
@@ -205,6 +206,7 @@ if __name__ == '__main__':
     ip_address = create_droplet(my_token=api_token,
                                 template_id=template_id,
                                 username=args.username,
+                                tags=args.tags,
                                 user_data=user_data)
 
     # create dns entry
