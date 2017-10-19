@@ -20,14 +20,11 @@ Follow your operating system's instructions for installing python 3.
 Next, install [python-digitalocean][python-digitalocean] with `pip`:
 
 ```
-$ pip install python-digitalocean==1.10.1
+$ pip install python-digitalocean
 ```
 
 Note: If you have python 2 and python 3 installed on your system, you might
 need to use `pip3` instead.
-
-The `1.10.1` version is explicitly specified because later versions of the
-module have caused issues.
 
 ## Step 1: Fork & clone zulip/zulip-gci
 
@@ -74,11 +71,21 @@ Now you're ready to use the script.
 
 ## Usage
 
-`create.py` takes one argument: a GitHub username.
+`create.py` takes two arguments
+
+* GitHub username
+* Tags (Optional argument)
 
 ```
 $ python3 create.py <username>
+$ python3 create.py <username> --tags <tag>
+$ python3 create.py <username> --tags <tag1> <tag2> <tag3>
 ```
+Assigning tags to droplets like `GCI` can be later useful for
+listing all the droplets created during GCI.
+[Tags](https://www.digitalocean.com/community/tutorials/how-to-tag-digitalocean-droplets)
+may contain letters, numbers, colons, dashes, and underscores.
+If no tags are passed the GitHub username would be added as tag.
 
 In order for the script to work, the GitHub user must have:
 
