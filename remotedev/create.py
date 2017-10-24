@@ -176,7 +176,7 @@ if __name__ == '__main__':
     # define id of image to create new droplets from
     # You can get this with something like the following. You may need to try other pages.
     # curl -X GET -H "Content-Type: application/json" -u <API_KEY>: "https://api.digitalocean.com/v2/images?page=5" | grep --color=always base.zulipdev.org
-    template_id = "25020421"
+    template_id = "28792373"
 
     # get command line arguments
     args = parser.parse_args()
