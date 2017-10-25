@@ -85,7 +85,6 @@ Assigning tags to droplets like `GCI` can be later useful for
 listing all the droplets created during GCI.
 [Tags](https://www.digitalocean.com/community/tutorials/how-to-tag-digitalocean-droplets)
 may contain letters, numbers, colons, dashes, and underscores.
-If no tags are passed the GitHub username would be added as tag.
 
 In order for the script to work, the GitHub user must have:
 
