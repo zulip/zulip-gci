@@ -1,6 +1,5 @@
 *.pyc
 *~
-remotedev/conf.ini
 *.sw[po]
 *.DS_Store
 *.sublime-project
