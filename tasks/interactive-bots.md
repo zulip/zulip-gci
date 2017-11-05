@@ -1,4 +1,4 @@
-#GCI Tasks: interactive bots
+# GCI Tasks: Interactive bots
 
 ## Prerequisites
 
