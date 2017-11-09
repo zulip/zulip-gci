@@ -89,10 +89,9 @@ on this topic.
 
 Zulip has hundreds of open issues that we'd like to resolve that don't
 have corresponding GCI tasks; many of them have been tagged as
-"bite-size" issues because we expect them to be accessible to new
-contributors:
+"good first issue" because we expect them to be accessible to new contributors:
 
-https://github.com/zulip/zulip/issues?q=is%3Aissue+is%3Aopen+label%3A%22bite+size%22
+https://github.com/zulip/zulip/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22
 
 You're encouraged to browse that list!  If you see a project in there
 that you're excited about helping with, ask about it on
