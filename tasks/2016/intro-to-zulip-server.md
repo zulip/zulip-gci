@@ -28,7 +28,7 @@ and entering `git grep 'def check_send_message'`.
 #### Modify the code
 
 Modify `check_send_message` so that anytime a user sends a message which says
-"bye", we convert the content to become `See you in a while :crocodile:!`
+`welcome`, we convert the content to become `Welcome to Zulip :octopus:`
 before `check_send_message` calls `check_message`.
 
 **Hint**: You will want to look at the incoming parameters to the function
@@ -44,29 +44,29 @@ Add some tests to the bottom of `zerver/tests/test_messages.py` to make sure
 we do not accidentally break this behavior in the future.
 
 ```
-class CrocodileTest(ZulipTestCase):
-    def test_change_bye_message(self):
-        # type: () -> None
-        sender = get_user_profile_by_email('othello@zulip.com')
+class OctopusTest(ZulipTestCase):
+    def test_change_welcome_message(self) -> None:
+        sender = get_user('iago@zulip.com', get_realm('zulip'))
         client = make_client(name="test suite")
-        message_id = check_send_message(sender, client, "stream", ["Verona"], "Crocodile test", "bye")
+        message_id = check_send_message(sender, client, "stream", ["Verona"], "Zulip Octopus test", "welcome")
         self.assertEqual(
             Message.objects.values_list("content", flat=True).get(id=message_id),
-            "See you in a while :crocodile:!")
+            "Welcome to Zulip :octopus:")
 
-    def test_leave_hi_message_alone(self):
-        # type: () -> None
-        sender = get_user_profile_by_email('othello@zulip.com')
+    def test_leave_welcome_message_alone(self) -> None:
+        sender = get_user('iago@zulip.com', get_realm('zulip'))
         client = make_client(name="test suite")
-        message_id = check_send_message(sender, client, "stream", ["Verona"], "Crocodile test", "Hi there")
+        message_id = check_send_message(sender, client, "stream", ["Verona"], "Zulip Octopus test", "Welcome everyone!")
         self.assertEqual(
             Message.objects.values_list("content", flat=True).get(id=message_id),
-            "Hi there")
+            "Welcome everyone!")
 ```
+You should also import `check_send_message` function from `zerver/lib/actions.py`
+as this is used in `test_change_welcome_message` and `test_leave_welcome_message_alone`.
 
 Then run
 ```
-tools/test-backend zerver/tests/test_messages.CrocodileTest
+tools/test-backend zerver/tests/test_messages.OctopusTest
 ```
 to make sure your code passes the tests you just added. If it doesn't,
 fix any brokenness in your code until it does. Take a screenshot of
@@ -83,7 +83,7 @@ interactive debugging, one often wants to just run a single test in the suite. R
 ```
 cat tools/test-all
 ```
-and figure out how to run just the lint tests and do so (there should be no
+and figure out how to run just the lint tests for backend and do so (there should be no
 output). Add an extra space to the beginning of any line of code and run the
 lint tests again. You should see a bunch of output in red. Take a screenshot of
 your terminal.
