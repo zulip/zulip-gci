@@ -7,7 +7,7 @@
   on how to set one up.
 
 * Update your working copy of Zulip and then create a feature branch. [Learn
-  how](../before-every-task.md).
+  how](../../before-every-task.md).
 
 * Good written English.
 
