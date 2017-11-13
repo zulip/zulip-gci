@@ -13,7 +13,7 @@
   [here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
 
 * Update your working copy of Zulip and then create a feature branch. [Learn
-  how](../before-every-task.md).
+  how](../../before-every-task.md).
 
 ## Background
 

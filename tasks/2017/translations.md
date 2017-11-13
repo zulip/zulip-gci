@@ -7,7 +7,7 @@
   system, browser, email, etc defaults should be this language.
 
 * Update your working copy of Zulip and then create a feature branch. [Learn
-  how](../before-every-task.md).
+  how](../../before-every-task.md).
 
 * You need to know how to create a GitHub pull request. Check out the
   [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)
