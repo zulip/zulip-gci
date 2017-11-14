@@ -9,26 +9,25 @@
 * You need to know how to create a GitHub pull request. Check out the
   [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)
   task if you aren't sure how to do this, or read through the task
-  description
-  [here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
+  description [here](https://github.com/zulip/zulip-gci/tree/master/submit-a-pull-request).
 
 * Update your working copy of Zulip and then create a feature branch. [Learn
   how](../before-every-task.md).
 
 ## Background
 
-Zulip [contrib-bots](https://github.com/zulip/zulip/tree/master/contrib_bots/lib)
+[Zulip bots](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots)
 is a boilerplate for creating interactive bots that react to messages sent
 by users.
 
-The interactive bots live in the `contrib-bots/lib` as python files ('.py')
-that define their specific behavior. The `contrib-bots/run.py` file defines
-common behaviors for the interactive bots that react to messages.
+The interactive bots live in the [`zulip_bots/bots/`](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots) directory with a sub-directory for each bot.
+Each bot directory has python files ('.py') that define their specific behavior,
+have automated tests and documentation explaining its behavior. The overall directory structure of zulip bots can be seen [here](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots#directory-structure).
 
 The following tasks will introduce you to using interactive bots and creating
-simple new bots that react to messages. This group of tasks has a high
-creative potential, as you can create your own bots that react to specific
-messages and can be integrated with various APIs.
+simple new bots that react to messages. This group of tasks has a high creative potential,
+as you can create your own bots (with complete automated tests) that react to specific messages
+and can be integrated with various APIs.
 
 ## Task Descriptions
 
@@ -40,59 +39,21 @@ the Task Types below.
 Follow the tutorial below to test run the followup bot on your Zulip
 instance (either local or in your droplet).
 
-* Run the Zulip server and log in the browser as Cordelia.
-
-* Find your user's API key just below the bots section in the settings page.
-This is how Zulip knows the request is from an authorized user.
-
-  You can also create a new bot for a user in settings - it will have its
-  own API key and email. Remember to subscribe it to the streams you want to
-  use the bot in.
-
-* Download your bot's `zuliprc` file, by clicking on the green button, and
-save it as `~/zuliprc-local`.
-
-  Alternatively, you can create this file with credentials:
-
-  ```
-  [api]
-  key=<api-key>
-  email=<email>
-  site=<dev-url>
-  ```
-
-  In the example replace the `<api-key>` with an existing API
-  key and `<email>` with the bot's email. The `<dev-url>` should
-  point to your development environment URL.
-
-  If you're running your bot in the droplet, alongside your Zulip instance,
-  the `<dev-url>` will be `localhost:9991`.
+* Any bot in [`zulip_bots/bots/`](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots) can [run](http://zulip.readthedocs.io/en/latest/running-bots-guide.html#running-a-bot)
+on a running Zulip server by replacing `<bot-name>` by any of the existing valid bot name
+(under `zulip_bots/bots/`). Replace `<bot-name>` by `followup` for this tutorial.
 
 * Create a `followup` stream on your Zulip server.
 
 * Use `Manage Streams` to subscribe your bot (if you created one) to the
 following streams: `devel`, `social`, and `followup`.
 
-* Run the followup bot:
-
-  ```
-  cd ~/zulip/contrib_bots
-  python run.py lib/followup.py --config-file ~/.zuliprc-local
-  ```
-
-    Make sure to point to your `.zuliprc-local` file - if you have created
-    it in a different folder than `~`, you have to point to the right folder,
-    e.g. `../../.zuliprc-local`.
-
-    **Note:** if you're using Vagrant, make sure you run the bot **outside**
-    of the Vagrant container.
-
-
 * Test manually that the followup bot is working on the local Zulip instance,
 by:
 
- - sending a few messages starting with `@followup` and `@follow-up` from
- different streams, such as `devel` and `social`
+ - sending a few messages starting with `@<your-active-bot-name>` from
+ different streams, such as `devel` and `social`. `<your-active-bot-name>` is the
+ name of the bot that you had given while creating a bot [initially](http://zulip.readthedocs.io/en/latest/running-bots-guide.html#running-a-bot)(Settings -> Your bots -> Add a new bot).
 
  - checking that the messages showed up in the `followup` stream, prepended
  by the sender email
