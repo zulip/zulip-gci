@@ -102,10 +102,13 @@ have corresponding GCI tasks; many of them have been tagged as
 
 https://github.com/zulip/zulip/issues?page=3&q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+no%3Aassignee
 
-You're encouraged to browse that list!  If you see a project in there
+You're encouraged to browse that list! If you see a project in there
 that you're excited about helping with, ask about it on
 https://chat.zulip.org; it's likely that we'll be happy to create a GCI task
-for it.
+for it. Additionally, you can comment `@zulipbot claim` on it to have our
+GitHub bot [@zulipbot](https://github.com/zulipbot) officially assign the issue
+to you. You can read more about using **@zulipbot**
+[here](http://zulip.readthedocs.io/en/latest/zulipbot-usage.html).
 
 ## Information for GCI mentors
 
