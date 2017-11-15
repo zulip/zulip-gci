@@ -30,7 +30,7 @@ as long as they have *some* interaction on the task. The deadlines on tasks are
 mostly to allow tasks to go back into the pool if a student isn’t actively working 
 on it, rather than to be a difficult deadline to meet.
 ```
-I've given you an extra day to complete the task, since you seem to be 
+I've given you an extra three days to complete the task, since you seem to be 
 diligently working on it.
 ```
 
@@ -103,7 +103,7 @@ in the review queue.`
 
 ## Zulip
 
-### Student pings mentors for reviews instead of going through the queue system
+### Student pings mentors constantly for reviews
 
 I inform the student there is a queue of submissions and their submission will be
 reviewed shortly:
