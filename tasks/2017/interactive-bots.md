@@ -7,23 +7,23 @@
   instructions on how to set one up.
 
 * You need to know how to create a GitHub pull request. Check out the
-  [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)
+  [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)(TODO: Need to update this link with the new one)
   task if you aren't sure how to do this, or read through the task
-  description
-  [here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
+  description [here](https://github.com/zulip/zulip-gci/tree/master/submit-a-pull-request).
 
 * Update your working copy of Zulip and then create a feature branch. [Learn
   how](../../before-every-task.md).
 
 ## Background
 
-Zulip [contrib-bots](https://github.com/zulip/zulip/tree/master/contrib_bots/lib)
+[Zulip bots](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots)
 is a boilerplate for creating interactive bots that react to messages sent
 by users.
 
-The interactive bots live in the `contrib-bots/lib` as python files ('.py')
-that define their specific behavior. The `contrib-bots/run.py` file defines
-common behaviors for the interactive bots that react to messages.
+The interactive bots live in the [`zulip_bots/bots/`](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots) directory with a sub-directory for each bot.
+Each bot directory has python files ('.py') that define their specific behavior,
+automated tests and documentation. The overall directory structure of zulip bots can be seen
+[here](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots#directory-structure).
 
 The following tasks will introduce you to using interactive bots and creating
 simple new bots that react to messages. This group of tasks has a high
@@ -35,92 +35,53 @@ messages and can be integrated with various APIs.
 There are four types of tasks in this category, each corresponding to one of
 the Task Types below.
 
-### Task Type A: Learn about interactive bots by running the followup bot
+### Task Type A: Learn about interactive bots by running the helloworld bot
 
-Follow the tutorial below to test run the followup bot on your Zulip
-instance (either local or in your droplet).
+Follow the tutorial below to test run the helloworld bot on your Zulip
+instance (either local or in your droplet).  As you're going through the tutorial,
+take notes on where you got stuck or needed to look up terminology.
 
-* Run the Zulip server and log in the browser as Cordelia.
+Refer to the detailed description on how to [run a zulip bot](https://chat.zulip.org/api/running-bots).
 
-* Find your user's API key just below the bots section in the settings page.
-This is how Zulip knows the request is from an authorized user.
+Follow the steps below to run helloworld bot:
 
-  You can also create a new bot for a user in settings - it will have its
-  own API key and email. Remember to subscribe it to the streams you want to
-  use the bot in.
+* Create a bot with the name `<your-name>_helloworld_bot`.
+(For details refer to the second step [here](https://chat.zulip.org/api/running-bots))
 
-* Download your bot's `zuliprc` file, by clicking on the green button, and
-save it as `~/zuliprc-local`.
+* Since we aim to run a helloworld bot, replace <my_bot> with helloworld while [running a bot](https://chat.zulip.org/api/running-bots).
 
-  Alternatively, you can create this file with credentials:
-
-  ```
-  [api]
-  key=<api-key>
-  email=<email>
-  site=<dev-url>
-  ```
-
-  In the example replace the `<api-key>` with an existing API
-  key and `<email>` with the bot's email. The `<dev-url>` should
-  point to your development environment URL.
-
-  If you're running your bot in the droplet, alongside your Zulip instance,
-  the `<dev-url>` will be `localhost:9991`.
-
-* Create a `followup` stream on your Zulip server.
-
-* Use `Manage Streams` to subscribe your bot (if you created one) to the
-following streams: `devel`, `social`, and `followup`.
-
-* Run the followup bot:
-
-  ```
-  cd ~/zulip/contrib_bots
-  python run.py lib/followup.py --config-file ~/.zuliprc-local
-  ```
-
-    Make sure to point to your `.zuliprc-local` file - if you have created
-    it in a different folder than `~`, you have to point to the right folder,
-    e.g. `../../.zuliprc-local`.
-
-    **Note:** if you're using Vagrant, make sure you run the bot **outside**
-    of the Vagrant container.
-
-
-* Test manually that the followup bot is working on the local Zulip instance,
+* Test manually that the helloworld bot is working on the local Zulip instance,
 by:
 
- - sending a few messages starting with `@followup` and `@follow-up` from
- different streams, such as `devel` and `social`
+ - sending a few messages starting with `@<your-name>_helloworld_bot` from
+ the stream "Verona".
 
- - checking that the messages showed up in the `followup` stream, prepended
- by the sender email
+ - checking that the bot is replying with `beep boop` each time.
 
 * Take screenshots showing that the bot is working, make sure to have
 screenshots of:
 
  - your terminal window with the bot running, including the command you used
  to run the bot and the output with the bot description
- - messages sent by you to the bot in the `devel` and `social` streams
- - messages sent by the bot in the `followup` stream
+ - messages sent by you to the bot in "Verona" stream
+ - messages sent by the bot in the same stream
  - any other screenshots you find relevant
 
-  Add the screenshots to `interactive-bots/followup/<username>/`. Make sure
+  Add the screenshots to `interactive-bots/helloworld/<username>/`. Make sure
   your filenames do not have white-spaces. Instead, use dashes (`-`).
 
 * Note down any places you got stuck, problems or errors you ran into while
 doing this setup process. Add your notes as a `notes.md` file to
-`interactive-bots/followup/<username>/`.
+`interactive-bots/helloworld/<username>/`.
 
 * Create a commit with the screenshots and notes, with commit message
-`interactive bots: Run the followup bot for <username>.`.
+`interactive bots: Run the helloworld bot for <username>.`.
 
-* Create a pull request in the `zulip/zulip-gci` repository, with title
-`interactive bots: Run the followup bot for <username>`. Link to your GCI
+* Create a pull request in the `zulip/zulip-gci-submissions` repository, with title
+`interactive bots: Run the helloworld bot for <username>`. Link to your GCI
 task in comment section.
 
-*Completion criteria:* Mentors will check that the followup bot was properly
+*Completion criteria:* Mentors will check that the helloworld bot was properly
 set up.
 
 ### Task Type B: Learn about interactive bots by creating a links bot
