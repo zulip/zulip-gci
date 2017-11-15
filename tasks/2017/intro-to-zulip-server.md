@@ -61,8 +61,8 @@ class OctopusTest(ZulipTestCase):
             Message.objects.values_list("content", flat=True).get(id=message_id),
             "Welcome everyone!")
 ```
-You should also import `check_send_message` function from `zerver/lib/actions.py`
-as this is used in `test_change_welcome_message` and `test_leave_welcome_message_alone`.
+You should also import the `check_send_message` function from `zerver/lib/actions.py`
+becuase this is used in `test_change_welcome_message` and `test_leave_welcome_message_alone`.
 
 Then run
 ```
