@@ -12,7 +12,7 @@
 * You need to know how to create a GitHub pull request. Check out the
   [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)
   task if you aren't sure how to do this, or read through the task description
-  [here](https://github.com/zulip/zulip-gci/blob/master/tasks/submit-a-pull-request.md).
+  [here](submit-a-pull-request.md).
 
 ## Background
 
@@ -22,9 +22,13 @@ Zulip](https://zulip.readthedocs.io/en/latest/translating.html).
 
 This group of tasks is about creating common translation style guides, to give
 guidance on how Zulip should be translated into specific languages. Currently
-we have a benchmark [Chinese](https://zulip.readthedocs.io/en/latest/chinese.html)
-guide and initial [Polish](https://zulip.readthedocs.io/en/latest/polish.html)
-and [Spanish](https://zulip.readthedocs.io/en/latest/spanish.html) guides.
+we have guides for [Chinese](
+https://zulip.readthedocs.io/en/latest/chinese.html), [French](
+https://zulip.readthedocs.io/en/latest/french.html), [German](
+https://zulip.readthedocs.io/en/latest/german.html), [Polish](
+https://zulip.readthedocs.io/en/latest/polish.html), [Russian](
+https://zulip.readthedocs.io/en/latest/russian.html), and [Spanish](
+https://zulip.readthedocs.io/en/latest/spanish.html).
 
 ## Task Descriptions
 
@@ -33,15 +37,15 @@ brought you here.
 
 ### Task Type A: Research web application translations
 
-* Find three different web applications that have been translated into the
+* Find three different web applications that have been translated into
 *language*. Some examples of applications translated into multiple languages:
   * Facebook
   * GMail
-  * Twitter
   * Instagram
   * Skype
+  * Twitter
+  * Wikipedia
   * YouTube
-  * Wikpedia
 
 * Look for common words and phrases associated with web applications such as
 *log in*, *home*, *reply* etc. Take screenshots of the applications with the
@@ -53,7 +57,7 @@ Add the screenshots to a new folder `translations/<language>/research`.
 specific forms that should or shouldn't be used? What words or phrases are most
 commonly used? What could sound awkward?
 
-* Are there any other specific requirements for the *language*? Does the
+* Are there any other specific requirements for *language*? Does the
 application interface change when you switch languages? Is the *language*
 right-to-left or left-to-right? Does it require any special encodings or
 characters?
@@ -67,16 +71,23 @@ characters?
 `translations: Research translations for <language>.`.
 
 *Completion criteria*: The mentors will verify that you successfully created a
-pull request with at least 6 screenshots of 3 different interfaces and notes.
+pull request with correctly organized screenshots for 3 applications and notes.
+There should be at least 12 screenshots.
+
+*Tips:*
+* Taking smaller screenshots will make it easier for others to locate the
+words and phrases relevant to Zulip.
+* You can and should take screenshots of the same interface in different applications
+(e.g. the settings menu in Facebook and Twitter).
 
 ### Task Type B: Write general rules for translations
 
 * Create a new file `general-rules.md` in `translations/<language>`.
 
-* Write rules for translations specific to the *language*. If applicable, answer
+* Write rules for translations specific to *language*. If applicable, answer
 the following questions:
 
-  * Should the language be formal or informal?
+  * Should translations be formal or informal?
 
   * Which grammatical person should be used for translations (e.g. second person
     singular, first person plural)?
@@ -96,14 +107,12 @@ the following questions:
   * Balancing common verbs and nouns with specific IT-related translation of
   English terms
 
-* Add any other rules you believe are appropriate in the *language* context.
+* Add any other rules you believe are appropriate in the context of *language*.
 
-* Reference the [Chinese](https://zulip.readthedocs.io/en/latest/chinese.html),
-[Polish](https://zulip.readthedocs.io/en/latest/polish.html)
-and [Spanish](https://zulip.readthedocs.io/en/latest/spanish.html) style guides
-for inspiration and to make sure you didn't omit any important rules.
+* For inspiration and to make sure you didn't omit any important rules,
+check out the style guides.
 
-* Communicate with other native speakers of the *language* in the Zulip
+* Communicate with other native speakers of *language* in the Zulip
 `translation` stream.
 
 * Create a commit with the `general-rules.md`, with commit message  `translations:
@@ -144,8 +153,7 @@ appropriate.
 
 ### Task Type D: Improve existing style guides
 
-* Improve the existing *language* style guide, using the [Chinese](https://zulip.readthedocs.io/en/latest/chinese.html) style guide as
-your benchmark. Make sure your improvement includes:
+* Improve the existing *language* style guide. Make sure your improvements include:
 
   * Putting the initial general rules in the *Notes* section
   * Diving the *Special terms used in Zulip* into *Terms*, *Phrases* and *Other*
@@ -156,7 +164,14 @@ your benchmark. Make sure your improvement includes:
   * Providing example usage of the translated terms in the Zulip context
   * Refactoring the formatting of the markdown file
 
-* Communicate with other native speakers of the *language* in the Zulip
+* Use the [Chinese](
+https://zulip.readthedocs.io/en/latest/chinese.html), [German](
+https://zulip.readthedocs.io/en/latest/german.html), and [Spanish](
+https://zulip.readthedocs.io/en/latest/spanish.html) style guides as
+your benchmark. None of these is flawless though, and many of the
+points listed below also apply to them.
+
+* Communicate with other native speakers of *language* in the Zulip
 `translation` stream. Before you change an existing translation of a word, be
 sure to talk about it.
 
@@ -168,26 +183,27 @@ Improve the <language> style guide.`
 
 *Completion criteria*: The mentors will verify that you have improved the style
 guide and put the translated terms in the appropriate sections, providing
-examples of usage in the *language*. Additional questions about specific
-translations may be asked by fluent *language* speakers, to make sure the
-translation is appropriate.
+examples of usage in *language*. Additional questions may be asked by fluent
+*language* speakers, to make sure the style guide is appropriate.
 
 ### Task Type E: Propose a language
 
-* Create a topic on your *language* in the Zulip `translation` stream. Describe
-your experience with the *language*, e.g. *I'm a native speaker of the [language],
-I currently live in the [language_country_of_origin]*.
+* Create a topic on *language* in the Zulip `translation` stream. Describe
+your experience with *language*, e.g. *I'm a native speaker of \<language\>,
+I currently live in \<language_country_of_origin\>*.
 
-* Do **Task Type A** for the *language*.
+* Ask mentors to create **Task Type A** for *language*.
 
-* As soon as your pull request is accepted, request mentors to create Tasks Type
-B and C for the *language*.
+* Do **Task Type A** for *language*.
+
+* As soon as your pull request is accepted, request mentors to create Task Types
+B and C for *language*.
 
 *Completion criteria*: The mentors will verify that you have completed the
-**Task Type A** for the *language* and created the appropriate topic in the
-`translation` stream. They will also check that you have requested appropriate
-tasks and @mention you when they are published.
+**Task Type A** for *language* and discussed your language in the `translation`
+stream. They will also check that you have requested appropriate tasks and
+@-mention you when they are published.
 
 ## General notes
 
-This group of tasks is intended for fluent speakers of the *language*.
+This group of tasks is intended for fluent speakers of *language*.
