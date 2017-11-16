@@ -37,4 +37,4 @@
 * You
 * We
 
-& any Zulip-relevant terms in the *language* that should be specified
+& any Zulip-relevant terms in *language* that should be specified
