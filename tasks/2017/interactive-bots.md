@@ -196,68 +196,51 @@ set up.
 
 ### Task Type C: Create an interactive bot
 
-We recommend claiming this task type after completing Task Type A
-and Task Type B.
+We recommend claiming this task type after completing **Task Type A**
+and **Task Type B**.
 
 Let *feature* be the feature mentioned in the task that brought you here.
 
-* Make sure you understand what is expected of the *feature* - what messages
+* Make sure you understand what is expected of *feature* - what messages
 should the bot react to, what should it do with the message content and
 where should it post any output. Should you have any doubts, discuss them in
 the Zulip `GCI tasks` stream.
 
-* Create the interactive bot at `~/zulip/contrib_bots/lib/<feature>` as a
-`<feature>.py` file. Make sure it fulfills the requirements.
+* Create the interactive bot at
+`python-zulip-api/zulip_bots/zulip_bots/bots/<feature>/`. Check out the
+[Writing bots](http://zulip.readthedocs.io/en/latest/writing-bots-guide.html)
+guide for help on creating a new bot.
 
 * Test your bot manually, check that:
 
-  * The bot is reacting to the appropriate messages.
-  * The bot uses the content from the messages properly.
-  * The bot posts the expected output.
+  * Your bot is reacting to the appropriate messages.
+  * Your bot responds with the expected output.
+
+* Verify that your bot follows the [directory structure for Zulip bots](
+http://zulip.readthedocs.io/en/latest/writing-bots-guide.html#adding-a-bot-to-zulip).
+You can use the [GIPHY bot](
+https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots/giphy)
+as an orientation. In particular, check that:
+
+  * Your bot comes with unit tests.
+  * Your bot comes with a documentation.
 
 * Create a commit with your bot, with commit message `interactive bots:
-Create *feature* bot.`.
+Create <feature> bot.`.
 
-* Create a pull request in the `zulip/zulip` repository, with title
-`interactive bots: Create *feature* bot.`. Link to your GCI task in
+* Create a pull request in the [zulip/python-zulip-api](
+https://github.com/zulip/python-zulip-api) repository, with title
+`interactive bots: Create <feature> bot.`. Link to your GCI task in
 the comment section on GitHub.
 
 *Completion criteria:* Mentors will check if the new bot fulfills the
-feature requirements.
+feature requirements and follows the proper directory structure.
 
-### Task Type D: Create your own bot
+## General notes
 
-We recommend claiming this task type after completing Task Type A and Task
-Type B.
-
-* Come up with an idea for your own interactive bot that would improve Zulip.
-Make sure to make clear what would be expected of the bot - the kind of
-messages it should react to, what it should do with the message content and
-where it should post any output.
-
-* Present your idea for an interactive bot on the `interactive bots` topic
-on the `GCI tasks` stream. Consult with mentors and make sure your idea is
-approved before you start coding.
-
-* Create your interactive bot at `~/zulip/contrib_bots/lib/<bot_name>` as a
-`<bot_name>.py` file. Make sure it fulfills the requirements.
-
-* Test your bot manually, check that:
-
-  * The bot is reacting to the appropriate messages.
-  * The bot uses the content from the messages properly.
-  * The bot posts the expected output.
-
-* Document your interactive bot at `~/zulip/contrib_bots/lib/<bot_name>` in
-a `docs.md` (about the bot, how the bot works, what the bot does, etc.). Add
-any relevant screenshots that will help understand how the bot works.
-
-* Create a commit with your bot, with commit message `interactive bots:
-Create <bot_name> bot.`.
-
-* Create a pull request in the `zulip/zulip` repository, with title
-`interactive bots: Create <bot_name> bot by <username>.`. Link to your GCI
-task in the comment section on GitHub.
-
-*Completion criteria:* Mentors will check if the new bot fulfills the feature
-requirements.
+If there is an integration Zulip doesn't have that you would like to add,
+please let us know on the `bot proposals` topic in the `GCI tasks` stream.
+We can then discuss adding a **Task Type C** for creating that bot. Good
+sources of inspiration are the integrations and bots present in [Hubot](
+https://hubot.github.com/), [Errbot](http://errbot.io/en/latest/), [Slack](
+https://slack.com/apps), and [Telegram](https://storebot.me/).
