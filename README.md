@@ -37,10 +37,17 @@ sending test messages.
 There are at least a dozen other active streams on the server; go to
 https://chat.zulip.org/#streams/all to check them out.
 
-A few notes:
-* If you see a question you can answer (on any of the streams), please do!
-* Please adhere to our
-  [community code of conduct](https://zulip.readthedocs.io/en/latest/code-of-conduct.html).
+Participating in an open source community is about more than just 
+contributing code. It is about helping your fellow contributors with their
+contributions as well. As such, one of the major considerations for the
+competition winners will be how active you are in helping your fellow 
+students. You can do this in two ways:
+* Answer questions in any of the streams
+* Help people during code review, so that by the time a mentor looks at the 
+  pull request, they've had enough feedback to make their PR clean enough to approve. 
+
+Please be kind in all of your interactions, and adhere to our 
+[community code of conduct](https://zulip.readthedocs.io/en/latest/code-of-conduct.html).
 
 A few non-obvious things that help keep the server manageable:
 * All test messages should go to the [#test
@@ -83,12 +90,15 @@ internet connection (the local install is ~500 Mb), or are planning on doing
 a small number of Zulip tasks, we recommend starting with the remote VM.
 You can always set up a local install later.
 
-## This repository
+## GCI repositories
 
-This repository is the home for images, code, and other contributions that
-don't yet have a place in one of the other Zulip repositories. Many of the
-tasks will instruct you to submit pull requests and create github issues on
-this repository.
+This repository is the home for Google Code In documentation, code, task 
+descriptions, and anything else that helps us keep Google Code In organized. 
+
+Many of the tasks will instruct you to submit pull requests and create github 
+issues on a github respository that we made especially for 
+[student submissions](https://github.com/zulip/zulip-gci-submissions) 
+that do not yet have a place in other Zulip repositories.
 
 If you are not sure how to submit a pull request (or what that even means), check out our
 [beginner task](https://github.com/zulip/zulip-gci/tree/master/submit-a-pull-request)
@@ -117,12 +127,14 @@ participation in Google Code-In.
 
 At the moment, this includes:
 
+* `docs/`: Documentation that you can point students to in order to 
+  help them learn about how open source works. 
+* `scripts/`: Tools for iterating over the tasks in a category and
+  creating actual GCI tasks out of them.
 * `tasks/`: Template descriptions for large categories of tasks.  We
   put the bulk of the descriptions in this repo rather than in the GCI
   interface so that it's possible to update the documentation on how
   to do things as we see what folks find confusing.
-* `scripts/`: Tools for iterating over the tasks in a category and
-  creating actual GCI tasks out of them.
 
 For each major category of tasks, we'll want to have both a template
 description under `tasks/` as well as a script under `scripts/` to import
