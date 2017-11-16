@@ -84,122 +84,114 @@ task in comment section.
 *Completion criteria:* Mentors will check that the helloworld bot was properly
 set up.
 
-### Task Type B: Learn about interactive bots by creating a links bot
+### Task Type B: Learn about interactive bots by creating a message info bot
 
-We recommend completing Task Type A before doing this task.
+We recommend completing **Task Type A** before doing this task.
 
-Follow the tutorial below to create your first simple bot that sends private
-messages to users.
+Follow the tutorial below to create your first simple bot. It will analyze a
+message that @-mentions the bot and count its words for word count. The gathered
+information will then be sent to a private conversation with the message author.
 
-* Make a copy of `followup.py` located in `contrib_bots/lib` and name it
-`links.py`, to build on existing code.
+* Make a copy of the helloworld bot
+[python-zulip-api/zulip_bots/zulip_bots/bots/helloworld](
+https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots/helloworld)
+and name it `message_info`, to build on existing code.
+  ```shell
+  cp -r helloworld message_info
   ```
-  cp followup.py links.py
-  ```
 
-
-* Change the class name to `LinksHandler` and the last line to `handler_class
-= LinksHandler`.
-
-
-* Edit the comment  in `class LinksHandler(object)` appropriately:
-
-  > This plugin facilitates creating a list of resources you want to save
-  while using Zulip. It looks for messages starting with "@link" or
-  "@resource".
-  > In this example, we send resources to private messages.
+* Rename `helloworld.py` to `message_info.py`. In `message_info.py`,
+change the class name to `MessageInfoHandler` and the last line to
+`handler_class = MessageInfoHandler`.
 
 * Edit the return statement in `def usage(self)`:
 
-  > This plugin will allow users to flag messages as being resources and
-  store them in private messages with the bot. Users should preface messages
-  with "@link" or "@resource".
+  > This bot will allow users to analyze a message for letter count
+  and word count. The gathered information will then be sent to a private
+  conversation with the user. Users should @-mention the bot in the
+  beginning of a message.
 
-
-* Edit the comments of `triage_message`:
-
-  ```
-  # This next line of code is defensive, as we
-  # never want to get into an infinite loop of posting links
-  # for own links!
+* Edit the code of `handle_message()`:
+  ```python
+  words_in_message = message['content'].split()
+  content = "You sent a message with {} words.".format(len(words_in_message))
   ```
 
-
-* Edit the if statements of `triage_message`:
-
-  ```
-  if message['display_recipient'] == 'followup':
-      return False
-  is_link = (original_content.startswith('@link') or
-             original_content.startswith('@resource'))
-
-  return is_link
-  ```
-
-  The bot now responds to messages starting with `@link` and `@resource`.
-
-
-* Edit the if statements of `handle_message`:
-
-  ```
-  if original_content.startswith('@link'):
-      new_content = original_content.replace('@link',
-                                         'from %s:' % (original_sender,))
-  else:
-      new_content = original_content.replace('@resource',
-                                         'from %s:' % (original_sender,))
-  ```
-
-
-* Create a links bot in settings for an existing user. Use its credentials
-in `~/.zuliprc-local`. Subscribe the bot to `devel` and `social` streams.
+* Create a new bot in your development server's settings. Use "Message info bot"
+as the bot's full name, and "message-info" as its username. Run your bot
+like in **Task Type A**.
 
 * Check that the bot is working as expected:
 
-  - it reacts to messages starting with `@link` and `@resource`
-  - it currently posts the message to the `followup` stream, as the followup
+  - it replies to messages that @-mention the bot with the word count of that message
+  - it currently replies to a message in the same stream, as the helloworld
   bot did
 
-* Edit the `handle_message`:
+* Edit the code of `handle_message()` once again:
 
-  ```
-  client.send_message(dict(
+  ```python
+  original_sender = message['sender_email']
+  bot_handler.send_message(dict(
       type='private',
       to=original_sender,
-      content=new_content,
+      content=content,
   ))
   ```
 
 * Check that the bot is working as expected:
 
-  - it reacts to messages starting with `@link` and `@resource`
+  - it responds to messages that @-mention the bot with the word count of that message
+  - it responds with a private message to the sender of the original message
 
-  - it sends a private message to the sender of the original message
+* Rename `test_helloworld.py` to `test_message_info.py` and edit the file:
+
+  ```python
+  bot_name = 'message_info'
+  ```
+
+* Edit the bot's unit tests. Our bot is expected to respond with a private
+message, so we need slightly more complicated testing methods:
+
+  ```python
+  message = "this should be five words"
+  response = {'type': 'private',
+              'to': 'foo_sender@zulip.com',
+              'content': 'You sent a message with 5 words.'}
+  expected_conversation = [
+      (message, response)
+  ]
+  self.check_expected_responses(expected_conversation, expected_method='send_message')
+  ```
+
+* Test your new unit test for your bot. Run `tools/test-bots message_info` in your
+  `python-zulip-api` repo.
 
 * Take screenshots showing that the bot is working, make sure to have
 screenshots of:
 
- - your terminal window with the bot running, including the command you used
- to run the bot and the output with the bot description
- - messages sent by you to the bot in the `devel` and `social` streams
- - messages sent by the bot in the private messages to the author
- - any other screenshots you find relevant
+  - your terminal window with the bot running, including the command you used
+  to run the bot and the output with the bot description
+  - messages sent by you to the bot in the `Verona` stream
+  - messages sent by the bot in the private messages to the author
+  - your successful unit test
+  - any other screenshots you find relevant
 
- Add the screenshots to `interactive-bots/links/<username>/`. Make sure your
- filenames do not have white spaces. Instead, use dashes (`-`).
+* Add the screenshots to `interactive-bots/message_info/<username>/`. Make sure your
+filenames do not have white spaces. Instead, use dashes (`-`).
 
-* Note down any places you got stuck, problems or errors you ran into while
-doing this setup process. Add your notes as a `notes.md` file to
-`interactive-bots/links/<username>/`.
+  - Note down any places you got stuck, problems or errors you ran into while
+  doing this setup process. Add your notes as a `notes.md` file to
+  `interactive-bots/message_info/<username>/`.
 
-* Create a commit with the screenshots and notes, with commit message
-`interactive bots: Run the links bot for <username>.`.
+  - Create a commit with the screenshots and notes, with commit message
+  `interactive bots: Run the message_info bot for <username>.`
 
-* Create a pull request in the `zulip/zulip-gci` repository, with title
-`interactive bots: Run the links bot for <username>`. Link to your GCI task
-in comment section.
+  - Create a pull request in the [zulip/zulip-gci-submissions](
+  https://github.com/zulip/zulip-gci-submissions) repository, with title
+  `interactive bots: Run the message_info bot for <username>`. Link to your GCI task
+  in comment section.
 
-*Completion criteria:* Mentors will check that the links bot was properly
+*Completion criteria:* Mentors will check that the message info bot was properly
 set up.
 
 ### Task Type C: Create an interactive bot
