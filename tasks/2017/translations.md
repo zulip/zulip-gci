@@ -67,7 +67,7 @@ characters?
 * Create a commit with the screenshots and notes, with commit message
 `translations: Research translations for <language>.`.
 
-* Create a pull request in the `zulip/zulip-gci` repository, with title
+* Create a pull request in the `zulip/zulip-gci-submissions` repository, with title
 `translations: Research translations for <language>.`.
 
 *Completion criteria*: The mentors will verify that you successfully created a
@@ -118,7 +118,7 @@ check out the style guides.
 * Create a commit with the `general-rules.md`, with commit message  `translations:
 Write general rules for <language>.`.
 
-* Create a pull request in the `zulip/zulip-gci` repository, with title
+* Create a pull request in the `zulip/zulip-gci-submissions` repository, with title
 `translations: Write general rules for <language>.`.
 
 *Completion criteria*: The mentors will verify that you have created general
@@ -143,7 +143,7 @@ sections.
 * Create a commit with the `special-terms.md`, with commit message  `translations:
 Translate special terms for <language>.`.
 
-* Create a pull request in the `zulip/zulip-gci` repository, with title
+* Create a pull request in the `zulip/zulip-gci-submissions` repository, with title
 `translations: Translate special terms for <language>.`.
 
 *Completion criteria*: The mentors will verify that you have translated all the
