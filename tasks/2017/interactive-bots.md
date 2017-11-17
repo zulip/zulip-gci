@@ -80,9 +80,10 @@ doing this setup process. Add your notes as a `notes.md` file to
 * Create a commit with the screenshots and notes, with commit message
 `interactive bots: Run the helloworld bot for <username>.`.
 
-* Create a pull request in the `zulip/zulip-gci-submissions` repository, with title
-`interactive bots: Run the helloworld bot for <username>`. Link to your GCI
-task in comment section.
+* Create a pull request in the [zulip/zulip-gci-submissions](
+  https://github.com/zulip/zulip-gci-submissions) repository, with
+  title `interactive bots: Run the helloworld bot for
+  <username>`. Link to your GCI task in comment section.
 
 *Completion criteria:* Mentors will check that the helloworld bot was properly
 set up.
