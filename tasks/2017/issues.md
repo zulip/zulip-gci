@@ -44,11 +44,15 @@ stream for a mentor to create a task for it.
 
 ## Task Description
 
-Read the description of the issue and discussion in the comments. Try to understand
-all the considerations involved in the code. When you're ready to start working,
-you can claim the issue by commenting `@zulipbot claim` on the Github issue.
-zulipbot is a workflow management bot for the Zulip project that streamlines
-GitHub issue triage by allowing anyone to claim or label an issue and check the
+Read the description of the issue and discussion in the comments. Try
+to understand all the considerations involved in the code. When you've
+done enough reading to be confident you'll be able to make progress on
+the issue, you can claim the issue on GitHub by commenting `@zulipbot
+claim` on the Github issue (this will prevent Zulip contributors not
+involved in GCI from starting working on the issue, and you should do
+after claiming task in the GCI webapp).  zulipbot is a workflow
+management bot for the Zulip project that streamlines GitHub issue
+triage by allowing anyone to claim or label an issue and check the
 issue's status. You can read more about zulipbot at
 http://zulip.readthedocs.io/en/latest/contributing/zulipbot-usage.html
 
