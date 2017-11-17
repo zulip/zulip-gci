@@ -240,6 +240,77 @@ the comment section on GitHub.
 *Completion criteria:* Mentors will check if the new bot fulfills the
 feature requirements and follows the proper directory structure.
 
+### Task Type D: Improve an existing bot
+
+We recommend claiming this task type after completing **Task Type A**
+and **Task Type B**.
+
+Let *bot* and \<bot\> be the bot mentioned in the task that brought you here.
+
+* Locate *bot*. It can be either in [python-zulip-api/zulip_bots/zulip_bots/bots](
+https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots/),
+or in [python-zulip-api/zulip_bots/zulip_bots/bots_unmaintained](
+https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots_unmaintained/).
+If it is in `bots_unmaintained`, move it to `bots`.
+
+* Try to run *bot*. Fix any bugs you notice.
+  - Does *bot* start?
+  - Does *bot* respond as expected?
+  - Does *bot* crash on any input?
+
+* Check the structure of *bot*. Fix any inconsistencies you notice.
+  - Is the directory of *bot* properly structured?
+  - Are the files in *bot*'s directory named correctly? Are they complete? If
+  a bot requires a configuration file, the directory should contain a template `<bot>.conf`.
+  - You can look up the proper directory structure and filenames in our
+  [Writing bots guide](https://www.zulipchat.com/api/writing-bots#adding-a-bot-to-zulip).
+
+* Read through the documentation of *bot*. Fix any inconsistencies you notice.
+  - Does the documentation describe the purpose of *bot*?
+  - Does the documentation give instructions for setting up and using *bot*?
+  - Is the documentation properly structured into the sections "Intro", "Setup",
+  and "Usage"?
+
+* Add and run tests for *bot*. Fix any bugs you notice and aim for 100% test coverage.
+  - If *bot* already has unit tests (these are in a file named `test_<bot>.py`):
+    - In the development environment in your python-zulip-api repo, run
+      ```
+      tools/test-bots <bot> --coverage
+      ```
+      This will run the unit tests for *bot* and verify that it responds correctly to
+      messages. Additionally, it will create a folder `htmlcov`.
+    - Open `htmlcov/index.html` and click on `<bot>.py`. You will see the file, with some
+    lines marked in green, and some in red. Green lines are covered by the test. This means
+    that during the unit test, these lines got executed at some point. Lines marked in red
+    have never been executed.
+    - Add tests for all the remaining red lines.
+
+  - If *bot* does not have unit tests:
+    - Add unit tests for *bot* in a new file `test_<bot>.py`. Getting 100% test coverage
+    is a nice-to-have, but not required when there are no existing tests.
+
+  - `zulip_bots` has an extensive test helper library that simplifies testing bots with
+  configuration files, internet queries, etc. Use tests for other bots as an orientation.
+  In particular, check out the tests for the [GIPHY bot](
+  https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots/giphy).
+  [Testing with mocks](
+  http://zulip.readthedocs.io/en/latest/testing/testing-with-django.html#testing-with-mocks)
+  is a guide that will further prep your testing skills.
+
+  - Think of corner cases when adding tests. Test messages you wouldn't expect a user to
+  send, and try to break *bot* (just like manual testing).
+
+* Create a commit with the updated bot, with commit message `interactive bots:
+Improve *bot* bot.`.
+
+* Create a pull request in the [zulip/python-zulip-api](
+https://github.com/zulip/python-zulip-api) repository, with title
+`interactive bots: Improve <bot> bot.`. Link to your GCI task in
+the comment section on GitHub.
+
+*Completion criteria:* Mentors will check that the improved bot works,
+is structured properly, has a comprehensive documentation and passes all tests.
+
 ## General notes
 
 * If there is an integration Zulip doesn't have that you would like to add,
