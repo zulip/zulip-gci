@@ -16,14 +16,16 @@
 
 ## Background
 
-[Zulip bots](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots)
-is a boilerplate for creating interactive bots that react to messages sent
-by users.
+Zulip supports interactive bots. Bots are little programs that have limited
+access to a Zulip server. They can receive messages @-mentioning them and
+respond with useful information, jokes, etc.
 
-The interactive bots live in the [`zulip_bots/bots/`](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots) directory with a sub-directory for each bot.
-Each bot directory has python files ('.py') that define their specific behavior,
-automated tests and documentation. The overall directory structure of zulip bots can be seen
-[here](https://github.com/zulip/python-zulip-api/tree/master/zulip_bots#directory-structure).
+Zulip's bot infrastructure lives in the [`zulip_bots`](
+https://github.com/zulip/python-zulip-api/tree/master/zulip_bots)
+Python package. The bots themselves can be found in [zulip_bots/zulip_bots/bots](
+https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots).
+Each bot resides in its own directory that contains the bot's code, tests, and
+documentation.
 
 The following tasks will introduce you to using interactive bots and creating
 simple new bots that react to messages. This group of tasks has a high
@@ -41,19 +43,19 @@ Follow the tutorial below to test run the helloworld bot on your Zulip
 instance (either local or in your droplet).  As you're going through the tutorial,
 take notes on where you got stuck or needed to look up terminology.
 
-Refer to the detailed description on how to [run a zulip bot](https://chat.zulip.org/api/running-bots).
+Follow the steps below to run the helloworld bot:
 
-Follow the steps below to run helloworld bot:
+* Go through the steps outlined in the [Running a bot guide](
+https://chat.zulip.org/api/running-bots#running-a-bot).
 
-* Create a bot with the name `<your-name>_helloworld_bot`.
-(For details refer to the second step [here](https://chat.zulip.org/api/running-bots))
-
-* Since we aim to run a helloworld bot, replace <my_bot> with helloworld while [running a bot](https://chat.zulip.org/api/running-bots).
+  - In step 2, use `<your-name>_helloworld_bot` for the bot's full name,
+  and `helloworld` for its username.
+  - In step 4, substitute `<bot-name>` with `helloworld`.
 
 * Test manually that the helloworld bot is working on the local Zulip instance,
 by:
 
- - sending a few messages starting with `@<your-name>_helloworld_bot` from
+ - sending a few messages starting with `@**<your-name>_helloworld_bot**` in
  the stream "Verona".
 
  - checking that the bot is replying with `beep boop` each time.
@@ -61,14 +63,15 @@ by:
 * Take screenshots showing that the bot is working, make sure to have
 screenshots of:
 
- - your terminal window with the bot running, including the command you used
- to run the bot and the output with the bot description
- - messages sent by you to the bot in "Verona" stream
- - messages sent by the bot in the same stream
- - any other screenshots you find relevant
+  - your terminal window with the bot running, including the command you used
+  to run the bot and the output with the bot description
+  - messages sent by you to the bot in the stream "Verona"
+  - messages sent by the bot in the same stream
+  - any other screenshots you find relevant
 
   Add the screenshots to `interactive-bots/helloworld/<username>/`. Make sure
-  your filenames do not have white-spaces. Instead, use dashes (`-`).
+  your filenames do not have white-spaces, since those often cause trouble
+  with file systems. Instead, use dashes (`-`).
 
 * Note down any places you got stuck, problems or errors you ran into while
 doing this setup process. Add your notes as a `notes.md` file to
@@ -177,7 +180,8 @@ screenshots of:
   - any other screenshots you find relevant
 
 * Add the screenshots to `interactive-bots/message_info/<username>/`. Make sure your
-filenames do not have white spaces. Instead, use dashes (`-`).
+filenames do not have white spaces, since those often cause trouble
+with file systems. Instead, use dashes (`-`).
 
   - Note down any places you got stuck, problems or errors you ran into while
   doing this setup process. Add your notes as a `notes.md` file to
@@ -208,7 +212,7 @@ the Zulip `GCI tasks` stream.
 
 * Create the interactive bot at
 `python-zulip-api/zulip_bots/zulip_bots/bots/<feature>/`. Check out the
-[Writing bots](http://zulip.readthedocs.io/en/latest/writing-bots-guide.html)
+[Writing bots](https://www.zulipchat.com/api/writing-bots)
 guide for help on creating a new bot.
 
 * Test your bot manually, check that:
@@ -217,7 +221,7 @@ guide for help on creating a new bot.
   * Your bot responds with the expected output.
 
 * Verify that your bot follows the [directory structure for Zulip bots](
-http://zulip.readthedocs.io/en/latest/writing-bots-guide.html#adding-a-bot-to-zulip).
+https://www.zulipchat.com/api/writing-bots#adding-a-bot-to-zulip).
 You can use the [GIPHY bot](
 https://github.com/zulip/python-zulip-api/tree/master/zulip_bots/zulip_bots/bots/giphy)
 as an orientation. In particular, check that:
@@ -238,9 +242,12 @@ feature requirements and follows the proper directory structure.
 
 ## General notes
 
-If there is an integration Zulip doesn't have that you would like to add,
+* If there is an integration Zulip doesn't have that you would like to add,
 please let us know on the `bot proposals` topic in the `GCI tasks` stream.
 We can then discuss adding a **Task Type C** for creating that bot. Good
 sources of inspiration are the integrations and bots present in [Hubot](
 https://hubot.github.com/), [Errbot](http://errbot.io/en/latest/), [Slack](
 https://slack.com/apps), and [Telegram](https://storebot.me/).
+
+* If you want to test bots on [chat.zulip.org](chat.zulip.org), please use the
+[#bot testing](https://chat.zulip.org/#narrow/stream/bot.20testing) stream.
