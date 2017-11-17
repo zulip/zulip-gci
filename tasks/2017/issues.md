@@ -10,9 +10,22 @@ completing the
 [Intro to Zulip Server development beginner task](https://github.com/zulip/zulip-gci/blob/master/tasks/intro-to-zulip-server.md)
 before claiming a GitHub issue task, since most GitHub issues require
 the knowledge you learn with that task.
-* If you are interested in working on a issue in some other project like the
-mobile or desktop app, we recommend going through the contribution and setup
-guide in their specific repository.
+
+* If you are interested in working on a issue in some other project
+like our
+[Python API and bots project](https://github.com/zulip/python-zulip-api),
+[mobile app](https://github.com/zulip/zulip-mobile) or
+[desktop app](https://github.com/zulip/zulip-electron), we recommend
+going through the contribution and setup guide in their specific
+repository (for some repos, there's a high-quality task that will help
+teach you how the project works; we recommend doing those first).
+
+* Some confidence from completing other tasks.  These tasks can be
+  very rewarding, but they can also take many hours to complete.
+  Also, since generally less pre-thought has been put into these
+  issues by mentors, it's more likely that you might need to redo your
+  work several times as it becomes apparent that the approach we'd had
+  in mind isn't going to produce a good result.
 
 ## Background
 
@@ -21,7 +34,7 @@ We have a number of projects from which you can select issues to work on:
 
 * Zulip Server and Web Frontend - http://github.com/zulip/zulip
 * React Native Mobile App - http://github.com/zulip/zulip-mobile
-* Electon Desktop App - https://github.com/zulip/zulip-electron
+* Electron Desktop App - https://github.com/zulip/zulip-electron
 * Zulip Python API and Bots Framework - https://github.com/zulip/python-zulip-api
 
 Issues we add as GCI tasks are generally labelled as "good first issue"
@@ -40,9 +53,16 @@ issue's status. You can read more about zulipbot at
 http://zulip.readthedocs.io/en/latest/contributing/zulipbot-usage.html
 
 When making changes, carefully read the surrounding code to understand
-the style in which it is written (which you'll want to replicate)
-and its behavior.  When feasible, add tests for the new functionality,
-so that it will continue working in the future.
+the style in which it is written (which you'll want to replicate) and
+its behavior.  When feasible, add tests for the new functionality, so
+that it will continue working in the future.  Finally,
+[write a reviewable series of commits][https://zulip.readthedocs.io/en/latest/contributing/version-control.html]
+where the commit messages explain why your change both solves the
+problem correctly and doesn't change anything else.
+
+Make heavy use of tools like `git grep` and your code editor's search
+features to find the definitions of relevant functions, chase the code
+path of similar features, etc.
 
 If you have any questions, ask on the "GCI tasks" stream (set the
 topic to the issue number) or add comments to the discussion on
