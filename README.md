@@ -44,7 +44,8 @@ competition winners will be how active you are in helping your fellow
 students. You can do this in two ways:
 * Answer questions in any of the streams
 * Help people during code review, so that by the time a mentor looks at the 
-  pull request, they've had enough feedback to make their PR clean enough to approve. 
+  pull request, your fellow student has enough feedback to make their PR 
+  clean enough to approve. 
 
 Please be kind in all of your interactions, and adhere to our 
 [community code of conduct](https://zulip.readthedocs.io/en/latest/code-of-conduct.html).
