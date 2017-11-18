@@ -145,14 +145,14 @@ GCI tasks:
 * General task requirements - the files are named properly and created in the
 right folders, the commit messages are following both the specific task
 description and the [Zulip commit discipline
-doc](http://zulip.readthedocs.io/en/latest/version-control.html#commit-discipline)
+doc](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-discipline)
 etc.
 
 * Task functionality - the submission implements the required functionality
 appropriately.
 
 * Code quality and style (as in the [Zulip code style
-  doc](http://zulip.readthedocs.io/en/latest/code-style.html)).
+  doc](https://zulip.readthedocs.io/en/latest/contributing/code-style.html)).
 
 * Passing the test suite.
 
@@ -164,10 +164,10 @@ before submitting your work for review.
 readable.
 
 * User docs adhere to the
-[style guide](http://zulip.readthedocs.io/en/latest/README.html#style-guide).
+[style guide](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html).
 
 We also apply rules described in the [Zulip
-review doc](http://zulip.readthedocs.io/en/latest/code-reviewing.html).
+review doc](https://zulip.readthedocs.io/en/latest/contributing/code-reviewing.html).
 
 ## Why is it taking so long for the mentors to check my task?
 
@@ -241,13 +241,13 @@ approach. Have a hypothesis on what might be the problem.
 
 * Look for answers on your own using:
 
-  * [Zulip documentation](http://zulip.readthedocs.io/en/latest/).
+  * [Zulip documentation](https://zulip.readthedocs.io/en/latest/).
 
   * Documentation for the libraries and other tools you're using.
 
   * Simple Google searches, e.g. `python import a library`.
 
-  * [StackOverflow](http://stackoverflow.com/) and
+  * [StackOverflow](https://stackoverflow.com/) and
   [Quora](https://www.quora.com/) threads on relevant topics.
 
 * Make sure your message has all the relevant information:
@@ -315,7 +315,7 @@ or helping others. This section includes some ideas on what you can do.
 ones](https://github.com/zulip/zulip/issues?q=is%3Aopen+is%3Aissue+label%3A%22bite+size%22).
 
   * Read [Tim's post on
-  mypy](http://blog.zulip.org/2016/10/13/static-types-in-python-oh-mypy/).
+  mypy](https://blog.zulip.org/2016/10/13/static-types-in-python-oh-mypy/).
 
   * Read Alicja's blog posts on
   [mentoring](https://trueskawka.github.io/zulip/outreachy/gci/blog/2017/01/03/to-mentor.html)
