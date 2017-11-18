@@ -10,10 +10,10 @@ Once you're done, we recommend browsing through Zulip's [extensive
 documentation](http://zulip.readthedocs.io/en/latest/readme-symlink.html) about
 its code and community. If you're planning on submitting a lot of code, we
 particularly recommend the guides to
-[git](https://zulip.readthedocs.io/en/latest/git-guide.html), [version
-control](https://zulip.readthedocs.io/en/latest/version-control.html), [coding
-style](https://zulip.readthedocs.io/en/latest/code-style.html), and
-[testing](https://zulip.readthedocs.io/en/latest/testing.html).
+[git](https://zulip.readthedocs.io/en/latest/contributing/git-guide.html), [version
+control](https://zulip.readthedocs.io/en/latest/contributing/version-control.html), [coding
+style](https://zulip.readthedocs.io/en/latest/contributing/code-style.html), and
+[testing](https://zulip.readthedocs.io/en/latest/testing/testing.html).
 
 ## Community
 
@@ -61,13 +61,13 @@ participants developing Zulip.  To get a VM,
 [follow the instructions here](http://zulip.readthedocs.io/en/latest/request-remote-dev.html).
 
 Once you have access to your VM, take a look at our tips for [editing code on a
-remote
-machine](https://zulip.readthedocs.io/en/latest/dev-remote.html#editing-code-on-the-remote-machine).
+remote development server
+machine](https://zulip.readthedocs.io/en/latest/development/remote.html#making-changes-to-code-on-your-remote-development-server).
 
 ### Local install
 
 See the [Vagrant environment setup
-tutorial](https://zulip.readthedocs.io/en/latest/dev-env-first-time-contributors.html)
+tutorial](https://zulip.readthedocs.io/en/latest/development/setup-vagrant.html)
 for installing Zulip on Linux or OS X. There are also instructions for
 installing locally on Windows, though the setup can be tricky.
 
