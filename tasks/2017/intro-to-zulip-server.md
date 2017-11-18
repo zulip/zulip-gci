@@ -62,7 +62,7 @@ class OctopusTest(ZulipTestCase):
             "Welcome everyone!")
 ```
 You should also import the `check_send_message` function from `zerver/lib/actions.py`
-becuase this is used in `test_change_welcome_message` and `test_leave_welcome_message_alone`.
+because this is used in `test_change_welcome_message` and `test_leave_welcome_message_alone`.
 
 Then run
 ```
