@@ -7,13 +7,13 @@ and [setting up a development
 environment](#setting-up-the-zulip-development-environment).
 
 Once you're done, we recommend browsing through Zulip's [extensive
-documentation](http://zulip.readthedocs.io/en/latest/readme-symlink.html) about
+documentation](https://zulip.readthedocs.io/en/latest/readme-symlink.html) about
 its code and community. If you're planning on submitting a lot of code, we
 particularly recommend the guides to
 [git](https://zulip.readthedocs.io/en/latest/contributing/git-guide.html), [version
 control](https://zulip.readthedocs.io/en/latest/contributing/version-control.html), [coding
 style](https://zulip.readthedocs.io/en/latest/contributing/code-style.html), and
-[testing](https://zulip.readthedocs.io/en/latest/testing/testing.html).
+[testing](https://zulip.readthedocs.io/en/latest/testing/index.html).
 
 ## Community
 
@@ -66,7 +66,7 @@ two strategies for setting one up.
 
 Zulip has partnered with Digital Ocean to provide VMs for GCI
 participants developing Zulip.  To get a VM,
-[follow the instructions here](http://zulip.readthedocs.io/en/latest/request-remote-dev.html).
+[follow the instructions here](https://zulip.readthedocs.io/en/latest/request-remote-dev.html).
 
 Once you have access to your VM, take a look at our tips for [editing code on a
 remote development server
@@ -119,7 +119,7 @@ https://chat.zulip.org; it's likely that we'll be happy to create a GCI task
 for it. Additionally, you can comment `@zulipbot claim` on it to have our
 GitHub bot [@zulipbot](https://github.com/zulipbot) officially assign the issue
 to you. You can read more about using **@zulipbot**
-[here](http://zulip.readthedocs.io/en/latest/zulipbot-usage.html).
+[here](https://zulip.readthedocs.io/en/latest/contributing/zulipbot-usage.html).
 
 ## Information for GCI mentors
 
