@@ -66,7 +66,7 @@ You don't have to open a new pull request each time you want to change what
 you've submitted. You can update your feature branch and force push changes.
 Changes pushed to your feature branch will be automatically updated in the
 pull request. [This guide](https://github.com/zulip/zulip-gci/blob/master/docs/fixing-commits.md)
-has some useful information on fixing commits and you can refer to [this guide](http://zulip.readthedocs.io/en/latest/git-guide.html?highlight=git#force-push-changes-to-github-after-you-ve-altered-your-history)
+has some useful information on fixing commits and you can refer to [this guide](https://zulip.readthedocs.io/en/latest/contributing/git-guide.html#force-push-changes-to-github-after-you-ve-altered-your-history)
 if you are not sure how to force push your changes. If you get stuck somewhere you
 are always welcome to chat with us on [Zulip](https://chat.zulip.org). Thanks!
 ```
@@ -78,9 +78,9 @@ I point them to docs:
 ```
 Some helpful docs:
 
-- [fixing commits](https://zulip.readthedocs.io/en/latest/fixing-commits.html)
-- [working copies](https://zulip.readthedocs.io/en/latest/working-copies.html)
-- [Git guide](http://zulip.readthedocs.io/en/latest/git-guide.html)
+- [fixing commits](https://zulip.readthedocs.io/en/latest/tutorials/fixing-commits.html)
+- [working copies](https://zulip.readthedocs.io/en/latest/tutorials/working-copies.html)
+- [Git guide](https://zulip.readthedocs.io/en/latest/contributing/git-guide.html)
 ```
 
 ### Student has the same problem for a prolonged time/the problem became complicated
