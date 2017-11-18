@@ -32,8 +32,8 @@ teach you how the project works; we recommend doing those first).
 Zulip Issues are the bugs and open feature requests for the Zulip Project.
 We have a number of projects from which you can select issues to work on:
 
-* Zulip Server and Web Frontend - http://github.com/zulip/zulip
-* React Native Mobile App - http://github.com/zulip/zulip-mobile
+* Zulip Server and Web Frontend - https://github.com/zulip/zulip
+* React Native Mobile App - https://github.com/zulip/zulip-mobile
 * Electron Desktop App - https://github.com/zulip/zulip-electron
 * Zulip Python API and Bots Framework - https://github.com/zulip/python-zulip-api
 
@@ -54,7 +54,7 @@ after claiming task in the GCI webapp).  zulipbot is a workflow
 management bot for the Zulip project that streamlines GitHub issue
 triage by allowing anyone to claim or label an issue and check the
 issue's status. You can read more about zulipbot at
-http://zulip.readthedocs.io/en/latest/contributing/zulipbot-usage.html
+https://zulip.readthedocs.io/en/latest/contributing/zulipbot-usage.html
 
 When making changes, carefully read the surrounding code to understand
 the style in which it is written (which you'll want to replicate) and
@@ -75,7 +75,7 @@ Github.
 When you have completed the task, submit a pull request to the
 respective github respository. Make sure you reference the issue
 number in the
-[commit message](https://zulip.readthedocs.io/en/latest/version-control.html#commit-messages).
+[commit message](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages).
 
 Be sure to follow the instructions in the "Code Contribution Guide"
-section on http://zulip.readthedocs.io/en/latest/.
+section on https://zulip.readthedocs.io/en/latest/.
