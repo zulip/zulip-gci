@@ -15,7 +15,7 @@ them before users do, which is where this task comes in.
 
 All of these can be done in the development environment.  A helpful
 guide to doing manual testing in Zulip is here:
-http://zulip.readthedocs.io/en/latest/manual-testing.html
+https://zulip.readthedocs.io/en/latest/testing/manual-testing.html
 
 ### Task Type A: Internationalization overflow
 
