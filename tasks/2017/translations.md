@@ -18,17 +18,17 @@
 
 Zulip is a tool used by many teams daily. In order to make it more approachable
 to users, there is an ongoing translation effort. [Read more about translating
-Zulip](https://zulip.readthedocs.io/en/latest/translating.html).
+Zulip](https://zulip.readthedocs.io/en/latest/translating/index.html).
 
 This group of tasks is about creating common translation style guides, to give
 guidance on how Zulip should be translated into specific languages. Currently
 we have guides for [Chinese](
-https://zulip.readthedocs.io/en/latest/chinese.html), [French](
-https://zulip.readthedocs.io/en/latest/french.html), [German](
-https://zulip.readthedocs.io/en/latest/german.html), [Polish](
-https://zulip.readthedocs.io/en/latest/polish.html), [Russian](
-https://zulip.readthedocs.io/en/latest/russian.html), and [Spanish](
-https://zulip.readthedocs.io/en/latest/spanish.html).
+https://zulip.readthedocs.io/en/latest/translating/chinese.html), [French](
+https://zulip.readthedocs.io/en/latest/translating/french.html), [German](
+https://zulip.readthedocs.io/en/latest/translating/german.html), [Polish](
+https://zulip.readthedocs.io/en/latest/translating/polish.html), [Russian](
+https://zulip.readthedocs.io/en/latest/translating/russian.html), and [Spanish](
+https://zulip.readthedocs.io/en/latest/translating/spanish.html).
 
 ## Task Descriptions
 
@@ -133,7 +133,7 @@ fluent *language* speakers, to make sure the guide is appropriate.
 the format `English word: *language word*, [explanation for the
 decision], [example usage in the Zulip context]`.
 
-* Reference the [Chinese](https://zulip.readthedocs.io/en/latest/chinese.html)
+* Reference the [Chinese](https://zulip.readthedocs.io/en/latest/translating/chinese.html)
 style guide for formatting your `.md` file. Put the words in their appropriate
 sections.
 
@@ -165,9 +165,9 @@ appropriate.
   * Refactoring the formatting of the markdown file
 
 * Use the [Chinese](
-https://zulip.readthedocs.io/en/latest/chinese.html), [German](
-https://zulip.readthedocs.io/en/latest/german.html), and [Spanish](
-https://zulip.readthedocs.io/en/latest/spanish.html) style guides as
+https://zulip.readthedocs.io/en/latest/translating/chinese.html), [German](
+https://zulip.readthedocs.io/en/latest/translating/german.html), and [Spanish](
+https://zulip.readthedocs.io/en/latest/translating/spanish.html) style guides as
 your benchmark. None of these is flawless though, and many of the
 points listed below also apply to them.
 
