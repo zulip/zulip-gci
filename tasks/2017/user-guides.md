@@ -34,7 +34,7 @@ written available here:
 http://zulip.readthedocs.io/en/latest/README.html
 
 You should read it, especially the
-[section on general user documentation](http://zulip.readthedocs.io/en/latest/README.html#general-user-documentation),
+[section on general user documentation](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html),
 to make sure you're familiar with how to edit the documentation.
 
 ## Task Descriptions
@@ -61,7 +61,7 @@ features mentioned in the task that brought you here.
   Zulip `GCI tasks` stream to get feedback from mentors and other GCI
   participants on what you plan to include in your documentation.
 * Now work on writing your new documentation, following the
-  [user documentation style guide](https://zulip.readthedocs.io/en/latest/README.html#style-guide)!
+  [user documentation style guide](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html)!
   You should add your
   documentation to a new file to the `templates/zerver/help/` directory of
   https://github.com/zulip/zulip/.
@@ -87,7 +87,7 @@ Read the guides corresponding to *features*. For each feature, do the following:
   anything that is unclear, incorrect, and add any tips, warnings or other
   information the author may not have thought of.
 * Edit the guide to conform to the
-  [user documentation style guide](https://zulip.readthedocs.io/en/latest/README.html#style-guide).
+  [user documentation style guide](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html).
 * Incorporate the new documentation macros we've included (if applicable).
 * Find unnecessary images and remove them.
 * Rewrite the user guide to use the styling conventions listed in the documentation style guide.
