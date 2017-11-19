@@ -327,7 +327,7 @@ At first it seems like magic, but once you get the basic concepts you find it
 extremely useful and even easy to use (at least the 99% of the time).
 
 To learn more about how to use it, read
-[our docs](http://zulip.readthedocs.io/en/latest/git-guide.html) on Git and
+[our docs](https://zulip.readthedocs.io/en/latest/contributing/git-guide.html) on Git and
 Github.
 [This cheatsheet](https://github.com/zulip/zulip-gci/blob/master/docs/git-cheat-detailed.md)
 will be useful in your journey, as well.
