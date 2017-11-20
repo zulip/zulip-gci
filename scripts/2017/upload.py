@@ -10,7 +10,7 @@ from task_uploader.client import GCIAPIClient
 # One field is missing in the documentation and in the argument list below: external_url.
 # gci-support says it is coming soon.
 def upload_task(name, description, status, max_instances, mentors, tags, is_beginner,
-                categories, time_to_complete_in_days, private_metadata, do_upload = False):
+                categories, time_to_complete_in_days, private_metadata, external_url, do_upload = False):
     task = locals()
     del task['do_upload']
     try:
