@@ -46,8 +46,11 @@ take notes on where you got stuck or needed to look up terminology.
 Follow the steps below to run the helloworld bot:
 
 * Go through the steps outlined in the [Running a bot guide](
-https://chat.zulip.org/api/running-bots#running-a-bot).
+https://zulipchat.com/api/running-bots#running-a-bot).
 
+  - [Use your own Zulip development server](
+  https://github.com/zulip/zulip-gci/blob/master/tasks/2017/intro-to-zulip-server.md#practice-running-zulip)
+  for testing.
   - In step 2, use `<your-name>_helloworld_bot` for the bot's full name,
   and `helloworld` for its username.
   - In step 4, substitute `<bot-name>` with `helloworld`.
@@ -95,6 +98,9 @@ We recommend completing **Task Type A** before doing this task.
 Follow the tutorial below to create your first simple bot. It will analyze a
 message that @-mentions the bot and count its words for word count. The gathered
 information will then be sent to a private conversation with the message author.
+
+* Read through the [Running bots](https://zulipchat.com/api/running-bots#running-a-bot)
+and [Writing bots](https://www.zulipchat.com/api/writing-bots) guides.
 
 * Make a copy of the helloworld bot
 [python-zulip-api/zulip_bots/zulip_bots/bots/helloworld](
@@ -206,15 +212,16 @@ and **Task Type B**.
 
 Let *feature* be the feature mentioned in the task that brought you here.
 
+* Read through the [Running bots](https://zulipchat.com/api/running-bots#running-a-bot)
+and [Writing bots](https://www.zulipchat.com/api/writing-bots) guides.
+
 * Make sure you understand what is expected of *feature* - what messages
 should the bot react to, what should it do with the message content and
 where should it post any output. Should you have any doubts, discuss them in
 the Zulip `GCI tasks` stream.
 
 * Create the interactive bot at
-`python-zulip-api/zulip_bots/zulip_bots/bots/<feature>/`. Check out the
-[Writing bots](https://www.zulipchat.com/api/writing-bots)
-guide for help on creating a new bot.
+`python-zulip-api/zulip_bots/zulip_bots/bots/<feature>/`.
 
 * Test your bot manually, check that:
 
@@ -280,10 +287,10 @@ If it is in `bots_unmaintained`, move it to `bots`.
       ```
       This will run the unit tests for *bot* and verify that it responds correctly to
       messages. Additionally, it will create a folder `htmlcov`.
-    - Open `htmlcov/index.html` and click on `<bot>.py`. You will see the file, with some
-    lines marked in green, and some in red. Green lines are covered by the test. This means
-    that during the unit test, these lines got executed at some point. Lines marked in red
-    have never been executed.
+    - Open `htmlcov/index.html` and click on `zulip_bots/zulip_bots/bots/<bot>/<bot>.py`.
+    You will see the file, with some lines marked in green, and some in red. Green lines
+    are covered by the test. This means that during the unit test, these lines got executed
+    at some point. Lines marked in red have never been executed.
     - Add tests for all the remaining red lines.
 
   - If *bot* does not have unit tests:
