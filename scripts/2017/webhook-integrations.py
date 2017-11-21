@@ -5,21 +5,16 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-integrations = [ ]
-
-already_integrations = [
-    ('Review Bot', 'an on-line review monitoring tool'),
-    ('Solano Labs', 'A continuous integration tool'),
-    ('HelloSign', 'an E-signing tool'),
-    ('AppFollow', 'monitors appstore activity'),
-    ('Mention', 'a media monitoring tool'),
-    ('GoSquared', 'real time analytics'),
-    ('Mailchimp', 'an email marketing tool'),
-    ('InVision', 'a collaborative prototyping app'),
-    ('Heroku', 'cloud hosting and deployment'),
-    ('Stripe', 'online payments'),
-    ('Papertrail', 'a log management tool'),
-    ('Zeplin', 'design collaboration'),
+#  These are new integrations for GCI 2017.
+integrations = [
+    ('Facebook', "is the biggest social media and networking platform; "
+                 "use Facebook's graph API to build a webhoook"),
+    ('Groove', 'a customer support tool for personal support of each customer'),
+    ('Intercom', 'helps businesses track how users are interacting with their software'),
+    #  ('Mailchimp', 'an email marketing tool'),  # Hubot integration exists in main repo
+    # ('Zeplin', 'design collaboration')  # couldn't find public API
+    # ('InVision', 'a collaborative prototyping app'),  # no API yet: https://support.invisionapp.com/hc/en-us/articles/203730795-Does-InVision-have-an-API-for-integration
+    # ('Review Bot', 'an on-line review monitoring tool'),  # contacted for API support; response: integrates through Zapier
 ]
 
 description = """A [Zulip integration](https://zulipchat.com/integrations/) is a special
