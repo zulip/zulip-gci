@@ -18,7 +18,7 @@ upload_task(
     description = description,
     status = 2, # 1: draft, 2: published
     max_instances = 100,
-    mentors = ['lylafisch@gmail.com', 'tabbott@zulipchat.com', 'joshuapan8@gmail.com',
+    mentors = ['lylafisch@gmail.com', 'joshuapan8@gmail.com',
                'hkmp7tommy@gmail.com', 'yo@vishnuks.com'],
     tags = ['intro', 'vagrant', 'dev environment', 'vagrant'], # free text
     is_beginner = True,

@@ -37,8 +37,7 @@ description_BCD = description + "For this task, do **Task Type %(type)s** for " 
 #     description = description_A,
 #     status = 2, # 1: draft, 2: published
 #     max_instances = 20,
-#     mentors = ['tomasz-kolek@o2.pl', 'christie@authenticengine.com', 'reyhaverma@gmail.com',
-#                'rishig@zulipchat.com', 'tabbott@zulipchat.com', 'zulip@feorlen.org'],
+#     mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
 #     tags = ['python', 'integrations'], # free text
 #     is_beginner = False,
 #     # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -58,8 +57,7 @@ for integration, desc in integrations:
         description = description_BCD % {'type': 'B', 'integration': integration, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['tomasz-kolek@o2.pl', 'rishig@zulipchat.com', 'reyhaverma@gmail.com',
-                   'tabbott@zulipchat.com', 'zulip@feorlen.org'],
+        mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
         tags = ['python', 'integrations'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -78,8 +76,7 @@ for integration, desc in integrations:
         description = description_BCD % {'type': 'C', 'integration': integration, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['tomasz-kolek@o2.pl', 'rishig@zulipchat.com', 'reyhaverma@gmail.com',
-                   'tabbott@zulipchat.com', 'zulip@feorlen.org'],
+        mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
         tags = ['python', 'integrations'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
@@ -98,8 +95,7 @@ for integration, desc in integrations:
         description = description_BCD % {'type': 'D', 'integration': integration, 'desc': desc},
         status = 2, # 1: draft, 2: published
         max_instances = 1,
-        mentors = ['tomasz-kolek@o2.pl', 'rishig@zulipchat.com', 'reyhaverma@gmail.com',
-                   'tabbott@zulipchat.com', 'zulip@feorlen.org'],
+        mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
         tags = ['python', 'integrations'], # free text
         is_beginner = False,
         # 1: Coding, 2: User Interface, 3: Documentation & Training,
