@@ -66,7 +66,7 @@ two strategies for setting one up.
 
 Zulip has partnered with Digital Ocean to provide VMs for GCI
 participants developing Zulip.  To get a VM,
-[follow the instructions here](https://zulip.readthedocs.io/en/latest/request-remote-dev.html).
+[follow the instructions here](https://zulip.readthedocs.io/en/latest/development/request-remote.html).
 
 Once you have access to your VM, take a look at our tips for [editing code on a
 remote development server
