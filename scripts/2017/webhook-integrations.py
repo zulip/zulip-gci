@@ -7,7 +7,7 @@ args = parser.parse_args()
 
 #  These are new integrations for GCI 2017.
 integrations = [
-    ('Facebook', "is the biggest social media and networking platform; "
+    ('Facebook', "the biggest social media and networking platform; "
                  "use Facebook's graph API to build a webhoook"),
     ('Groove', 'a customer support tool for personal support of each customer'),
     ('Intercom', 'helps businesses track how users are interacting with their software'),
@@ -30,24 +30,23 @@ description_A = description + "For this task, do **Task Type A**."
 description_BCD = description + "For this task, do **Task Type %(type)s** for " + \
                   "the **%(integration)s** integration (%(desc)s)."
 
-# # Task Type A
-# upload_task(
-#     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-#     name = 'Learn how Zulip integrations work.',
-#     description = description_A,
-#     status = 2, # 1: draft, 2: published
-#     max_instances = 20,
-#     mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
-#     tags = ['python', 'integrations'], # free text
-#     is_beginner = False,
-#     # 1: Coding, 2: User Interface, 3: Documentation & Training,
-#     # 4: Quality Assurance, 5: Outreach & Research
-#     categories = [1],
-#     time_to_complete_in_days = 5, # must be between 3 and 7
-#     # Field currently not accessible via API. gci-support says it is coming soon.
-#     # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
-#     private_metadata = "webhook-integrations-A",
-#     do_upload = args.force)
+# Task Type A
+upload_task(
+    # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+    name = 'Learn how Zulip integrations work.',
+    description = description_A,
+    status = 2, # 1: draft, 2: published
+    max_instances = 100,
+    mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
+    tags = ['python', 'integrations'], # free text
+    is_beginner = False,
+    # 1: Coding, 2: User Interface, 3: Documentation & Training,
+    # 4: Quality Assurance, 5: Outreach & Research
+    categories = [1],
+    time_to_complete_in_days = 3, # must be between 3 and 7
+    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
+    private_metadata = "webhook-integrations-A",
+    do_upload = args.force)
 
 for integration, desc in integrations:
     # Task Type B
@@ -64,8 +63,7 @@ for integration, desc in integrations:
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [5],
         time_to_complete_in_days = 3, # must be between 3 and 7
-        # Field currently not accessible via API. gci-support says it is coming soon.
-        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
         private_metadata = "webhook-integrations-B",
         do_upload = args.force)
 
@@ -83,8 +81,7 @@ for integration, desc in integrations:
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1],
         time_to_complete_in_days = 5, # must be between 3 and 7
-        # Field currently not accessible via API. gci-support says it is coming soon.
-        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
         private_metadata = "webhook-integrations-C",
         do_upload = args.force)
 
@@ -102,12 +99,10 @@ for integration, desc in integrations:
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [3],
         time_to_complete_in_days = 3, # must be between 3 and 7
-        # Field currently not accessible via API. gci-support says it is coming soon.
-        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md",
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
         private_metadata = "webhook-integrations-D",
         do_upload = args.force)
 
 if not args.force:
-    print
     print("No tasks uploaded. Add a -f argument to upload tasks to the GCI website.")
     print("This is not idempotent. Running this twice with -f will create two sets of tasks.")
