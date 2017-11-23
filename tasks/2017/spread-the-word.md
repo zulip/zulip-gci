@@ -9,7 +9,7 @@ like Zulip.
 
 In this task, we will ask you to rate and review Zulip on some technology sites.
 You're free to decide whether or not to do each individual task, but we do ask
-that you do at least five of the social media marketing tasks in order to get
+that you do at least four of the social media marketing tasks in order to get
 credit for the overall task. We expect completing all the tasks will take about
 90 minutes.
 
@@ -24,34 +24,34 @@ There are four main repositories:
 [mobile](https://github.com/zulip/zulip-mobile),
 [desktop](https://github.com/zulip/zulip-electron), and [Python
 API](https://github.com/zulip/python-zulip-api). For each repository, star the
-repository, and then write down the number of stars that repository has in
-your submission file.
+repository, and then record in your submission file the number of stars that
+repository had when you starred it.
 
 ### Share Zulip on StackShare
 
-1. Create an account at StackShare. Add your name and a picture, [i.e. do the
-work to have a real profile].
+1. Create an account at StackShare. Add your name and a picture, (i.e. do the
+work to have a real profile).
 
 2. Think of six technology products you really like, and consider adding Zulip
 to that list.
 
 3. For each product in 2: Add the product to your Stack, star it, and upvote at
-least three reasons why people like product that you find compelling.
+least three reasons why people like the product that you find compelling.
 
 4. Add a link to your profile to your submission file. The link should look like
 https://stackshare.io/Lyla-Fischer, but replace Lyla-Fischer with your
 username.
 
-### Write a review on the android play store
+### Write a review on the Google Play Store
 
-1. Rate and review Zulip in the android play store. Five star reviews go a
+1. Rate and review Zulip in the Google Play Store. Five star reviews go a
 long way toward letting people know that Zulip is a quality product.
 
 2. Go to the Zulip app’s entry in the play store, scroll down to the “my
-review” section, and take a screenshot of your review and add that
+review” section, take a screenshot of your review, and add that
 screenshot to your submission file.
 
-### Write a review on the ios app store.
+### Write a review on the iOS app store.
 
 1. Rate and review Zulip in the iOS app store. Five star reviews go a long way
 toward letting people know that Zulip is a quality product.
