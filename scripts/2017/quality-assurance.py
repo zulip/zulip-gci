@@ -7,15 +7,16 @@ args = parser.parse_args()
 
 description = """Find new bugs in Zulip!
 
-For this task, do any one of the listed Task Types.
+Instructions for this task are at
+https://github.com/zulip/zulip-gci/blob/master/tasks/quality-assurance.md.
 """
 
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Find bugs in Zulip',
+    name = 'Find and report bugs in Zulip (backend, web, desktop, mobile, bots, or anywhere else!)',
     description = description,
     status = 2, # 1: draft, 2: published
-    max_instances = 20,
+    max_instances = 40,
     mentors = ['lylafisch@gmail.com'],
     tags = ['bug squashing', 'internationalization', 'mobile', 'frontend', 'real-time sync'], # free text
     is_beginner = False,
