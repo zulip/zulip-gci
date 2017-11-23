@@ -33,6 +33,8 @@ discussion or help.
 discussion, feedback, questions, or anything you want!
 * [#test here](https://chat.zulip.org/#narrow/stream/test.20here): Used for
 sending test messages.
+* [#bot testing](https://chat.zulip.org/#narrow/stream/bot.20testing): Used for
+testing bots.
 
 There are at least a dozen other active streams on the server; go to
 https://chat.zulip.org/#streams/all to check them out.
@@ -52,7 +54,9 @@ Please be kind in all of your interactions, and adhere to our
 
 A few non-obvious things that help keep the server manageable:
 * All test messages should go to the [#test
-here](https://chat.zulip.org/#narrow/stream/test.20here) stream.
+here](https://chat.zulip.org/#narrow/stream/test.20here) stream, *except for testing bots*.
+Test bots in the [#bot testing](https://chat.zulip.org/#narrow/stream/bot.20testing)
+stream.
 * Always use a topic. If you're not sure what to put, you can use your name.
 * When asking for help, include as much detail as you can, in particular,
   what you tried, and the full traceback of any error messages you got.
