@@ -36,29 +36,29 @@ Find any sequence of actions that results in something displaying the wrong
 output.  Try to click on things that aren't the most natural next
 thing to click.
 
-### Task Type D: Android bug
+### Task Type D: Mobile bug
 
-Download the Zulip Android app from the Google Play Store, and find a
-new bug in it.
+Download the Zulip Mobile app from the Google Play Store, and find a new bug
+in it. Check things like how well the app syncs with the web version when you
+do something in both, that all of the functionality of the web version is
+present in the mobile version, and that the app always behaves in ways that
+make sense. 
 
 ## Submission instructions
 
-Post the bug to the 'quality assurance' topic of the 'GCI task
-discussion' stream on chat.zulip.org, and a mentor will check off on
-whether it is a known bug (in the GitHub issue tracker) or not. If it
-is indeed new, open a new GitHub issue the zulip/zulip-gci repository
-(aka this repository), with:
+Post the bug to the 'quality assurance' topic of the 'GCI task discussion'
+stream on chat.zulip.org, and a mentor will check off on whether it is a known
+bug (in the GitHub issue tracker) or not. If it is indeed new, open a new
+GitHub issue the [zulip/zulip](https://github.com/zulip/zulip) repository or
+[zulip/zulip-mobile](https://github.com/zulip/zulip-mobile) repository (as
+appropriate), with:
 
-* A title that starts with "Quality Assurance".
 * A screenshot of the broken behavior.
 * Step by step instructions for getting to that broken state. E.g. "log in
   as othello, then click on the settings gear icon, then ..."
 
 Mentors will accept your task once you've written up a clear bug
 report that they are able to reproduce.
-
-Mentors: Create a new GCI task or `zulip/zulip` GitHub issue for fixing
-the bug after accepting the bug report.
 
 ## General notes
 
