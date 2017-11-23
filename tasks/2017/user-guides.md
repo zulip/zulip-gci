@@ -2,130 +2,99 @@
 
 ## Prerequisites
 
-* A working Zulip development environment. See
-  [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
-  on how to set one up.
+* A working **Zulip development environment**. See
+  [here](https://github.com/zulip/zulip-gci#setting-up-the-zulip-development-environment)
+  for instructions on how to set one up.
 
-* Update your working copy of Zulip and then create a feature branch. [Learn
-  how](../../before-every-task.md).
+* A **new feature branch** rebased off of the latest `upstream/master` remote
+  branch. See [here](../../before-every-task.md) to learn how to do so.
 
-* Good written English.
+* **Good written English.** Proper spelling, grammar, and word usage conventions
+  are critical for this task, so you should be fluent in English if you decide
+  to claim this task.
 
-* If this is your first contribution, you may be interested in the
-  [how to create a pull request](https://codein.withgoogle.com/tasks/6541581402243072/) task.
+* **Completion of the
+  [submit a pull request](./submit-a-pull-request.md) task**. The task helps
+  you familiarize yourself with the Zulip workflow and is a great first
+  contribution!
 
 ## Background
 
-Good user guides help users and search engines discover Zulip features. They
-are important since they are a medium through which we present Zulip to our
-potential users and contributors. This task involves writing a user
-guide for one of our features.
+Well-written user documentation helps users and search engines discover Zulip
+features. They are important since they are a medium through which we present
+Zulip to our potential users and contributors. This task involves writing user
+documentation for one of our features.
 
-You can see the existing user guide style content that we have at
-https://chat.zulip.org/help/; that document may already have some
-content related to the feature you're hoping to document.  Our plan is
-to split that giant page into a number of smaller pages about
-individual topics, rather than continuing to add more content to it.
-So regardless of whether a topic is already covered there, there is
-work to be done!
+You can our read existing user documentation we have at
+https://chat.zulip.org/help/ to accustom yourself with our writing style.
 
-There is detailed documentation on how Zulip's documentation is
-written available here:
-http://zulip.readthedocs.io/en/latest/README.html
+We have already written a
+[guide](http://zulip.readthedocs.io/en/latest/subsystems/user-docs.html) for
+writing user docs in the Zulip developer documentation. **Please read the entire
+guide before you proceed with this task.**
 
-You should read it, especially the
-[section on general user documentation](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html),
-to make sure you're familiar with how to edit the documentation.
+## Task Description
 
-## Task Descriptions
+In the following task description, *feature* or *features* represents the
+features in the task description that you plan to document.
 
-There are two types of task in this category, each corresponding to one of
-the Task Types below. Let *feature* or *features* be the feature or set of
-features mentioned in the task that brought you here.
+1. Play with the Zulip UI to learn how *feature* works in Zulip.
+  If you can't find out how to do something in Zulip (or whether it's even
+  possible), ask about it on the [GCI
+  tasks](https://chat.zulip.org/#narrow/stream/GCI.20tasks) stream; one of the
+  mentors can likely answer it for you.
 
-### Task Type A
+2. Write an outline for documentation for *feature*, and post it to the
+  [GCI tasks](https://chat.zulip.org/#narrow/stream/GCI.20tasks) stream to
+  receive feedback from mentors and other GCI participants on what you plan to
+  include in your documentation.
 
-* First, search https://chat.zulip.org/help/ to see if it already
-  discusses *feature*.  If it does, you will instead want to take that
-  documentation, extract it to a new page (linked to from the main
-  index page), and then edit it to make sure it is high quality and
-  covers the topic fully.  You'll still want to do the research
-  suggested in this task description, however.
-* Play with the Zulip UI to learn how *feature* works in Zulip.
-  Browse the documentation linked from the gear menu in the upper-left
-  to see if it's documented there.  If you can't find out how to do
-  something in Zulip (or whether it's even possible), ask about it on
-  the `GCI tasks` stream; one of the mentors can likely answer it for
-  you.
-* Write an outline for documentation for *feature*, and post it to the
-  Zulip `GCI tasks` stream to get feedback from mentors and other GCI
-  participants on what you plan to include in your documentation.
-* Now work on writing your new documentation, following the
-  [user documentation style guide](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html)!
-  You should add your
-  documentation to a new file to the `templates/zerver/help/` directory of
-  https://github.com/zulip/zulip/.
-  The name of the file should be a lowercase, hyphenated version of *feature*
-  like `view-the-markdown-source-of-a-message` for the feature "View the Markdown source of a message".
-  The end result should be a nice
-  and clear user guide for *feature*, written in Markdown.
-* Add a link to your guide under the "Using Zulip"
-  heading in `templates/zerver/help/index.md`.
-* Verify your documentation looks as you intended and all links work;
-  it's common to make small mistakes in the markdown that cause your
-  documentation to not look right.
-* Add a commit and submit a pull request to the
-  https://github.com/zulip/zulip/ repository. The title of both the commit
-  and the pull request should be `docs: Add user guide for *feature*`.
-  Include a link to the pull request when you submit your task on the GCI
-  website.
+3. Write your new documentation while following the
+  [user documentation style
+  guide](http://zulip.readthedocs.io/en/latest/subsystems/user-docs.html). The
+  end result should be a nice, clear user documentation article for *feature*
+  written in Markdown located in the `templates/zerver/help/` folder.
 
-### Task Type B
+4. Add a link to your article under the appropriate user documentation subsection
+  in `templates/zerver/help/include/sidebar.md` to be included in the user
+  documentation index and sidebar.
 
-Read the guides corresponding to *features*. For each feature, do the following:
-* Follow the instructions step-by-step, completely precisely. Correct
-  anything that is unclear, incorrect, and add any tips, warnings or other
-  information the author may not have thought of.
-* Edit the guide to conform to the
-  [user documentation style guide](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html).
-* Incorporate the new documentation macros we've included (if applicable).
-* Find unnecessary images and remove them.
-* Rewrite the user guide to use the styling conventions listed in the documentation style guide.
-* Edit the guide to have good English grammar and cadence.
-* Verify your documentation looks as you intended and all links work;
-  it's common to make small mistakes in the markdown that cause your
-  documentation to not look right.
-* Add a commit for each feature, with commit message like `docs: Edit
-  change-your-name.md to conform to style guide`. Submit a single pull request
-  with all your commits to the https://github.com/zulip/zulip/
-  repository. The title of the pull request should be something like `docs:
-  Edit Accounts Basics articles (Part 1) to conform to style guide.`
+5. Verify your documentation looks as you intended and all links work; it's
+  common to make small mistakes in the markdown that cause your documentation to
+  not look right.
 
-A prerequisite for this task is good written English, at the high end of
-native proficiency.
+    **Tip:** To see the current Markdown version of a user documentation file,
+    reload your browser on `http://<hostname>:9991/help/<feature>`, where
+    `<hostname>` is either `localhost` or the hostname of your VM, and `<feature>`
+    is the name of the feature.
 
-## General Notes
+6. Ensure your article passes our user documentation linter. You can modify your
+  article to pass the linter by making sure it does not contain any trailing
+  whitespace or have any lines greater than 80 characters (it's okay for lines
+  with links to go up to 120 characters).
 
-* The source for the user documentation is the Markdown files under
-  `templates/zerver/help/` in the main Zulip repository (zulip/zulip).
+    **Tip:** You can run the linter by running `tools/test-help-documentation` in
+    your Zulip development environment.
 
-* To see the current, Markdown version of a user documentation file, reload
-  your browser on `http://<hostname>:9991/help/<feature>`, where
-  `<hostname>` is either `localhost` or the hostname of your VM, and
-  `<feature>` is the name of the feature.
+7. Add a commit and submit a pull request to the https://github.com/zulip/zulip/
+  repository. The title of both the commit and the pull request should be `user
+  docs: Add user guide for *feature*`.
+
+8. Submit your task on the GCI website with a link to the pull request you just
+  created in the comments of your GCI task.
+
+## Additional Notes
 
 * If there are visual elements that you'd like to be able to express in your
-  user guide, but aren't sure how to, bring it up in the `GCI tasks` stream!
-  Our user guide rendering software is very new, and it should be possible
-  to add features to the user guide system as needed. If there's interest,
-  we can also create GCI tasks for adding some of those features!
+  user documentation article, but aren't sure how to, bring it up in the [GCI
+  tasks](https://chat.zulip.org/#narrow/stream/GCI.20tasks) stream! Make sure to
+  review all available
+  [features](http://zulip.readthedocs.io/en/latest/subsystems/user-docs.html#features)
+  of the Zulip markdown rendering engine before doing so.
 
-* You can check out the other guides in `templates/zerver/help/` or at
-  https://get.slack.help/hc/en-us/categories/200111606-Using-Slack for
-  inspiration.
-
-* That being said, it is *extremely important* that you not copy text or
-  images from other products’ documentation. The companies that develop
-  those products own the copyright to their documentation. If you are not
-  sure what constitutes copying, please ask on the "user guides" topic of
-  the "GCI tasks" stream at chat.zulip.org!
+* Although it is okay to read user documentation from other products for
+  inspiration, it is *extremely important* that you not copy text or images from
+  their user documentation because the companies that develop those products own
+  the copyright to their documentation. If you are not sure what constitutes
+  plagiarism, please ask on the `user guides` topic of the [GCI
+  tasks](https://chat.zulip.org/#narrow/stream/GCI.20tasks) stream!
