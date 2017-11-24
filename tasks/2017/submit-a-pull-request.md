@@ -1,4 +1,4 @@
-# Submit A Pull Request to Zulip GCI Repository
+# Submit A Pull Request to Zulip GCI Submissions Repository
 
 This task will familiarize you with our GitHub workflow.  If you
 are already familiar with making a pull request in GitHub, feel free
@@ -14,11 +14,13 @@ task, but is a skill that you should learn sooner or later. Here is a
 
 ## Task
 
-* Fork the [zulip-gci](https://github.com/zulip/zulip-gci) repository.
-If you are not sure what this means, refer to [this tutorial](https://guides.github.com/activities/forking/#fork).
+* Fork the [zulip-gci-submissions](https://github.com/zulip/zulip-gci-submissions) repository.
+If you are not sure what this means, refer to [this tutorial](
+https://guides.github.com/activities/forking/#fork).
 
 * Create a new branch called `submit-a-pull-request` in the forked repository.
-If you are not sure what a branch is, refer to [this tutorial](https://guides.github.com/activities/hello-world/#branch).
+If you are not sure what a branch is, refer to [this tutorial](
+https://guides.github.com/activities/hello-world/#branch).
 
 * Make a new folder `submit-a-pull-request/<username>` where `<username>` is your GitHub username.
 
@@ -44,16 +46,18 @@ if you are not sure how to do this.
 
 ## Submit
 
-* Open a Pull Request in the zulip-gci repository with title "Submit a Pull Request".
-  Refer to [this tutorial](https://guides.github.com/activities/hello-world/#pr)
+* Open a Pull Request in the [zulip-gci-submissions](
+  https://github.com/zulip/zulip-gci-submissions) repository with title
+  "Submit a Pull Request". Refer to [this tutorial](
+  https://guides.github.com/activities/hello-world/#pr)
   if you don't know how to open a pull request.
 
 * Sign the Dropbox CLA using the link posted by the Dropbox CLA bot.
 
 * Post a link to the pull request when you submit your task on the GCI
   website. The link should look like
-  `https://github.com/zulip/zulip-gci/pull/<number>`, where `<number>` is a 2 or
-  3 digit number.
+  `https://github.com/zulip/zulip-gci-submissions/pull/<number>`, where
+  `<number>` is a 2 or 3 digit number.
 
 The mentors will verify that you successfully created a pull request
 with 2 commits, first adding the file and then editing it to contain
@@ -63,7 +67,7 @@ workflow.
 
 Zulip has a detailed guide on how we use GitHub for our server project
 that you may find useful reading as you continue to learn about Git and
-GitHub: https://zulip.readthedocs.io/en/latest/contributing/git-guide.html.
+GitHub: http://zulip.readthedocs.io/en/latest/git/index.html.
 
 After you finish this task, a great next task is to learn how to use
 the Zulip server development environment:
