@@ -10,7 +10,7 @@ Once you're done, we recommend browsing through Zulip's [extensive
 documentation](https://zulip.readthedocs.io/en/latest/readme-symlink.html) about
 its code and community. If you're planning on submitting a lot of code, we
 particularly recommend the guides to
-[git](https://zulip.readthedocs.io/en/latest/contributing/git-guide.html), [version
+[git](https://zulip.readthedocs.io/en/latest/git/index.html), [version
 control](https://zulip.readthedocs.io/en/latest/contributing/version-control.html), [coding
 style](https://zulip.readthedocs.io/en/latest/contributing/code-style.html), and
 [testing](https://zulip.readthedocs.io/en/latest/testing/index.html).
