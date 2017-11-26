@@ -29,6 +29,8 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md.
 description_A = description + "For this task, do **Task Type A**."
 description_BCD = description + "For this task, do **Task Type %(type)s** for " + \
                   "the **%(integration)s** integration (%(desc)s)."
+description_E = description + "For this task, do **Task Type E** for " + \
+                "the webhook integrations {webhooks[0]}, {webhooks[1]} and {webhooks[2]}."
 
 # Task Type A
 upload_task(
@@ -102,6 +104,45 @@ for integration, desc in integrations:
         external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
         private_metadata = "webhook-integrations-D",
         do_upload = args.force)
+
+webhook_docs = [
+    ('airbrake', 'appfollow', 'basecamp'),
+    ('bitbucket', 'bitbucket2', 'circleci'),
+    ('codeship', 'crashlytics', 'delighted'),
+    ('gci', 'github', 'gitlab'),
+    ('gogs', 'gosquared', 'greenhouse'),
+    ('hellosign', 'helloworld', 'heroku'),
+    ('homeassistant', 'ifttt', 'jira'),
+    ('librato', 'mention', 'newrelic'),
+    ('opsgenie', 'pagerduty', 'papertrail'),
+    ('pingdom', 'pivotal', 'semaphore'),
+    ('sentry', 'slack', 'solano'),
+    ('splunk', 'stripe', 'taiga'),
+    ('teamcity', 'transifex', 'travis'),
+    ('trello', 'updown', 'yo'),
+    ('wordpress', 'zapier', 'zendesk'),
+]
+
+# Task Type E
+for webhooks in webhook_docs:
+    upload_task(
+        # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+        name='Organize docs into numbered steps for the webhooks {webhooks[0]}, {webhooks[1]}, and {webhooks[2]}'.format(
+            webhook=webhook),
+        description=description_E.format(webhooks=webhooks),
+        status=2, # 1: draft, 2: published
+        max_instances=1,
+        mentors=['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
+        tags=['python', 'integrations'], # free text
+        is_beginner = False,
+        # 1: Coding, 2: User Interface, 3: Documentation & Training,
+        # 4: Quality Assurance, 5: Outreach & Research
+        categories=[3],
+        time_to_complete_in_days=3, # must be between 3 and 7
+        external_url="https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
+        private_metadata="webhook-integrations-E",
+        do_upload=args.force
+    )
 
 if not args.force:
     print("No tasks uploaded. Add a -f argument to upload tasks to the GCI website.")

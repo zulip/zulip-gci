@@ -242,6 +242,47 @@ https://github.com/zulip/zulip) repository.
 * Include a link to the pull request when you submit your task on the GCI
   website.
 
+### Task Type E: Organize integrations' documentation into a numbered list of steps.
+
+Let *integration* be one of the integrations listed in the task that brought
+you here. All paths in this task refer to the
+[zulip/zulip](https://github.com/zulip/zulip) repository.
+
+1. Open up `zerver/webhooks/<integration>/doc.md` and edit the Markdown so that
+   each step in the instructions is part of a numbered list item. For a hint on
+   how to do this, see
+   [this commit](https://github.com/zulip/zulip/pull/7362/commits/32ec52605f2500396b708961bbfadec0c783f24e).
+
+2. Read [this](https://zulipchat.com/api/integration-docs-guide#markdown-macros)
+   to familiarize yourself with how our Markdown macros work.
+
+3. In `zerver/webhooks/<integration>/doc.md`, make sure you replace the following
+   macros:
+   * Replace `{!change-zulip-config-file.md!}` with `{!change-zulip-config-file-indented.md!}`.
+   * Replace `{!create-bot-construct-url.md!}` with `{!create-bot-construct-url-indented.md!}`.
+   * Replace `{!git-webhook-url-with-branches.md!}` with
+     `{!git-webhook-url-with-branches-indented.md!}`.
+   * Replace `{!webhook-url-with-bot-email.md!}` with
+     `{!webhook-url-with-bot-email-indented.md!}`.
+
+4. Save your changes and navigate to `localhost:9991/integrations/doc/<integration>` in
+   your dev environment and check whether your changes are rendered correctly.
+
+5. Make sure all the tests pass, using `tools/test-all`.
+
+6. Add a commit with the changes above, the commit
+   message should be
+   `webhooks/<integration>: Organize documentation into numbered steps.`
+
+7. Repeat steps 1-6 for all the integrations listed in the task.
+
+8. Submit a pull request to the
+   [zulip/zulip](https://github.com/zulip/zulip) repository. The title
+   of the pull request should be `webhooks: Organize docs into numbered steps.`
+
+9. Include a link to the pull request when you submit your task on the GCI
+   website.
+
 ## General notes
 
 If there is an integration Zulip doesn't have that you would like to add,
