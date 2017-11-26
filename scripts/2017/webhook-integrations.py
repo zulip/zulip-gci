@@ -5,16 +5,19 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
+interations = [
 #  These are new integrations for GCI 2017.
-integrations = [
-    ('Facebook', "the biggest social media and networking platform; "
-                 "use Facebook's graph API to build a webhoook"),
-    ('Groove', 'a customer support tool for personal support of each customer'),
-    ('Intercom', 'helps businesses track how users are interacting with their software'),
     #  ('Mailchimp', 'an email marketing tool'),  # Hubot integration exists in main repo
     # ('Zeplin', 'design collaboration')  # couldn't find public API
     # ('InVision', 'a collaborative prototyping app'),  # no API yet: https://support.invisionapp.com/hc/en-us/articles/203730795-Does-InVision-have-an-API-for-integration
     # ('Review Bot', 'an on-line review monitoring tool'),  # contacted for API support; response: integrates through Zapier
+]
+
+integrations_uploaded = [
+    ('Facebook', "the biggest social media and networking platform; "
+                 "use Facebook's graph API to build a webhoook"),
+    ('Groove', 'a customer support tool for personal support of each customer'),
+    ('Intercom', 'helps businesses track how users are interacting with their software'),
 ]
 
 description = """A [Zulip integration](https://zulipchat.com/integrations/) is a special
@@ -32,23 +35,25 @@ description_BCD = description + "For this task, do **Task Type %(type)s** for " 
 description_E = description + "For this task, do **Task Type E** for " + \
                 "the webhook integrations {webhooks[0]}, {webhooks[1]} and {webhooks[2]}."
 
-# Task Type A
-upload_task(
-    # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn how Zulip integrations work.',
-    description = description_A,
-    status = 2, # 1: draft, 2: published
-    max_instances = 100,
-    mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
-    tags = ['python', 'integrations'], # free text
-    is_beginner = False,
-    # 1: Coding, 2: User Interface, 3: Documentation & Training,
-    # 4: Quality Assurance, 5: Outreach & Research
-    categories = [1],
-    time_to_complete_in_days = 3, # must be between 3 and 7
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
-    private_metadata = "webhook-integrations-A",
-    do_upload = args.force)
+# This task has already been uploaded for 2017
+if False:
+    # Task Type A
+    upload_task(
+        # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+        name = 'Learn how Zulip integrations work.',
+        description = description_A,
+        status = 2, # 1: draft, 2: published
+        max_instances = 100,
+        mentors = ['jerryguitarist@gmail.com', 'robhoenig@gmail.com'],
+        tags = ['python', 'integrations'], # free text
+        is_beginner = False,
+        # 1: Coding, 2: User Interface, 3: Documentation & Training,
+        # 4: Quality Assurance, 5: Outreach & Research
+        categories = [1],
+        time_to_complete_in_days = 3, # must be between 3 and 7
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md",
+        private_metadata = "webhook-integrations-A",
+        do_upload = args.force)
 
 for integration, desc in integrations:
     # Task Type B
@@ -105,7 +110,7 @@ for integration, desc in integrations:
         private_metadata = "webhook-integrations-D",
         do_upload = args.force)
 
-webhook_docs = [
+webhook_docs_uploaded = [
     ('airbrake', 'appfollow', 'basecamp'),
     ('bitbucket', 'bitbucket2', 'circleci'),
     ('codeship', 'crashlytics', 'delighted'),
@@ -122,6 +127,8 @@ webhook_docs = [
     ('trello', 'updown', 'yo'),
     ('wordpress', 'zapier', 'zendesk'),
 ]
+
+webhook_docs = []
 
 # Task Type E
 for webhooks in webhook_docs:
