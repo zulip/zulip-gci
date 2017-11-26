@@ -10,6 +10,12 @@ all GitHub projects, including Zulip, use.
 * A suitable terminal. This is the built-in terminal client on Linux and OS X,
  and Git Bash on Windows (assuming you installed Git On Windows).
 
+* Consider
+  [installing a graphical Git repository viewer](http://zulip.readthedocs.io/en/latest/git/setup.html#get-a-graphical-client).
+  These can be really helpful to see the exact state of your local
+  repository when practicing with Git, branching, and rebasing, and
+  how that state is changed by each Git command.
+
 ## Task
 
 * Read the GitHub [Hello World](https://guides.github.com/activities/hello-world/) tutorial and follow
@@ -27,7 +33,17 @@ all GitHub projects, including Zulip, use.
   [rebasing](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages).
   Zulip uses a rebase-oriented workflow.
 
-* If you're curious about how `git` works, watch [this video](https://www.youtube.com/watch?v=Y2Msq90ZknI)!
+* Check out the
+  [Zulip Git Guide](http://zulip.readthedocs.io/en/latest/git/overview.html)
+  and skim each of the sub-articles, so you know what's in there.
+  This guide has a lot of helpful information, guides, and techniques
+  that you'll want to be able to call on in the future.
+
+* If you're curious to learn more about how `git` works, watch
+  [this video](https://www.youtube.com/watch?v=Y2Msq90ZknI)!  Reading
+  [our guide on how Git works](https://zulip.readthedocs.io/en/latest/git/the-git-difference.html)
+  and the articles linked from there is a great way to get deeper into
+  learning Git.
 
 ## Submission
 
