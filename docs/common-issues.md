@@ -78,8 +78,8 @@ I point them to docs:
 ```
 Some helpful docs:
 
-- [fixing commits](https://zulip.readthedocs.io/en/latest/tutorials/fixing-commits.html)
-- [working copies](https://zulip.readthedocs.io/en/latest/tutorials/working-copies.html)
+- [fixing commits](https://zulip.readthedocs.io/en/latest/git/fixing-commits.html)
+- [working copies](https://zulip.readthedocs.io/en/latest/git/working-copies.html)
 - [Git guide](https://zulip.readthedocs.io/en/latest/git/index.html)
 ```
 
