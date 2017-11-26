@@ -94,3 +94,10 @@ your terminal.
 ### Submit
 
 Submit the three screenshots using the GCI tasks interface.
+
+### Notes
+
+There are 2 copies of this task: One tagged as a beginner task, and
+one that isn't.  Please only complete one copy.  We have 2 copies
+because we want to ensure every GCI student can do this task, even if
+they completed 2 other beginner tasks.

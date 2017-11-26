@@ -12,6 +12,8 @@ Instructions for this task are at
 https://github.com/zulip/zulip-gci/blob/master/tasks/2017/intro-to-zulip-server.md
 """
 
+# Upload twice, once as beginner and once as not beginner.
+
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
     name = 'Intro to Zulip server development',
@@ -22,6 +24,24 @@ upload_task(
                'hkmp7tommy@gmail.com', 'yo@vishnuks.com'],
     tags = ['intro', 'dev environment', 'vagrant'], # free text
     is_beginner = True,
+    # 1: Coding, 2: User Interface, 3: Documentation & Training,
+    # 4: Quality Assurance, 5: Outreach & Research
+    categories = [1, 3],
+    time_to_complete_in_days = 5, # must be between 3 and 7
+    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/intro-to-zulip-server.md",
+    private_metadata = "intro-to-zulip-server",
+    do_upload = args.force)
+
+upload_task(
+    # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+    name = 'Intro to Zulip server development',
+    description = description,
+    status = 2, # 1: draft, 2: published
+    max_instances = 100,
+    mentors = ['lylafisch@gmail.com', 'joshuapan8@gmail.com',
+               'hkmp7tommy@gmail.com', 'yo@vishnuks.com'],
+    tags = ['intro', 'dev environment', 'vagrant'], # free text
+    is_beginner = False,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [1, 3],
