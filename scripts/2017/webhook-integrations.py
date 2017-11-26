@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-interations = [
+integrations = [
 #  These are new integrations for GCI 2017.
     #  ('Mailchimp', 'an email marketing tool'),  # Hubot integration exists in main repo
     # ('Zeplin', 'design collaboration')  # couldn't find public API
