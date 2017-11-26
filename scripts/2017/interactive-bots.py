@@ -52,7 +52,7 @@ can be integrated with various APIs.
 description_AB = description + "For this task, do **Task Type %(type)s**."
 description_C = description + "For this task, do **Task Type C** for creating a " + \
                               "**%(bot)s** bot (%(desc)s)."
-description_D = description + "For this task, do **Task Type d** for improving " + \
+description_D = description + "For this task, do **Task Type D** for improving " + \
                                "the **%(bot)s** bot (%(desc)s)."
 
 # Task Type A
