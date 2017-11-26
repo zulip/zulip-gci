@@ -20,7 +20,7 @@ upload_task(
     max_instances = 100,
     mentors = ['lylafisch@gmail.com', 'joshuapan8@gmail.com',
                'hkmp7tommy@gmail.com', 'yo@vishnuks.com'],
-    tags = ['intro', 'vagrant', 'dev environment', 'vagrant'], # free text
+    tags = ['intro', 'dev environment', 'vagrant'], # free text
     is_beginner = True,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
     # 4: Quality Assurance, 5: Outreach & Research
