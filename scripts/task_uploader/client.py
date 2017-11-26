@@ -27,7 +27,7 @@ class GCIAPIClient(object):
             url_prefix='https://codein.withgoogle.com/',
             debug=False
     ):
-        self.url_prefix = urlparse.urljoin(url_prefix, 'api/program/current/')
+        self.url_prefix = urllib.parse.urljoin(url_prefix, 'api/program/current/')
         self.headers = {
             'Authorization': 'Bearer {}'.format(auth_token),
             'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ class GCIAPIClient(object):
             requests_log.propagate = True
 
     def _build_url(self, path):
-        return urlparse.urljoin(self.url_prefix, path) + '/'
+        return urllib.parse.urljoin(self.url_prefix, path) + '/'
 
     def get_list_tasks(self, page=1):
         """
