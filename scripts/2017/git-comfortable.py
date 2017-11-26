@@ -13,7 +13,7 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/2017/git-comfortable.md
 
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Get comfortable with git',
+    name = 'Get comfortable with git, branches, and more with some great tutorials!',
     description = description,
     status = 2, # 1: draft, 2: published
     max_instances = 100,

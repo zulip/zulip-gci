@@ -16,7 +16,7 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/2017/spread-the-word.md
 
 upload_task(
     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Spread the Word about Zulip',
+    name = 'Spread the word about Zulip',
     description = description,
     status = 2, # 1: draft, 2: published
     max_instances = 100,
