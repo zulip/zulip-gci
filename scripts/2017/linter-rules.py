@@ -13,13 +13,15 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/2017/linter-rules.md
 For this task, update the linter rule {}.
 """
 
-linter_rules = [
+linter_rules_uploaded = [
     ("groups trailing_whitespace_rule, whitespace_rules, markdown_whitespace_rules, markdown_rules, help_markdown_rules, and prose_style_rules", ['markdown']),
     ("group js_rules", ['javascript']),
     ("group python_rules", ['python']),
     ("groups bash_rules, handlebars_rules and jinja2_rules", []),
     ("groups css_rules and html_rules", ['html', 'css']),
 ]
+
+linter_rules = []
 
 for task, tags in linter_rules:
     upload_task(
