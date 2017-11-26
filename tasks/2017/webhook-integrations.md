@@ -242,6 +242,77 @@ https://github.com/zulip/zulip) repository.
 * Include a link to the pull request when you submit your task on the GCI
   website.
 
+### Task Type E: Organize integrations' documentation into a numbered list of steps.
+
+Your goal is to update the documentation for three integrations to
+nicely use a numbered list of steps.  In the below discussion, let
+*integration* be one of the integrations listed in the task that
+brought you here.
+
+All paths in this task refer to the
+[zulip/zulip](https://github.com/zulip/zulip) repository.
+
+1. Read [this](https://zulipchat.com/api/integration-docs-guide#markdown-macros)
+   to familiarize yourself with how our Markdown macros work.
+
+2. Open up `zerver/webhooks/<integration>/doc.md` and edit the Markdown so that
+   each step in the instructions is part of a numbered list item. For a hint on
+   how to do this, see
+   [this commit](https://github.com/zulip/zulip/pull/7362/commits/32ec52605f2500396b708961bbfadec0c783f24e).
+
+   While you're doing this, you may find it makes sense to remove
+   unnecessary use of words like "Next, ", or "Now, " that were needed
+   with the old documentation (without numbered steps) but now feel
+   redundant.
+
+   Also, you'll need to replace our normal macros with variants that
+   indent the content to avoid creating a new paragraph break.  You
+   will likely need to replace the following macros:
+   * Replace `{!change-zulip-config-file.md!}` with `{!change-zulip-config-file-indented.md!}`.
+   * Replace `{!create-bot-construct-url.md!}` with `{!create-bot-construct-url-indented.md!}`.
+   * Replace `{!git-webhook-url-with-branches.md!}` with
+     `{!git-webhook-url-with-branches-indented.md!}`.
+   * Replace `{!webhook-url-with-bot-email.md!}` with
+     `{!webhook-url-with-bot-email-indented.md!}`.
+
+3. Save your changes and navigate to `localhost:9991/integrations/doc/<integration>` in
+   your dev environment and check whether your changes are rendered
+   correctly.  Repeat the above until the documentat looks perfect.
+
+4. Make sure all the tests pass, using `tools/test-all`.
+
+5. Add a commit with the changes above, the commit
+   message should be
+   `webhooks/<integration>: Organize documentation into numbered steps.`
+
+6. Repeat steps 1-6 for all the integrations listed in the task.
+
+7. Carefully double-check your work for all 3 by looking at the HTML
+   in the development environment, checking that each integration's
+   documentation is clear, the numbers count from 1 to N (with no
+   duplicates or counts restarting at 1; with Markdown, the latter is
+   often caused by not indenting things inside a bullet enough,
+   causing the Markdown processor to think that you had a paragraph
+   between two numbered lists).
+
+8. Submit a pull request to the
+   [zulip/zulip](https://github.com/zulip/zulip) repository. The title
+   of the pull request should be `webhooks: Organize docs into
+   numbered steps.`
+
+   Note any issues with the documentation that you're not sure about
+   in your pull request.  We also recommend including screenshots of
+   what each doc looks like in your pull request, because it'll make
+   it much easier for mentors to quickly review your work and point
+   out problems.
+
+9. Include a link to the pull request when you submit your task on the
+   GCI website.
+
+Mentors will check that the PR has 3 commits each with a correct
+commit message, each commit only changes that one integration's docs,
+and the documentation looks good in the Zulip development environment.
+
 ## General notes
 
 If there is an integration Zulip doesn't have that you would like to add,
