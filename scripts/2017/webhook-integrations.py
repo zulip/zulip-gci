@@ -128,7 +128,7 @@ for webhooks in webhook_docs:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
         name='Organize docs into numbered steps for the webhooks {webhooks[0]}, {webhooks[1]}, and {webhooks[2]}'.format(
-            webhook=webhook),
+            webhooks=webhooks),
         description=description_E.format(webhooks=webhooks),
         status=2, # 1: draft, 2: published
         max_instances=1,
