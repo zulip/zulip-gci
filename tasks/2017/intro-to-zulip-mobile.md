@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * Having completed our beginner tasks to learn about Git:
-  [git-comfortable]() and [Submit a Pull Request]()
+  [git-comfortable](git-comfortable.md) and [Submit a Pull Request](submit-a-pull-request.md)
 
 * Having cloned the
   [zulip-mobile](https://github.com/zulip/zulip-mobile) repository and
@@ -14,6 +14,26 @@
   setup and Zulip's mobile experience is less well-documented than the
   rest of Zulip, so this isn't a great first task if you're new to
   programming.
+
+  ### Some useful links to get started with RN & Mobile Development environment
+
+  #### React Native
+
+  * [Facebook official tutorials](https://facebook.github.io/react-native/docs/tutorial.html)
+  * [React Native Express](http://www.reactnativeexpress.com)
+  * [React Native School](https://www.youtube.com/playlist?list=PLjVnDc2oPyOGBOb75V8CpeSr9Gww8pZdL)
+  * [Start Building a React Native Application](https://egghead.io/lessons/react-start-building-a-react-native-application) (quick guide)
+  * [Tutorials Point](https://www.tutorialspoint.com/react_native/)
+
+  ##### Android Studio
+
+  * [Download Android Studio](https://developer.android.com/studio/index.html)
+  * [Building Your First Android App](https://developer.android.com/training/basics/firstapp/index.html)
+
+  ##### Xcode
+
+  * Download Xcode from [here](https://developer.apple.com/xcode/)
+  * [Start Developing iOS Apps](https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html)
 
 ### Setup a development environment
 
