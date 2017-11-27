@@ -17,7 +17,7 @@ upload_task(
     description = description,
     status = 2, # 1: draft, 2: published
     max_instances = 100,
-    mentors = ['lylafisch@gmail.com','biswajitsampriti@gmail.com', 'rheaparekh12@gmail.com', 'premsinwar4@gmail.com'],
+    mentors = ['lylafisch@gmail.com','biswajitsampriti@gmail.com', 'rheaparekh12@gmail.com', 'premsinwar4@gmail.com', 'jajodia.raghav@gmail.com'],
     tags = ['pull request', 'git', 'github'], # free text
     is_beginner = True,
     # 1: Coding, 2: User Interface, 3: Documentation & Training,
