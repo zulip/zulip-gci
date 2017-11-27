@@ -186,7 +186,7 @@ submit the task and it will be queued in the app. It's not a perfect solution,
 but keeping with the queue assures we are more objective than by simply
 attending only to students active on Zulip chat.
 
-![Example dashboard view](gci-app-screenshot.png)
+![Example dashboard view](assets/gci-app-screenshot.png)
 
 Other important points about the response times:
 
