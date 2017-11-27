@@ -1,4 +1,4 @@
-# GCI Tasks: Unit Testing `narrow_state.js`
+# GCI Tasks: Increase node test coverage
 
 ## Prerequisites
 
@@ -24,29 +24,26 @@ You can find all our existing node tests in `frontend_tests/node_tests`.
 
 ## Task Description
 
-The goal of this task is to obtain full testing coverage for `static/js/narrow_state.js`. The following
-is to help you recognize which lines in `narrow_state.js` that haven't been tested/covered.
+Let *file* be the file and *functions* be the functions in *file* listed in the task that brought you here.
+
+The goal of this task is to obtain full testing coverage for all *functions* in *file*. The following
+will help you recognize which lines in *functions* that haven't been tested/covered.
 
 * Start up your [Zulip development environment](https://github.com/zulip/zulip-gci/blob/master/README.md#setting-up-the-zulip-development-environment).
   This will be where you will run all your tests.
 * Generate testing coverage reports by running `./tools/test-js-with-node --coverage` in your
   development environment.
-* To see the coverage report, open `node-coverage/lcov-report/zulip/static/js/narrow_state.js.html`.
-* You should see that 92% of statements are covered in the top left corner. You should also see
-  `narrow_state.js` with colored lines, green meaning that line is successfully tested and red
+* To see the coverage report, open `node-coverage/lcov-report/zulip/static/js/<file>.html` locally, where `<file>` is *file*.
+    * **Tip:** Another way to see the coverage report is to go to `http://<hostname>:9991/node-coverage/zulip/static/js/<file>.html`,
+      where `<hostname>` is either `localhost` or the hostname of your VM, and `<file>` is *file*.
+* For example, if you were testing `narrow_state.js`, you should see that 92% of statements are covered in the top left corner.
+  You should also see `narrow_state.js` with colored lines, green meaning that line is successfully tested and red
   meaning that line is **not** successfully tested.
-* Your task is to test all the red-colored lines!
+* Your task is to test all the red-colored lines in *functions*!
 
-The functions with lines that still need coverage:
-* `exports.operators()`
-* `collect_single()`
-* `exports.set_compose_defaults()`
-* `exports.stream()`
-* `exports.topic()`
-* `exports.is_for_stream_id()`
-
-When you have reached 100% of statements covered in `narrow_state.js`,
-* Add a commit with commit message `tests: Get narrow_state.js to 100% coverage.`
-* Submit a pull request that contains this commit. Include a link to the pull request
+When you successfully covered a function in *functions* in *file*,
+* Add a commit with commit message `tests: Add node tests for <function> in <file>.`, where `<file>` is *file*, and
+  `<function>` is the function name, for each function in *functions*.
+* Submit a pull request that contains these commits. Include a link to the pull request
   when you submit your task on the GCI website.
 
