@@ -7,7 +7,9 @@ args = parser.parse_args()
 
 # Add customized task for Japanese and Korean, as these are mostly fully translated,
 # but have no style guides.
-languages_tasks = [
+languages_tasks = []
+
+languages_tasks_uploaded = [
     ('Arabic', ['A', 'B',]),
     ('French', ['D',]),
     ('Hungarian', ['A', 'B', 'C',]),
@@ -56,7 +58,7 @@ for language_tasks in languages_tasks:
             # 4: Quality Assurance, 5: Outreach & Research
             categories = [3, 5],
             time_to_complete_in_days = 5, # must be between 3 and 7
-            external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
+            # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
             private_metadata = "translations-A",
             do_upload = args.force)
 
@@ -74,7 +76,7 @@ for language_tasks in languages_tasks:
             # 4: Quality Assurance, 5: Outreach & Research
             categories = [3],
             time_to_complete_in_days = 5, # must be between 3 and 7
-            external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
+            # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
             private_metadata = "translations-B",
             do_upload = args.force)
 
@@ -92,7 +94,7 @@ for language_tasks in languages_tasks:
             # 4: Quality Assurance, 5: Outreach & Research
             categories = [3],
             time_to_complete_in_days = 5, # must be between 3 and 7
-            external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
+            # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
             private_metadata = "translations-C",
             do_upload = args.force)
 
@@ -110,7 +112,7 @@ for language_tasks in languages_tasks:
             # 4: Quality Assurance, 5: Outreach & Research
             categories = [3],
             time_to_complete_in_days = 5, # must be between 3 and 7
-            external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
+            # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
             private_metadata = "translations-D",
             do_upload = args.force)
 
@@ -128,7 +130,7 @@ upload_task(
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [3],
     time_to_complete_in_days = 5, # must be between 3 and 7
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
+    # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/translations.md",
     private_metadata = "translations-E",
     do_upload = args.force)
 

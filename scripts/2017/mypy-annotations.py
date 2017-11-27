@@ -70,8 +70,7 @@ for files in tasks_A:
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1],
         time_to_complete_in_days = 4, # must be between 3 and 7
-        # Field currently not accessible via API. gci-support says it is coming soon.
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
         private_metadata = "mypy-annotations-A",
         do_upload = args.force)
 

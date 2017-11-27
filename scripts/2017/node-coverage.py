@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force', dest='force', action="store_true", default=False)
 args = parser.parse_args()
 
-files = [
+files_uploaded = [
     ('narrow_state.js', ['exports.operators', 'collect_single', 'exports.set_compose_defaults', 'exports.stream', 'exports.topic', 'exports.is_for_stream_id']),
     ('stream_data.js',  ['exports.delete_sub', 'exports.invite_streams', 'exports.get_subscriber_count', 'exports.render_stream_description',
                          'exports.canonicalized_name', 'exports.name_in_home_view', 'exports.notifications_in_home_view', 'exports.get_default_status',
@@ -13,6 +13,8 @@ files = [
                          'exports.receives_audible_notifications', 'exports.initialize_from_page_params', 'exports.get_newbie_stream', 'exports.remove_default_stream']),
     ('user_groups.js',  ['exports.get_user_group_from_id', 'exports.get_user_group_from_name', 'exports.initialize'])
 ]
+
+files = []
 
 description = """Unit tests ensure the quality and correctness of your code, especially when doing
 large code refactorings, and prevent regressions. Zulip uses node to unit test its
@@ -47,7 +49,7 @@ for file, functions in files:
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1],
         time_to_complete_in_days = 5, # must be between 3 and 7
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/node-coverage.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/node-coverage.md",
         private_metadata = "node-coverage",
         do_upload = args.force)
 
