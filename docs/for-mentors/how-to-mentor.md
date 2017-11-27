@@ -39,30 +39,50 @@
    (https://zulip.readthedocs.io/en/latest/code-of-conduct.html), 
    and enforce the code of conduct between students.
 
+ * Follow [Google's recommendations](https://developers.google.com/open-source/gci/help/oa-tips#reviewing_student_work)
+   for reviewing student work.
+
  * Tell the admins when you see students helping each other. It will help when 
    determining the winners of the competition, as community support is part of 
    what they are judged on. Share the good karma. 
 
- * Be as public as possible. If a student asks for help privately, move the discussion to a public place where other students will be able to see the issue and resolution. That being said, if they are asking for help with something that should stay private, it’s fine to keep it private. 
+ * Be as public as possible. If a student asks for help privately, move the
+   discussion to a public place where other students will be able to see the
+   issue and resolution. That being said, if they are asking for help with
+   something that should stay private, it’s fine to keep it private 
 
- * If a student needs critical feedback on their behavior patterns, bring it up on “GCI Mentors”.  We’ll want to send such feedback to the student in a private message thread, but it’s important for the org admins to be involved.  
+ * If a student needs critical feedback on their behavior patterns, bring it up
+   on “GCI Mentors”.  We’ll want to send such feedback to the student in a
+   private message thread, but it’s important for the org admins to be involved.
 
 
 ## Sign up for shifts:
 
 [Claim your shifts](https://docs.google.com/spreadsheets/d/1ivw43Y6-dhitenj1aknc58J4HoskosMaqZYdo-VeSKg/edit?usp=sharing). 
 
- * If you are new to the Zulip community and will need training, please sign up for at least 5 of our 4-hour shifts over the course of the 7-week program. That’s a bit under 1 shift/week. 
+ * If you are new to the Zulip community and will need training, please sign up
+   for at least 5 of our 4-hour shifts over the course of the 7-week program.
+   That’s a bit under 1 shift/week.
 
  * We need lots of coverage for the first two weeks!
 
-   * That is when students are getting their development environment getting set up and learning git, so there are lot of “get me unstuck” questions that are critical for allowing our students to have a good experience with Zulip. 
+   * That is when students are getting their development environment getting set
+     up and learning git, so there are lot of “get me unstuck” questions that
+     are critical for allowing our students to have a good experience with
+     Zulip.
 
-   * We want to have two people per shift, and 24/7 shifts for this period because fast response times are so critical to student retention. 
+   * We want to have two people per shift, and 24/7 shifts for this period
+     because fast response times are so critical to student retention.
 
-   * If you're less experienced with either Zulip or mentorship, sign up for your first couple shifts during the first two weeks, when others will be on shift as well, so they can help show you how it's done.
+   * If you're less experienced with either Zulip or mentorship, sign up for
+     your first couple shifts during the first two weeks, when others will be on
+     shift as well, so they can help show you how it's done.
 
- * We’ll send out email reminders every week to sign up for shifts, if you don’t know when exactly you will be available, but you know that you want to contribute. If you take that route, please drop us a note telling us your overall volunteer goals so we know about how much to expect / how much to panic-recruit more shift coverage. 
+ * We’ll send out email reminders every week to sign up for shifts, if you don’t
+   know when exactly you will be available, but you know that you want to
+   contribute. If you take that route, please drop us a note telling us your
+   overall volunteer goals so we know about how much to expect / how much to
+   panic-recruit more shift coverage.
 
 
 ## Your job during your shift is to:
