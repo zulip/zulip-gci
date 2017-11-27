@@ -37,7 +37,7 @@ for task, tags in linter_rules:
         # 4: Quality Assurance, 5: Outreach & Research
         categories = [1, 4],
         time_to_complete_in_days = 3, # must be between 3 and 7
-        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/linter-rules.md",
+        # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/linter-rules.md",
         private_metadata = "linter-rules",
         do_upload = args.force)
 

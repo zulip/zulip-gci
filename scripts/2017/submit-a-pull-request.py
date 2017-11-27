@@ -24,7 +24,7 @@ upload_task(
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [3],
     time_to_complete_in_days = 5, # must be between 3 and 7
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/submit-a-pull-request.md",
+    # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/submit-a-pull-request.md",
     private_metadata = "submit-a-pull-request",
     do_upload = args.force)
 

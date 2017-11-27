@@ -27,7 +27,7 @@ upload_task(
     # 4: Quality Assurance, 5: Outreach & Research
     categories = [5],
     time_to_complete_in_days = 3, # must be between 3 and 7
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/spread-the-word.md",
+    # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/spread-the-word.md",
     private_metadata = "spread-the-word",
     do_upload = args.force)
 
