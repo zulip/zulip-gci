@@ -7,12 +7,11 @@ from task_uploader.client import GCIAPIClient
 
 # Information about the fields is available at
 # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-# One field is missing in the documentation and in the argument list below: external_url.
-# gci-support says it is coming soon.
 def upload_task(*, name, description, status, max_instances, mentors, tags, is_beginner,
-                categories, time_to_complete_in_days, private_metadata, external_url=None, do_upload = False):
+                categories, time_to_complete_in_days, private_metadata, external_url = None, do_upload = False):
     task = locals()
     del task['do_upload']
+    # external_url is an optional field. If it's not there, then we shouldn't pass the empty value.
     if task['external_url'] is None:
         del task['external_url']
     try:
