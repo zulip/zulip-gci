@@ -52,6 +52,9 @@ started with mobile development.
 Run the app with one of the following commands:
 ```
 react-native run-ios //  run the app on an iOS device on Mac OS
+npm run ios-min //  runs in an iOS simulator in the minimally supported device (currently iPhone 5s)
+npm run ios-max // runs in an iOS simulator in the newest/most premium supported device (currently iPhone X)
+
 react-native run-android // run the app on an Android device
 ```
 
