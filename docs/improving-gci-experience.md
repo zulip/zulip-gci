@@ -311,8 +311,7 @@ or helping others. This section includes some ideas on what you can do.
   * Read [Zulip documentation](https://zulip.readthedocs.io/en/latest/).
 
   * Look through [current issues](https://github.com/zulip/zulip/issues),
-  especially the [bite-size
-ones](https://github.com/zulip/zulip/issues?q=is%3Aopen+is%3Aissue+label%3A%22bite+size%22).
+  especially the [good-first issues](https://github.com/zulip/zulip/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
   * Read [Tim's post on
   mypy](https://blog.zulip.org/2016/10/13/static-types-in-python-oh-mypy/).
