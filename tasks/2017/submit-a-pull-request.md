@@ -4,13 +4,7 @@ This task will familiarize you with our GitHub workflow.  If you
 are already familiar with making a pull request in GitHub, feel free
 to skip this task.
 
-As a first step, we recommend reading GitHub's
-[hello world tutorial](https://guides.github.com/activities/hello-world/), which covers
-forking a repository, creating a branch, creating commits, and make a new pull request
-using only the GitHub web interface. You can also use command line Git for creating
-branches and making commits. This is not necessary for completing this
-task, but is a skill that you should learn sooner or later. Here is a
-[great tutorial](https://try.github.io) if you want to learn command line Git.
+As a first step, we recommend doing the [Get Comfortable With Git](https://github.com/zulip/zulip-gci/blob/master/tasks/2017/git-comfortable.md) task first.
 
 ## Task
 
