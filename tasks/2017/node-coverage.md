@@ -42,8 +42,8 @@ will help you recognize which lines in *functions* that haven't been tested/cove
 * Your task is to test all the red-colored lines in *functions*!
 
 When you successfully covered a function in *functions* in *file*,
-* Add a commit with commit message `tests: Add node tests for <function> in <file>.`, where `<file>` is *file*, and
-  `<function>` is the function name, for each function in *functions*.
+* Add a commit with commit message `node tests: Cover <function_name>.`, where 
+  `<function_name>` is the function name in *functions*.
 * Submit a pull request that contains these commits. Include a link to the pull request
   when you submit your task on the GCI website.
 
