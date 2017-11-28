@@ -47,7 +47,7 @@ if you are not sure how to do this.
   [this doc](http://zulip.readthedocs.io/en/latest/git/pull-requests.html#create-a-pull-request) on creating pull requests
   if you don't know how to open a pull request.
 
-* Sign the Dropbox CLA using the link posted by the Dropbox CLA bot.
+* Sign the Dropbox CLA - https://opensource.dropbox.com/cla/
 
 * Post a link to the pull request when you submit your task on the GCI
   website. The link should look like
