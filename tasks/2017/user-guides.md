@@ -110,13 +110,14 @@ In this task, you will carefully review existing user documentation and note
 potential improvements to increase the documentation's clarity and readability.
 
 1. Start your development environment. In your browser, visit
-http://localhost:9991/help to view the index for general user documentation or
-http://localhost:9991/api to visit our API documentation.
+`http://<hostname>:9991/help` to view the index for general user documentation or
+`http://<hostname>:9991/api` to visit our API documentation, where `hostname` is
+either `localhost` or the hostname of your VM.
 
 2. Read the documentation corresponding to *features*.
 
 3. Follow the instructions in the article exactly step-by-step. Note any steps
-in the procedure anything that are unclear, incorrect. Additionally, suggest any
+in the procedure that are unclear, incorrect. Additionally, suggest any
 tips, warnings, or other information the author may not have thought of that
 should be added to the user documentation.
 
@@ -131,7 +132,9 @@ parts not conform to the guide? List them and describe how they could be
 revised.
 
 6. Compile your notes into an organized Markdown document located in a folder
-named `user-guides/<username>` where `<username>` represents your username.
+named `user-guides/<username>` where `<username>` represents your username
+(this folder you will create in the [`zulip-gci-submissions`](https://github.com/zulip/zulip-gci-submissions/)
+repository).
 **Include at least 3 questions, comments, or suggestions you encountered while
 reading each article.**
 
