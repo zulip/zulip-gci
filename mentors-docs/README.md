@@ -3,13 +3,13 @@ where high school students compete to contribute the most to major
 open source projects like Zulip and Wikimedia. There is a lot of work
 to be done for it, and we could use as much help as we can get.
 
-Volunteers involved with the various open source projects
-participating in GCI are called "mentors".  The term "mentor" usually
+Google calls the volunteers helping run GCI "mentors".  The term
+"mentor" perhaps isn't the right term for GCI, because it usually
 suggests a 1:1 relationship with a mentee (and that is how GCI's
-sister program, Google Summer of Code, works).  GCI is structured
-around each student doing dozens of smaller individual tasks, so each
-mentor will likely help dozens of students over the course of the
-program.
+sister program, Google Summer of Code, works).  GCI, in contrast, is
+structured around each student doing dozens of smaller individual
+tasks, so each mentor will likely help dozens of students over the
+course of the program.
 
 The main that GCI mentors do is to help our high school student
 contributors get involved in Zulip.  This includes answering
