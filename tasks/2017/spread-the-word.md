@@ -72,7 +72,8 @@ aviendha1591 with your username.
 ### Consider following the Zulip project
 
 This isn't required to complete the task, but while you're at it,
-consider [following Zulip on Twitter](https://twitter.com/zulip).
+we recommend [following Zulip on Twitter](https://twitter.com/zulip)
+so you can get intersting Zulip community news.
 
 ### Submit your submission file
 
