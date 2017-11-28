@@ -73,7 +73,7 @@ aviendha1591 with your username.
 
 This isn't required to complete the task, but while you're at it,
 we recommend [following Zulip on Twitter](https://twitter.com/zulip)
-so you can get intersting Zulip community news.
+so you can get interesting Zulip community news.
 
 ### Submit your submission file
 
