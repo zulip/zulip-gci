@@ -9,9 +9,6 @@ files_uploaded = [
     ('narrow_state.js', ['exports.is_for_stream_id']),
     ('stream_data.js',  ['exports.name_in_home_view', 'exports.notifications_in_home_view']),
     ('user_groups.js',  ['exports.get_user_group_from_id'])
-]
-
-files = [
     ('user_groups.js', ['exports.get_user_group_from_name']),
     ('user_groups.js', ['exports.initialize']),
     ('stream_data.js', ['exports.get_newbie_stream']),
@@ -26,6 +23,9 @@ files = [
     ('narrow_state.js', ['exports.stream', 'exports.topic']),
     ('narrow_state.js', ['exports.operators', 'collect_single']),
     ('narrow_state.js', ['exports.set_compose_defaults'])
+]
+
+files = [
 ]
 
 description = """Unit tests ensure the quality and correctness of your code, especially when doing
