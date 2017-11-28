@@ -55,6 +55,21 @@ if you are not sure how to do this.
   `<number>` is a number (specifically, the number of pull requests
   submitted to this repository so far).
 
+* Double-check that your pull request has the right title, the right branch name,
+  doesn't contain any typos, etc. Use our automatic grader for this task
+  to find out if there is anything you should fix. You can find the script
+  in the `zulip-gci-submissions` repository. Run it:
+  ```shell
+  python ./submit-a-pull-request/grader.py <your-pull-request-number> <your-github-username>
+  ```
+  If your PR is correct, the script will print:
+  > LGTM.
+
+  Otherwise, the script will tell you what it thinks is wrong. If the script
+  is complaining, but you think that your PR is correct, discuss it on
+  chat.zulip.org in the stream [GCI tasks](
+  https://chat.zulip.org/#narrow/stream/GCI.20tasks) on the topic `submit-a-pull-request`.
+
 The mentors will verify that you successfully created a pull request
 with 2 commits, first adding the file and then editing it to contain
 your username.  Once you've signed the Dropbox CLA, your pull request
