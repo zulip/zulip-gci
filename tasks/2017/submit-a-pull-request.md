@@ -43,8 +43,9 @@ if you are not sure how to do this.
 * Open a Pull Request in the [zulip-gci-submissions](
   https://github.com/zulip/zulip-gci-submissions) repository with title
   "Submit a Pull Request". Refer to [this tutorial](
-  https://guides.github.com/activities/hello-world/#pr)
-  if you don't know how to open a pull request and read about how to [create a Pull Request](http://zulip.readthedocs.io/en/latest/git/pull-requests.html#create-a-pull-request).
+  https://guides.github.com/activities/hello-world/#pr) or 
+  [this doc](http://zulip.readthedocs.io/en/latest/git/pull-requests.html#create-a-pull-request) on creating pull requests
+  if you don't know how to open a pull request.
 
 * Sign the Dropbox CLA using the link posted by the Dropbox CLA bot.
 
