@@ -4,7 +4,10 @@ This task will familiarize you with our GitHub workflow.  If you
 are already familiar with making a pull request in GitHub, feel free
 to skip this task.
 
-As a first step, we recommend doing the [Get Comfortable With Git](https://github.com/zulip/zulip-gci/blob/master/tasks/2017/git-comfortable.md) task first.
+We recommend doing the
+[Get Comfortable With Git](https://codein.withgoogle.com/dashboard/tasks/5415336817983488/)
+task first, since that ask teaches you a lot of things you might
+otherwise need to look up when working on this one.
 
 ## Task
 

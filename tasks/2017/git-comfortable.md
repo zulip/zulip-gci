@@ -3,6 +3,10 @@
 This task will familiarize you with Git, which is the version control system
 all GitHub projects, including Zulip, use.
 
+In this task, you'll learn both the Git basics as well as read
+resources that will help you move towards being an advanced user of
+Git.
+
 ## Prerequisites
 
 * A working Git installation. See [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
