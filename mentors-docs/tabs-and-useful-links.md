@@ -25,46 +25,46 @@ closing it.
 [Firefox](https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles)
 
 2. Add pinned tabs
-* https://chat.zulip.org
-* https://codein.withgoogle.com/
-* https://github.com/zulip/zulip-gci-submissions
+  * https://chat.zulip.org
+  * https://codein.withgoogle.com/
+  * https://github.com/zulip/zulip-gci-submissions
 
 3. Add a tab manager
 
-[OneTab](https://www.one-tab.com/) works pretty well in both Chrome and Firefox
-- it allows you to open tabs and save them in groups. You can name the groups
-and then restore them, either in your current or separate browser window, and
-then save them back with one click.
-
-My preferred setup for OneTab is:
-
-  a. When a tab group is restored, send the tabs to: A new window, unless OneTab is the only tab in the current window
-  b. Pinned tabs: Don't send pinned tabs to OneTab
-  c. Startup: Display OneTab whenever you start your web browser for the first time
-  d. On clicking 'restore all' or restoring a single tab: Open the tab(s) and remove them from your OneTab list
-  e. Duplicates: Allow duplicates
-
-Useful OneTab groups for GCI:
-
-* Mentor and contributor docs:
-  * [How to mentor](how-to-mentor.md) 
-  * [Shift spreadsheet](https://docs.google.com/spreadsheets/d/1ivw43Y6-dhitenj1aknc58J4HoskosMaqZYdo-VeSKg/edit#gid=0)
-  * [Common student issues](common-issues.md)
-  * [Code review](https://zulip.readthedocs.io/en/latest/contributing/code-reviewing.html)
-
-* Student docs:
-  * [Improving the GCI experience](../improving-gci-experience.md)
-  * [GCI rules](https://developers.google.com/open-source/gci/resources/contest-rules)
-
-* Zulip docs:
-  * [Vagrant setup](https://zulip.readthedocs.io/en/latest/development/setup-vagrant.html#)
-  * [Fixing commits](https://zulip.readthedocs.io/en/latest/tutorials/fixing-commits.html)
-  * [Git cheat sheet](https://zulip.readthedocs.io/en/latest/tutorials/git-cheat-sheet-detailed.html)
-  * [Zulip code style](https://zulip.readthedocs.io/en/latest/contributing/code-style.html)
-  * [Version control](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#)
-
-It’s useful to add specific groups of links if you find you use them quite often 
-- last year I had themed groups, e.g. for interactive bot tasks.
+   [OneTab](https://www.one-tab.com/) works pretty well in both Chrome and Firefox.
+   It allows you to open tabs and save them in groups. You can name the groups
+   and then restore them, either in your current or separate browser window, and
+   then save them back with one click.
+   
+   My preferred setup for OneTab is:
+   
+   * When a tab group is restored, send the tabs to a new window, unless OneTab is the only tab in the current window
+   * Pinned tabs: Don't send pinned tabs to OneTab
+   * Startup: Display OneTab whenever you start your web browser for the first time
+   * On clicking 'restore all' or restoring a single tab: Open the tab(s) and remove them from your OneTab list
+   * Duplicates: Allow duplicates
+   
+   Useful OneTab groups for GCI:
+   
+   * Mentor and contributor docs:
+     * [How to mentor](how-to-mentor.md) 
+     * [Shift spreadsheet](https://docs.google.com/spreadsheets/d/1ivw43Y6-dhitenj1aknc58J4HoskosMaqZYdo-VeSKg/edit#gid=0)
+     * [Common student issues](common-issues.md)
+     * [Code review](https://zulip.readthedocs.io/en/latest/contributing/code-reviewing.html)
+   
+   * Student docs:
+     * [Improving the GCI experience](../improving-gci-experience.md)
+     * [GCI rules](https://developers.google.com/open-source/gci/resources/contest-rules)
+   
+   * Zulip docs:
+     * [Vagrant setup](https://zulip.readthedocs.io/en/latest/development/setup-vagrant.html#)
+     * [Fixing commits](https://zulip.readthedocs.io/en/latest/tutorials/fixing-commits.html)
+     * [Git cheat sheet](https://zulip.readthedocs.io/en/latest/tutorials/git-cheat-sheet-detailed.html)
+     * [Zulip code style](https://zulip.readthedocs.io/en/latest/contributing/code-style.html)
+     * [Version control](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#)
+   
+   It’s useful to add specific groups of links if you find you use them quite often. 
+   Last year I had themed groups, e.g. for interactive bot tasks.
 
 
 4. Add a distinct color theme to the browser profile, so you always know you
