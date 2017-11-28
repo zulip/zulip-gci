@@ -112,7 +112,10 @@ Mentors will accept your task once you've submitted a clear bug report
 that they are able to reproduce.
 
 If you're interested in fixing the bug you found, you can work on it
-[via the issues task](https://github.com/zulip/zulip-gci/blob/master/tasks/2017/issues.md)
+[via the issues task](https://github.com/zulip/zulip-gci/blob/master/tasks/2017/issues.md).
+
+If you're not sure how to take screenshots, [this guide](http://zulip.readthedocs.io/en/latest/tutorials/screenshot-and-gif-software.html)
+should be helpful.
 
 ## General notes
 

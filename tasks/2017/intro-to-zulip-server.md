@@ -95,6 +95,9 @@ your terminal.
 
 Submit the three screenshots using the GCI tasks interface.
 
+If you're not sure how to take screenshots, [this guide](http://zulip.readthedocs.io/en/latest/tutorials/screenshot-and-gif-software.html)
+should be helpful.
+
 ### Notes
 
 There are 2 copies of this task: One tagged as a beginner task, and

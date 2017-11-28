@@ -61,6 +61,9 @@ all GitHub projects, including Zulip, use.
 Submit the four screenshots in the GCI app and provide a link to your
 `hello-world` repository.
 
+If you're not sure how to take screenshots, [this guide](http://zulip.readthedocs.io/en/latest/tutorials/screenshot-and-gif-software.html)
+should be helpful.
+
 ## Completion criteria
 
 Mentors will check that the student uploaded 4 screenshots for:
