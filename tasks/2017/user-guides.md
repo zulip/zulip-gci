@@ -103,44 +103,47 @@ In this task, you will write a new article to document an feature in Zulip.
   the copyright to their documentation. If you are not sure what constitutes
   plagiarism, please ask on the `user guides` topic of the [GCI
   tasks](https://chat.zulip.org/#narrow/stream/GCI.20tasks) stream!
-  
+
 ### Task Type B
 
 In this task, you will carefully review existing user documentation and note
 potential improvements to increase the documentation's clarity and readability.
 
 1. Start your development environment. In your browser, visit
-`http://<hostname>:9991/help` to view the index for general user documentation or
-`http://<hostname>:9991/api` to visit our API documentation, where `hostname` is
-either `localhost` or the hostname of your VM.
+   `http://<hostname>:9991/help` to view the index for general user documentation or
+   `http://<hostname>:9991/api` to visit our API documentation, where `hostname` is
+   either `localhost` or the hostname of your VM.
 
 2. Read the documentation corresponding to *features*.
 
 3. Follow the instructions in the article exactly step-by-step. Note any steps
-in the procedure that are unclear, incorrect. Additionally, suggest any
-tips, warnings, or other information the author may not have thought of that
-should be added to the user documentation.
+   in the procedure that are unclear, incorrect. Additionally, suggest any
+   tips, warnings, or other information the author may not have thought of that
+   should be added to the user documentation.
 
 4. Review the images included in the article and compare them with the
-corresponding features in the your development environment. Do any features look
-different? If so, take and save a screenshot of those features.
+   corresponding features in the your development environment. Do any features look
+   different? If so, take and save a screenshot of those features.
+
+   If you're not sure how to take screenshots, [this guide](http://zulip.readthedocs.io/en/latest/tutorials/screenshot-and-gif-software.html)
+   should be helpful.
 
 5. Compare the article's writing style and conventions to the ones established
-in the [user documentation style
-guide](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html). Do any
-parts not conform to the guide? List them and describe how they could be
-revised.
+   in the [user documentation style
+   guide](https://zulip.readthedocs.io/en/latest/subsystems/user-docs.html). Do any
+   parts not conform to the guide? List them and describe how they could be
+   revised.
 
 6. Compile your notes into an organized Markdown document located in a folder
-named `user-guides/<username>` where `<username>` represents your username
-(this folder you will create in the [`zulip-gci-submissions`](https://github.com/zulip/zulip-gci-submissions/)
-repository).
-**Include at least 3 questions, comments, or suggestions you encountered while
-reading each article.**
+   named `user-guides/<username>` where `<username>` represents your username
+   (this folder you will create in the [`zulip-gci-submissions`](https://github.com/zulip/zulip-gci-submissions/)
+  repository).
+   **Include at least 3 questions, comments, or suggestions you encountered while
+   reading each article.**
 
 7. Add a commit titled `user guides: Review user documentation for <features>.`
-to your branch. Submit a single pull request with from your branch to the
-https://github.com/zulip/zulip-gci-submissions/ repository.
+   to your branch. Submit a single pull request with from your branch to the
+   https://github.com/zulip/zulip-gci-submissions/ repository.
 
 8. Paste the link of your new pull request in the comments of your task on the
-GCI website, and submit your task for review afterwards.
+   GCI website, and submit your task for review afterwards.

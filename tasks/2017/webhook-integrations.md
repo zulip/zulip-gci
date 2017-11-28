@@ -114,6 +114,9 @@ You now have the webhook code written, and you have fixture data to test it.
       2016-11-18 15:58:04,600 INFO     127.0.0.1       POST    200 643ms (mem: 34ms/16) (md: 155ms/1) (db: 166ms/15q) (+start: 18ms) /api/v1/external/<yourname> (<bot_name>-bot@zulip.com via Zulip<YourName>Webhook)
   ```
 
+  If you're not sure how to take screenshots, [this guide](http://zulip.readthedocs.io/en/latest/tutorials/screenshot-and-gif-software.html)
+  should be helpful.
+
 * On your local server, you will see a new message in the `Verona`
   stream. Take a **screenshot** of the message.
 
@@ -155,6 +158,9 @@ we can use to verify whether out integration works.
   `webhook-integrations/<integration>` in the [zulip/zulip-gci-submissions](
   https://github.com/zulip/zulip-gci-submissions) respository, where
   `<integration>` is replaced by *integration* in lowercase.
+
+  If you're not sure how to take screenshots, [this guide](http://zulip.readthedocs.io/en/latest/tutorials/screenshot-and-gif-software.html)
+  should be helpful.
 
 * Add a commit with the screenshots and notes, and submit a pull request to the
   [zulip/zulip-gci-submissions](https://github.com/zulip/zulip-gci-submissions)
@@ -305,6 +311,9 @@ All paths in this task refer to the
    what each doc looks like in your pull request, because it'll make
    it much easier for mentors to quickly review your work and point
    out problems.
+
+   If you're not sure how to take screenshots, [this guide](http://zulip.readthedocs.io/en/latest/tutorials/screenshot-and-gif-software.html)
+   should be helpful.
 
 9. Include a link to the pull request when you submit your task on the
    GCI website.
