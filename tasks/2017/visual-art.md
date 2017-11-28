@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * You need to know how to create a GitHub pull request. Check out the
-  [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/tasks/6541581402243072/)(TODO: Need to update this link with the new one)
+  [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/dashboard/tasks/4884433561714688/)
   task if you aren't sure how to do this, or read through the task
   description [here](https://github.com/zulip/zulip-gci/tree/master/submit-a-pull-request).
 
