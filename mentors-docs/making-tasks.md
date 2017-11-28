@@ -19,7 +19,7 @@ students to claim and work on.
   [task creation project](https://github.com/zulip/zulip-gci/projects/1) 
   or a make a new task from an idea that you have on your own.
 
-  2. Create or update the task in the   
+  2. Create or update the task in the
   [tasks/2017](https://github.com/zulip/zulip-gci/tree/master/tasks/2017)
   folder of the zulip-gci repo.
 
@@ -40,9 +40,7 @@ and comment that they did so.
   8. Let the GCI admins (Lyla, Tim, Vishnu) know: we’ll bulk-create the tasks
 in the GCI webapp. 
 
-  9. If there’s a directory for the task’s submissions in the [submissions repo]
-(https://github.com/zulip/zulip-gci-submissions), update the link in that
-directory to point to the 2017 version of the task (see e.g. [translations/]
-(https://github.com/zulip/zulip-gci-submissions/tree/master/translations))
+  9. If there’s a directory for the task’s submissions in the [submissions repo](https://github.com/zulip/zulip-gci-submissions), update the link in that
+directory to point to the 2017 version of the task (see e.g. [translations/](https://github.com/zulip/zulip-gci-submissions/tree/master/translations))
 
   Yay, work complete!

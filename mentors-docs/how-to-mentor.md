@@ -1,6 +1,6 @@
-#How to Mentor
+# How to Mentor
 
-##Know your stuff:
+## Know your stuff:
 
  * Make sure you’re familiar with the Zulip development environment and our 
    [code contribution guide](https://zulip.readthedocs.io/en/latest/code-reviewing.html) 
@@ -9,7 +9,7 @@
  * Check out the list of [common issues](common-issues.md) that come up when 
    working with students so that you know how to respond.
 
- * Have [relelvent zulip resources](tabs-and-useful-links.md) available so that 
+ * Have [relelvent Zulip resources](tabs-and-useful-links.md) available so that 
    you can look up 
    answers to student questions or point students in the right directioin to 
    find answers. 
@@ -35,8 +35,7 @@
    especially because younger students are still children 
    (13-17 years old!). 
 
- * Follow the [Code of Conduct]
-   (https://zulip.readthedocs.io/en/latest/code-of-conduct.html), 
+ * Follow the [Code of Conduct](https://zulip.readthedocs.io/en/latest/code-of-conduct.html), 
    and enforce the code of conduct between students.
 
  * Follow [Google's recommendations](https://developers.google.com/open-source/gci/help/oa-tips#reviewing_student_work)
@@ -111,7 +110,7 @@
       student worked on the task before claiming it, but it also happens that 
       students just forget to resubmit a task after updating the PR
 
-    * inviting students to chat with us on Zulip if they have trouble 
+    * Inviting students to chat with us on Zulip if they have trouble 
       understanding how the GCI and/or development process works
 
   * Be responsive on the GCI streams on chat.zulip.org
@@ -129,7 +128,7 @@
       to read some introductory docs on Zulip, git etc. might be helpful
 
     * Encourage other students to help out, since they’re waiting for their 
-      tasks to be reviewed anyway, is a great way to facilitate their learning 
+      tasks to be reviewed anyway, it's a great way to facilitate their learning 
       and make sure everyone is having a good experience
 
   * When code is ready to merge into zulip.git, add the label 
