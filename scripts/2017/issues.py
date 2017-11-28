@@ -62,7 +62,7 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/2017/issues.md
             # 4: Quality Assurance, 5: Outreach & Research
             categories = [1],
             time_to_complete_in_days = 5, # must be between 3 and 7
-            external_url=url,
+            # external_url=url,
             private_metadata = "issues",
             do_upload = args.force)
 
