@@ -60,7 +60,7 @@ When making changes, carefully read the surrounding code to understand
 the style in which it is written (which you'll want to replicate) and
 its behavior.  When feasible, add tests for the new functionality, so
 that it will continue working in the future.  Finally,
-[write a reviewable series of commits][https://zulip.readthedocs.io/en/latest/contributing/version-control.html]
+[write a reviewable series of commits](https://zulip.readthedocs.io/en/latest/contributing/version-control.html)
 where the commit messages explain why your change both solves the
 problem correctly and doesn't change anything else.
 
