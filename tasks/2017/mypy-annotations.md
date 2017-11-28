@@ -10,8 +10,8 @@
   how](../../before-every-task.md).
 
 * If this is your first contribution, you may be interested in the
-  [how to create a pull request](https://codein.withgoogle.com/tasks/6541581402243072/) and
-  [intro to Zulip server development](https://codein.withgoogle.com/tasks/4799263762546688/) tasks.
+  [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/dashboard/tasks/4884433561714688/) and
+  [intro to Zulip server development](https://codein.withgoogle.com/dashboard/tasks/5165908538425344/) tasks.
 
 ## Background
 

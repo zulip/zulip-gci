@@ -67,4 +67,4 @@ GitHub: https://zulip.readthedocs.io/en/latest/git/index.html.
 
 After you finish this task, a great next task is to learn how to use
 the Zulip server development environment:
-https://codein.withgoogle.com/tasks/4799263762546688/
+https://codein.withgoogle.com/dashboard/tasks/5165908538425344/
