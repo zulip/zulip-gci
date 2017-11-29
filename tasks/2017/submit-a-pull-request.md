@@ -8,6 +8,8 @@ As a first step, we recommend doing the [Get Comfortable With Git](https://githu
 
 ## Task
 
+**Please follow the directions below exactly step by step. We will return the submission even if you are missing only a period.**
+
 * Fork the [zulip-gci-submissions](https://github.com/zulip/zulip-gci-submissions) repository.
 If you are not sure what this means, refer to [this tutorial](
 https://guides.github.com/activities/forking/#fork).
