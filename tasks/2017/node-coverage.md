@@ -20,11 +20,13 @@ large code refactorings, and prevent regressions. Zulip uses node to unit test i
 You should definitely read how our JavaScript unit tests work and how to write them:
 http://zulip.readthedocs.io/en/latest/testing/testing-with-node.html.
 
-You can find all our existing node tests in `frontend_tests/node_tests`.
+You will be writing node tests for Zulip's webapp repository [`zulip/zulip`](https://github.com/zulip/zulip).
+You can find all our existing node tests in `frontend_tests/node_tests` directory.
 
 ## Task Description
 
 Let *file* be the file and *functions* be the functions in *file* listed in the task that brought you here.
+Again, all files/functions are in the [`zulip/zulip`](https://github.com/zulip/zulip) repository.
 
 **Tip:** All files can be found in directory `static/js/<file>`, where `<file>` is *file*. The corresponding
 file you should add tests to is `frontend_tests/node_tests/<file>`, where `<file>` is *file*.
@@ -36,9 +38,11 @@ will help you recognize which lines in *functions* that haven't been tested/cove
   This will be where you will run all your tests.
 * Generate testing coverage reports by running `./tools/test-js-with-node --coverage` in your
   development environment.
-* To see the coverage report, open `node-coverage/lcov-report/zulip/static/js/<file>.html` locally, where `<file>` is *file*.
-    * **Tip:** Another way to see the coverage report is to go to `http://<hostname>:9991/node-coverage/zulip/static/js/<file>.html`,
-      where `<hostname>` is either `localhost` or the hostname of your VM, and `<file>` is *file*.
+* To see the coverage report, open `node-coverage/lcov-report/index.html` locally. Click on the `zulip/static/js` link.
+  Then find *file* in the list of files and click on it to see the coverage report for *file*.
+    * **Tip:** Another way to see the coverage report is to go to `http://<hostname>:9991/node-coverage/index.html`,
+      where `<hostname>` is either `localhost` or the hostname of your VM. Click on the `zulip/static/js` link and then find
+      *file* in the list of files to see the coverage report for *file*.
 * For example, if you were testing `narrow_state.js`, you should see that 92% of statements are covered in the top left corner.
   You should also see `narrow_state.js` with colored lines, green meaning that line is successfully tested and red
   meaning that line is **not** successfully tested.
