@@ -13,6 +13,14 @@ otherwise need to look up when working on this one.
 
 **Please follow the directions below exactly step by step. We will return the submission even if you are missing only a period.**
 
+Why?
+* We want you to introduce you to Zulip's [commit discipline](http://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-discipline).
+* We also want to introduce how to write good [commit messages](http://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages).
+* Finally, if you do make a mistake, you'll be able to learn to [fix your commits](http://zulip.readthedocs.io/en/latest/git/fixing-commits.html).
+
+
+The directions for the task is as follows:
+
 * Fork the [zulip-gci-submissions](https://github.com/zulip/zulip-gci-submissions) repository.
 If you are not sure what this means, refer to [this tutorial](
 https://guides.github.com/activities/forking/#fork).
