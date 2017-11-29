@@ -20,7 +20,7 @@ the codebase doesn't do things like pass a string (like `'42'`) to a function
 that is expecting an int (like `42`).
 
 You can read more about how mypy works at
-http://zulip.readthedocs.io/en/latest/mypy.html.
+http://zulip.readthedocs.io/en/latest/contributing/mypy.html.
 
 Zulip was the
 [first large project to be 100% mypy annotated](https://blog.zulip.org/2016/10/13/static-types-in-python-oh-mypy/).
