@@ -26,6 +26,9 @@ You can find all our existing node tests in `frontend_tests/node_tests`.
 
 Let *file* be the file and *functions* be the functions in *file* listed in the task that brought you here.
 
+**Tip:** All files can be found in directory `static/js/<file>`, where `<file>` is *file*. The corresponding
+file you should add tests to is `frontend_tests/node_tests/<file>`, where `<file>` is *file*.
+
 The goal of this task is to obtain full testing coverage for all *functions* in *file*. The following
 will help you recognize which lines in *functions* that haven't been tested/covered.
 
