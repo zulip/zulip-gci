@@ -6,6 +6,10 @@
   [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for
   instructions on how to set one up.
 
+* A working Zulip bots development environment. See [here](
+  https://zulipchat.com/api/writing-bots#installing-a-development-version-of-the-zulip-bots-package)
+  for instructions on how to set one up.
+
 * You need to know how to create a GitHub pull request. Check out the
   [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/dashboard/tasks/4884433561714688/)
   task if you aren't sure how to do this, or read through the task
