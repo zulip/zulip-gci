@@ -72,13 +72,15 @@ screenshots of:
   - messages sent by the bot in the same stream
   - any other screenshots you find relevant
 
-  Add the screenshots to `interactive-bots/helloworld/<username>/`. Make sure
+  Add the screenshots to `interactive-bots/helloworld/<username>/` in the [zulip/zulip-gci-submissions](
+  https://github.com/zulip/zulip-gci-submissions) repository. Make sure
   your filenames do not have white-spaces, since those often cause trouble
   with file systems. Instead, use dashes (`-`).
 
 * Note down any places you got stuck, problems or errors you ran into while
 doing this setup process. Add your notes as a `notes.md` file to
-`interactive-bots/helloworld/<username>/`.
+`interactive-bots/helloworld/<username>/` in the [zulip/zulip-gci-submissions](
+https://github.com/zulip/zulip-gci-submissions) repository.
 
 * Create a commit with the screenshots and notes, with commit message
 `interactive bots: Run the helloworld bot for <username>.`.
