@@ -47,7 +47,7 @@ Let *file* be a file listed in the task that brought you here.
   migrate).
 
 * Commit your changes with a commit message title `mypy: Use Python 3
-  tyoe syntax in <file>.`
+  type syntax in <file>.`
 
 After you've converted the annotations for all the files, Submit a pull request,
 with title  `mypy: Use Python 3 syntax for typing in <file>.`
