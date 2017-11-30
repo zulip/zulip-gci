@@ -122,8 +122,8 @@ change the class name to `MessageInfoHandler` and the last line to
 
 * Edit the return statement in `def usage(self)`:
 
-  > This bot will allow users to analyze a message for letter count
-  and word count. The gathered information will then be sent to a private
+  > This bot will allow users to analyze a message for word count.
+  The gathered information will then be sent to a private
   conversation with the user. Users should @-mention the bot in the
   beginning of a message.
 
