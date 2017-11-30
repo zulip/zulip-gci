@@ -1,4 +1,4 @@
-# GCI Tasks: User research
+# GCI Tasks: User interviews
 
 ## Background
 
