@@ -282,8 +282,8 @@ If it is in `bots_unmaintained`, move it to `bots`.
 * Read through the documentation of *bot*. Fix any inconsistencies you notice.
   - Does the documentation describe the purpose of *bot*?
   - Does the documentation give instructions for setting up and using *bot*?
-  - Is the documentation properly structured into the sections "Intro", "Setup",
-  and "Usage"?
+  - Is the documentation properly structured? It should have a quick introductory
+  paragraph under the main header, followed by sections "Setup" and "Usage".
 
 * Add and run tests for *bot*. Fix any bugs you notice and aim for 100% test coverage.
   - If *bot* already has unit tests (these are in a file named `test_<bot>.py`):
