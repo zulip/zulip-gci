@@ -66,7 +66,7 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/2017/issues.md
             private_metadata = "issues",
             do_upload = args.force)
 
-create_tasks_from_issues(zulip_issues, "zulip", ['lylafisch@gmail.com', 'rishig@zulipchat.com', 'malavarena@gmail.com'
+create_tasks_from_issues(zulip_issues, "zulip", ['lylafisch@gmail.com', 'rishig@zulipchat.com', 'malavarena@gmail.com',
                                                  'harshitbansal2015@gmail.com', 'cjl2625@gmail.com'])
 create_tasks_from_issues(zulip_mobile_issues, "zulip-mobile", ["jainkuniya@gmail.com", "saumya.bhatnagar.sb@gmail.com", "cdikibo@alumni.nd.edu"])
 create_tasks_from_issues(zulip_electron_issues, "zulip-electron", ["akash@zulipchat.com"])
