@@ -57,7 +57,9 @@ https://zulipchat.com/api/running-bots#running-a-bot).
   for testing.
   - In step 2, use `<your-name>_helloworld_bot` for the bot's full name,
   and `helloworld` for its username.
-  - In step 4, substitute `<bot-name>` with `helloworld`.
+  - In step 4, substitute `<bot-name>` with `helloworld` and use the full path 
+  including the file name in place of `~/zuliprc-my-bot`, e.g. `~/Admin/zuliprc` 
+  where `zuliprc` is the downloaded file.
 
 * Test manually that the helloworld bot is working on the local Zulip instance,
 by:
@@ -127,15 +129,17 @@ change the class name to `MessageInfoHandler` and the last line to
   conversation with the user. Users should @-mention the bot in the
   beginning of a message.
 
-* Edit the code of `handle_message()`:
+* Insert the following into the code of `handle_message()`, leaving the 
+existing `bot_handler.send_reply(message, content)` line in place:
   ```python
   words_in_message = message['content'].split()
   content = "You sent a message with {} words.".format(len(words_in_message))
   ```
 
 * Create a new bot in your development server's settings. Use "Message info bot"
-as the bot's full name, and "message-info" as its username. Run your bot
-like in **Task Type A**.
+as the bot's full name, and "message-info" as its username. Run your bot 
+like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, insert the 
+full path to the python file, including the file name itself.
 
 * Check that the bot is working as expected:
 
@@ -143,7 +147,7 @@ like in **Task Type A**.
   - it currently replies to a message in the same stream, as the helloworld
   bot did
 
-* Edit the code of `handle_message()` once again:
+* Navigate back to the python file and insert the following into the code of `handle_message()`:
 
   ```python
   original_sender = message['sender_email']
@@ -165,8 +169,8 @@ like in **Task Type A**.
   bot_name = 'message_info'
   ```
 
-* Edit the bot's unit tests. Our bot is expected to respond with a private
-message, so we need slightly more complicated testing methods:
+* Replace the bot's exiting unit tests with the code below. Our bot is expected to respond 
+with a private message, so we need slightly more complicated testing methods:
 
   ```python
   message = "this should be five words"
