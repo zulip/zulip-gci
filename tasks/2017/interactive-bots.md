@@ -57,9 +57,7 @@ https://zulipchat.com/api/running-bots#running-a-bot).
   for testing.
   - In step 2, use `<your-name>_helloworld_bot` for the bot's full name,
   and `helloworld` for its username.
-  - In step 4, substitute `<bot-name>` with `helloworld` and use the full path 
-  including the file name in place of `~/zuliprc-my-bot`, e.g. `~/Admin/zuliprc` 
-  where `zuliprc` is the downloaded file.
+  - In step 4, substitute `<bot-name>` with `helloworld`.
 
 * Test manually that the helloworld bot is working on the local Zulip instance,
 by:
@@ -138,8 +136,8 @@ existing `bot_handler.send_reply(message, content)` line in place:
 
 * Create a new bot in your development server's settings. Use "Message info bot"
 as the bot's full name, and "message-info" as its username. Run your bot 
-like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, insert the 
-full path to the python file, including the file name itself.
+like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, use
+`message_info`.
 
 * Check that the bot is working as expected:
 
