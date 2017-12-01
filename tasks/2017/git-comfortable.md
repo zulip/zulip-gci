@@ -40,7 +40,7 @@ Git.
   This guide has a lot of helpful information, guides, and techniques
   that you'll want to be able to call on in the future.
 
-* Install a [installing a graphical Git repository viewer](http://zulip.readthedocs.io/en/latest/git/setup.html#get-a-graphical-client)
+* Install a [graphical Git repository viewer](http://zulip.readthedocs.io/en/latest/git/setup.html#get-a-graphical-client)
   and take a **screenshot** of it running.
 
 * Get familiar with the [Zulip Git guide](https://zulip.readthedocs.io/en/latest/git/index.html) -
