@@ -6,7 +6,7 @@
   [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
 * Experience working in the Zulip server environment.  We recommend completing the
-  [Intro to Zulip Server development beginner task](https://github.com/zulip/zulip-gci/blob/master/tasks/intro-to-zulip-server.md).
+  [Intro to Zulip Server development beginner task](https://github.com/zulip/zulip-gci/blob/master/tasks/2017/intro-to-zulip-server.md).
 * Learn how [testing](http://zulip.readthedocs.io/en/latest/testing/testing.html)
   works in Zulip and how to write tests, specifically [JavaScript unit tests](http://zulip.readthedocs.io/en/latest/testing/testing-with-node.html). 
 * Know how to submit a [pull request](https://github.com/zulip/zulip-gci/blob/master/tasks/2017/submit-a-pull-request.md).
