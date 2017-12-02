@@ -37,7 +37,8 @@ you'll create a set of user avatars with a shared theme.
   your GitHub username.
 
 * Design 4-5 avatar images that fit together thematically, e.g. animals,     
-  monsters, smiley faces. They should look good at 50x50px size. It’s OK for
+  monsters, smiley faces. They should look good at 50x50px as well as 300x300px
+  size. If possible, try to use a vector format for the avatars. It’s OK for
   the first versions of these to be rough versions; it makes sense to defer
   spending a lot of time making them really good until you’ve gotten feedback
   on which design directions others like.
