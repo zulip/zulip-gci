@@ -78,7 +78,7 @@ faces.
 * The avatars' distinct features are clear in the 50x50px image.
 * The avatars are student's own work, not images downloaded from the Internet.
 
-#### Task Type B: Generate identicons for user avatars
+### Task Type B: Generate identicons for user avatars
 
 Currently, Zulip's non-custom avatars are  [identicons](https://en.wikipedia.org/wiki/Identicon) automatically generated
 by Gravatar. In this task, you'll generate your own identicons for user avatars.
