@@ -33,7 +33,7 @@ choose from when creating an account. Our non-custom avatars are automatically
 generated [identicons](https://en.wikipedia.org/wiki/Identicon). In this task,
 you'll create a set of user avatars with a shared theme.
 
-* Create a directory `draw-avatars/<username>`, where `<username>` is
+* Create a directory `bot-avatars/<username>`, where `<username>` is
   your GitHub username.
 
 * Design 4-5 avatar images that fit together thematically, e.g. animals,     
@@ -49,11 +49,11 @@ you'll create a set of user avatars with a shared theme.
   for each avatar, at 50x50 and 300x300 pixel.
 
 * Add a commit with these files, with commit message "visual art: Add
-  a/an <theme> avatar set.", where `<theme>` is the leading theme of your
+  a/an `<theme>` avatar set.", where `<theme>` is the leading theme of your
   avatar set, e.g. cute monsters.
 
 * Submit a pull request to the `zulip/zulip-gci-submissions` repository, with
-  title "visual art: Draw a/an <theme> avatar set.". Include a link to the
+  title "visual art: Draw a/an `<theme>` avatar set.". Include a link to the
   pull request when you submit your task on the GCI website.
 
 **Making inclusive avatars**
