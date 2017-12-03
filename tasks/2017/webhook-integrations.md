@@ -73,17 +73,18 @@ You will test your integration on this server.
     Wikipedia article every week.)
 
 * Add the integration code.
-  * Add a new file `zerver/views/webhooks/<yourname>.py`
-  * Copy the contents of the `helloworld.py` to this file. Replace all instances of `HelloWorld`
-  and `helloworld` with `<YourName>` and `<yourname>`, respectively. Also choose a new topic below
-  (replace `<your_topic>`).
+  * Add a new file `zerver/webhooks/<yourname>/view.py`
+  * Copy the contents of the `zerver/webhooks/helloworld/view.py` to this file.
+    Replace all instances of `HelloWorld` and `helloworld` with `<YourName>` and
+    `<yourname>`, respectively. Also choose a new topic below
+    (replace `<your_topic>`).
     ```
     def api_<yourname>_webhook(request, user_profile, client,
                                payload=REQ(argument_type='body'),
                                stream=REQ(default='test'),
                                topic=REQ(default='<your_topic>')):
     ```
-  and play around with the `body`.
+    and play around with the `body`.
   * Open `zerver/lib/integrations.py` and look for the lines beginning with:
     ```
       WEBHOOK_INTEGRATIONS = [
