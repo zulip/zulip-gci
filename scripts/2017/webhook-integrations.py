@@ -32,7 +32,7 @@ type of bot that brings information from the outside world into Zulip. Help
 add integrations to Zulip!
 
 Instructions for all integrations tasks are at
-https://github.com/zulip/zulip-gci/blob/master/tasks/webhook-integrations.md.
+https://github.com/zulip/zulip-gci/blob/master/tasks/2017/webhook-integrations.md.
 
 """
 
