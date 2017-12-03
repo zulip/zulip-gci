@@ -6,6 +6,10 @@
   [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
 
+* Basic knowledge of git. We **strongly suggest** you finish the
+  [Get Comfortable With Git](https://codein.withgoogle.com/dashboard/tasks/5415336817983488/)
+  task first before attempting this.
+
 * Update your working copy of Zulip and then create a feature branch. [Learn
   how](../../before-every-task.md).
 
