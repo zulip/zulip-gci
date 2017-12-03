@@ -6,6 +6,10 @@
   [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for
   instructions on how to set one up.
 
+* Basic knowledge of git. We **strongly suggest** you finish the
+  [Get Comfortable With Git](https://codein.withgoogle.com/dashboard/tasks/5415336817983488/)
+  task first before attempting this.
+
 * You need to know how to create a GitHub pull request. Check out the
   [Learn how to create a GitHub Pull Request](https://codein.withgoogle.com/dashboard/tasks/4884433561714688/)
   task if you aren't sure how to do this, or read through the task

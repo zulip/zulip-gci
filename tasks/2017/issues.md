@@ -5,6 +5,11 @@
 * A working Zulip development environment. See
   [here](https://github.com/zulip/zulip-gci/blob/master/README.md) for instructions
   on how to set one up.
+
+* Basic knowledge of git. We **strongly suggest** you finish the
+  [Get Comfortable With Git](https://codein.withgoogle.com/dashboard/tasks/5415336817983488/)
+  task first before attempting this.
+
 * Experience working in the Zulip server environment.  We recommend
 completing the
 [Intro to Zulip Server development beginner task](https://github.com/zulip/zulip-gci/blob/master/tasks/intro-to-zulip-server.md)
