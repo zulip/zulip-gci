@@ -26,6 +26,8 @@
     Instead, clone the `python-zulip-api` repository to your
     local computer and set up the development environment there.
 
+* Python 3.
+
 ## Background
 
 Zulip supports interactive bots. Bots are little programs that have limited
