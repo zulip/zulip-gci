@@ -155,8 +155,8 @@ like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, use
   - it currently replies to a message in the same stream, as the helloworld
   bot did
 
-* Navigate back to the python file and insert the following into the code of `handle_message()`:
-
+* Navigate back to the python file. In `handle_message()`, replace the `send_reply()` call
+  with this code:
   ```python
   original_sender = message['sender_email']
   bot_handler.send_message(dict(
