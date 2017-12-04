@@ -171,10 +171,13 @@ like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, use
   - it responds to messages that @-mention the bot with the word count of that message
   - it responds with a private message to the sender of the original message
 
-* Rename `test_helloworld.py` to `test_message_info.py` and edit the file:
+* Rename `test_helloworld.py` to `test_message_info.py` and change the top of the file to this:
 
   ```python
-  bot_name = 'message_info'
+  from zulip_bots.test_lib import BotTestCase
+
+  class TestMessageInfoBot(BotTestCase):
+      bot_name = "message_info"
   ```
 
 * Replace the bot's existing unit tests with the code below. Our bot is expected to respond 
