@@ -175,7 +175,7 @@ like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, use
   bot_name = 'message_info'
   ```
 
-* Replace the bot's exiting unit tests with the code below. Our bot is expected to respond 
+* Replace the bot's existing unit tests with the code below. Our bot is expected to respond 
 with a private message, so we need slightly more complicated testing methods:
 
   ```python
