@@ -4,9 +4,9 @@ This task will familiarize you with our GitHub workflow.  If you
 are already familiar with making a pull request in GitHub, feel free
 to skip this task.
 
-We recommend doing the
+We **strongly recommend** doing the
 [Get Comfortable With Git](https://codein.withgoogle.com/dashboard/tasks/5415336817983488/)
-task first, since that ask teaches you a lot of things you might
+task first, since that task teaches you a lot of things you might
 otherwise need to look up when working on this one.
 
 ## Task
