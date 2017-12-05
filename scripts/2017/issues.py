@@ -20,7 +20,9 @@ zulip_electron_issues = []
 
 python_zulip_api_issues = []
 
-uploaded_zulip_issues = []
+uploaded_zulip_issues = [
+    (7624, ['area: settings', 'responsive'])
+]
 
 uploaded_zulip_mobile_issues = []
 
