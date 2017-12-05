@@ -55,6 +55,29 @@ For this task, do **Task Type A** for the following set of files:
 %s
 """
 
+tasks_B = [
+]
+
+tasks_B_uploaded = [
+    ["converter", "define", "encrypt"],
+    ["incrementor", "link_shortener", "tictactoe"],
+    ["virtual_fs","weather"],
+    ["github_detail", "googlesearch", "help"],
+    ["wikipedia", "xkcd", "yoda"],
+    ["followup", "giphy"],
+]
+
+description_A = """Help add mypy annotations to the Zulip's interactive bots!
+This is a great way to practice git, git grep, and efficiently using a powerful editor.
+
+Instructions for the mypy annotation task are at
+https://github.com/zulip/zulip-gci/blob/master/tasks/2017/mypy-annotations.md.
+
+For this task, do **Task Type B** for the following set of files:
+
+%s
+"""
+
 for files in tasks_A:
     file_list = "\n".join([("* " + file_name) for file_name in files]),
     upload_task(
@@ -72,6 +95,26 @@ for files in tasks_A:
         time_to_complete_in_days = 4, # must be between 3 and 7
         # external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
         private_metadata = "mypy-annotations-A",
+        do_upload = args.force)
+
+for files in tasks_B:
+    file_list = "\n".join([("* " + file_name) for file_name in files]),
+    upload_task(
+        # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+        name = "Add mypy annotations to Zulip's interactive bots",
+        description = description_A % file_list,
+        status = 2, # 1: draft, 2: published
+        max_instances = 1,
+        mentors = ['aero31aero@gmail.com'],
+        tags = ['python', 'mypy'], # free text
+        is_beginner = False,
+        # 1: Coding, 2: User Interface, 3: Documentation & Training,
+        # 4: Quality Assurance, 5: Outreach & Research
+        categories = [1],
+        time_to_complete_in_days = 4, # must be between 3 and 7
+        # Field currently not accessible via API. gci-support says it is coming soon.
+        external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/mypy-annotations.md",
+        private_metadata = "mypy-annotations-B",
         do_upload = args.force)
 
 if not args.force:
