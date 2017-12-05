@@ -33,7 +33,7 @@ choose from when creating an account. Our non-custom avatars are automatically
 generated [identicons](https://en.wikipedia.org/wiki/Identicon). In this task,
 you'll create a set of user avatars with a shared theme.
 
-* Create a directory `bot-avatars/<username>`, where `<username>` is
+* Create a directory `draw-avatars/<username>`, where `<username>` is
   your GitHub username.
 
 * Design 4-5 avatar images that fit together thematically, e.g. animals,     
