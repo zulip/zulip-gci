@@ -64,7 +64,7 @@ with title  `mypy: Use Python 3 syntax for typing in <file>.`
 * Mentors should also make sure that the modified method definitions
   are line-wrapped properly and readable.
 
-http://zulip.readthedocs.io/en/latest/mypy.html is a helpful document, as is
+http://zulip.readthedocs.io/en/latest/contributing/mypy.html is a helpful document, as is
 just looking at other files in the project and seeing their annotations.
 
 #### General notes
