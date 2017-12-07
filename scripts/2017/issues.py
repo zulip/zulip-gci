@@ -9,7 +9,7 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 # (Issue number, tags)
-# Catagory of issue assumed to be coding
+# Category of issue assumed to be coding
 zulip_issues = [
     #(3055, ['javascript', 'html']),
 ]
