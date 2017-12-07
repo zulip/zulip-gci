@@ -88,11 +88,11 @@ Let *bot* be a bot listed in the task that brought you here.
   file, as well as any other python files in the directory
   `python-zulip-api/zulip_bots/zulip_bots/bots/<bot>`.
 
-* Add all the files you've just annotated to the `force_include` list in
+* Add all the files (not folders) you've just annotated to the `force_include` list in
   `tools/run-mypy`. Test your local changes by running
   `tools/test-static-analysis` and `tools/test-bots`.
 
-* Commit your changes with a commit message titled `mypy: Add annotations for <bot>.`
+* Commit your changes with a commit message titled `bots/<bot>: Use Python 3 type mypy annotations.`
 
 After you've converted the annotations for all the listed bots, submit
 a pull request with title  `mypy: Add annotations for bots.` to the
