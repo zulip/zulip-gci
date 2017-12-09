@@ -20,13 +20,8 @@ zulip_electron_issues = []
 
 python_zulip_api_issues = []
 
-uploaded_zulip_issues = []
-
-uploaded_zulip_mobile_issues = []
-
-uploaded_zulip_electron_issues = []
-
-uploaded_python_zulip_api_issues = []
+# See https://paper.dropbox.com/doc/Issues-for-GCI-Students-3jpXd8i4Y3YbpTMdphQ1u
+# for list of uploaded tasks
 
 def create_tasks_from_issues(issues, repo_name, mentors):
     head_description = """Your task is to solve an open bug or missing feature in the
@@ -56,7 +51,7 @@ https://github.com/zulip/zulip-gci/blob/master/tasks/2017/issues.md
             status = 2, # 1: draft, 2: published
             max_instances = 1,
             mentors = mentors,
-            tags = ['issues'] + tags, # free text
+            tags = ['issues'] + tags, # free text, maximum 5 tags
             is_beginner = False,
             # 1: Coding, 2: User Interface, 3: Documentation & Training,
             # 4: Quality Assurance, 5: Outreach & Research
