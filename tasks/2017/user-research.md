@@ -29,7 +29,7 @@ Write down the answers to the following questions in the submission file:
   be using P. What problem would P solve for them? Is that problem a major
   problem in their life? (If not, maybe it doesn't matter much that they
   aren't using P, in which case try to think of someone else :).)
-* How would you convince them that the problem P would address is a major
+* How would you convince them that the problem identified above is a major
   problem in their life?
 
 Optional:
