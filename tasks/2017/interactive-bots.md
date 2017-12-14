@@ -171,29 +171,13 @@ like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, use
   - it responds to messages that @-mention the bot with the word count of that message
   - it responds with a private message to the sender of the original message
 
-* Rename `test_helloworld.py` to `test_message_info.py` and change the top of the file to this:
-
-  ```python
-  from zulip_bots.test_lib import BotTestCase
-
-  class TestMessageInfoBot(BotTestCase):
-      bot_name = "message_info"
-  ```
-
-* Replace the bot's existing unit tests with the code below. Our bot is expected to respond 
-with a private message, so we need slightly more complicated testing methods:
-
-  ```python
-  message = dict(
-      content='this should be five words',
-      type='stream',
-      sender_email='foo@example.com',
-  )
-  response = self.get_response(message)
-  self.assertEqual(response['type'], 'private')
-  self.assertEqual(response['content'], 'You sent a message with 5 words.')
-  self.assertEqual(response['to'], 'foo@example.com')
-  ```
+* Rename `test_helloworld.py` to `test_message_info.py`. Edit the file and write tests
+  for the `message_info` bot.
+  * Update the line assigning the `bot_name` variable.
+  * Rewrite the existing unit test. It should simulate sending a message to a stream,
+  and verify that the bot replies with a private message to the sender with a correct
+  response. You can base your testing code on the [first followup bot unit test](
+  https://github.com/zulip/python-zulip-api/blob/master/zulip_bots/zulip_bots/bots/followup/test_followup.py#L13).
 
 * Test your new unit test for your bot. Run `tools/test-bots message_info` in your
   `python-zulip-api` repo.
@@ -206,6 +190,7 @@ screenshots of:
   - messages sent by you to the bot in the `Verona` stream
   - messages sent by the bot in the private messages to the author
   - your successful unit test
+  - the code you wrote for your unit test
   - any other screenshots you find relevant
 
 * Add the screenshots to `interactive-bots/message_info/<username>/`. Make sure your
