@@ -184,14 +184,15 @@ like in **Task Type A**. For `<bot-name>` in the `zulip-run-bot` command, use
 with a private message, so we need slightly more complicated testing methods:
 
   ```python
-  message = "this should be five words"
-  response = {'type': 'private',
-              'to': 'foo_sender@zulip.com',
-              'content': 'You sent a message with 5 words.'}
-  expected_conversation = [
-      (message, response)
-  ]
-  self.check_expected_responses(expected_conversation, expected_method='send_message')
+  message = dict(
+      content='this should be five words',
+      type='stream',
+      sender_email='foo@example.com',
+  )
+  response = self.get_response(message)
+  self.assertEqual(response['type'], 'private')
+  self.assertEqual(response['content'], 'You sent a message with 5 words.')
+  self.assertEqual(response['to'], 'foo@example.com')
   ```
 
 * Test your new unit test for your bot. Run `tools/test-bots message_info` in your
