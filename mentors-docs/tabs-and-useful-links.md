@@ -84,6 +84,6 @@ maintaining pull requests - https://github.com/settings/replies.
 
 ## Shell scripts and aliases
 
-We have some useful [Zulip scripts](http://zulip.readthedocs.io/en/latest/contributing/git-guide.html#zulip-specific-tools) ready, during GCI especially `fetch a pull
+We have some useful [Zulip scripts](http://zulip.readthedocs.io/en/latest/git/zulip-tools.html) ready, during GCI especially `fetch a pull
 request and rebase` comes in handy. Setting up some GCI specific aliases is also
 useful if you review a lot of PRs.
