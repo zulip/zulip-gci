@@ -45,8 +45,6 @@ def create_list(bullets):
         markdown += '* `' + bullet + '`\n'
     return markdown
 
-# **%(bot)s** bot (%(desc)s)."
-
 for file, functions in files:
     upload_task(
         # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
