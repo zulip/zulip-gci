@@ -20,6 +20,16 @@ zulip_electron_issues = []
 
 python_zulip_api_issues = []
 
+zulipbot_issues = [
+    (134, ['javascript', 'node.js', 'github api']),
+    (135, ['javascript', 'node.js', 'github api']),
+    (136, ['javascript', 'node.js', 'github api']),
+    (137, ['javascript', 'node.js', 'github api']),
+    (138, ['javascript', 'node.js', 'github api']),
+    (139, ['javascript', 'node.js', 'github api']),
+    (140, ['javascript', 'node.js', 'github api']),
+]
+
 # See https://paper.dropbox.com/doc/Issues-for-GCI-Students-3jpXd8i4Y3YbpTMdphQ1u
 # for list of uploaded tasks
 
@@ -67,6 +77,7 @@ create_tasks_from_issues(zulip_mobile_issues, "zulip-mobile", ["jainkuniya@gmail
 create_tasks_from_issues(zulip_electron_issues, "zulip-electron", ["akash@zulipchat.com"])
 create_tasks_from_issues(python_zulip_api_issues, "python-zulip-api", ["robhoenig@gmail.com", "volkova.ag@gmail.com",
                                                                        "jerryguitarist@gmail.com", "abhijeetkaur96@gmail.com"])
+create_tasks_from_issues(zulipbot_issues, "zulipbot", ["joshuapan8@gmail.com"])
 
 if not args.force:
     print
