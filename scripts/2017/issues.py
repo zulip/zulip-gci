@@ -30,6 +30,8 @@ zulipbot_issues = [
     (140, ['javascript', 'node.js', 'github api']),
 ]
 
+zulipbot_issues = []
+
 # See https://paper.dropbox.com/doc/Issues-for-GCI-Students-3jpXd8i4Y3YbpTMdphQ1u
 # for list of uploaded tasks
 
