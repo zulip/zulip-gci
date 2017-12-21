@@ -15,8 +15,9 @@
   task if you aren't sure how to do this, or read through the task
   description [here](https://github.com/zulip/zulip-gci/tree/master/submit-a-pull-request).
 
-* Update your working copy of Zulip and then create a feature branch. [Learn
-  how](../../before-every-task.md).
+* Update your working copy of Zulip. [Learn how](../../before-every-task.md).
+
+* **Update your working copy of the `python-zulip-api` repository and then create a feature branch.**
 
 * **A working Zulip bots development environment. See [here](
   https://zulipchat.com/api/writing-bots#installing-a-development-version-of-the-zulip-bots-package)
