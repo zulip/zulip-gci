@@ -6,6 +6,16 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 bots_to_create = [
+]
+
+bots_to_improve = [
+]
+
+bot_tasks_created = [
+    ('googlesearch', 'returns a top Google search result for the search term'),
+    ('tictactoe', 'lets you play Tic-tac-toe against the computer'),
+    ('wikipedia', 'returns a link to the top Wikipedia article for the search term'),
+    ('youtube', 'returns the top Youtube video for the search term'),
     ('baremetrics', 'gives companies real-time updates about customer behavior and financial performance'),
     ('Chess', 'lets you play chess against the computer or other people on Zulip; '
               'use an existing chess engine for this'),
@@ -29,13 +39,6 @@ bots_to_create = [
     ('URL shortener', 'takes a link and sends back a shortened version using a shortener service'),
     ('wit.ai', 'integrates Zulip with wit.ai bots that interact based on natural language; '
                'use https://github.com/wit-ai/pywit for building the integration'),
-]
-
-bots_to_improve = [
-    ('googlesearch', 'returns a top Google search result for the search term'),
-    ('tictactoe', 'lets you play Tic-tac-toe against the computer'),
-    ('wikipedia', 'returns a link to the top Wikipedia article for the search term'),
-    ('youtube', 'returns the top Youtube video for the search term'),
 ]
 
 description = """Zulip supports interactive bots. Bots are little programs that have
