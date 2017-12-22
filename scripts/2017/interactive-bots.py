@@ -59,40 +59,40 @@ description_D = description + "For this task, do **Task Type D** for improving "
                                "the **%(bot)s** bot (%(desc)s)."
 
 # Task Type A
-upload_task(
-    # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn about interactive bots, pt 1: running the helloworld bot.',
-    description = description_AB % {'type': 'A' },
-    status = 2, # 1: draft, 2: published
-    max_instances = 100,
-    mentors = ['robhoenig@gmail.com'],
-    tags = ['python', 'bots'], # free text
-    is_beginner = False,
-    # 1: Coding, 2: User Interface, 3: Documentation & Training,
-    # 4: Quality Assurance, 5: Outreach & Research
-    categories = [1],
-    time_to_complete_in_days = 3, # must be between 3 and 7
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/interactive-bots.md",
-    private_metadata = "interactive-bots-A",
-    do_upload = args.force)
+# upload_task(
+#     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+#     name = 'Learn about interactive bots, pt 1: running the helloworld bot.',
+#     description = description_AB % {'type': 'A' },
+#     status = 2, # 1: draft, 2: published
+#     max_instances = 100,
+#     mentors = ['robhoenig@gmail.com'],
+#     tags = ['python', 'bots'], # free text
+#     is_beginner = False,
+#     # 1: Coding, 2: User Interface, 3: Documentation & Training,
+#     # 4: Quality Assurance, 5: Outreach & Research
+#     categories = [1],
+#     time_to_complete_in_days = 3, # must be between 3 and 7
+#     external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/interactive-bots.md",
+#     private_metadata = "interactive-bots-A",
+#     do_upload = args.force)
 
 # Task Type B
-upload_task(
-    # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
-    name = 'Learn about interactive bots, pt 2: creating a message info bot.',
-    description = description_AB % {'type': 'B' },
-    status = 2, # 1: draft, 2: published
-    max_instances = 100,
-    mentors = ['robhoenig@gmail.com'],
-    tags = ['python', 'bots'], # free text
-    is_beginner = False,
-    # 1: Coding, 2: User Interface, 3: Documentation & Training,
-    # 4: Quality Assurance, 5: Outreach & Research
-    categories = [1],
-    time_to_complete_in_days = 3, # must be between 3 and 7
-    external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/interactive-bots.md",
-    private_metadata = "interactive-bots-B",
-    do_upload = args.force)
+# upload_task(
+#     # https://developers.google.com/open-source/gci/resources/downloads/TaskAPISpec.pdf
+#     name = 'Learn about interactive bots, pt 2: creating a message info bot.',
+#     description = description_AB % {'type': 'B' },
+#     status = 2, # 1: draft, 2: published
+#     max_instances = 100,
+#     mentors = ['robhoenig@gmail.com'],
+#     tags = ['python', 'bots'], # free text
+#     is_beginner = False,
+#     # 1: Coding, 2: User Interface, 3: Documentation & Training,
+#     # 4: Quality Assurance, 5: Outreach & Research
+#     categories = [1],
+#     time_to_complete_in_days = 3, # must be between 3 and 7
+#     external_url = "https://github.com/zulip/zulip-gci/blob/master/tasks/2017/interactive-bots.md",
+#     private_metadata = "interactive-bots-B",
+#     do_upload = args.force)
 
 for bot, desc in bots_to_create:
     # Task Type C
