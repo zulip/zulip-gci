@@ -16,6 +16,8 @@ features = [
     'Configure authentication methods',
 ]
 
+features = []
+
 features_review = [
     ("Guides", ["Getting started with Zulip", "Setting up your organization"]),
     ("Account Basics, Part 1", ["Change your name", "Change your email address", "Manage your password", "Edit your settings",
@@ -50,6 +52,8 @@ features_review = [
     ("Streams management", ["Delete a stream", "Set default streams for new users", "Rename a stream", "Change a stream's description", "Change the privacy of a stream", "Add someone to a stream",
                             "Remove someone from a stream"]),
 ]
+
+features_review = []
 
 description = """Good user guides help users and search engines discover Zulip features.
 Help write and edit user guides for Zulip!
