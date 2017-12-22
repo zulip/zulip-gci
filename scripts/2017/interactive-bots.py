@@ -6,6 +6,9 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 bots_to_create = [
+    ('salesforce', 'provides a cloud-based CRM platform for businesses. This bot should '
+                   'allow queries such as "@salesforce-bot get customer 150" and return '
+                   'information about the specified customer.')
 ]
 
 bots_to_improve = [
