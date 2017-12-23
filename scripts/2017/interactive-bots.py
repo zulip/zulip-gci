@@ -6,9 +6,7 @@ parser.add_argument('-f', '--force', dest='force', action="store_true", default=
 args = parser.parse_args()
 
 bots_to_create = [
-    ('salesforce', 'provides a cloud-based CRM platform for businesses. This bot should '
-                   'allow queries such as "@salesforce-bot get customer 150" and return '
-                   'information about the specified customer.')
+    ('jira', 'allows users to track issues.')
 ]
 
 bots_to_improve = [
@@ -42,6 +40,9 @@ bot_tasks_created = [
     ('URL shortener', 'takes a link and sends back a shortened version using a shortener service'),
     ('wit.ai', 'integrates Zulip with wit.ai bots that interact based on natural language; '
                'use https://github.com/wit-ai/pywit for building the integration'),
+    ('salesforce', 'provides a cloud-based CRM platform for businesses. This bot should '
+                   'allow queries such as "@salesforce-bot get customer 150" and return '
+                   'information about the specified customer.'),
 ]
 
 description = """Zulip supports interactive bots. Bots are little programs that have
