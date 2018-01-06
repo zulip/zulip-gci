@@ -161,11 +161,11 @@ b. Creating animated reactions from your own art
 * Add the images and the GIF to the directory above.
 
 * Add a commit with these files, with commit message "visual art: Add
-  a/an <name> animated reaction.", where `<name>` is the name of your animation
+  a/an \<name> animated reaction.", where `<name>` is the name of your animation
   e.g. growing heart.
 
 * Submit a pull request to the `zulip/zulip-gci-submissions` repository, with
-  title "visual art: Create a/an <name> animated reaction." Include a link to
+  title "visual art: Create a/an \<name> animated reaction." Include a link to
   the pull request when you submit your task on the GCI website.
 
 *Completion criteria:*
@@ -198,11 +198,11 @@ b. Creating pure CSS animations
 * Add the files for your animation to the directory above.
 
 * Add a commit with these files, with commit message "visual art: Add
-  a/an <name> standalone animation", where `<name>` is the name of your
+  a/an \<name> standalone animation", where `<name>` is the name of your
   animation e.g. happy octopus.
 
 * Submit a pull request to the `zulip/zulip-gci-submissions` repository, with
-  title "visual art: Create a/an <name> standalone animation." Describe what
+  title "visual art: Create a/an \<name> standalone animation." Describe what
   is the intended behavior for the animation. Include a link to the pull
   request when you submit your task on the GCI website.
 
