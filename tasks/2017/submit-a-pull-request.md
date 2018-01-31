@@ -19,7 +19,7 @@ Why?
 * Finally, if you do make a mistake, you'll be able to learn to [fix your commits](http://zulip.readthedocs.io/en/latest/git/fixing-commits.html).
 
 
-The directions for the task is as follows:
+The directions for the task is as follows (you should use Git in **command line** for this task):
 
 * Fork the [zulip-gci-submissions](https://github.com/zulip/zulip-gci-submissions) repository.
 If you are not sure what this means, refer to [this tutorial](
